@@ -1,0 +1,14 @@
+name = "Iron Jetpacks"
+filename = "IronJetpacks-1.19.2-6.0.4.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/DWIEOniQ/versions/T6Ed25bj/IronJetpacks-1.19.2-6.0.4.jar"
+hash-format = "sha512"
+hash = "c44ad8a62bc8abe6b591f92da4de0e70fc80b354cd4133c8cddc6fd175bcf9ffa12ee404735577d7abb47ba7b6f125fa0fc0944d8a2c2e1b161b615e3fba9519"
+
+[update]
+[update.modrinth]
+mod-id = "DWIEOniQ"
+version = "T6Ed25bj"

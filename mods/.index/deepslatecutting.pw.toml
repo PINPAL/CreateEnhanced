@@ -1,0 +1,14 @@
+name = "DeepslateCutting"
+filename = "deepslatecutting-forge-1.5.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "48b4d6564da0c29a7d1f6632a79f1b65db0f77d3"
+
+[update]
+[update.curseforge]
+file-id = 4015318
+project-id = 504899

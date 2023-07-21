@@ -1,0 +1,14 @@
+name = "Infinity Buttons"
+filename = "infinitybuttons-1.19.2-3.1.0.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/2raGoXFz/versions/r20YmAO6/infinitybuttons-1.19.2-3.1.0.jar"
+hash-format = "sha512"
+hash = "e0e6c02018af0cb5050c6a2611e87f4f5732c47581b6a7d9bce112f3527a4d51fb775cb30f6dc9f62e7d9c438e1d31a110036881491bd854dfb871df71e01b4a"
+
+[update]
+[update.modrinth]
+mod-id = "2raGoXFz"
+version = "r20YmAO6"

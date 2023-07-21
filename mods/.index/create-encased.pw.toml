@@ -1,0 +1,14 @@
+name = "Create Encased"
+filename = "CreateCasing-1.19.2-1.3-hotfix-1.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/hSSqdyU1/versions/7PDmefaP/CreateCasing-1.19.2-1.3-hotfix-1.jar"
+hash-format = "sha512"
+hash = "cfe4c5fc95a09aa5fcb2bd4b0dfce196f1b6ba16bbab5a200dd76db19de5b32a373302b527773597bcf2a8d5503b304a576653bd0fcf253ea18764f30a99749f"
+
+[update]
+[update.modrinth]
+mod-id = "hSSqdyU1"
+version = "7PDmefaP"

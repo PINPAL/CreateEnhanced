@@ -1,0 +1,14 @@
+name = "Reasonable Sorting"
+filename = "reasonable-sorting-forge-2.1.0-mc1.19.2.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/ghf7OqIS/versions/MP0us2zj/reasonable-sorting-forge-2.1.0-mc1.19.2.jar"
+hash-format = "sha512"
+hash = "135664cb670874ff44137c027d58bf71738b8b7c83efc8255e7fc6d30c4ec70341e907e347728d0d506f43e900158928f11a3078cb8bdb30325a729b9339c0ac"
+
+[update]
+[update.modrinth]
+mod-id = "ghf7OqIS"
+version = "MP0us2zj"

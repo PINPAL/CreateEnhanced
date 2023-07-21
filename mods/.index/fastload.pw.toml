@@ -1,0 +1,14 @@
+name = "Fastload"
+filename = "Fastload-Reforged-8.2.1+1.19.2.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/kCpssoSb/versions/P17HkM27/Fastload-Reforged-8.2.1%2B1.19.2.jar"
+hash-format = "sha512"
+hash = "56f0e24155de29bae3f73294b4a000bed38509e0e57b2d08c9683da3324c2aaffdeddf15fb26250de6daa3101240ef284954ec714258679fd7c60736143102e0"
+
+[update]
+[update.modrinth]
+mod-id = "kCpssoSb"
+version = "P17HkM27"

@@ -1,0 +1,14 @@
+name = "Easy Villagers"
+filename = "easy_villagers-1.19.2-1.0.11.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/Kaov2qgi/versions/QbuVsVCb/easy_villagers-1.19.2-1.0.11.jar"
+hash-format = "sha512"
+hash = "e2c432139afbb1fffa90dfdb653e80826c400b3b28e9ceb22142750aaf358f626960b6f5d84d67e14c2acc7f259649a6280ba829a251e387df3b2a5bce4deaca"
+
+[update]
+[update.modrinth]
+mod-id = "Kaov2qgi"
+version = "QbuVsVCb"
