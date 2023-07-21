@@ -6,6 +6,7 @@
   "item.refinedstorage.quartz_enriched_iron": "Silicon Quartz",
   "item.refinedstorage.construction_core": "Solid Biomethane",
 
+  "item.refinedstorage.filter": "Digital Filter",
   "block.refinedstorage.crafter": "Digital Crafter",
   "block.refinedstorage.controller": "Digital Controller"
 }
