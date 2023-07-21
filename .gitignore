@@ -12,5 +12,10 @@ kubejs/exported
 kubejs/probe
 
 !resources
+
+
 !config
+config/jei/world
+
+
 !defaultconfigs
