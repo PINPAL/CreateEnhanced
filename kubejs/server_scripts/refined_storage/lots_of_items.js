@@ -21,6 +21,12 @@ ServerEvents.recipes((event) => {
     "create:display_board",
   ]);
 
+  // Detector
+  event.shapeless("refinedstorage:detector", [
+    "refinedstorage:silicon",
+    "create:stockpile_switch",
+  ]);
+
   // Pattern Grid
   event.shapeless("refinedstorage:pattern_grid", [
     "refinedstorage:crafting_grid",

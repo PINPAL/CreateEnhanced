@@ -88,7 +88,8 @@
     "com.simibubi.create.content.schematics.client.SchematicEditScreen": true,
     "com.simibubi.create.content.logistics.filter.FilterScreen": true,
     "com.simibubi.create.content.equipment.zapper.terrainzapper.WorldshaperScreen": true,
-    "com.simibubi.create.content.schematics.client.SchematicPromptScreen": true
+    "com.simibubi.create.content.schematics.client.SchematicPromptScreen": true,
+    "com.refinedmods.refinedstorage.screen.DetectorScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

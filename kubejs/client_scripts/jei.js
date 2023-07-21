@@ -130,6 +130,7 @@ JEIEvents.addItems((event) => {
     "refinedstorage:crafting_monitor",
     "refinedstorage:controller",
     "refinedstorage:external_storage",
+    "refinedstorage:detector",
     "refinedstorage:importer",
     "refinedstorage:exporter",
     "refinedstorage:processor_binding",
