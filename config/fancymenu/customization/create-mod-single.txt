@@ -1,0 +1,75 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_526
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  restart_on_load = false
+  name = createmod
+  action = animatebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=346948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=504948%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=582972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=346972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=424972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=504972%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
+}
+

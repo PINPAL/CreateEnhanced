@@ -1,0 +1,188 @@
+JEIEvents.hideItems((event) => {
+  // Hide Items
+  const hideFromJEI = [
+    /cofh_core:/,
+    /spawn_egg/,
+    "createaddition:digital_adapter",
+    "minecraft:infested_stone",
+    "minecraft:infested_cobblestone",
+    "minecraft:infested_stone_bricks",
+    "minecraft:infested_mossy_stone_bricks",
+    "minecraft:infested_cracked_stone_bricks",
+    "minecraft:infested_chiseled_stone_bricks",
+    "minecraft:infested_deepslate",
+    "shrink:mob_bottle",
+    "#forge:pickaxes",
+    "#forge:shovels",
+    "#forge:axes",
+    "#forge:tools/gold",
+    "#forge:armor/gold",
+    "easypaxellite:golden_paxel",
+    "farmersdelight:golden_knife",
+    "alloyed:steel_pickaxe",
+    "alloyed:steel_shovel",
+    "alloyed:steel_axe",
+    "alloyed:steel_shears",
+    "alloyed:steel_fishing_rod",
+    "alloyed:steel_ingot",
+    "alloyed:steel_nugget",
+    "alloyed:steel_sheet",
+    "alloyed:bronze_ingot",
+    "alloyed:bronze_nugget",
+    "alloyed:bronze_sheet",
+    "supplementaries:crank",
+    "supplementaries:faucet",
+    "easypaxellite:netherite_paxel_ingot",
+    /sophisticatedbackpacks:*/,
+    /sophisticatedstorage:*/,
+    /refinedstorage:*/,
+    /itemfilters:*/,
+    /simplemagnets:*/,
+    "refinedstorageaddons:creative_wireless_crafting_grid",
+    "ironjetpacks:strap",
+    "ironjetpacks:thruster",
+    "ironjetpacks:capacitor",
+    "ironjetpacks:cell",
+    "ironjetpacks:basic_coil",
+    "ironjetpacks:advanced_coil",
+    "ironjetpacks:ultimate_coil",
+    "minecraft:elytra",
+    /wands:*/,
+    /ftbquests:*/,
+    "easy_villagers:iron_farm",
+    "easy_villagers:farmer",
+    "minecraft:enchanting_table",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil",
+    /chunkloaders:*/,
+    "minecraft:enchanted_book",
+  ];
+  hideFromJEI.forEach((item) => {
+    event.hide(item);
+  });
+});
+
+JEIEvents.addItems((event) => {
+  // Add Items
+  const addToJEI = [
+    "ftbquests:book",
+    "sophisticatedstorage:upgrade_base",
+    "sophisticatedstorage:compression_upgrade",
+    "sophisticatedstorage:stack_upgrade_tier_1",
+    "sophisticatedstorage:stack_upgrade_tier_2",
+    "sophisticatedstorage:stack_upgrade_tier_3",
+    "sophisticatedstorage:stack_upgrade_tier_4",
+    "sophisticatedstorage:void_upgrade",
+    "sophisticatedstorage:storage_tool",
+    Item.of("sophisticatedstorage:gold_chest", '{woodType: "spruce"}'),
+    Item.of("sophisticatedstorage:gold_barrel", '{woodType: "spruce"}'),
+    Item.of(
+      "sophisticatedstorage:limited_gold_barrel_1",
+      '{woodType: "spruce"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_gold_barrel_2",
+      '{woodType: "spruce"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_gold_barrel_3",
+      '{woodType: "spruce"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_gold_barrel_4",
+      '{woodType: "spruce"}'
+    ),
+    Item.of("sophisticatedstorage:netherite_chest", '{woodType: "dark_oak"}'),
+    Item.of("sophisticatedstorage:netherite_barrel", '{woodType: "dark_oak"}'),
+    Item.of(
+      "sophisticatedstorage:limited_netherite_barrel_1",
+      '{woodType: "dark_oak"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_netherite_barrel_2",
+      '{woodType: "dark_oak"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_netherite_barrel_3",
+      '{woodType: "dark_oak"}'
+    ),
+    Item.of(
+      "sophisticatedstorage:limited_netherite_barrel_4",
+      '{woodType: "dark_oak"}'
+    ),
+    "sophisticatedbackpacks:backpack",
+    "sophisticatedbackpacks:iron_backpack",
+    "sophisticatedbackpacks:gold_backpack",
+    "sophisticatedbackpacks:diamond_backpack",
+    "sophisticatedbackpacks:netherite_backpack",
+    "sophisticatedbackpacks:advanced_pickup_upgrade",
+    "sophisticatedbackpacks:advanced_void_upgrade",
+    "sophisticatedbackpacks:advanced_restock_upgrade",
+    "sophisticatedbackpacks:advanced_deposit_upgrade",
+    "sophisticatedbackpacks:advanced_refill_upgrade",
+    "sophisticatedbackpacks:everlasting_upgrade",
+    "refinedstorage:quartz_enriched_iron",
+    "refinedstorageaddons:wireless_crafting_grid",
+    "refinedstorage:cable",
+    "refinedstorage:crafting_grid",
+    "refinedstorage:pattern_grid",
+    "refinedstorage:crafting_monitor",
+    "refinedstorage:controller",
+    "refinedstorage:external_storage",
+    "refinedstorage:importer",
+    "refinedstorage:exporter",
+    "refinedstorage:processor_binding",
+    "refinedstorage:basic_processor",
+    "refinedstorage:improved_processor",
+    "refinedstorage:advanced_processor",
+    "refinedstorage:wireless_transmitter",
+    "refinedstorage:silicon",
+    "refinedstorage:pattern",
+    "refinedstorage:crafter",
+    "refinedstorage:filter",
+    "refinedstorage:upgrade",
+    "refinedstorage:speed_upgrade",
+    "refinedstorage:stack_upgrade",
+    "refinedstorage:crafting_upgrade",
+    "simplemagnets:advancedmagnet",
+    "simplemagnets:advanced_demagnetization_coil",
+    "wands:palette",
+    "chunkloaders:ultimate_chunk_loader",
+    Item.of("wands:netherite_wand", "{Unbreakable: 1b}"),
+    Item.of(
+      "minecraft:enchanted_book",
+      '{display:{Lore:[\'[{"text":"Can contain ","color":"gray","italic":false},{"text":"ANY ","color":"red","italic":false},{"text":"enchantment.","color":"gray","italic":false}]\',\'{"text":" "}\',\'{"text":"Equal chance of all enchants.","color":"gold","italic":false}\',\'{"text":"Will always be Level I","color":"yellow","italic":false}\'],Name:\'{"text":"Random Enchanted Book","color":"gold","italic":false}\'}}'
+    ),
+    Item.of(
+      "refinedstorage:cover",
+      '{Item:{Count:1,id:"create:brass_casing"}}'
+    ),
+    Item.of(
+      "refinedstorage:hollow_cover",
+      '{Item:{Count:1,id:"create:brass_casing"}}'
+    ),
+    Item.of(
+      "refinedstorage:cover",
+      '{Item:{Count:1,id:"create:andesite_casing"}}'
+    ),
+    Item.of(
+      "refinedstorage:hollow_cover",
+      '{Item:{Count:1,id:"create:andesite_casing"}}'
+    ),
+  ];
+  addToJEI.forEach((item) => {
+    event.add(item);
+  });
+});
+
+JEIEvents.removeCategories((event) => {
+  // Remove Categories
+  const removeCategories = [
+    "minecraft:anvil",
+    "create_central_kitchen:cutting_board_deploying",
+  ];
+  removeCategories.forEach((item) => {
+    event.remove(item);
+  });
+});

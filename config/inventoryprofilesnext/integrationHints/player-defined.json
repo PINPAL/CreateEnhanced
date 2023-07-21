@@ -1,0 +1,24 @@
+{
+    "net.minecraft.class_490": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 24,
+                "bottom": -12
+            }
+        }
+    },
+    "net.minecraft.class_476": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 2
+            }
+        }
+    },
+    "net.minecraft.class_495": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 2
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+  // Enchantments
+  //Sword
+  "enchantment.minecraft.sharpness": "§f\uEfd0 §rSharpness",
+  "enchantment.minecraft.smite": "§f\uEfd1 §rSmite",
+  "enchantment.minecraft.bane_of_arthropods": "§f\uEfd2 §rBane of Arthropods",
+  "enchantment.minecraft.knockback": "§f\uEfd4 §rKnockback",
+  "enchantment.minecraft.fire_aspect": "§f\uEfd3 §rFire Aspect",
+  "enchantment.minecraft.sweeping": "§f\uEfd5 §rSweeping Edge",
+  "enchantment.minecraft.looting": "§f\uEfc1 §rLooting",
+  //Crossbow
+  "enchantment.minecraft.multishot": "§f\uEfda §rMultishot",
+  "enchantment.minecraft.quick_charge": "§f\uEfdc §rQuick Charge",
+  "enchantment.minecraft.piercing": "§f\uEfdb §rPiercing",
+  //Bow
+  "enchantment.minecraft.power": "§f\uEfd7 §rPower",
+  "enchantment.minecraft.flame": "§f\uEfd8 §rFlame",
+  "enchantment.minecraft.punch": "§f\uEfd6 §rPunch",
+  "enchantment.minecraft.infinity": "§f\uEfd9 §rInfinity",
+  //Tools
+  "enchantment.minecraft.efficiency": "§f\uEfc0 §rEfficiency",
+  "enchantment.minecraft.silk_touch": "§f\uEfdd §rSilk Touch",
+  "enchantment.minecraft.fortune": "§f\uEfc1 §rFortune",
+  //Trident
+  "enchantment.minecraft.loyalty": "§f\uEfef §rLoyalty",
+  "enchantment.minecraft.impaling": "§f\uEfef §rImpaling",
+  "enchantment.minecraft.riptide": "§f\uEfef §rRiptide",
+  "enchantment.minecraft.channeling": "§f\uEfef §rChanneling",
+  //Fishing Rod
+  "enchantment.minecraft.luck_of_the_sea": "§f\uEfdf §rLuck of the Sea",
+  "enchantment.minecraft.lure": "§f\uEfde §rLure",
+  //Curses
+  "enchantment.minecraft.binding_curse": "§f\uEfcf §rCurse of Binding",
+  "enchantment.minecraft.vanishing_curse": "§f\uEfcf §rCurse of Vanishing",
+  //All
+  "enchantment.minecraft.unbreaking": "§f\uEfcd §rUnbreaking",
+  "enchantment.minecraft.mending": "§f\uEfce §rMending",
+  //Helmet
+  "enchantment.minecraft.respiration": "§f\uEfc7 §rRespiration",
+  "enchantment.minecraft.aqua_affinity": "§f\uEfc8 §rAqua Affinity",
+  //Boots
+  "enchantment.minecraft.feather_falling": "§f\uEfc6 §rFeather Falling",
+  "enchantment.minecraft.depth_strider": "§f\uEfc9 §rDepth Strider",
+  "enchantment.minecraft.frost_walker": "§f\uEfcc §rFrost Walker",
+  "enchantment.minecraft.soul_speed": "§f\uEfcb §rSoul Speed",
+  "enchantment.minecraft.swift_sneak": "§f\uEff0 §rSwift Sneak",
+  //Armor
+  "enchantment.minecraft.protection": "§f\uEfc2 §rProtection",
+  "enchantment.minecraft.fire_protection": "§f\uEfc3 §rFire Protection",
+  "enchantment.minecraft.blast_protection": "§f\uEfc4 §rBlast Protection",
+  "enchantment.minecraft.projectile_protection": "§f\uEfc5 §rProjectile Protection",
+  "enchantment.minecraft.thorns": "§f\uEfca §rThorns"
+}

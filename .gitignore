@@ -1,6 +1,16 @@
 # Ignore everything
-*
+/*
 
 # But not these files...
 !.gitignore
-!kubejs/*
+!kubejs
+kubejs/jsconfig.json
+kubejs/README.txt
+kubejs/config
+kubejs/data
+kubejs/exported
+kubejs/probe
+
+!resources
+!config
+!defaultconfigs

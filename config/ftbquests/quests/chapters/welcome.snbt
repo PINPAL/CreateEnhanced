@@ -1,0 +1,3295 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "octagon"
+	filename: "welcome"
+	group: ""
+	icon: "create:wrench"
+	id: "42D297EC7D3BE68E"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 8.0d
+			hover: [ ]
+			image: "fancymenu:textures/title-banner.png"
+			rotation: 0.0d
+			width: 27.47764d
+			x: 0.0d
+			y: -6.125d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 35.0d
+			hover: [ ]
+			image: "quests:textures/background.png"
+			order: -1
+			rotation: 0.0d
+			width: 35.0d
+			x: 0.0d
+			y: 7.125d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 20.0d
+			hover: [ ]
+			image: "quests:textures/cog_border.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -19.278d
+			y: 4.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 20.0d
+			hover: [ ]
+			image: "quests:textures/cog_border.png"
+			rotation: -180.0d
+			width: 10.0d
+			x: 19.278d
+			y: 12.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "create_things_and_misc:items/vibration_mechanism2"
+			rotation: 0.0d
+			width: 0.125d
+			x: 30.875d
+			y: -10.375d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "create_things_and_misc:items/vibration_mechanism2"
+			rotation: 0.0d
+			width: 0.125d
+			x: -1.25d
+			y: -23.0d
+		}
+	]
+	order_index: 0
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["386A633F6CE57DC1"]
+			dependency_requirement: "one_completed"
+			id: "26D185F68C821538"
+			progression_mode: "linear"
+			shape: "octagon"
+			subtitle: "Now you can mine stone!"
+			tasks: [{
+				id: "444AF8A4D0239ED1"
+				item: {
+					Count: 1b
+					id: "easypaxellite:wood_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Your First Tool"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			id: "27F8B5F7212E9412"
+			rewards: [{
+				count: 16
+				id: "00D4F609D72801D0"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "Obtain Cobblestone"
+			tasks: [{
+				consume_items: false
+				id: "50D4E04BAB029E83"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Getting Stone"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"27F8B5F7212E9412"
+				"3B237ADD59BDB02A"
+			]
+			description: ["Use your new &6Sand Paper&r to refine some cobblestone."]
+			id: "37E5D108BDCEA53B"
+			shape: "octagon"
+			subtitle: "Sand down raw rock."
+			tasks: [{
+				consume_items: false
+				id: "2A10947119CE65C9"
+				item: "kubejs:refined_stone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			description: ["Obtain &6Sand Paper&r and take your very first steps to becoming a true engineer!"]
+			id: "3B237ADD59BDB02A"
+			shape: "octagon"
+			subtitle: "Obtain Sandpaper"
+			tasks: [{
+				consume_items: false
+				id: "36AEA6271CDC4601"
+				item: {
+					Count: 1b
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Your First Engineering"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37E5D108BDCEA53B"]
+			id: "6545EE475DD16057"
+			subtitle: "You can mine ores now!"
+			tasks: [{
+				consume_items: false
+				id: "1410B61E7EB08E76"
+				item: {
+					Count: 1b
+					id: "easypaxellite:stone_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Getting an Upgrade"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6545EE475DD16057"]
+			icon: "create:iron_sheet"
+			id: "26C9C63835C84874"
+			size: 1.5d
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "220BC2544010367C"
+				item: "minecraft:iron_ore"
+				title: "The Iron Age"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "386A633F6CE57DC1"
+			subtitle: "Obtain a Crafting Table"
+			tasks: [{
+				id: "372DDF1E1D5AA3FE"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Time to craft!"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			hide: true
+			hide_details_until_startable: true
+			id: "01D1C7A267CC448A"
+			optional: true
+			shape: "circle"
+			subtitle: "Create your first weapon."
+			tasks: [{
+				id: "1645AF99B5B4BD07"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Your First Weapon"
+			x: -1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			id: "06B04C606CE4187C"
+			subtitle: "Obtain Andesite from any forest biome."
+			tasks: [{
+				id: "51A41503C16277E8"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Andesite"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["06B04C606CE4187C"]
+			id: "6E931AE38AE91C4F"
+			size: 2.0d
+			subtitle: "The beginning of Create mod."
+			tasks: [{
+				id: "1819C8C6F32D5917"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "The Andesite Age"
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "6FEF3380D11818AF"
+			subtitle: "Don't poke it too hard.."
+			tasks: [{
+				id: "670C0A222CE5618B"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Deploying"
+			x: 4.75d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "497786B7F649F21B"
+			subtitle: "BONK!"
+			tasks: [{
+				id: "18374A98DC56A1DE"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Pressing"
+			x: 4.75d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "0301EA6307C18BF2"
+			subtitle: "It's like baking a cake!"
+			tasks: [{
+				id: "60CDE0CC2E8A7707"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Mixing"
+			x: 2.25d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "5904703F33472CFC"
+			subtitle: "The power of air!"
+			tasks: [{
+				id: "040B022D64F7770D"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Blowing"
+			x: 3.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "28CE2EDC4F928E0B"
+			subtitle: "Cutting wood autonomously!"
+			tasks: [{
+				id: "2E2713EAE800BC24"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "Sawing"
+			x: 4.0d
+			y: 7.75d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "77DDAE3A43C0356F"
+			subtitle: "Breaking down materials."
+			tasks: [{
+				id: "05DB7532FF2568ED"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Milling"
+			x: 4.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "664B341348EFB352"
+			subtitle: "A pair of giants."
+			tasks: [{
+				id: "66F68E9621BE389A"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing"
+			x: 2.875d
+			y: 7.75d
+		}
+		{
+			dependencies: ["06B04C606CE4187C"]
+			id: "3017843FE3F03B3F"
+			size: 2.0d
+			subtitle: "Powering your machinary."
+			tasks: [{
+				id: "478B17CB376F37A7"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "Power Generation"
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3017843FE3F03B3F"]
+			hide: true
+			id: "7ACDD2A3B9D129A4"
+			subtitle: "Your first power without having to crank it."
+			tasks: [{
+				id: "654B0BF9A5AF1F86"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Your first power."
+			x: -3.75d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7ACDD2A3B9D129A4"]
+			hide: true
+			id: "5DFCA69367100FC6"
+			subtitle: "The water wheels big cousin."
+			tasks: [{
+				id: "7494FDDA692C5324"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "The Bigger Brother"
+			x: -4.625d
+			y: 7.625d
+		}
+		{
+			dependencies: ["3017843FE3F03B3F"]
+			hide: true
+			id: "0F29039F69FF4A7D"
+			subtitle: "Your mid-game power source."
+			tasks: [{
+				id: "5F7DF74C129D3016"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "Save the environment!"
+			x: -3.0d
+			y: 7.25d
+		}
+		{
+			dependencies: ["3017843FE3F03B3F"]
+			dependency_requirement: "one_completed"
+			hide: true
+			id: "5EFD1F3E40DBE153"
+			subtitle: "Hard to craft, but plenty of rotational force."
+			tasks: [{
+				id: "139E9A9566F861C1"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "End Game Power"
+			x: -2.0d
+			y: 7.25d
+		}
+		{
+			dependencies: ["3017843FE3F03B3F"]
+			id: "7453758780D4848F"
+			size: 2.0d
+			subtitle: "The beginning of greater things.."
+			tasks: [{
+				id: "4D976AFD17D3F3CC"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			title: "The Electrical Age"
+			x: -5.75d
+			y: 10.25d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			hide_details_until_startable: false
+			id: "06AD2AF50AE0F143"
+			optional: true
+			rewards: [{
+				id: "19BD22EF0BEB30C9"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			subtitle: "Forging better tools."
+			tasks: [{
+				id: "329B8328A81B9F47"
+				item: {
+					Count: 1b
+					id: "easypaxellite:iron_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Real Upgrades"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			id: "1822D538FA5F3E98"
+			optional: true
+			shape: "circle"
+			subtitle: "Using your new forging skills for combat."
+			tasks: [{
+				id: "697A9CAF2BFBA370"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Better Weaponary"
+			x: 2.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			id: "0AA52F5F7E62EBD7"
+			optional: true
+			shape: "circle"
+			subtitle: "Using your new forging skills for farming."
+			tasks: [{
+				id: "1B85B3A1309E52A7"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Upgraded Farming"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6FEF3380D11818AF"]
+			id: "7EFE09C7A87A4FD3"
+			size: 2.0d
+			subtitle: "Storing your items."
+			tasks: [{
+				id: "5F3B740CF070A70B"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:gold_barrel"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				type: "item"
+			}]
+			title: "Storage"
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7EFE09C7A87A4FD3"]
+			id: "5AA93F61C816FF09"
+			subtitle: "The perfect solution to bulk item storage."
+			tasks: [{
+				id: "42B668276847DDB0"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:limited_gold_barrel_1"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				type: "item"
+			}]
+			title: "Bulk Storage"
+			x: 7.5d
+			y: 9.25d
+		}
+		{
+			dependencies: ["5AA93F61C816FF09"]
+			description: [
+				"&7The &rBarrel &6Drawer 3 &7is the perfect drawer size to pair with a &rCompression Upgrade &7as it allows you to fit in your blocks, ingots and nuggets into one."
+				""
+				"&7The &rCompression Upgrade&7 automatically converts all contents in the drawer between types."
+			]
+			hide: true
+			icon: "sophisticatedstorage:compression_upgrade"
+			id: "1B384151A6E111CE"
+			subtitle: "Automatically convert blocks/nuggets/ingots!"
+			tasks: [
+				{
+					id: "70820AB8830DD508"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:limited_gold_barrel_3"
+						tag: {
+							woodType: "spruce"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "059E1A0916E1951E"
+					item: "sophisticatedstorage:compression_upgrade"
+					type: "item"
+				}
+			]
+			title: "Auto Compacting!"
+			x: 7.0d
+			y: 8.25d
+		}
+		{
+			dependencies: ["5AA93F61C816FF09"]
+			description: ["&7The &rBarrel Wrench&7 allows you to easily manage your storage including locking drawers so they can only accept certain item types."]
+			hide: true
+			id: "75F594821E72D1B4"
+			subtitle: "The wrench is your friend!"
+			tasks: [{
+				id: "31547022A907891E"
+				item: "sophisticatedstorage:storage_tool"
+				type: "item"
+			}]
+			title: "Configuring Barrels?"
+			x: 8.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["7EFE09C7A87A4FD3"]
+			id: "71BC4F7FCFB29E9E"
+			optional: true
+			subtitle: "No problem!"
+			tasks: [{
+				id: "332B1CD8669E5E7E"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:gold_chest"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				type: "item"
+			}]
+			title: "Prefer Chests?"
+			x: 8.25d
+			y: 11.125d
+		}
+		{
+			dependencies: ["06B04C606CE4187C"]
+			icon: "minecraft:netherrack"
+			id: "6DD58DEC49782F4E"
+			subtitle: "Enter the&6 Nether"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "4D7BE8C4FB7DF611"
+				title: "Enter the &6Nether"
+				type: "dimension"
+			}]
+			title: "The future lays ahead.."
+			x: 0.0d
+			y: 8.9d
+		}
+		{
+			dependencies: [
+				"6DD58DEC49782F4E"
+				"0301EA6307C18BF2"
+			]
+			icon: "create:blaze_burner"
+			id: "3013996FDD5C82B3"
+			subtitle: "A step closer to brass!"
+			tasks: [
+				{
+					id: "57129730C0408BEF"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "7479FA2D68D70774"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "Mixing with Blaze!"
+			x: 0.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["3013996FDD5C82B3"]
+			id: "26B607339F9A9909"
+			size: 1.5d
+			subtitle: "Where the real Create begins."
+			tasks: [{
+				id: "4FC62F0FD6CD0E43"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "The Brass Age"
+			x: 0.75d
+			y: 11.625d
+		}
+		{
+			dependencies: [
+				"7EFE09C7A87A4FD3"
+				"26B607339F9A9909"
+			]
+			hide: true
+			id: "15CC2A8854A12C33"
+			subtitle: "More slots and upgrades!"
+			tasks: [{
+				id: "3CAF98AC7DC2BDD0"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:netherite_barrel"
+					tag: {
+						woodType: "dark_oak"
+					}
+				}
+				type: "item"
+			}]
+			title: "Upgrading your storage."
+			x: 5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["15CC2A8854A12C33"]
+			id: "13F8366D9B6C934A"
+			subtitle: "Brass Drawers provide the biggest capacity for storing items."
+			tasks: [{
+				id: "336EEF44F4070BE8"
+				item: {
+					Count: 1b
+					id: "sophisticatedstorage:limited_netherite_barrel_1"
+					tag: {
+						woodType: "dark_oak"
+					}
+				}
+				type: "item"
+			}]
+			title: "Now that's bulk!"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["13F8366D9B6C934A"]
+			hide: true
+			id: "2142527C3A2204CA"
+			subtitle: "Increasing your stack size by two!"
+			tasks: [{
+				id: "3433D02D782835F8"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2142527C3A2204CA"]
+			id: "23EF04B35C62461B"
+			subtitle: "Increasing your stack size by four!"
+			tasks: [{
+				id: "0860B4C28638B37B"
+				item: "sophisticatedstorage:stack_upgrade_tier_2"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.125d
+		}
+		{
+			dependencies: ["23EF04B35C62461B"]
+			id: "0A1CD692562DF490"
+			subtitle: "Increasing your stack size by eight!"
+			tasks: [{
+				id: "03D304D70C0A5512"
+				item: "sophisticatedstorage:stack_upgrade_tier_3"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0A1CD692562DF490"]
+			id: "0930A951D3532F0E"
+			subtitle: "With a brass drawer filled with these you can store over a billion items in one block!"
+			tasks: [{
+				id: "290518184C796C88"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			hide: true
+			id: "72B561894C6AC831"
+			subtitle: "A multiblock structure to store electricity."
+			tasks: [{
+				id: "35F877062C50CD39"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "Storing Electricity"
+			x: -7.0d
+			y: 9.75d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			id: "389F49B8EA9807B9"
+			subtitle: "Connectors are used to transfer your electricity around your machines."
+			tasks: [{
+				id: "28D21275C042E2F8"
+				item: "createaddition:connector"
+				type: "item"
+			}]
+			title: "Moving Electricity"
+			x: -5.75d
+			y: 14.5d
+		}
+		{
+			dependencies: ["26B607339F9A9909"]
+			icon: "minecraft:end_stone"
+			id: "191247B3681B4E45"
+			subtitle: "Enter &6The End"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "21B26D110E2BC5DD"
+				title: "Enter &6The End"
+				type: "dimension"
+			}]
+			title: "END Game"
+			x: -0.75d
+			y: 12.375d
+		}
+		{
+			dependencies: ["504EA82C987ABA3F"]
+			description: [
+				""
+				"{image:quests:textures/charging.png width:180 height:180 align:1}"
+			]
+			id: "75165ACBEC559E3A"
+			rewards: [{
+				id: "58C8341721721A15"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Fully charge a jetpack."
+			tasks: [{
+				id: "598A78F0384DB5ED"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Energy: 5000000
+						Id: "ironjetpacks:brass"
+						Throttle: 1.0d
+					}
+				}
+				match_nbt: true
+				title: "Fully Charged Jetpack"
+				type: "item"
+			}]
+			title: "Fully powered!"
+			x: -2.75d
+			y: 13.5d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:chainmail_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "568E4C255A477E20"
+			optional: true
+			shape: "circle"
+			subtitle: "Forging Better Armor"
+			tasks: [{
+				id: "25A34E42DE0B0B08"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:chainmail_armor"
+					}
+				}
+				title: "Any #kubejs:chainmail_armor"
+				type: "item"
+			}]
+			title: "Armor Upgrading"
+			x: -1.375d
+			y: 6.0d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:leather_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "79672686765C7030"
+			shape: "circle"
+			subtitle: "Create your first armor."
+			tasks: [{
+				id: "0C231792360146AC"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:leather_armor"
+					}
+				}
+				title: "Any Leather Armor"
+				type: "item"
+			}]
+			title: "Your First Defense"
+			x: -1.625d
+			y: 1.0d
+		}
+		{
+			dependencies: ["568E4C255A477E20"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "49F9FC411BF9B890"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "06F2166A623E1766"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:iron_armor"
+					}
+				}
+				title: "Any #kubejs:iron_armor"
+				type: "item"
+			}]
+			title: "Iron Armor"
+			x: -2.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["49F9FC411BF9B890"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "alloyed:steel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11866A0A040998FA"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "6CE66F0BF87F4DE1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:steel_armor"
+					}
+				}
+				title: "Any #kubejs:steel_armor"
+				type: "item"
+			}]
+			title: "Steel Armor"
+			x: -2.625d
+			y: 6.0d
+		}
+		{
+			dependencies: ["11866A0A040998FA"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2E7775FE373386DA"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "11D33E0000772BDE"
+				item: {
+					Count: 1b
+					id: "minecraft:diamond_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Diamond Armor"
+			x: -3.375d
+			y: 5.25d
+		}
+		{
+			dependencies: ["2E7775FE373386DA"]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "165135DFCF0DE1E4"
+			optional: true
+			shape: "circle"
+			tasks: [{
+				id: "67EF0A6F9B34C957"
+				item: {
+					Count: 1b
+					id: "minecraft:netherite_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Netherite Armor"
+			x: -4.125d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6DD58DEC49782F4E"]
+			hide: true
+			id: "7326963563960996"
+			rewards: [{
+				id: "4B8D5559A523ABD4"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			subtitle: "Preparing for a battle.."
+			tasks: [{
+				id: "39CE22FF0B87814D"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			title: "Collecting Skulls"
+			x: -1.0d
+			y: 9.375d
+		}
+		{
+			dependencies: ["7326963563960996"]
+			hide: true
+			id: "1EC42DB4CEEF6909"
+			rewards: [{
+				id: "0CD81CDA7F226A70"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "The power of magical stars."
+			tasks: [{
+				id: "232DD1DFE2646BC8"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "A Boss Battle"
+			x: -2.0d
+			y: 9.875d
+		}
+		{
+			dependencies: ["1EC42DB4CEEF6909"]
+			id: "5169F5136FEF5FD2"
+			subtitle: "A late game crafting item."
+			tasks: [{
+				id: "3C98D76D1FA98B36"
+				item: "create_things_and_misc:vibration_mechanism"
+				type: "item"
+			}]
+			title: "Quantum Entanglement"
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			hide: true
+			id: "504EA82C987ABA3F"
+			subtitle: "With the power of the Tesla coil you can charge items."
+			tasks: [{
+				id: "22666D143349525C"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			title: "Charging your items."
+			x: -4.375d
+			y: 13.5d
+		}
+		{
+			dependencies: ["191247B3681B4E45"]
+			description: ["For fast transport you might want to look into Trains. The jetpack is slow to provide help with building, not whizzing around your world."]
+			hide: true
+			id: "1B73E52F20FF6C1F"
+			subtitle: "Build with ease with using the jetpack"
+			tasks: [{
+				id: "29B7053FB66ADB54"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:brass"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "To the moon!"
+			x: -1.25d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"122521EBD0B42EB3"
+				"389F49B8EA9807B9"
+			]
+			id: "3D84983EB475FA84"
+			size: 2.0d
+			subtitle: "Search through your items with a digitally powered interface."
+			tasks: [{
+				id: "77C84505A328C1CD"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			title: "Digital Storage"
+			x: -3.5d
+			y: 15.75d
+		}
+		{
+			dependencies: [
+				"3D84983EB475FA84"
+				"5169F5136FEF5FD2"
+			]
+			hide: true
+			icon: "refinedstorageaddons:wireless_crafting_grid"
+			id: "27EAA10E8969850A"
+			subtitle: "Storage anywhere!"
+			tasks: [
+				{
+					id: "7E0D8B2F7982CD7C"
+					item: "refinedstorage:wireless_transmitter"
+					type: "item"
+				}
+				{
+					id: "00A60A685548F9C3"
+					item: "refinedstorageaddons:wireless_crafting_grid"
+					type: "item"
+				}
+			]
+			title: "Wireless Storage"
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["27EAA10E8969850A"]
+			id: "3B0E2FC24BF6085C"
+			subtitle: "Access your storage from anywhere, anytime!"
+			tasks: [{
+				id: "0ABB65A133DE038B"
+				item: "rsinfinitybooster:infinity_card"
+				type: "item"
+			}]
+			title: "Unlimited Range"
+			x: -1.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["3B0E2FC24BF6085C"]
+			id: "152044C6E4F0E5DD"
+			subtitle: "Access your storage from other dimensions."
+			tasks: [{
+				id: "7F5FC48C23C2FD8D"
+				item: "rsinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			title: "Truly anywhere!"
+			x: -1.75d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5169F5136FEF5FD2"]
+			id: "0063F8A2083F6A3D"
+			subtitle: "Keep your machines running when your offline."
+			tasks: [{
+				id: "774912C26B938FB3"
+				item: "chunkloaders:ultimate_chunk_loader"
+				type: "item"
+			}]
+			title: "Chunk Loading"
+			x: -2.75d
+			y: 10.75d
+		}
+		{
+			dependencies: ["0063F8A2083F6A3D"]
+			id: "711A389A68B465EC"
+			subtitle: "Keep your contraptions on the move while you're away!"
+			tasks: [{
+				id: "6C257B9B52DB7AAF"
+				item: "createchunkloading:chunk_loader"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6C37D2ED3A1BB762"]
+			id: "122521EBD0B42EB3"
+			tasks: [{
+				id: "410388C232FEDFB9"
+				item: "refinedstorage:advanced_processor"
+				type: "item"
+			}]
+			x: -4.875d
+			y: 16.25d
+		}
+		{
+			dependencies: [
+				"5FA9860593EC3347"
+				"1F195231F51D6FA2"
+			]
+			id: "6C37D2ED3A1BB762"
+			tasks: [{
+				id: "6C4022CC14A044EB"
+				item: "refinedstorage:silicon"
+				type: "item"
+			}]
+			x: -5.875d
+			y: 16.25d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			hide: true
+			hide_dependency_lines: true
+			id: "05B308A5BA7C921C"
+			subtitle: "Evaporate some water in a cauldron."
+			tasks: [{
+				id: "29AE1F9089DE1E20"
+				item: "salt:salt"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 14.625d
+		}
+		{
+			dependencies: ["05B308A5BA7C921C"]
+			hide: true
+			hide_dependency_lines: true
+			id: "178976A1A9CF9A42"
+			subtitle: "Silicon doesn't come easy."
+			tasks: [{
+				id: "7417A1252997033E"
+				item: "kubejs:empty_canister"
+				type: "item"
+			}]
+			title: "Working with Gas"
+			x: -7.375d
+			y: 14.5d
+		}
+		{
+			dependencies: ["05B308A5BA7C921C"]
+			hide: true
+			icon: "salt:salt_cluster"
+			id: "2084C1703DB2C2F3"
+			rewards: [{
+				count: 8
+				id: "57D6B92508DBC5DA"
+				item: "salt:salt_lamp"
+				title: "A cool lamp for your troubles."
+				type: "item"
+			}]
+			subtitle: "Use dripstone to create renewable salt."
+			tasks: [
+				{
+					id: "0B5DA2DB11CC2758"
+					item: "salt:raw_rock_salt"
+					type: "item"
+				}
+				{
+					id: "0E23EBE9792DBA5E"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Growing your own"
+			x: -8.625d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"178976A1A9CF9A42"
+				"2084C1703DB2C2F3"
+			]
+			id: "2B04669626480B2F"
+			subtitle: "Storing liquid in a can!"
+			tasks: [{
+				id: "2222A3DDF2A67BEF"
+				item: "kubejs:brine_canister"
+				type: "item"
+			}]
+			x: -7.75d
+			y: 15.375d
+		}
+		{
+			dependencies: ["3D84983EB475FA84"]
+			hide: true
+			id: "35479BD21CC2BCD6"
+			subtitle: "All your stuff in one place."
+			tasks: [{
+				id: "205B2CD717E3270A"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			title: "Viewing your storage"
+			x: -3.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3D84983EB475FA84"]
+			hide: true
+			id: "28455BB910BA3421"
+			subtitle: "The pattern grid allows you to program patterns to automatically craft items and input items into your assembly lines."
+			tasks: [{
+				id: "61F31E1769C72BA0"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			title: "Autocrafting with ease"
+			x: -4.125d
+			y: 17.0d
+		}
+		{
+			dependencies: ["28455BB910BA3421"]
+			id: "283EBB76E703CCF0"
+			subtitle: "The basis of autocrafting with a digital system."
+			tasks: [{
+				id: "08DA8CEFCB953F34"
+				item: "refinedstorage:pattern"
+				type: "item"
+			}]
+			title: "Patterns, Patterns, Patterns..."
+			x: -5.125d
+			y: 17.5d
+		}
+		{
+			dependencies: ["28455BB910BA3421"]
+			id: "27E919C7ECB9F8FB"
+			subtitle: "Use this for basic crafting recipes and inputting into assembly lines."
+			tasks: [{
+				id: "0A6CCA3C0E0A909B"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			title: "Digital Crafting"
+			x: -3.625d
+			y: 18.0d
+		}
+		{
+			dependencies: ["28455BB910BA3421"]
+			id: "701CD06412CA32F0"
+			subtitle: "Monitor your autocrafts and keep track of &m if &r when stuff goes wrong."
+			tasks: [{
+				id: "060E680C09EF90D9"
+				item: "refinedstorage:crafting_monitor"
+				type: "item"
+			}]
+			title: "Where's my craft!?"
+			x: -4.625d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3D84983EB475FA84"]
+			description: [
+				"&eThere are no disks here."
+				"I don't know about you but my computers drive doesn't fit 8 billion cubic tons of stone.&r"
+			]
+			hide: true
+			id: "60DCD10EE774BCDC"
+			subtitle: "You may have a digital interface, but you gotta put those items somewhere."
+			tasks: [{
+				id: "5D723F225F3B02E7"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["26B607339F9A9909"]
+			id: "5D83A0E68CAC463B"
+			size: 2.0d
+			subtitle: "Fast transport for you and your items!"
+			tasks: [{
+				id: "35B7862DD00FDC2B"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "The Train Age"
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			hide: true
+			icon: "create:track"
+			id: "537BBE2721CC1EC0"
+			tasks: [{
+				id: "0456C40633D4796B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:train_tracks"
+					}
+				}
+				title: "Any #kubejs:train_tracks"
+				type: "item"
+			}]
+			title: "Train Tracks"
+			x: 2.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			hide: true
+			id: "4198E47737EED427"
+			subtitle: "You can't have a train without a station!"
+			tasks: [{
+				id: "1B59F4FF11D185EB"
+				item: "create:track_station"
+				type: "item"
+			}]
+			title: "Choo Choo!"
+			x: 2.75d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			description: [
+				"Automating coal for your trains is highly recommended."
+				""
+				"Powered trains can reach a top speed of &cOVER 240 blocks per second&r."
+				"Therefore it's highly recommended to atleast power your player transport trains."
+			]
+			hide: true
+			id: "6B5FB36353FEBED1"
+			rewards: [{
+				id: "42CA577D3BB87147"
+				item: "minecraft:coal"
+				random_bonus: 63
+				title: "A little bonus!"
+				type: "item"
+			}]
+			subtitle: "Any storage on the train containing coal will allow it to move &6ALOT&r faster!"
+			tasks: [{
+				count: 64L
+				id: "2144BBD1ED30B468"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:coals"
+					}
+				}
+				title: "Any #minecraft:coals"
+				type: "item"
+			}]
+			title: "Full Steam Ahead!"
+			x: 1.0d
+			y: 15.25d
+		}
+		{
+			dependencies: ["497786B7F649F21B"]
+			hide: true
+			id: "46B6445D0861E943"
+			subtitle: "The heart of create."
+			tasks: [{
+				id: "30E4CBD3F13963FA"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "Rotate, reverse repeat!"
+			x: 5.125d
+			y: 7.375d
+		}
+		{
+			dependencies: ["497786B7F649F21B"]
+			hide: true
+			id: "55BB62DE3FC965DD"
+			rewards: [
+				{
+					id: "305CCA4B03E7627D"
+					item: "create:cogwheel"
+					random_bonus: 15
+					title: "For your future builds..."
+					type: "item"
+				}
+				{
+					id: "467A108D28B7F16E"
+					item: "create:shaft"
+					random_bonus: 15
+					title: "You deserve it engineer!"
+					type: "item"
+				}
+			]
+			subtitle: "Allows you to see information about your contraptions."
+			tasks: [{
+				id: "28264499A5E345E7"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: 5.75d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			description: [
+				"&l&nEnchanting Overview"
+				""
+				"Obtaining &6Random Enchanted Books&r is your first step to beginning your enchanting journey."
+				""
+				"Once you have some enchanted books, you can apply them onto your tools using the &6Blaze Enchanter&r."
+				""
+				"&l&nLevel I Only?"
+				""
+				"This means enchanting is more of a challenge, you will need a source of heat for &bsuperheating&r in order to obtain &bHyper Experience&r this will allow your &6Blaze Enchanter&r to enchant the item one level higher than the book in it's &6Enchanting Guide&r."
+				""
+				"Yes you can reach enchantments upto &cLevel X&r. While enchanting is harder than Vanilla, it offers much greater scalability and automation."
+			]
+			icon: "minecraft:enchanting_table"
+			id: "11E1B19181CD6D2D"
+			rewards: [{
+				id: "7AE232F9BBEB9F9C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 2.0d
+			subtitle: "Enchanting has been greatly modified."
+			tasks: [{
+				id: "0D779AD36F766E95"
+				points: false
+				type: "xp"
+				value: 1L
+			}]
+			title: "Enchanting"
+			x: 2.75d
+			y: 16.75d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			hide: true
+			id: "7CB45649FE5D0AC6"
+			rewards: [{
+				id: "5F94BD60FFF0D90D"
+				item: "easy_villagers:breeder"
+				type: "item"
+			}]
+			subtitle: "Villagers aren't wizards. Therefore they don't trade you books."
+			tasks: [{
+				id: "7AA43BED53ECBF85"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
+			title: "No Villagers Here."
+			x: 4.0d
+			y: 16.25d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			description: [
+				""
+				"{image:quests:textures/blaze_enchanter.png width:150 height:150 align:1 fit:true}"
+			]
+			hide: true
+			id: "5AD1C0B4CF6FC3D6"
+			rewards: [{
+				id: "4B7CA35E4087E49E"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			subtitle: "Anvils, enchanting tables no more. Enchanting is done through blaze enchanters."
+			tasks: [{
+				id: "5A0D0199E4E10C54"
+				item: "create_enchantment_industry:enchanting_guide"
+				type: "item"
+			}]
+			title: "Blaze Enchanting"
+			x: 3.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			description: [
+				""
+				"{image:quests:textures/enchanted_book.png width:120 height:120 align:1}"
+			]
+			hide: true
+			id: "7FF7BB4DA70B8C78"
+			rewards: [{
+				id: "6A3729BBCF546F1A"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						display: {
+							Lore: [
+								"[{\"text\":\"Can contain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"ANY \",\"color\":\"red\",\"italic\":false},{\"text\":\"enchantment.\",\"color\":\"gray\",\"italic\":false}]"
+								"{\"text\":\" \"}"
+								"{\"text\":\"Equal chance of all enchants.\",\"color\":\"gold\",\"italic\":false}"
+								"{\"text\":\"Will always be Level I\",\"color\":\"yellow\",\"italic\":false}"
+							]
+							Name: "{\"text\":\"Random Enchanted Book\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				title: "Does nothing itself, see it's recipe for details."
+				type: "item"
+			}]
+			subtitle: "Look at the recipe for the enchanted book to find out more."
+			tasks: [{
+				id: "6816B4FAD3892E86"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			title: "Enchanting Your Books"
+			x: 4.0d
+			y: 17.25d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			hide: true
+			id: "67C6C2EE56BDF581"
+			rewards: [{
+				id: "75D4E9CA9EAE4696"
+				title: "Try standing on top!"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "Can collect XP drops and absorb from players standing on top."
+			tasks: [{
+				id: "36B0A1B65D67E038"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: 2.25d
+			y: 18.0d
+		}
+		{
+			dependencies: ["56A83A4BF3CEFC3E"]
+			description: [
+				"The &6Blaze Enchanter&r can't enchant books directly."
+				""
+				"Instead you will need to enchant a tool of your choice using &bhyper enchanting&r then extract it's enchantments using the Disenchanter."
+			]
+			id: "1B7EDE54D07C9212"
+			subtitle: "Creating OP enchantments.."
+			tasks: [{
+				id: "6157F658E844B803"
+				item: "disenchanting:disenchanter"
+				type: "item"
+			}]
+			title: "Disenchanting"
+			x: 3.75d
+			y: 19.0d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			hide: true
+			id: "56A83A4BF3CEFC3E"
+			subtitle: "Hyper experience can be used to increase the level of an enchantment."
+			tasks: [{
+				id: "479B815D6A1FA36B"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			title: "Leveling Up"
+			x: 3.375d
+			y: 18.0d
+		}
+		{
+			dependencies: ["11E1B19181CD6D2D"]
+			hide: true
+			id: "094EE47B94A6CDB0"
+			rewards: [
+				{
+					id: "7701407820F7152B"
+					item: "create:fluid_pipe"
+					random_bonus: 15
+					type: "item"
+				}
+				{
+					id: "2EC67F1BB7A63EAF"
+					item: "create:mechanical_pump"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "You can move liquid XP around using Create pipes"
+			tasks: [{
+				id: "28B69D214162EEAE"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Storing XP"
+			x: 1.5d
+			y: 17.25d
+		}
+		{
+			dependencies: ["26B607339F9A9909"]
+			id: "7DB05CBC8B579FD8"
+			size: 2.0d
+			subtitle: "Mechanical Crafting allows recipes with sizes upto 5x5"
+			tasks: [{
+				id: "4DCB14610E565C55"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Crafting but Bigger."
+			x: 5.0d
+			y: 13.25d
+		}
+		{
+			dependencies: ["7DB05CBC8B579FD8"]
+			hide: true
+			id: "0353772AB22352F6"
+			subtitle: "The extendo grip is an essential tool to give you more reach."
+			tasks: [{
+				id: "5BAF76103844FECF"
+				item: {
+					Count: 1b
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.25d
+			y: 13.75d
+		}
+		{
+			dependencies: ["5169F5136FEF5FD2"]
+			id: "36C39C53C3E931D3"
+			subtitle: "The building wand makes building a breeze with multiple modes."
+			tasks: [{
+				id: "22322138A9DEA3C0"
+				item: {
+					Count: 1b
+					id: "wands:netherite_wand"
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -2.875d
+			y: 11.875d
+		}
+		{
+			dependencies: ["36C39C53C3E931D3"]
+			id: "1E5602DBA90E0FCD"
+			subtitle: "The palette allows you to randomise or cycle a set of blocks in your wand."
+			tasks: [{
+				id: "1A0811D431BA807F"
+				item: {
+					Count: 1b
+					id: "wands:palette"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Randomisation "
+			x: -3.75d
+			y: 12.25d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			description: [
+				"&l&nFood Overhauled"
+				""
+				"You will now find a button within your inventory to track your food."
+				"Food must be balanced, you must make sure to get your &9Vegtables&r, &9Meat&r and &9Carbs&r."
+				""
+				"If you have a poor diet you will be &cmalnourished&r."
+				"- This will reduce your health slightly."
+				"- Your mining speed will be reduced a small amount."
+				""
+				"&l&nWhy?"
+				""
+				"What's the point in having all these unique food types in the game if you only eat one?"
+				"Instead this change aims to incentivize the player to create farms for each of the different nutrient types and potentially even combine them together into a \"Super Food\" like a Burger that provides all the nutrients."
+			]
+			icon: "farmersdelight:hamburger"
+			id: "7407910917C9F8A9"
+			rewards: [{
+				count: 3
+				id: "743EC2F2D3A46584"
+				item: "farmersdelight:bacon_sandwich"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "Nutritional Balance!"
+			tasks: [{
+				id: "18719282FDFB6558"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:seeds"
+					}
+				}
+				title: "Any Seeds"
+				type: "item"
+			}]
+			title: "Food"
+			x: 3.25d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			hide: true
+			icon: "minecraft:bread"
+			id: "62B5628A3CD272C6"
+			rewards: [{
+				id: "41E31A86EC9A18E2"
+				item: "farmersdelight:bacon_sandwich"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Obtain enough &6Carbs&r to last a while."
+			tasks: [{
+				count: 32L
+				id: "4E2BCA7404FCF983"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nutrients/carbs"
+					}
+				}
+				title: "Any Carbs"
+				type: "item"
+			}]
+			title: "Carbs"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			hide: true
+			icon: "minecraft:cooked_beef"
+			id: "3D1A262754A16E06"
+			rewards: [{
+				id: "6156B27EA8527DA0"
+				item: "farmersdelight:noodle_soup"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Obtain enough &6Protien&r to last a while."
+			tasks: [{
+				count: 32L
+				id: "596E8F5AC1ABC8C7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:foods/meat/cooked"
+					}
+				}
+				title: "Any Cooked Meat"
+				type: "item"
+			}]
+			title: "Protein"
+			x: 2.75d
+			y: -0.25d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			hide: true
+			icon: "minecraft:carrot"
+			id: "4EA1AE56A3276FFA"
+			rewards: [{
+				id: "3683B9FF5B7BF746"
+				item: "farmersdelight:mutton_wrap"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Obtain enough &6Vegetables&r to last a while."
+			tasks: [{
+				count: 32L
+				id: "0439FD780535EE7B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:nutrients/vegetables"
+					}
+				}
+				title: "Any Vegtables"
+				type: "item"
+			}]
+			title: "Vegetables"
+			x: 3.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["26D185F68C821538"]
+			hide: true
+			id: "2A8EB2589707FAE3"
+			optional: true
+			shape: "circle"
+			subtitle: "Lots of items on you? No problem."
+			tasks: [{
+				id: "1456FE0905BE050C"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 1.12d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			id: "4BEB29F474FAB0D4"
+			optional: true
+			shape: "circle"
+			subtitle: "2 whole rows!"
+			tasks: [{
+				id: "686D1E1C7292AC36"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "Upgrading your Backpack"
+			x: 1.25d
+			y: 4.875d
+		}
+		{
+			dependencies: ["4BEB29F474FAB0D4"]
+			hide: true
+			id: "75D93EB2CB71F281"
+			optional: true
+			shape: "circle"
+			subtitle: "3 whole rows!"
+			tasks: [{
+				id: "3E31435B3581B493"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.875d
+		}
+		{
+			dependencies: ["75D93EB2CB71F281"]
+			hide: true
+			id: "50A28D2866E46020"
+			optional: true
+			shape: "circle"
+			subtitle: "4 whole rows!"
+			tasks: [{
+				id: "6889337264142320"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 4.875d
+		}
+		{
+			dependencies: ["50A28D2866E46020"]
+			hide: true
+			id: "2F289DC495ECFC9E"
+			optional: true
+			shape: "circle"
+			subtitle: "5 ENTIRE ROWS?!"
+			tasks: [{
+				id: "70FE5BD3E0B1E10E"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			title: "The Biggest Bag"
+			x: 5.0d
+			y: 4.875d
+		}
+		{
+			dependencies: ["2F289DC495ECFC9E"]
+			hide: true
+			id: "270DD27B292BD6C8"
+			optional: true
+			shape: "circle"
+			subtitle: "Why not make it indestructable too?"
+			tasks: [{
+				id: "743632D10D59B1FB"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+				type: "item"
+			}]
+			title: "Everlasting Upgrade"
+			x: 6.25d
+			y: 4.875d
+		}
+		{
+			dependencies: ["5169F5136FEF5FD2"]
+			id: "6778D06A90E260AE"
+			subtitle: "A device that allows you to shrink yourself to work with very compact systems."
+			tasks: [{
+				id: "61102D4EBDF66F8B"
+				item: {
+					Count: 1b
+					id: "shrink:shrinking_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Can't fit?"
+			x: -1.125d
+			y: 11.125d
+		}
+		{
+			dependencies: ["7DB05CBC8B579FD8"]
+			hide: true
+			id: "0F4CCCBB88406D91"
+			subtitle: "Pickup items with ease!"
+			tasks: [{
+				id: "770DF739137A9987"
+				item: {
+					Count: 1b
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0F4CCCBB88406D91"]
+			hide: true
+			id: "5F714FC2FAAA20BA"
+			rewards: [{
+				id: "2AA5FB35AFD6B1D4"
+				item: "simplemagnets:advanced_demagnetization_coil"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Prevent your magnet from messing up your assembly lines."
+			tasks: [{
+				id: "1C96FBAF573A9828"
+				item: "simplemagnets:advanced_demagnetization_coil"
+				type: "item"
+			}]
+			x: 6.375d
+			y: 14.875d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			hide: true
+			id: "5A7DAF971DB8B4D3"
+			subtitle: "Hire somebody else to drive!"
+			tasks: [
+				{
+					id: "7783CADB77B29DDF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "railways:conductor_caps"
+						}
+					}
+					title: "Any Color Conductor Cap"
+					type: "item"
+				}
+				{
+					id: "2B7614009D4A0189"
+					item: "create:schedule"
+					type: "item"
+				}
+			]
+			title: "Automatic Trains"
+			x: 0.25d
+			y: 14.625d
+		}
+		{
+			dependencies: ["2B04669626480B2F"]
+			id: "5FA9860593EC3347"
+			subtitle: "Use electrolysis to create chlorine gas."
+			tasks: [{
+				id: "4F21D27965817D24"
+				item: "kubejs:chlorine_canister"
+				type: "item"
+			}]
+			title: "Electrolysis"
+			x: -6.875d
+			y: 15.75d
+		}
+		{
+			dependencies: [
+				"536C67D9469F3995"
+				"56AD353D90826AA9"
+			]
+			id: "1F195231F51D6FA2"
+			tasks: [{
+				id: "0077BA8347E1803B"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			x: -6.875d
+			y: 16.75d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:sand"
+			id: "536C67D9469F3995"
+			rewards: [{
+				id: "75AA083971B55775"
+				item: "farmersdelight:egg_sandwich"
+				title: "A sandwich for your sand."
+				type: "item"
+			}]
+			subtitle: "Create renewable sand for silicon."
+			tasks: [
+				{
+					id: "17F129060BE6AB31"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "6C2EC60AFC2A225F"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Sand Farm"
+			x: -7.75d
+			y: 17.125d
+		}
+		{
+			dependencies: ["7453758780D4848F"]
+			hide: true
+			id: "366D9BE3BE6915C8"
+			subtitle: "Create an electric motor to convert your electricity to rotation force."
+			tasks: [{
+				id: "43BB5035B13D7AE9"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			title: "Rotation from Electricity"
+			x: -7.0d
+			y: 10.875d
+		}
+		{
+			dependencies: ["6545EE475DD16057"]
+			description: ["In this area you can tick off Items as you automate them."]
+			icon: "minecraft:farmland"
+			id: "372F217BE8C60631"
+			size: 2.0d
+			subtitle: "Automating the basics."
+			tasks: [{
+				id: "132DB5433DFB3821"
+				title: "I'm ready to automate!"
+				type: "checkmark"
+			}]
+			title: "Farming"
+			x: -4.25d
+			y: 2.625d
+		}
+		{
+			dependencies: ["372F217BE8C60631"]
+			hide: true
+			icon: "minecraft:cobblestone"
+			id: "6C96662719E52E17"
+			subtitle: "The basis for everything."
+			tasks: [
+				{
+					id: "5D426ED8CF422E88"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "3F0B5CE2BD996D38"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Cobblestone Generator"
+			x: -5.375d
+			y: 0.125d
+		}
+		{
+			dependencies: ["6C96662719E52E17"]
+			hide: true
+			icon: "minecraft:gravel"
+			id: "28DDB93015935685"
+			tasks: [
+				{
+					id: "47EBFDE8715F61BD"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "7A3D9A528FE26522"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: 1.125d
+		}
+		{
+			dependencies: ["28DDB93015935685"]
+			icon: "minecraft:iron_nugget"
+			id: "03A9B3E2E879B706"
+			subtitle: "Wash some gravel for a chance at Iron."
+			tasks: [
+				{
+					id: "778625A8671477B1"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "43636022E8186856"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Renewable Iron"
+			x: -6.5d
+			y: 1.625d
+		}
+		{
+			dependencies: ["28DDB93015935685"]
+			icon: "minecraft:sand"
+			id: "3038EFE018F42050"
+			subtitle: "Crush some gravel for sand."
+			tasks: [
+				{
+					id: "4F939C7321C1DC3C"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "44419AEBC0EC17A8"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Sand"
+			x: -6.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["7900CBBDF3093BC3"]
+			hide: true
+			icon: "minecraft:gold_ingot"
+			id: "2C83AEF36C0B1A70"
+			subtitle: "Pack nuggets into Gold Ingots"
+			tasks: [
+				{
+					count: 256L
+					id: "5F000E3F0DBC4CC6"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "79069DA2031AC1D8"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Gold"
+			x: -10.125d
+			y: -0.75d
+		}
+		{
+			dependencies: ["536C67D9469F3995"]
+			icon: "minecraft:soul_sand"
+			id: "3E66F32A80195932"
+			subtitle: "Haunt from Sand for Soul Sand."
+			tasks: [
+				{
+					id: "25E2A9F0C7AE7CB6"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "3CA96023E8792E11"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Soul Sand Farm"
+			x: -7.25d
+			y: 18.125d
+		}
+		{
+			dependencies: ["3E66F32A80195932"]
+			icon: "minecraft:quartz"
+			id: "56AD353D90826AA9"
+			tasks: [
+				{
+					id: "50BF94F48A4C9A73"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "75399F54DF4AC348"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Quartz Farm"
+			x: -6.375d
+			y: 17.75d
+		}
+		{
+			dependencies: ["3038EFE018F42050"]
+			icon: "minecraft:soul_sand"
+			id: "2A209E76D9014317"
+			subtitle: "Haunt Sand into Soul Sand"
+			tasks: [
+				{
+					id: "1A3C5B62B718ED77"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "7C7CC86B9E7A4031"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Soul Sand"
+			x: -7.75d
+			y: -0.625d
+		}
+		{
+			dependencies: [
+				"2A209E76D9014317"
+				"2899086A083BF7FA"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:gold_nugget"
+			id: "7900CBBDF3093BC3"
+			subtitle: "Wash some Soul Sand or Red Sand for a chance at Gold."
+			tasks: [
+				{
+					id: "4F31185AB056BCFC"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "773F39B21D8399D7"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Gold Washing"
+			x: -9.25d
+			y: -1.125d
+		}
+		{
+			dependencies: ["03A9B3E2E879B706"]
+			hide: true
+			icon: "minecraft:iron_ingot"
+			id: "50F54C5799B05773"
+			subtitle: "Pack nuggets into Iron Ingots"
+			tasks: [
+				{
+					count: 256L
+					id: "6FC7F662FE01A2A9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "3A28A60451D36BAB"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Iron"
+			x: -5.625d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"44DA8CA6EC28944E"
+				"64EBC6558844AE7B"
+			]
+			hide: true
+			icon: "minecraft:copper_ingot"
+			id: "095C2A20F71534C3"
+			subtitle: "Pack nuggets into Copper Ingots"
+			tasks: [
+				{
+					count: 256L
+					id: "7DDF86C0999FDFCE"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "050FA4086DB92FA9"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Copper"
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13BEAFB67595B5CA"]
+			hide: true
+			icon: "create:crushed_raw_copper"
+			id: "44DA8CA6EC28944E"
+			subtitle: "Crush Veridum for a chance at Copper"
+			tasks: [
+				{
+					id: "3D731664E531F5FD"
+					item: "create:crushed_raw_copper"
+					type: "item"
+				}
+				{
+					id: "52B9F2A6B1107E6E"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -6.5d
+			y: 5.875d
+		}
+		{
+			dependencies: ["13BEAFB67595B5CA"]
+			hide: true
+			icon: "create:copper_nugget"
+			id: "64EBC6558844AE7B"
+			subtitle: "Crush Veridum for a chance at Copper"
+			tasks: [
+				{
+					id: "0BF40CCF2420A9BC"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "183FF2DFE429C3B7"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -5.875d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"700C91B0F88E44E3"
+				"01A2F12E34418D14"
+			]
+			hide: true
+			icon: "create:veridium"
+			id: "13BEAFB67595B5CA"
+			subtitle: "Mix Tuff \\& Limestone for Veridum"
+			tasks: [
+				{
+					id: "5811A2410FFBA986"
+					item: "create:veridium"
+					type: "item"
+				}
+				{
+					id: "320ED62C42AAF4FF"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Veridum"
+			x: -8.625d
+			y: 7.375d
+		}
+		{
+			dependencies: [
+				"686CBD88C7FE9EAF"
+				"3F3F68F7424872F8"
+			]
+			icon: "minecraft:tuff"
+			id: "700C91B0F88E44E3"
+			subtitle: "Compact Scoria \\& Deepslate into Tuff"
+			tasks: [
+				{
+					id: "4ED3EACE1E460E99"
+					item: "minecraft:tuff"
+					type: "item"
+				}
+				{
+					id: "3F8AC8712F61C767"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Tuff"
+			x: -10.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["24259E89F817F74C"]
+			description: [
+				""
+				"{image:quests:textures/limestone_generator.png width:100 height:50 align:1 fit:true}"
+			]
+			hide: true
+			icon: "create:limestone"
+			id: "01A2F12E34418D14"
+			subtitle: "Create a limestone generator."
+			tasks: [
+				{
+					id: "4DDC202293D5F85C"
+					item: "create:limestone"
+					type: "item"
+				}
+				{
+					id: "2D9AD423DD52F479"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Limestone"
+			x: -9.5d
+			y: 7.75d
+		}
+		{
+			dependencies: ["372F217BE8C60631"]
+			hide: true
+			hide_dependency_lines: true
+			id: "24259E89F817F74C"
+			subtitle: "Collect a honey bucket for use in a Limestone Generator"
+			tasks: [{
+				id: "277E52EE5CD1C389"
+				item: "create:honey_bucket"
+				type: "item"
+			}]
+			x: -10.375d
+			y: 8.125d
+		}
+		{
+			dependencies: ["2A209E76D9014317"]
+			icon: "create:scoria"
+			id: "3F3F68F7424872F8"
+			subtitle: "Blast Soul Sand into Scoria"
+			tasks: [
+				{
+					id: "41D7DFB5E694CF36"
+					item: "create:scoria"
+					type: "item"
+				}
+				{
+					id: "7623BF7F24041A54"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Scoria"
+			x: -11.125d
+			y: 0.625d
+		}
+		{
+			dependencies: ["41317116C417F243"]
+			icon: "minecraft:cobbled_deepslate"
+			id: "686CBD88C7FE9EAF"
+			subtitle: "Slice Deepslate into Cobbled Deepslate"
+			tasks: [
+				{
+					id: "78CD451F4756A6CF"
+					item: "minecraft:cobbled_deepslate"
+					type: "item"
+				}
+				{
+					id: "1274324F2E94B22F"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Cobbled Deepslate"
+			x: -11.125d
+			y: 4.25d
+		}
+		{
+			dependencies: ["6C96662719E52E17"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:deepslate"
+			id: "41317116C417F243"
+			subtitle: "Compact Cobble into Deepslate"
+			tasks: [
+				{
+					id: "2E5BC013CE43272A"
+					item: "minecraft:deepslate"
+					type: "item"
+				}
+				{
+					id: "32676DBB3D949730"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Deepslate"
+			x: -12.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["6CD2D647D9EC2203"]
+			hide: true
+			icon: "minecraft:redstone"
+			id: "62FADB925CE1E8A7"
+			subtitle: "Wash Crushed Iron into Redstone"
+			tasks: [
+				{
+					count: 256L
+					id: "0DBAD0DFB321C643"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "33A0F7FB5C29007C"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Redstone"
+			x: -8.875d
+			y: 2.375d
+		}
+		{
+			dependencies: ["4519D70C199B08B5"]
+			icon: "create:crushed_raw_iron"
+			id: "6CD2D647D9EC2203"
+			subtitle: "Crush Crimsite for Raw Iron"
+			tasks: [
+				{
+					id: "427E49FEE72BB6E0"
+					item: "create:crushed_raw_iron"
+					type: "item"
+				}
+				{
+					id: "4D222FF3ABA78AEA"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Crushed Iron"
+			x: -9.25d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"700C91B0F88E44E3"
+				"6BD16E91198EE0A8"
+			]
+			hide: true
+			icon: "create:crimsite"
+			id: "4519D70C199B08B5"
+			subtitle: "Mix Tuff \\& Diorite for Crimsite"
+			tasks: [
+				{
+					id: "18243430888DE25A"
+					item: "create:crimsite"
+					type: "item"
+				}
+				{
+					id: "3B2794E73872C4F3"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Crimsite"
+			x: -10.125d
+			y: 1.125d
+		}
+		{
+			dependencies: ["39CB9E508F498A79"]
+			icon: "minecraft:diorite"
+			id: "6BD16E91198EE0A8"
+			subtitle: "Mix Cobble \\& Quartz for Diorite"
+			tasks: [
+				{
+					id: "0477D92785F2C098"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "7041CBF922635A04"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Diorite"
+			x: -9.0d
+			y: 0.625d
+		}
+		{
+			dependencies: ["2A209E76D9014317"]
+			icon: "minecraft:quartz"
+			id: "39CB9E508F498A79"
+			tasks: [
+				{
+					id: "3CB73851B106D14D"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "0CD38409E5606734"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -8.125d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"372F217BE8C60631"
+				"07752CB64C52E070"
+			]
+			hide: true
+			icon: "minecraft:stripped_oak_log"
+			id: "12BF690370E321C4"
+			subtitle: "Saw logs into stripped varients."
+			tasks: [
+				{
+					id: "304455FA32CE0885"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+				{
+					count: 256L
+					id: "21D7745773E15940"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:stripped_logs"
+						}
+					}
+					title: "Any Stripped Log"
+					type: "item"
+				}
+			]
+			title: "Strippin' It"
+			x: -3.75d
+			y: 1.25d
+		}
+		{
+			dependencies: ["372F217BE8C60631"]
+			hide: true
+			icon: "minecraft:dried_kelp"
+			id: "71EB5EDE441893EE"
+			subtitle: "Create a Kelp farm for Belts."
+			tasks: [
+				{
+					count: 256L
+					id: "57611A9FF14A9C2D"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					id: "6E5351B9C141B840"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Kelp for Belts"
+			x: -2.875d
+			y: 2.0d
+		}
+		{
+			dependencies: ["372F217BE8C60631"]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:oak_log"
+			id: "07752CB64C52E070"
+			subtitle: "Create a tree farm for Wood."
+			tasks: [
+				{
+					id: "54EE5FB2908CF8F9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any Logs"
+					type: "item"
+				}
+				{
+					id: "3E9C500501A2C00D"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Wood"
+			x: -3.375d
+			y: 0.375d
+		}
+		{
+			dependencies: [
+				"372F217BE8C60631"
+				"6C96662719E52E17"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:red_sand"
+			id: "2899086A083BF7FA"
+			optional: true
+			shape: "circle"
+			subtitle: "Crush Granite or Terracotta into Red Sand."
+			tasks: [
+				{
+					id: "5EF4F90AA9E80E28"
+					item: "minecraft:red_sand"
+					type: "item"
+				}
+				{
+					id: "3BACAC0E9F8B8823"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -8.125d
+			y: -1.625d
+		}
+		{
+			dependencies: ["7EFE09C7A87A4FD3"]
+			description: ["Before you get to the late game and digital storage, you're going to need some sort of storage to sort your items for you. Chest monsters make projects take infinitely longer than they should."]
+			icon: {
+				Count: 1b
+				id: "sophisticatedstorage:netherite_chest"
+				tag: {
+					woodType: "dark_oak"
+				}
+			}
+			id: "5996CB4C81972F13"
+			rewards: [{
+				id: "1F531A428F8BE268"
+				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Your first auto-sorter."
+			tasks: [
+				{
+					count: 8L
+					id: "79A6A6FF83BD06FD"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "quests:brass_sorter"
+						}
+					}
+					title: "Any Item Sorter Block"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5714C1E401ED6B04"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "quests:storage_blocks"
+						}
+					}
+					title: "Any Storage Blocks"
+					type: "item"
+				}
+				{
+					id: "3E176E993F63F0D5"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Storage System"
+			x: 8.375d
+			y: 9.875d
+		}
+		{
+			dependencies: ["497786B7F649F21B"]
+			description: ["Toolboxes provide you a quick way to access your items when nearby. The stack items 4x the normal stack size and can be accessed with a keybind. These are very useful to store items you use a lot like cogs/shafts/belts etc!"]
+			id: "6DFE9B670BBBD1D9"
+			rewards: [{
+				id: "4CE4C20ABE4C1174"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			subtitle: "Quick access to your items!"
+			tasks: [{
+				id: "3B11CC8A46B4975B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				title: "Any Toolbox"
+				type: "item"
+			}]
+			title: "Toolbox"
+			x: 5.75d
+			y: 8.875d
+		}
+		{
+			dependencies: [
+				"232826631F7692AD"
+				"482FE89F6FF87A1B"
+			]
+			icon: "create_dd:tin_ingot"
+			id: "475D7FD7832B3BA8"
+			subtitle: "Pack nuggets into Tin Ingots"
+			tasks: [
+				{
+					count: 256L
+					id: "5838B9500C0AC687"
+					item: "create_dd:tin_ingot"
+					type: "item"
+				}
+				{
+					id: "55437716724FC433"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Tin"
+			x: -12.875d
+			y: 1.625d
+		}
+		{
+			dependencies: [
+				"095C2A20F71534C3"
+				"11947EC5FD458C8A"
+			]
+			hide: true
+			icon: "create:brass_ingot"
+			id: "69A390DE1BDEC2AA"
+			tasks: [
+				{
+					count: 256L
+					id: "6CBB78013E1C3218"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "266D109B712968E3"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Brass"
+			x: -4.875d
+			y: 3.875d
+		}
+		{
+			dependencies: [
+				"646286C449B53DF5"
+				"0A200BE82AABE69E"
+			]
+			icon: "create:zinc_ingot"
+			id: "11947EC5FD458C8A"
+			subtitle: "Pack nuggets into Zinc Ingots"
+			tasks: [
+				{
+					count: 256L
+					id: "135A53944D0FACA5"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					id: "52FA89FA11D57E33"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Zinc"
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["700C91B0F88E44E3"]
+			icon: "create_dd:potassic_cobble"
+			id: "74357F6CF5298E38"
+			subtitle: "Crush Tuff into Potassic"
+			tasks: [
+				{
+					id: "615CE912C799B57B"
+					item: "create_dd:potassic_cobble"
+					type: "item"
+				}
+				{
+					id: "3FC0EB78511069AE"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Potassic"
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["28DDB93015935685"]
+			icon: "minecraft:andesite"
+			id: "52B32743C4765B1B"
+			subtitle: "Compact Cobble into Andesite"
+			tasks: [
+				{
+					id: "19F53E12404F1230"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "3F769790B441A9D1"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -8.75d
+			y: 3.625d
+		}
+		{
+			dependencies: ["74357F6CF5298E38"]
+			id: "482FE89F6FF87A1B"
+			subtitle: "Crush Potassic into Raw Tin"
+			tasks: [{
+				id: "0310D5171278CC9B"
+				item: "create:crushed_raw_tin"
+				type: "item"
+			}]
+			x: -11.875d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74357F6CF5298E38"]
+			id: "232826631F7692AD"
+			subtitle: "Crush Potassic into Tin Nuggets"
+			tasks: [{
+				id: "72873FF8D423DE37"
+				item: "create_dd:tin_nugget"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"700C91B0F88E44E3"
+				"52B32743C4765B1B"
+			]
+			icon: "create:asurine"
+			id: "22FC90F2B547E4C2"
+			subtitle: "Mix Tuff \\& Andesite for Asurine"
+			tasks: [
+				{
+					id: "4C271C29BFBDE874"
+					item: "create:asurine"
+					type: "item"
+				}
+				{
+					id: "6B32A013F7289D98"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -8.375d
+			y: 4.625d
+		}
+		{
+			dependencies: ["22FC90F2B547E4C2"]
+			id: "646286C449B53DF5"
+			tasks: [{
+				id: "303FD69D384E0A23"
+				item: "create:crushed_raw_zinc"
+				type: "item"
+			}]
+			x: -7.375d
+			y: 5.0d
+		}
+		{
+			dependencies: ["22FC90F2B547E4C2"]
+			id: "0A200BE82AABE69E"
+			tasks: [{
+				id: "1BD7C44085108CBF"
+				item: "create:zinc_nugget"
+				type: "item"
+			}]
+			x: -7.375d
+			y: 4.125d
+		}
+		{
+			dependencies: [
+				"03A9B3E2E879B706"
+				"52B32743C4765B1B"
+			]
+			id: "109C601D3098D036"
+			subtitle: "Mix Andesite \\& Nuggets for Andesite Alloy"
+			tasks: [{
+				id: "1D00331C16F1D0BA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -7.125d
+			y: 3.0d
+		}
+		{
+			description: ["Enjoy some nice Chocolate Cake for your work :)"]
+			icon: "create:wrench"
+			id: "4017886C8B817FCC"
+			rewards: [
+				{
+					id: "1AD1D9FCB26BE39E"
+					item: "createaddition:chocolate_cake"
+					type: "item"
+				}
+				{
+					id: "3A184D7E6362DFBA"
+					item: "create_central_kitchen:chocolate_cake_slice"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 5.0d
+			subtitle: "Obtain a full set of gear."
+			tasks: [
+				{
+					id: "5E5D1D586FB9375A"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					icon: "create:brown_toolbox"
+					id: "701C94713AB46CA8"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:toolboxes"
+						}
+					}
+					title: "Any Color Toolbox"
+					type: "item"
+				}
+				{
+					id: "747EF68920535A26"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "54B805D901457E11"
+					item: {
+						Count: 1b
+						id: "ironjetpacks:jetpack"
+						tag: {
+							Id: "ironjetpacks:brass"
+							Throttle: 1.0d
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36D8D8C9649009D8"
+					item: {
+						Count: 1b
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "207F94D9B7E22BE7"
+					item: {
+						Count: 1b
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A0A1DF13A0E6281"
+					item: {
+						Count: 1b
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62A30DDF32E11AE4"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37361D681CB15CFB"
+					item: {
+						Count: 1b
+						id: "easypaxellite:tempered_netherite_paxel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EE38723F1A0568B"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06FC83ADB0171B5E"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "276497ED98FA1437"
+					item: "create:clipboard"
+					type: "item"
+				}
+				{
+					id: "563907E3B8989921"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+				{
+					id: "7296535A61E405B6"
+					item: {
+						Count: 1b
+						id: "simplemagnets:advancedmagnet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "553330F53484E06A"
+					item: {
+						Count: 1b
+						id: "wands:netherite_wand"
+						tag: {
+							Damage: 0
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DEF6C0952174C70"
+					item: {
+						Count: 1b
+						id: "minecraft:water_bucket"
+						tag: {
+							CustomModelData: 1
+							Enchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+							HideFlags: 1
+							display: {
+								Name: "{\"text\":\"Infinite Water Bucket\",\"italic\":false}"
+							}
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "A Proper Engineer"
+			x: 10.0d
+			y: 1.0d
+		}
+	]
+	title: "Create Modpack"
+}

@@ -1,0 +1,33 @@
+{
+  "key.nutritionalbalance.opennutrientgui": "Nutrient GUI",
+
+  "nutritionalbalance.nutrients": "\u00A7fNutrients",
+
+  "nutritionalbalance.nutrient.proteins": "\u00A79Protein",
+  "nutritionalbalance.nutrient.carbs": "\u00A79Carbs",
+  "nutritionalbalance.nutrient.dairy": "",
+  "nutritionalbalance.nutrient.fruits": "",
+  "nutritionalbalance.nutrient.sugars": "",
+  "nutritionalbalance.nutrient.vegetables": "\u00A79Veggies",
+
+  "nutritionalbalance.nutrientstatus.MALNOURISHED": "Malnourished",
+  "nutritionalbalance.nutrientstatus.SAFE": "Safe",
+  "nutritionalbalance.nutrientstatus.ON_TARGET": "On Target",
+  "nutritionalbalance.nutrientstatus.ENGORGED": "Engorged",
+
+  "nutritionalbalance.nutrientstatus.msg.MALNOURISHED": "You are malnourished.",
+  "nutritionalbalance.nutrientstatus.msg.SAFE": "Your diet is decent.",
+  "nutritionalbalance.nutrientstatus.msg.ON_TARGET": "Your diet is well balanced.",
+  "nutritionalbalance.nutrientstatus.msg.ENGORGED": "You have engorged yourself.",
+
+  "nutritionalbalance.nutrientstatus.details.MALNOURISHED": "",
+  "nutritionalbalance.nutrientstatus.details.SAFE": "",
+  "nutritionalbalance.nutrientstatus.details.ON_TARGET": "",
+  "nutritionalbalance.nutrientstatus.details.ENGORGED": "",
+
+  "effect.nutritionalbalance.engorged_effect": "Engorged",
+  "effect.nutritionalbalance.malnourished_effect": "Malnourished",
+  "effect.nutritionalbalance.nourished_effect": "Well Nourished",
+
+  "nutritionalbalance.close": "Close"
+}

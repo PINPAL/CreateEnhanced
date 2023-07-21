@@ -1,0 +1,11 @@
+{
+  "parent": "easy_villagers:block/farm",
+  "textures": {
+    "1": "easy_villagers:block/andesite_casing",
+    "2": "create:block/andesite_casing",
+    "6": "easy_villagers:block/farm_andesite",
+    "particle": "create:block/andesite_casing",
+    "front": "create:block/andesite_casing",
+    "back": "create:block/andesite_casing"
+  }
+}

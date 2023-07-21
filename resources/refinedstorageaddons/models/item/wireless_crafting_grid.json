@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "refinedstorageaddons:item/wireless_crafting_grid_disconnected",
+		"particle": "refinedstorageaddons:item/wireless_crafting_grid_disconnected"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [4, 1, 6.5],
+			"to": [12, 13, 9.5],
+			"faces": {
+				"north": {"uv": [4, 3, 12, 15], "texture": "#0"},
+				"east": {"uv": [4, 3, 5, 15], "texture": "#0"},
+				"south": {"uv": [4, 3, 12, 15], "texture": "#0"},
+				"west": {"uv": [11, 3, 12, 15], "texture": "#0"},
+				"up": {"uv": [4, 3, 12, 4], "texture": "#0"},
+				"down": {"uv": [4, 14, 12, 15], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 2, 7],
+			"to": [13, 12, 9],
+			"faces": {
+				"north": {"uv": [3, 4, 13, 14], "texture": "#0"},
+				"east": {"uv": [3, 4, 4, 14], "texture": "#0"},
+				"south": {"uv": [3, 4, 13, 14], "texture": "#0"},
+				"west": {"uv": [12, 4, 13, 14], "texture": "#0"},
+				"up": {"uv": [3, 4, 13, 5], "texture": "#0"},
+				"down": {"uv": [3, 13, 13, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "antenna",
+			"from": [10.5, 13, 7.5],
+			"to": [11.5, 15, 8.5],
+			"faces": {
+				"north": {"uv": [10, 1, 11, 3], "texture": "#0"},
+				"east": {"uv": [10, 1, 11, 3], "texture": "#0"},
+				"south": {"uv": [10, 1, 11, 3], "texture": "#0"},
+				"west": {"uv": [10, 1, 11, 3], "texture": "#0"},
+				"up": {"uv": [10, 1, 11, 2], "texture": "#0"},
+				"down": {"uv": [10, 2, 11, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "screen",
+			"from": [3.9, 5, 5.75],
+			"to": [12.1, 11, 10.25],
+			"faces": {
+				"north": {"uv": [4, 5, 12, 11], "texture": "#0"},
+				"east": {"uv": [4, 5, 5, 11], "texture": "#0"},
+				"south": {"uv": [4, 5, 12, 11], "texture": "#0"},
+				"west": {"uv": [11, 5, 12, 11], "texture": "#0"},
+				"up": {"uv": [4, 5, 12, 6], "texture": "#0"},
+				"down": {"uv": [4, 10, 12, 11], "texture": "#0"}
+			}
+		}
+	],
+	"overrides": [
+		{"predicate": {"connected": 0}, "model": "refinedstorageaddons:item/wireless_crafting_grid_disconnected"},
+		{"predicate": {"connected": 1}, "model": "refinedstorageaddons:item/wireless_crafting_grid_connected"}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3, -0.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 3, -0.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [2, 125, 6],
+			"translation": [2.25, 2, -4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [2, 125, 6],
+			"translation": [2.25, 2, -4]
+		},
+		"ground": {
+			"translation": [0, 5.2, 0]
+		},
+		"gui": {
+			"rotation": [25, -30, 0],
+			"translation": [0, 2.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	}
+}

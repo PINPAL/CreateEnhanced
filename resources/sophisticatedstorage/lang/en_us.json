@@ -1,0 +1,27 @@
+{
+  "item.sophisticatedstorage.storage_tool": "Drawer Wrench",
+
+  "item.sophisticatedstorage.compression_upgrade": "Drawer Compression Upgrade",
+  "item.sophisticatedstorage.void_upgrade": "Drawer Void Upgrade",
+
+  "item.sophisticatedstorage.stack_upgrade_tier_1": "Drawer Upgrade Tier 1",
+  "item.sophisticatedstorage.stack_upgrade_tier_2": "Drawer Upgrade Tier 2",
+  "item.sophisticatedstorage.stack_upgrade_tier_3": "Drawer Upgrade Tier 3",
+  "item.sophisticatedstorage.stack_upgrade_tier_4": "Drawer Upgrade Tier 4",
+
+  "block.sophisticatedstorage.controller": "Drawer Controller",
+
+  "block.sophisticatedstorage.gold_chest": "Andesite Chest",
+  "block.sophisticatedstorage.gold_barrel": "Andesite Barrel",
+  "block.sophisticatedstorage.limited_gold_barrel_1": "Andesite \u00A76Drawer 1",
+  "block.sophisticatedstorage.limited_gold_barrel_2": "Andesite \u00A76Drawer 2",
+  "block.sophisticatedstorage.limited_gold_barrel_3": "Andesite \u00A76Drawer 3",
+  "block.sophisticatedstorage.limited_gold_barrel_4": "Andesite \u00A76Drawer 4",
+
+  "block.sophisticatedstorage.netherite_chest": "Brass Chest",
+  "block.sophisticatedstorage.netherite_barrel": "Brass Barrel",
+  "block.sophisticatedstorage.limited_netherite_barrel_1": "Brass \u00A76Drawer 1",
+  "block.sophisticatedstorage.limited_netherite_barrel_2": "Brass \u00A76Drawer 2",
+  "block.sophisticatedstorage.limited_netherite_barrel_3": "Brass \u00A76Drawer 3",
+  "block.sophisticatedstorage.limited_netherite_barrel_4": "Brass \u00A76Drawer 4"
+}

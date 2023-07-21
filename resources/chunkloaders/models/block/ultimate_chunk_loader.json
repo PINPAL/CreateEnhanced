@@ -1,0 +1,141 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "chunkloaders:block/netherite_sheet_metal",
+		"1": "chunkloaders:block/vibration_mechanism",
+		"particle": "chunkloaders:block/netherite_sheet_metal"
+	},
+	"elements": [
+		{
+			"name": "netherite_top",
+			"from": [5, 13, 5],
+			"to": [11, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 6], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 1], "texture": "#0"},
+				"south": {"uv": [5, 0, 6, 6], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 5, 6, 6], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_side",
+			"from": [5, 5, 2],
+			"to": [11, 11, 3],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 13.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"west": {"uv": [0, 5, 6, 6], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 6], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [5, 0, 6, 6], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_side",
+			"from": [13, 5, 5],
+			"to": [14, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"south": {"uv": [0, 5, 6, 6], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 6], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 6], "texture": "#0"},
+				"down": {"uv": [5, 0, 6, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_side",
+			"from": [2, 5, 5],
+			"to": [3, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"south": {"uv": [0, 5, 6, 6], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 6], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 6], "texture": "#0"},
+				"down": {"uv": [5, 0, 6, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_side",
+			"from": [5, 5, 13],
+			"to": [11, 11, 14],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 13.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 1], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"west": {"uv": [0, 5, 6, 6], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 6], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [5, 0, 6, 6], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "netherite_bottom",
+			"from": [5, 2, 5],
+			"to": [11, 3, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 6], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 1], "texture": "#0"},
+				"south": {"uv": [5, 0, 6, 6], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 5, 6, 6], "texture": "#0"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "brass_rod_z",
+			"from": [7, 7, 3],
+			"to": [9, 9, 13],
+			"faces": {
+				"east": {"uv": [0, 7, 10, 9], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [0, 7, 10, 9], "texture": "#0"},
+				"up": {"uv": [0, 7, 10, 9], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [0, 7, 10, 9], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "brass_rod_x",
+			"from": [3, 7, 7],
+			"to": [13, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 7, 10, 9], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [0, 7, 10, 9], "texture": "#0"},
+				"up": {"uv": [0, 7, 10, 9], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 7, 10, 9], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "brass_rod_y",
+			"from": [7, 3, 7],
+			"to": [9, 13, 9],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 7, 10, 9], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [0, 7, 10, 9], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 7, 10, 9], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [0, 7, 10, 9], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "vibration_middle",
+			"from": [5, 5, 5],
+			"to": [11, 11, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

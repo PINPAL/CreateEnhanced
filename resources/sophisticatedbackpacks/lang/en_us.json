@@ -1,0 +1,10 @@
+{
+  "item.sophisticatedbackpacks.gold_backpack": "Steel Backpack",
+
+  "item.sophisticatedbackpacks.advanced_pickup_upgrade": "Backpack Pickup Upgrade",
+  "item.sophisticatedbackpacks.advanced_void_upgrade": "Backpack Void Upgrade",
+  "item.sophisticatedbackpacks.advanced_restock_upgrade": "Backpack Restock Upgrade",
+  "item.sophisticatedbackpacks.advanced_deposit_upgrade": "Backpack Deposit Upgrade",
+  "item.sophisticatedbackpacks.advanced_refill_upgrade": "Backpack Refill Upgrade",
+  "item.sophisticatedbackpacks.everlasting_upgrade": "Backpack Everlasting Upgrade"
+}

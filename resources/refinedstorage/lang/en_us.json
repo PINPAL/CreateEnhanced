@@ -1,0 +1,11 @@
+{
+  "item.refinedstorage.processor_binding": "Raw Circuit Board",
+  "item.refinedstorage.basic_processor": "Incomplete Circuit Board",
+  "item.refinedstorage.improved_processor": "Incomplete Circuit Board",
+  "item.refinedstorage.advanced_processor": "Circuit Board",
+  "item.refinedstorage.quartz_enriched_iron": "Silicon Quartz",
+  "item.refinedstorage.construction_core": "Solid Biomethane",
+
+  "block.refinedstorage.crafter": "Digital Crafter",
+  "block.refinedstorage.controller": "Digital Controller"
+}
