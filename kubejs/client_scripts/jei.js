@@ -1,6 +1,7 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "nutritionalbalance:lunchbox",
     "supplementaries:bamboo_spikes",
     "supplementaries:bamboo_spikes_tipped",
     "supplementaries:bomb",
