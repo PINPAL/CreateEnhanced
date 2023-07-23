@@ -63,13 +63,13 @@ ServerEvents.recipes((event) => {
           "refinedstorage:upgrade",
           "create_things_and_misc:vibration_mechanism",
         ]),
-        event.recipes.create.pressing(
-          "refinedstorage:upgrade",
-          "refinedstorage:upgrade"
-        ),
         event.recipes.createDeploying("refinedstorage:upgrade", [
           "refinedstorage:upgrade",
-          "createdeco:netherite_sheet",
+          "create_dd:shadow_steel",
+        ]),
+        event.recipes.createDeploying("refinedstorage:upgrade", [
+          "refinedstorage:upgrade",
+          "create_dd:chromatic_compound",
         ]),
         event.recipes.create.pressing(
           "refinedstorage:upgrade",
@@ -77,8 +77,9 @@ ServerEvents.recipes((event) => {
         ),
       ]
     )
+    .id("kubejs:refined_storage/infinity_card")
     .transitionalItem("refinedstorage:upgrade")
-    .loops(10);
+    .loops(12);
 
   // Dimension Range Upgrade
   event.remove({ id: "rsinfinitybooster:dimension_card" });
@@ -101,6 +102,7 @@ ServerEvents.recipes((event) => {
         ]),
       ]
     )
+    .id("kubejs:refined_storage/dimension_card")
     .transitionalItem("rsinfinitybooster:infinity_card")
     .loops(3);
 });

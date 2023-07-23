@@ -14,4 +14,12 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "supplementaries:item_lore_display" });
   event.remove({ id: "supplementaries:crank" });
   event.remove({ id: "supplementaries:faucet" });
+  event.remove({ output: "supplementaries:bamboo_spikes" });
+  event.remove({
+    output: Item.of(
+      "supplementaries:bamboo_spikes_tipped",
+      '{Damage:0,Potion:"minecraft:poison"}'
+    ),
+  });
+  event.remove({ output: "supplementaries:bomb" });
 });

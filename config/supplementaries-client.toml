@@ -98,7 +98,7 @@
 
 	[blocks.bamboo_spikes]
 		#Populate the creative inventory with all tipped spikes variations
-		populate_creative_tab = true
+		populate_creative_tab = false
 
 	[blocks.turn_table]
 		#Display visual particles when a block is rotated

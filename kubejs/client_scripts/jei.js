@@ -1,6 +1,12 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "supplementaries:bamboo_spikes",
+    "supplementaries:bamboo_spikes_tipped",
+    "supplementaries:bomb",
+    "supplementaries:bomb_blue",
+    "supplementaries:bellows",
+    "supplementaries:pulley_block",
     /cofh_core:/,
     /spawn_egg/,
     "createaddition:digital_adapter",

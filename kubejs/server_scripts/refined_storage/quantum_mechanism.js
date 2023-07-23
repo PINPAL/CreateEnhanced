@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+  event.remove({ output: "create_things_and_misc:vibration_mechanism" });
   event.recipes
     .createSequencedAssembly(
       [

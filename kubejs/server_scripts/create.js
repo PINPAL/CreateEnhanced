@@ -13,6 +13,22 @@ ServerEvents.recipes((event) => {
     C: "minecraft:copper_block",
   });
 
+  // Harder Drill
+  event.remove({ output: "create:mechanical_drill" });
+  event.shaped(Item.of("create:mechanical_drill"), [" A ", "ASA", " C "], {
+    A: "create:andesite_alloy",
+    S: "create_dd:steel_sheet",
+    C: "create:andesite_casing",
+  });
+
+  // Shadow Steel
+  event.recipes.create
+    .mixing(
+      [Item.of("create_dd:shadow_steel")],
+      ["minecraft:netherite_block", "8x create:iron_sheet"]
+    )
+    .superheated();
+
   // "Harder" Super glue
   event.remove({ id: "create:crafting/kinetics/super_glue" });
 

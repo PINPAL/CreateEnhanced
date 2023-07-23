@@ -1,0 +1,14 @@
+name = "Armor Trims Backport"
+filename = "armortrims-1.19.2-1.3.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/srKdSMcH/versions/8P2I5Irv/armortrims-1.19.2-1.3.jar"
+hash-format = "sha512"
+hash = "882250eb4636cca2062b809793d8e144aa3c6a0673f53269c6d5f44ef89f08b296e86b7553b89522ac46f9111ab004003595a32ea1b220b652863b5bfc22ef21"
+
+[update]
+[update.modrinth]
+mod-id = "srKdSMcH"
+version = "8P2I5Irv"

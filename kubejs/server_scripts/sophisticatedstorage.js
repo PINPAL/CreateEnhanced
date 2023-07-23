@@ -116,7 +116,7 @@ ServerEvents.recipes((event) => {
   // Tier 4
   event.recipes.create.deploying("sophisticatedstorage:stack_upgrade_tier_4", [
     "sophisticatedstorage:stack_upgrade_tier_3",
-    "create:brass_sheet",
+    "create:sturdy_sheet",
   ]);
   event.recipes
     .createSequencedAssembly(
