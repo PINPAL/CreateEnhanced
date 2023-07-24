@@ -76,6 +76,36 @@ ServerEvents.tags("item", (event) => {
     }
   );
 
+  [
+    "minecraft:iron_nugget",
+    "minecraft:gold_nugget",
+    "create:zinc_nugget",
+    "create:brass_nugget",
+    "create_dd:tin_nugget",
+  ].forEach((item) => {
+    event.add("kubejs:simple_nuggets", item);
+  });
+
+  [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "create:zinc_ingot",
+    "create:brass_ingot",
+    "create_dd:tin_ingot",
+  ].forEach((item) => {
+    event.add("kubejs:simple_ingots", item);
+  });
+
+  [
+    "minecraft:iron_block",
+    "minecraft:gold_block",
+    "create:zinc_block",
+    "create:brass_block",
+    "create_dd:tin_block",
+  ].forEach((item) => {
+    event.add("kubejs:simple_blocks", item);
+  });
+
   event.add("quests:storage_blocks", "#forge:barrels");
   event.add("quests:storage_blocks", "#forge:chests");
   [

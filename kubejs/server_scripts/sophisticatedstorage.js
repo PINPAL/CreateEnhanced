@@ -14,24 +14,24 @@ ServerEvents.recipes((event) => {
     "#minecraft:planks",
   ]);
 
+  // Void Upgrade
+  event.shaped("sophisticatedstorage:void_upgrade", ["EOE", "OUO", "EOE"], {
+    U: "sophisticatedstorage:upgrade_base",
+    E: "#forge:ender_pearls",
+    O: "#forge:obsidian",
+  });
+
   // Compression Upgrade
   event.shaped(
     "sophisticatedstorage:compression_upgrade",
-    ["EOE", "OUO", "EOE"],
+    [" B ", " U ", "I N"],
     {
+      B: "#kubejs:simple_blocks",
       U: "sophisticatedstorage:upgrade_base",
-      E: "#forge:ender_pearls",
-      O: "#forge:obsidian",
+      I: "#kubejs:simple_ingots",
+      N: "#kubejs:simple_nuggets",
     }
   );
-
-  // Void Upgrade
-  event.shaped("sophisticatedstorage:void_upgrade", [" B ", " U ", "I N"], {
-    B: "#forge:storage_blocks",
-    U: "sophisticatedstorage:upgrade_base",
-    I: "#forge:ingots",
-    N: "#forge:nuggets",
-  });
 
   // Stack Upgrades
   // =================
@@ -167,10 +167,7 @@ ServerEvents.recipes((event) => {
     [" L ", " B ", "   "],
     {
       L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:gold_barrel",
-        '{woodType: "spruce"}'
-      ).strongNBT(),
+      B: "create:item_vault",
     }
   );
   // Andesite Drawer 2
@@ -182,10 +179,7 @@ ServerEvents.recipes((event) => {
     ["   ", "LBL", "   "],
     {
       L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:gold_barrel",
-        '{woodType: "spruce"}'
-      ).strongNBT(),
+      B: "create:item_vault",
     }
   );
   // Andesite Drawer 3
@@ -197,10 +191,7 @@ ServerEvents.recipes((event) => {
     [" L ", " B ", "L L"],
     {
       L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:gold_barrel",
-        '{woodType: "spruce"}'
-      ).strongNBT(),
+      B: "create:item_vault",
     }
   );
   // Andesite Drawer 4
@@ -212,10 +203,7 @@ ServerEvents.recipes((event) => {
     ["L L", " B ", "L L"],
     {
       L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:gold_barrel",
-        '{woodType: "spruce"}'
-      ).strongNBT(),
+      B: "create:item_vault",
     }
   );
 
@@ -230,63 +218,59 @@ ServerEvents.recipes((event) => {
     ["#forge:barrels", "create:andesite_alloy"]
   );
   // Brass Drawer 1
-  event.shaped(
+  event.shapeless(
     Item.of(
       "sophisticatedstorage:limited_netherite_barrel_1",
       '{woodType: "dark_oak"}'
     ),
-    [" L ", " B ", "   "],
-    {
-      L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:netherite_barrel",
-        '{woodType: "dark_oak"}'
+    [
+      Item.of(
+        "sophisticatedstorage:limited_gold_barrel_1",
+        '{woodType: "spruce"}'
       ).strongNBT(),
-    }
+      "create:brass_ingot",
+    ]
   );
   // Brass Drawer 2
-  event.shaped(
+  event.shapeless(
     Item.of(
       "sophisticatedstorage:limited_netherite_barrel_2",
       '{woodType: "dark_oak"}'
     ),
-    ["   ", "LBL", "   "],
-    {
-      L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:netherite_barrel",
-        '{woodType: "dark_oak"}'
+    [
+      Item.of(
+        "sophisticatedstorage:limited_gold_barrel_2",
+        '{woodType: "spruce"}'
       ).strongNBT(),
-    }
+      "create:brass_ingot",
+    ]
   );
   // Brass Drawer 3
-  event.shaped(
+  event.shapeless(
     Item.of(
       "sophisticatedstorage:limited_netherite_barrel_3",
       '{woodType: "dark_oak"}'
     ),
-    [" L ", " B ", "L L"],
-    {
-      L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:netherite_barrel",
-        '{woodType: "dark_oak"}'
+    [
+      Item.of(
+        "sophisticatedstorage:limited_gold_barrel_3",
+        '{woodType: "spruce"}'
       ).strongNBT(),
-    }
+      "create:brass_ingot",
+    ]
   );
   // Brass Drawer 4
-  event.shaped(
+  event.shapeless(
     Item.of(
       "sophisticatedstorage:limited_netherite_barrel_4",
       '{woodType: "dark_oak"}'
     ),
-    ["L L", " B ", "L L"],
-    {
-      L: "#minecraft:logs",
-      B: Item.of(
-        "sophisticatedstorage:netherite_barrel",
-        '{woodType: "dark_oak"}'
+    [
+      Item.of(
+        "sophisticatedstorage:limited_gold_barrel_4",
+        '{woodType: "spruce"}'
       ).strongNBT(),
-    }
+      "create:brass_ingot",
+    ]
   );
 });

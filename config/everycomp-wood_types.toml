@@ -39,10 +39,6 @@
 			ladder = true
 			hollow_log = true
 
-		[entries.wood_type.infinitybuttons]
-			plank_secret_button = true
-			large_button = true
-
 		[entries.wood_type.decorative_blocks]
 			beam = true
 			support = true

@@ -31,6 +31,36 @@ ServerEvents.recipes((event) => {
     event.remove({ id: recipeID });
   });
 
+  // Harder Hydraulic Press
+  event.remove({ output: "create_dd:hydraulic_press" });
+  event.shaped(Item.of("create_dd:hydraulic_press"), [" S ", " H ", " B "], {
+    S: "create_dd:sealed_mechanism",
+    H: "create_dd:hydraulic_casing",
+    B: "create_dd:bronze_casing",
+  });
+
+  // Harder Spout
+  event.remove({ output: "create:spout" });
+  event.shaped(Item.of("create:spout"), [" C ", " K ", " S "], {
+    C: "create:copper_casing",
+    K: "minecraft:dried_kelp",
+    S: "create_dd:sealed_mechanism",
+  });
+
+  // Harder Bronze Casing
+  event.remove({ output: "create_dd:reinforcement_plating" });
+  event.shapeless("create_dd:reinforcement_plating", [
+    "#forge:storage_blocks/steel",
+    "#forge:storage_blocks/bronze",
+    "#forge:storage_blocks/bronze",
+    "#forge:storage_blocks/steel",
+  ]);
+  event.remove({ output: "create_dd:bronze_casing" });
+  event.recipes.create.deploying("create_dd:bronze_casing", [
+    "create_dd:reinforcement_plating",
+    "create_dd:bronze_ingot",
+  ]);
+
   // Concrete
   event.stonecutting(
     "2x createindustry:concrete_slab",
@@ -54,14 +84,34 @@ ServerEvents.recipes((event) => {
   );
 
   // Harder steam engine
-  event.remove({ id: "create:crafting/kinetics/steam_engine" });
-  event.remove({ id: "create_dd:crafting/steam_engine" });
+  event.remove({ output: "create:steam_engine" });
   event.shaped(Item.of("create:steam_engine"), [" G ", "IMS", " C "], {
     G: "create:golden_sheet",
     I: "create_dd:infernal_mechanism",
     M: "create_dd:integrated_mechanism",
     S: "create_dd:sealed_mechanism",
     C: "minecraft:copper_block",
+  });
+
+  // Harder Deployer
+  event.remove({ output: "create:deployer" });
+  event.shaped(Item.of("create:deployer"), [" E ", " A ", "LBL"], {
+    E: "create:electron_tube",
+    A: "create:andesite_casing",
+    L: "create_dd:inductive_mechanism",
+    B: "create:brass_hand",
+  });
+
+  // Harder Item Vault
+  event.remove({ id: "create:crafting/kinetics/item_vault" });
+
+  // Harder Train Controls
+  event.remove({ output: "create:controls" });
+  event.shaped("create:controls", [" L ", " T ", "P I"], {
+    L: "minecraft:lever",
+    T: "create:railway_casing",
+    P: "create:precision_mechanism",
+    I: "create_dd:integrated_mechanism",
   });
 
   // Harder Drill
