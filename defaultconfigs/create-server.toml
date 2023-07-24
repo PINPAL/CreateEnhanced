@@ -396,7 +396,7 @@ displayLinkRange = 64
 #.
 #The total amount of stacks a vault can hold per block in size.
 #Range: > 1
-vaultCapacity = 20
+vaultCapacity = 54
 
 #.
 #Everything related to Schematic tools
@@ -430,11 +430,11 @@ schematicannonDelay = 1
 #.
 #% of Schematicannon's Fuel filled by 1 Gunpowder.
 #Range: 0.0 ~ 100.0
-schematicannonGunpowderWorth = 20.0
+schematicannonGunpowderWorth = 1.5625
 #.
 #% of Schematicannon's Fuel used for each fired block.
 #Range: 0.0 ~ 100.0
-schematicannonFuelUsage = 0.05000000074505806
+schematicannonFuelUsage = 0.125
 
 #.
 #Gadgets and other Shenanigans added by Create
@@ -455,15 +455,15 @@ toolboxRange = 32
 #.
 #The Maximum volume of Air that can be stored in a backtank = Seconds of underwater breathing
 #Range: > 1
-airInBacktank = 900
+airInBacktank = 1800
 #.
 #The volume of Air added by each level of the backtanks Capacity Enchantment
 #Range: > 1
-enchantedBacktankCapacity = 300
+enchantedBacktankCapacity = 600
 #.
 #Amount of free Extendo Grip actions provided by one filled Copper Backtank. Set to 0 makes Extendo Grips unbreakable
 #Range: > 0
-maxExtendoGripActions = 0
+maxExtendoGripActions = 2048
 #.
 #Amount of free Potato Cannon shots provided by one filled Copper Backtank. Set to 0 makes Potato Cannons unbreakable
 #Range: > 0
@@ -479,7 +479,7 @@ trainsCauseDamage = true
 #.
 #Maximum length of track that can be placed as one batch or turn.
 #Range: 16 ~ 128
-maxTrackPlacementLength = 32
+maxTrackPlacementLength = 64
 #.
 #Maximum length of a Train Stations' assembly track.
 #Range: > 5
@@ -519,12 +519,12 @@ trainAcceleration = 3.0
 #[in Blocks/Second]
 #The top speed of powered Trains.
 #Range: 0.0 ~ 3.4028234663852886E38
-poweredTrainTopSpeed = 240.0
+poweredTrainTopSpeed = 120.0
 #.
 #[in Blocks/Second]
 #The top speed of powered Trains during a turn.
 #Range: 0.0 ~ 3.4028234663852886E38
-poweredTrainTurningTopSpeed = 40.0
+poweredTrainTurningTopSpeed = 80.0
 #.
 #[in Blocks/Second²]
 #The acceleration of powered Trains.

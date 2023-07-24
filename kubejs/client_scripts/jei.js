@@ -1,7 +1,27 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "createaddition:digital_adapter",
+    "createindustry:napalm_bomb",
+    "createindustry:napalm_bucket",
+    "createindustry:thermite_grenade",
+    /createindustry:.*concrete.*/,
+    "createindustry:mesh",
+    "createindustry:thermite_powder",
+    "createindustry:napalm",
+    "createindustry:factory_floor",
+    "createindustry:factory_floor_slab",
+    "createindustry:steel_ingot",
+    "createindustry:cast_iron_ingot",
+    "createindustry:cast_iron_block",
+    "createindustry:heavy_plate",
+    "createindustry:steel_scaffolding",
+    "createindustry:industrial_barrel",
+    "createindustry:caution_block",
     "nutritionalbalance:lunchbox",
+    "create_dd:deforester_saw",
+    "supplementaries:soap",
+    "supplementaries:soap_block",
     "supplementaries:bamboo_spikes",
     "supplementaries:bamboo_spikes_tipped",
     "supplementaries:bomb",
@@ -10,7 +30,6 @@ JEIEvents.hideItems((event) => {
     "supplementaries:pulley_block",
     /cofh_core:/,
     /spawn_egg/,
-    "createaddition:digital_adapter",
     "minecraft:infested_stone",
     "minecraft:infested_cobblestone",
     "minecraft:infested_stone_bricks",
@@ -73,6 +92,11 @@ JEIEvents.hideItems((event) => {
 JEIEvents.addItems((event) => {
   // Add Items
   const addToJEI = [
+    "createindustry:concrete",
+    "createindustry:concrete_slab",
+    "createindustry:concrete_stairs",
+    "createindustry:concrete_wall",
+    "createindustry:concrete_pillar",
     "ftbquests:book",
     "sophisticatedstorage:upgrade_base",
     "sophisticatedstorage:compression_upgrade",
@@ -184,6 +208,21 @@ JEIEvents.addItems((event) => {
   });
 });
 
+JEIEvents.hideFluids((event) => {
+  // Hide Fluids
+  const hideFluids = [
+    "sophisticatedcore:xp_still",
+    "createindustry:napalm",
+    "createindustry:kerosene",
+    "createindustry:naphta",
+    "cofh_core:experience",
+    "cofh_core:honey",
+    "cofh_core:potion",
+  ].forEach((fluid) => {
+    event.hide(fluid);
+  });
+});
+
 JEIEvents.removeCategories((event) => {
   // Remove Categories
   const removeCategories = [
@@ -193,4 +232,39 @@ JEIEvents.removeCategories((event) => {
   removeCategories.forEach((item) => {
     event.remove(item);
   });
+});
+
+JEIEvents.information((event) => {
+  const itemsToDescriptionate = [
+    {
+      id: "createindustry:concrete",
+      desc: [
+        "Concrete is made when it dries out in the world after being placed using a bucket.",
+      ],
+    },
+    {
+      id: "createindustry:oil_deposit",
+      desc: ["Rarely spawns at bedrock at the bottom of the world."],
+    },
+  ];
+  itemsToDescriptionate.forEach((item) => event.addItem(item.id, item.desc));
+
+  const undergroundStoneTypes = [
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:tuff",
+    "createindustry:bauxite",
+    "create:crimsite",
+    "create:limestone",
+    "create:asurine",
+    "create:ochrum",
+    "create:veridum",
+    "create_dd:potassic",
+    "create_dd:gabbro",
+  ].forEach((item) => event.addItem(item, ["Spawns in veins underground."]));
+
+  const netherStoneTypes = ["create:scoria", "create:scorchia"].forEach(
+    (item) => event.addItem(item, ["Spawns in veins around The Nether."])
+  );
 });

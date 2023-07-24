@@ -1,0 +1,14 @@
+name = "Create: The Factory Must Grow"
+filename = "createindustry-0.5.3f-1.19.2-yeehaw.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "90dbfbeb144846bea43a79bb59491396166065af"
+
+[update]
+[update.curseforge]
+file-id = 4635350
+project-id = 693815

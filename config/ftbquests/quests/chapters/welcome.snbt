@@ -374,8 +374,8 @@
 				type: "item"
 			}]
 			title: "Power Generation"
-			x: -2.5d
-			y: 8.5d
+			x: -5.75d
+			y: 9.375d
 		}
 		{
 			dependencies: ["3017843FE3F03B3F"]
@@ -388,13 +388,22 @@
 				type: "item"
 			}]
 			title: "Your first power."
-			x: -3.75d
-			y: 8.0d
+			x: -5.125d
+			y: 8.125d
 		}
 		{
 			dependencies: ["7ACDD2A3B9D129A4"]
 			hide: true
 			id: "5DFCA69367100FC6"
+			rewards: [{
+				id: "5FF469414CD932C0"
+				item: {
+					Count: 1b
+					id: "minecraft:water_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "The water wheels big cousin."
 			tasks: [{
 				id: "7494FDDA692C5324"
@@ -402,8 +411,8 @@
 				type: "item"
 			}]
 			title: "The Bigger Brother"
-			x: -4.625d
-			y: 7.625d
+			x: -4.25d
+			y: 7.75d
 		}
 		{
 			dependencies: ["3017843FE3F03B3F"]
@@ -416,8 +425,8 @@
 				type: "item"
 			}]
 			title: "Save the environment!"
-			x: -3.0d
-			y: 7.25d
+			x: -6.25d
+			y: 8.125d
 		}
 		{
 			dependencies: ["3017843FE3F03B3F"]
@@ -430,9 +439,9 @@
 				item: "create:steam_engine"
 				type: "item"
 			}]
-			title: "End Game Power"
-			x: -2.0d
-			y: 7.25d
+			title: "Steam Power"
+			x: -7.0d
+			y: 8.875d
 		}
 		{
 			dependencies: ["3017843FE3F03B3F"]
@@ -445,8 +454,8 @@
 				type: "item"
 			}]
 			title: "The Electrical Age"
-			x: -5.75d
-			y: 10.25d
+			x: -6.75d
+			y: 12.25d
 		}
 		{
 			dependencies: ["26C9C63835C84874"]
@@ -782,8 +791,8 @@
 				type: "item"
 			}]
 			title: "Storing Electricity"
-			x: -7.0d
-			y: 9.75d
+			x: -8.125d
+			y: 11.625d
 		}
 		{
 			dependencies: ["7453758780D4848F"]
@@ -868,7 +877,7 @@
 						value: "kubejs:chainmail_armor"
 					}
 				}
-				title: "Any #kubejs:chainmail_armor"
+				title: "Any Chainmail Armor"
 				type: "item"
 			}]
 			title: "Armor Upgrading"
@@ -926,7 +935,7 @@
 						value: "kubejs:iron_armor"
 					}
 				}
-				title: "Any #kubejs:iron_armor"
+				title: "Any Iron Armor"
 				type: "item"
 			}]
 			title: "Iron Armor"
@@ -955,7 +964,7 @@
 						value: "kubejs:steel_armor"
 					}
 				}
-				title: "Any #kubejs:steel_armor"
+				title: "Any Steel Armor"
 				type: "item"
 			}]
 			title: "Steel Armor"
@@ -979,11 +988,12 @@
 				id: "11D33E0000772BDE"
 				item: {
 					Count: 1b
-					id: "minecraft:diamond_chestplate"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "kubejs:diamond_armor"
 					}
 				}
+				title: "Any Diamond Armor"
 				type: "item"
 			}]
 			title: "Diamond Armor"
@@ -1007,11 +1017,12 @@
 				id: "67EF0A6F9B34C957"
 				item: {
 					Count: 1b
-					id: "minecraft:netherite_chestplate"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "kubejs:netherite_armor"
 					}
 				}
+				title: "Any Netherite Armor"
 				type: "item"
 			}]
 			title: "Netherite Armor"
@@ -1195,8 +1206,8 @@
 				item: "createchunkloading:chunk_loader"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 10.0d
+			x: -3.375d
+			y: 10.125d
 		}
 		{
 			dependencies: ["6C37D2ED3A1BB762"]
@@ -2140,8 +2151,8 @@
 				type: "item"
 			}]
 			title: "Rotation from Electricity"
-			x: -7.0d
-			y: 10.875d
+			x: -8.125d
+			y: 12.75d
 		}
 		{
 			dependencies: ["6545EE475DD16057"]
@@ -3289,6 +3300,146 @@
 			title: "A Proper Engineer"
 			x: 10.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["717CC1ACE664292F"]
+			description: [""]
+			icon: "createindustry:gasoline_engine"
+			id: "0E1103BC3A77FFC7"
+			subtitle: "Harness Oil for MAXIMUM POWAAHHH!"
+			tasks: [
+				{
+					id: "23AF413053106E2A"
+					item: "createindustry:gasoline_engine"
+					type: "item"
+				}
+				{
+					id: "7863215D4E5B4B5A"
+					item: "createindustry:gasoline_engine_back"
+					type: "item"
+				}
+				{
+					id: "537992C88FE794DC"
+					item: "createindustry:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "57DF8A0BB5E0655B"
+					item: "createindustry:lpg_engine_back"
+					type: "item"
+				}
+				{
+					id: "75D1C151C5D4171B"
+					item: "createindustry:turbine_engine"
+					type: "item"
+				}
+				{
+					id: "4192399B39D08D9D"
+					item: "createindustry:turbine_engine_back"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0A76D77DBEC19B2D"
+					item: "createindustry:exhaust"
+					type: "item"
+				}
+			]
+			title: "End Game Power"
+			x: -10.125d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3017843FE3F03B3F"]
+			hide: true
+			icon: "createindustry:crude_oil_fluid_bucket"
+			id: "30E1C70200A72928"
+			subtitle: "Find some Oil using the Surface Scanner"
+			tasks: [{
+				id: "5D2D5CA5DEB3738D"
+				item: "createindustry:deposit_scanner"
+				type: "item"
+			}]
+			title: "Finding Oil"
+			x: -7.125d
+			y: 10.0d
+		}
+		{
+			dependencies: ["30E1C70200A72928"]
+			hide: true
+			icon: "createindustry:steel_pump"
+			id: "753BE290D41373D9"
+			subtitle: "Collect Oil from a deposit."
+			tasks: [
+				{
+					id: "776F8518615A0BF1"
+					item: "createindustry:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "4AD52154C96037DE"
+					item: "createindustry:pumpjack_hammer_holder"
+					type: "item"
+				}
+				{
+					id: "121168DC063CE1BD"
+					item: "createindustry:pumpjack_base"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "259E9AA2E1FEB73A"
+					item: "createindustry:steel_pipe"
+					type: "item"
+				}
+				{
+					id: "5E19F1BEB5211A9A"
+					item: "createindustry:steel_pump"
+					type: "item"
+				}
+				{
+					id: "54B76F872574C5EC"
+					item: "createindustry:machine_input"
+					type: "item"
+				}
+			]
+			title: "Using Oil"
+			x: -8.125d
+			y: 9.5d
+		}
+		{
+			dependencies: ["753BE290D41373D9"]
+			icon: "createindustry:steel_fluid_tank"
+			id: "717CC1ACE664292F"
+			subtitle: "Refine Oil using distillation"
+			tasks: [
+				{
+					id: "234D2B66149C3DC3"
+					item: "createindustry:distillation_tower_controller"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "521C7F862B51C5FF"
+					item: "createindustry:steel_fluid_tank"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7424CFC27354B1A2"
+					item: "createindustry:industrial_pipe"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "25ED308BB93CBFCF"
+					item: "createindustry:distillation_tower_output"
+					type: "item"
+				}
+			]
+			title: "Refining Oil"
+			x: -9.125d
+			y: 10.0d
 		}
 	]
 	title: "Create Modpack"
