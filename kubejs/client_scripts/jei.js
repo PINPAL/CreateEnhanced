@@ -58,6 +58,7 @@ JEIEvents.hideItems((event) => {
     "alloyed:bronze_sheet",
     "supplementaries:crank",
     "supplementaries:faucet",
+    /supplementaries:.*present.*/,
     "easypaxellite:netherite_paxel_ingot",
     /sophisticatedbackpacks:*/,
     /sophisticatedstorage:*/,
@@ -246,13 +247,25 @@ JEIEvents.information((event) => {
       id: "createindustry:oil_deposit",
       desc: ["Rarely spawns at bedrock at the bottom of the world."],
     },
-  ];
-  itemsToDescriptionate.forEach((item) => event.addItem(item.id, item.desc));
+    {
+      id: "minecraft:granite",
+      desc: [
+        "Spawns in massive veins underground in Mountain and Hill biomes.",
+      ],
+    },
+    {
+      id: "minecraft:diorite",
+      desc: [
+        "Spawns in massive veins underground in Savanna, Jungle and Mushroom biomes.",
+      ],
+    },
+    {
+      id: "minecraft:granite",
+      desc: ["Spawns in massive veins underground in Forest biomes."],
+    },
+  ].forEach((item) => event.addItem(item.id, item.desc));
 
   const undergroundStoneTypes = [
-    "minecraft:granite",
-    "minecraft:diorite",
-    "minecraft:andesite",
     "minecraft:tuff",
     "createindustry:bauxite",
     "create:crimsite",
@@ -264,7 +277,11 @@ JEIEvents.information((event) => {
     "create_dd:gabbro",
   ].forEach((item) => event.addItem(item, ["Spawns in veins underground."]));
 
-  const netherStoneTypes = ["create:scoria", "create:scorchia"].forEach(
-    (item) => event.addItem(item, ["Spawns in veins around The Nether."])
+  const netherStoneTypes = [
+    "create:scoria",
+    "create:scorchia",
+    "supplementaries:ash",
+  ].forEach((item) =>
+    event.addItem(item, ["Spawns in veins around The Nether."])
   );
 });

@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
       outputMod: "createdeco",
       outputMat: "andesite",
       bars: "createdeco:andesite_bars",
-      sheets: "create:andesite_alloy",
+      sheets: "create_dd:andesite_sheet",
       nuggets: "create:andesite_alloy",
       hasNativeLadder: true,
     },
