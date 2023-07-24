@@ -1,6 +1,9 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "create_dd:industrial_iron_ingot",
+    "create_dd:industrial_iron_nugget",
+    "create_dd:industrial_iron_sheet",
     "createaddition:digital_adapter",
     "createindustry:napalm_bomb",
     "createindustry:napalm_bucket",

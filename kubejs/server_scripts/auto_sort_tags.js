@@ -38,6 +38,7 @@ ServerEvents.tags("item", (event) => {
   event.add("as:mithril", /(_|:)mithril($|_)/);
   event.add("as:brass", /(_|:)brass($|_)/);
   event.add("as:andesite", /(_|:)andesite($|_)/);
+  event.add("as:aluminum", /(_|:)aluminum($|_)/);
 
   // Digital Storage
   event.add("as:digital_storage", /rsinfinitybooster:/);
