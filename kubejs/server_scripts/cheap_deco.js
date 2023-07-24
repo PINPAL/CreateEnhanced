@@ -79,8 +79,8 @@ ServerEvents.recipes((event) => {
       outputMod: "alloyed",
       outputMat: "steel",
       bars: "alloyed:steel_bars",
-      sheets: "alloyed:steel_sheet",
-      nuggets: "alloyed:steel_nugget",
+      sheets: "create_dd:steel_sheet",
+      nuggets: "create_dd:steel_nugget",
       hasNativeLadder: false,
     },
   ].forEach((decorativeMat) => {

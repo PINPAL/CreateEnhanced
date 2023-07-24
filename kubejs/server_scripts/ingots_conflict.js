@@ -24,11 +24,6 @@ ServerEvents.recipes((event) => {
     "createindustry:steel_block",
     "#forge:storage_blocks/steel"
   );
-  event.replaceInput(
-    { input: "alloyed:steel_sheet" },
-    "alloyed:steel_sheet",
-    "#forge:plates/steel"
-  );
 
   // Remove Bronze from Create: Alloyed
   event.remove({ output: "alloyed:bronze_ingot" });

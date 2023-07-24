@@ -121,7 +121,7 @@ ServerEvents.recipes((event) => {
   event.recipes.create
     .mixing(
       [Item.of("create_dd:shadow_steel")],
-      ["minecraft:netherite_block", "8x create:iron_sheet"]
+      ["minecraft:netherite_block", "8x #forge:plates/steel"]
     )
     .superheated();
 
