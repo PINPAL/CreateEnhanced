@@ -673,7 +673,7 @@
 			]
 			title: "Mixing with Blaze!"
 			x: 0.0d
-			y: 10.25d
+			y: 10.375d
 		}
 		{
 			dependencies: ["3013996FDD5C82B3"]
@@ -686,8 +686,8 @@
 				type: "item"
 			}]
 			title: "The Brass Age"
-			x: 0.75d
-			y: 11.625d
+			x: 0.5625d
+			y: 11.8125d
 		}
 		{
 			dependencies: [
@@ -1423,8 +1423,8 @@
 				type: "item"
 			}]
 			title: "Train Tracks"
-			x: 2.0d
-			y: 12.75d
+			x: 0.25d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
@@ -2513,7 +2513,7 @@
 			hide: true
 			icon: "create:limestone"
 			id: "01A2F12E34418D14"
-			subtitle: "Create a limestone generator."
+			subtitle: "Create a Limestone generator."
 			tasks: [
 				{
 					id: "4DDC202293D5F85C"
@@ -2545,10 +2545,14 @@
 			y: 8.125d
 		}
 		{
-			dependencies: ["2A209E76D9014317"]
+			dependencies: ["16BDF42199C1D968"]
+			description: [
+				""
+				"{image:quests:textures/scoria_generator.png width:100 height:50 align:1 fit:true}"
+			]
 			icon: "create:scoria"
 			id: "3F3F68F7424872F8"
-			subtitle: "Blast Soul Sand into Scoria"
+			subtitle: "Create a Scoria generator."
 			tasks: [
 				{
 					id: "41D7DFB5E694CF36"
@@ -2562,8 +2566,8 @@
 				}
 			]
 			title: "Scoria"
-			x: -11.125d
-			y: 0.625d
+			x: -11.0d
+			y: 1.625d
 		}
 		{
 			dependencies: ["41317116C417F243"]
@@ -3440,6 +3444,64 @@
 			title: "Refining Oil"
 			x: -9.125d
 			y: 10.0d
+		}
+		{
+			dependencies: ["372F217BE8C60631"]
+			hide: true
+			hide_dependency_lines: true
+			id: "16BDF42199C1D968"
+			subtitle: "Collect a chocolate bucket for use in a Scoria Generator"
+			tasks: [{
+				id: "4A1045BFF560BDA8"
+				item: "create:chocolate_bucket"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 0.625d
+		}
+		{
+			dependencies: ["3013996FDD5C82B3"]
+			description: ["Did you know you can give a Blaze Burner a straw to allow it to be pumped fluids?"]
+			hide: true
+			id: "26E7E34402E3FA5E"
+			rewards: [{
+				id: "3C47661D2CC8DB4F"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			subtitle: "Easy fluids!"
+			tasks: [{
+				id: "41ADD28ADC5F2B39"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 0.875d
+			y: 10.75d
+		}
+		{
+			dependencies: ["6DD58DEC49782F4E"]
+			description: [
+				"Did you know you can use a haunted bell to highlight spots mob can spawn near you?"
+				""
+				"This makes lighting up an area to prevent mob spawns super easy!"
+			]
+			hide: true
+			id: "1696558EB98D8197"
+			rewards: [{
+				count: 16
+				id: "657A8FEBBE58AA68"
+				item: "minecraft:torch"
+				random_bonus: 48
+				type: "item"
+			}]
+			subtitle: "Easy spawnproofing!"
+			tasks: [{
+				id: "3D9AF1EFDBA30409"
+				item: "create:haunted_bell"
+				type: "item"
+			}]
+			x: 0.875d
+			y: 9.25d
 		}
 	]
 	title: "Create Modpack"
