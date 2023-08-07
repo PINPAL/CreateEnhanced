@@ -11,6 +11,9 @@ ServerEvents.tags("item", (event) => {
   event.get("minecraft:mineable/paxel").add("#minecraft:wool");
   event.get("minecraft:mineable/paxel").add("#minecraft:wool_carpets");
 
+  // Add paxel tag
+  event.add("kubejs:paxel", /easypaxellite:.*_paxel/);
+
   // Add Knives Together
   event.add("kubejs:mid_tier_knives", "create_things_and_misc:zinc_knife");
   event

@@ -67,7 +67,7 @@ nourished_mining_speed = 0.2
 [general.nutrition_affects.malnourished_affects]
 #Max Health - number of health points (1/2 hearts) to add or subtract. (default: -4.0)
 #Range: -40.0 ~ 40.0
-malnourished_max_health = -4.0
+malnourished_max_health = -10.0
 #Knockback Resistance - knockback resistance to add. 1.0 is 100%. (default: 0.0)
 #Range: 0.0 ~ 1.0
 malnourished_knockback_resistance = 0.0

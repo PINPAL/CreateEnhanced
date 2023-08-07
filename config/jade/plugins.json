@@ -54,6 +54,10 @@
     "converter": true,
     "breeder": true
   },
+  "immersiveengineering": {
+    "hemp": true,
+    "multiblock_icon": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

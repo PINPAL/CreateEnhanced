@@ -90,7 +90,9 @@
     "com.simibubi.create.content.equipment.zapper.terrainzapper.WorldshaperScreen": true,
     "com.simibubi.create.content.schematics.client.SchematicPromptScreen": true,
     "com.refinedmods.refinedstorage.screen.DetectorScreen": true,
-    "net.mehvahdjukaar.supplementaries.client.screens.PulleyBlockScreen": true
+    "net.mehvahdjukaar.supplementaries.client.screens.PulleyBlockScreen": true,
+    "com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchScreen": true,
+    "blusunrize.lib.manual.gui.ManualScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

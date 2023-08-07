@@ -11,9 +11,20 @@ ServerEvents.recipes((event) => {
     }
   );
   // Remove Items
+  event.remove({ output: "supplementaries:bubble_blower" });
   event.remove({ id: "supplementaries:item_lore_display" });
   event.remove({ id: "supplementaries:crank" });
   event.remove({ id: "supplementaries:faucet" });
+  event.remove({ id: "supplementaries:soap/dirty_glass" });
+  event.remove({ id: "supplementaries:soap/dirty_shard" });
+  event.remove({ id: "supplementaries:soap/piston" });
+  event.remove({ id: "supplementaries:soap_clean_minecraft_shulker_box" });
+  event.remove({ id: "supplementaries:soap_clean_minecraft_concrete_powder" });
+  event.remove({ id: "supplementaries:soap_clean_minecraft_concrete" });
+  event.remove({
+    id: "supplementaries:soap_clean_supplementaries_candle_holder",
+  });
+  event.remove({ id: "supplementaries:soap_clean_minecraft_stained_glass" });
   event.remove({ output: "supplementaries:bamboo_spikes" });
   event.remove({
     output: Item.of(

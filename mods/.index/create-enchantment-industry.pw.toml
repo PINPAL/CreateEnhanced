@@ -1,14 +1,14 @@
 name = "Create Enchantment Industry"
-filename = "create_enchantment_industry-1.19.2-for-create-0.5.1.b-1.2.5.b.jar"
+filename = "create_enchantment_industry-1.19.2-for-create-0.5.1.c-1.2.6.jar"
 side = "both"
 
 [download]
 mode = "url"
-url = "https://cdn.modrinth.com/data/JWGBpFUP/versions/Wt422Wax/create_enchantment_industry-1.19.2-for-create-0.5.1.b-1.2.5.b.jar"
+url = "https://cdn.modrinth.com/data/JWGBpFUP/versions/AFINpxV4/create_enchantment_industry-1.19.2-for-create-0.5.1.c-1.2.6.jar"
 hash-format = "sha512"
-hash = "8642d914d6f777feb628283006b1d1be985c870a41579f148ecf3467d40d62c49589eab730db67cf8bd488aa298f093540b79887b686fa056326584915a256dc"
+hash = "65560c875f5ac9a06b4995b9a4fa0b8dc5e10d1213e969d339a2f9ea2b90e30ffa06af940e6a2fb670ba10b71df40b246fa02ab41c5760322925fb2847586b9f"
 
 [update]
 [update.modrinth]
 mod-id = "JWGBpFUP"
-version = "Wt422Wax"
+version = "AFINpxV4"

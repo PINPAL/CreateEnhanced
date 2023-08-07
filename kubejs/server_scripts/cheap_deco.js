@@ -213,11 +213,12 @@ ServerEvents.recipes((event) => {
               "_lamp",
             8
           ),
-          [" N ", " L ", " S "],
+          [" N ", " L ", "DS "],
           {
             S: decorativeMat.sheets,
             L: "minecraft:lantern",
             N: decorativeMat.nuggets,
+            D: "minecraft:" + lampColor + "_dye",
           }
         );
       });

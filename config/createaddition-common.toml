@@ -6,7 +6,7 @@
 	connector_max_input = 10000000
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
-	wire_length = 64
+	wire_length = 128
 	#Connector max output in FE/t (Energy transfer).
 	#Range: > 0
 	connector_max_output = 10000000

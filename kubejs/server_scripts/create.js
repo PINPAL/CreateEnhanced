@@ -26,6 +26,37 @@ ServerEvents.recipes((event) => {
     event.remove({ id: recipeID });
   });
 
+  // Infernal Mechanism
+  event.remove({ output: "create_dd:infernal_mechanism" });
+  event.recipes
+    .createSequencedAssembly(
+      ["create_dd:infernal_mechanism"],
+      "createdeco:netherite_sheet",
+      [
+        event.recipes.createDeploying(
+          "create_dd:incomplete_infernal_mechanism",
+          ["create_dd:incomplete_infernal_mechanism", "create:cogwheel"]
+        ),
+        event.recipes.createDeploying(
+          "create_dd:incomplete_infernal_mechanism",
+          ["create_dd:incomplete_infernal_mechanism", "minecraft:magma_block"]
+        ),
+        event.recipes.createDeploying(
+          "create_dd:incomplete_infernal_mechanism",
+          ["create_dd:incomplete_infernal_mechanism", "#forge:nuggets/gold"]
+        ),
+        event.recipes.create.filling(
+          "create_dd:incomplete_infernal_mechanism",
+          [
+            Fluid.of("minecraft:lava", 100),
+            "create_dd:incomplete_infernal_mechanism",
+          ]
+        ),
+      ]
+    )
+    .transitionalItem("create_dd:incomplete_infernal_mechanism")
+    .loops(2);
+
   // Harder Hydraulic Press
   event.remove({ output: "create_dd:hydraulic_press" });
   event.shaped(Item.of("create_dd:hydraulic_press"), [" S ", " H ", " B "], {
