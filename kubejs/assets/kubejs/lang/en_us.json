@@ -1,0 +1,15 @@
+{
+  "block.chunkloaderes.advanced_chunk_loader.tooltip": "CHUNK LOADER",
+  "block.chunkloaderes.advanced_chunk_loader.tooltip.summary": "Does _NOT_ work on moving contraptions.",
+  "block.chunkloaderes.advanced_chunk_loader.tooltip.condition1": "When placed",
+  "block.chunkloaderes.advanced_chunk_loader.tooltip.behaviour1": "Can load chunks in upto a 7x7 area.",
+  "block.chunkloaderes.advanced_chunk_loader.tooltip.control1": "test",
+  "block.chunkloaderes.advanced_chunk_loader.tooltip.action1": "test",
+
+  "block.createchunkloading.chunk_loader.tooltip": "Chunk Loader",
+  "block.createchunkloading.chunk_loader.tooltip.summary": "Can _ONLY_ work on moving contraptions.",
+  "block.createchunkloading.chunk_loader.tooltip.condition1": "When placed on contraption",
+  "block.createchunkloading.chunk_loader.tooltip.behaviour1": "Loads chunks required for the contraption.",
+  "block.createchunkloading.chunk_loader.tooltip.control1": "test",
+  "block.createchunkloading.chunk_loader.tooltip.action1": "test"
+}

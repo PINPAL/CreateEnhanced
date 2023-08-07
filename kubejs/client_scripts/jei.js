@@ -305,7 +305,7 @@ JEIEvents.information((event) => {
       ],
     },
     {
-      id: "minecraft:granite",
+      id: "minecraft:andesite",
       desc: ["Spawns in massive veins underground in Forest biomes."],
     },
   ].forEach((item) => event.addItem(item.id, item.desc));
@@ -317,7 +317,7 @@ JEIEvents.information((event) => {
     "create:limestone",
     "create:asurine",
     "create:ochrum",
-    "create:veridum",
+    "create:veridium",
     "create_dd:potassic",
     "create_dd:gabbro",
   ].forEach((item) => event.addItem(item, ["Spawns in veins underground."]));
