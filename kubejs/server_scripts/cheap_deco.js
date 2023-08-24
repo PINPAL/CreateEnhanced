@@ -8,6 +8,16 @@ ServerEvents.recipes((event) => {
   event.shaped("64x createdeco:netherite_bars", ["SSS", "SSS"], {
     S: "#forge:ingots/netherite",
   });
+  // Cheap Cast Iron
+  event.remove({ id: "minecraft:compacting/cast_iron_ingot" });
+  event.recipes.create.compacting(
+    "createdeco:cast_iron_ingot",
+    "minecraft:iron_ingot"
+  );
+  event.recipes.create.compacting(
+    "createdeco:cast_iron_block",
+    "minecraft:iron_block"
+  );
   // Cheaper Everything else
   const lampColors = ["yellow", "red", "green", "blue"];
   const decorativeMats = [

@@ -132,8 +132,14 @@
 				"27F8B5F7212E9412"
 				"3B237ADD59BDB02A"
 			]
-			description: ["Use your new &6Sand Paper&r to refine some cobblestone."]
+			description: ["Drop some Cobble into your millstone then place your &6Hand Crank&r underneath your &6Millstone&r and start cranking."]
 			id: "37E5D108BDCEA53B"
+			rewards: [{
+				id: "49F46CF713A78F98"
+				item: "kubejs:refined_stone"
+				random_bonus: 1
+				type: "item"
+			}]
 			shape: "octagon"
 			subtitle: "Sand down raw rock."
 			tasks: [{
@@ -147,22 +153,23 @@
 		}
 		{
 			dependencies: ["26D185F68C821538"]
-			description: ["Obtain &6Sand Paper&r and take your very first steps to becoming a true engineer!"]
+			description: ["Obtain a &6Millstone&r and take your very first steps to becoming a true engineer!"]
+			icon: "create:millstone"
 			id: "3B237ADD59BDB02A"
 			shape: "octagon"
-			subtitle: "Obtain Sandpaper"
-			tasks: [{
-				consume_items: false
-				id: "36AEA6271CDC4601"
-				item: {
-					Count: 1b
-					id: "create:sand_paper"
-					tag: {
-						Damage: 0
-					}
+			subtitle: "Obtain a Millstone"
+			tasks: [
+				{
+					id: "2DA826BDD32BA410"
+					item: "create:millstone"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6CC5A5F38B7B6472"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
 			title: "Your First Engineering"
 			x: -1.0d
 			y: 2.0d
@@ -240,11 +247,13 @@
 		}
 		{
 			dependencies: ["26C9C63835C84874"]
+			description: ["Combine &6Andesite&r and some nuggets to get &6Andesite Alloy&r."]
+			icon: "minecraft:andesite"
 			id: "06B04C606CE4187C"
 			subtitle: "Obtain Andesite from any forest biome."
 			tasks: [{
-				id: "51A41503C16277E8"
-				item: "minecraft:andesite"
+				id: "18422314A7B67D37"
+				item: "create:andesite_alloy"
 				type: "item"
 			}]
 			title: "Andesite"
@@ -338,14 +347,28 @@
 		{
 			dependencies: ["6E931AE38AE91C4F"]
 			hide: true
+			icon: {
+				Count: 1b
+				id: "create:sand_paper"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "77DDAE3A43C0356F"
-			subtitle: "Breaking down materials."
+			subtitle: "Paper wasn't so easy huh?"
 			tasks: [{
-				id: "05DB7532FF2568ED"
-				item: "create:millstone"
+				id: "12271AE86589AA8A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+				title: "Any Sandpaper"
 				type: "item"
 			}]
-			title: "Milling"
+			title: "Sanding"
 			x: 4.0d
 			y: 10.25d
 		}
@@ -535,7 +558,7 @@
 			size: 2.0d
 			subtitle: "Storing your items."
 			tasks: [{
-				id: "5F3B740CF070A70B"
+				id: "5B3F76282047352C"
 				item: {
 					Count: 1b
 					id: "sophisticatedstorage:gold_barrel"
@@ -784,6 +807,19 @@
 			dependencies: ["7453758780D4848F"]
 			hide: true
 			id: "72B561894C6AC831"
+			rewards: [
+				{
+					count: 2
+					id: "4ADABC9923C0CC24"
+					item: "createaddition:large_connector"
+					type: "item"
+				}
+				{
+					id: "57B5BE61D32D2933"
+					item: "createaddition:gold_spool"
+					type: "item"
+				}
+			]
 			subtitle: "A multiblock structure to store electricity."
 			tasks: [{
 				id: "35F877062C50CD39"
@@ -800,7 +836,14 @@
 			subtitle: "Connectors are used to transfer your electricity around your machines."
 			tasks: [{
 				id: "28D21275C042E2F8"
-				item: "createaddition:connector"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:electric_connector"
+					}
+				}
+				title: "Any Electric Connector"
 				type: "item"
 			}]
 			title: "Moving Electricity"
@@ -1419,7 +1462,7 @@
 						value: "kubejs:train_tracks"
 					}
 				}
-				title: "Any #kubejs:train_tracks"
+				title: "Any Train Tracks"
 				type: "item"
 			}]
 			title: "Train Tracks"
@@ -1468,12 +1511,12 @@
 						value: "minecraft:coals"
 					}
 				}
-				title: "Any #minecraft:coals"
+				title: "Charcoal or Coal"
 				type: "item"
 			}]
 			title: "Full Steam Ahead!"
-			x: 1.0d
-			y: 15.25d
+			x: 0.875d
+			y: 15.375d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]

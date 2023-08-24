@@ -1,14 +1,14 @@
-name = "SuperMartijn642's Config Lib"
-filename = "supermartijn642configlib-1.1.7-forge-mc1.19.jar"
+name = "SuperMartijn642's Config Library"
+filename = "supermartijn642configlib-1.1.8-forge-mc1.19.jar"
 side = "both"
 
 [download]
 mode = "url"
-url = "https://cdn.modrinth.com/data/LN9BxssP/versions/6Dhrrj9a/supermartijn642configlib-1.1.7-forge-mc1.19.jar"
+url = "https://cdn.modrinth.com/data/LN9BxssP/versions/HHm0Di8Y/supermartijn642configlib-1.1.8-forge-mc1.19.jar"
 hash-format = "sha512"
-hash = "b9ca39d70de092ce990ebacadae2b2ffa8f8db15f754a4f52734c13c6338d36bc502f29f95e3af40ed527d96526ad9da5375e99e178945c5ee56a6dd462a034c"
+hash = "e90d98d19769c75b5f779d90141c4a4637a26ea3089dac4df55137f607f0ca0623988647930ede359ccaa69d15d9e8130f68b3289d25c01af8bfea72cdeaafb1"
 
 [update]
 [update.modrinth]
 mod-id = "LN9BxssP"
-version = "6Dhrrj9a"
+version = "HHm0Di8Y"

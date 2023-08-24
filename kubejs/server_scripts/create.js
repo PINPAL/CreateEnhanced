@@ -17,6 +17,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: item });
   });
   const idsToRemove = [
+    "create_dd:industrial_iron/mechanical_press",
     "createindustry:mixing/napalm",
     "create:item_application/copper_casing_from_wood_using_deployer",
     "create:item_application/copper_casing_from_log_using_deployer",
@@ -24,6 +25,20 @@ ServerEvents.recipes((event) => {
     "create:item_application/copper_casing_from_log",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
+  });
+
+  // Cheap Millstone
+  event.remove({ output: "create:millstone" });
+  event.shaped(Item.of("create:millstone"), [" F ", " P ", " S "], {
+    F: "minecraft:flint",
+    P: "#minecraft:planks",
+    S: "minecraft:stone",
+  });
+  // Cheap Hand Crank
+  event.remove({ output: "create:hand_crank" });
+  event.shaped(Item.of("create:hand_crank"), ["PPP", "  S", "  "], {
+    P: "#minecraft:planks",
+    S: "minecraft:stick",
   });
 
   // Infernal Mechanism

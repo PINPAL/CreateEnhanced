@@ -86,6 +86,12 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:simple_nuggets", item);
   });
 
+  ["createaddition:connector", "createaddition:large_connector"].forEach(
+    (item) => {
+      event.add("kubejs:electric_connector", item);
+    }
+  );
+
   [
     "minecraft:iron_ingot",
     "minecraft:gold_ingot",

@@ -1,6 +1,10 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    /createaddition:.*electrum.*/,
+    "create_paper_line:frame",
+    "create_paper_line:saw_dust",
+    "create_paper_line:wood_chips",
     "kubejs:white_dye_fluid_bucket",
     "kubejs:orange_dye_fluid_bucket",
     "kubejs:magenta_dye_fluid_bucket",

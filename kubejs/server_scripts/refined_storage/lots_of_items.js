@@ -87,12 +87,13 @@ ServerEvents.recipes((event) => {
   // Controller
   event.recipes.createMechanicalCrafting(
     "refinedstorage:controller",
-    [" BBB ", "BAEAB", "BTATB", "BAEAB", " BBB "],
+    [" BBB ", "BAEAB", "BTMTB", "BAEAB", " BBB "],
     {
       B: "create:brass_block",
       A: "refinedstorage:advanced_processor",
       E: "createaddition:electric_motor",
       T: "create:electron_tube",
+      M: "createindustry:steel_mechanism",
     }
   );
 

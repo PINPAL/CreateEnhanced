@@ -54,10 +54,6 @@
     "converter": true,
     "breeder": true
   },
-  "immersiveengineering": {
-    "hemp": true,
-    "multiblock_icon": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -76,6 +72,9 @@
     "crafting_blueprint": true,
     "goggles.detailed": false,
     "placard": true
+  },
+  "create_paper_line": {
+    "data": true
   },
   "corpse": {
     "corpse": true

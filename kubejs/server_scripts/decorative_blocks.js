@@ -1,5 +1,7 @@
 ServerEvents.recipes((event) => {
   // Lattice
   event.remove({ id: "decorative_blocks:lattice" });
-  event.shapeless("decorative_blocks:lattice", ["4x minecraft:stick"]);
+  event.shaped(Item.of("decorative_blocks:lattice"), ["SS ", "SS ", "   "], {
+    S: "minecraft:stick",
+  });
 });

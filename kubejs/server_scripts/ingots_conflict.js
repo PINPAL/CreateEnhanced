@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
     "createindustry:heavy_plate",
     "#forge:plates/steel"
   );
-  // Fix Steel Mechanism (broken due to heavy_plate replace)
+  // Fix Sequenced Assembly recipes (broken due to heavy_plate replace)
   event.recipes
     .createSequencedAssembly(
       [
@@ -109,6 +109,41 @@ ServerEvents.recipes((event) => {
     )
     .transitionalItem("createindustry:unprocessed_steel_mechanism")
     .loops(3);
+
+  event.remove({ output: "createindustry:diesel_engine" });
+  event.recipes
+    .createSequencedAssembly(
+      [Item.of("createindustry:diesel_engine")],
+      "createindustry:heavy_machinery_casing",
+      [
+        event.recipes.createDeploying("createindustry:heavy_machinery_casing", [
+          "createindustry:heavy_machinery_casing",
+          "#forge:ingots/aluminum",
+        ]),
+        event.recipes.createDeploying("createindustry:heavy_machinery_casing", [
+          "createindustry:heavy_machinery_casing",
+          "#forge:plates/steel",
+        ]),
+        event.recipes.createDeploying("createindustry:heavy_machinery_casing", [
+          "createindustry:heavy_machinery_casing",
+          "createindustry:screw",
+        ]),
+        event.recipes.createDeploying("createindustry:heavy_machinery_casing", [
+          "createindustry:heavy_machinery_casing",
+          "createindustry:screwdriver",
+        ]),
+        event.recipes.create.filling("createindustry:heavy_machinery_casing", [
+          Fluid.of("createindustry:lubrication_oil", 1000),
+          "createindustry:heavy_machinery_casing",
+        ]),
+        event.recipes.createDeploying("createindustry:heavy_machinery_casing", [
+          "createindustry:heavy_machinery_casing",
+          "createindustry:steel_mechanism",
+        ]),
+      ]
+    )
+    .transitionalItem("createindustry:heavy_machinery_casing")
+    .loops(8);
 });
 
 // Fix Steel/Bronze/Cast Iron Conflicts
