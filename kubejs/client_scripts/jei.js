@@ -1,6 +1,7 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "kubejs:belt_scroll",
     /createaddition:.*electrum.*/,
     "create_paper_line:frame",
     "create_paper_line:saw_dust",

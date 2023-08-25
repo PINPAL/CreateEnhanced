@@ -64,8 +64,20 @@
 			image: "create_things_and_misc:items/vibration_mechanism2"
 			rotation: 0.0d
 			width: 0.125d
-			x: 30.875d
-			y: -10.375d
+			x: -1.25d
+			y: -23.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 17.5d
+			hover: [ ]
+			image: "quests:textures/creative_background.png"
+			rotation: 0.0d
+			width: 17.5d
+			x: 30.0d
+			y: 0.0d
 		}
 		{
 			click: ""
@@ -73,11 +85,73 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "create_things_and_misc:items/vibration_mechanism2"
+			image: "quests:textures/belt_scroll.png"
 			rotation: 0.0d
-			width: 0.125d
-			x: -1.25d
-			y: -23.0d
+			width: 0.06666666666666667d
+			x: 14.25d
+			y: -27.125d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: 15.75d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			rotation: 90.0d
+			width: 3.0d
+			x: 18.3d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			rotation: 90.0d
+			width: 3.0d
+			x: 20.85d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: 23.4d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "quests:textures/creative_title.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 30.0d
+			y: -7.0d
 		}
 	]
 	order_index: 0
@@ -3545,6 +3619,356 @@
 			}]
 			x: 0.875d
 			y: 9.25d
+		}
+		{
+			dependencies: ["21308ABC953708A4"]
+			id: "1DDE32BF702B6BB6"
+			shape: "heart"
+			tasks: [{
+				id: "3A8442959E8DA84D"
+				item: "kubejs:molten_iron_block"
+				type: "item"
+			}]
+			x: 29.125d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"07669EC77ADE87CB"
+				"1BB3A43E22D55C6C"
+				"6F5AB7DFECF28C92"
+				"6DBEC398BB83BA72"
+				"3DC0879756030923"
+				"08FCFA6FC6218B88"
+				"1DDE32BF702B6BB6"
+				"12B37A1C4B0E9BDC"
+				"2BA91A0C7302BA98"
+			]
+			id: "101D4037778B6AB3"
+			rewards: [{
+				id: "168595E8EE39C0F3"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
+			shape: "heart"
+			size: 2.0d
+			subtitle: "The alloy to end all alloys."
+			tasks: [{
+				id: "44572752AE4D1EEA"
+				item: "kubejs:metal_alloy_block"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["25E93E74042E607F"]
+			id: "08FCFA6FC6218B88"
+			shape: "heart"
+			tasks: [{
+				id: "292ECC270D93513E"
+				item: "kubejs:molten_copper_block"
+				type: "item"
+			}]
+			x: 28.625d
+			y: -1.5d
+		}
+		{
+			dependencies: ["34396696F09C307E"]
+			id: "3DC0879756030923"
+			shape: "heart"
+			tasks: [{
+				id: "4C7BB2D53364ACCA"
+				item: "kubejs:molten_gold_block"
+				type: "item"
+			}]
+			x: 28.625d
+			y: -2.375d
+		}
+		{
+			dependencies: ["6D471E1E9517C0E2"]
+			id: "1BB3A43E22D55C6C"
+			shape: "heart"
+			tasks: [{
+				id: "4B3EAE10D89B2911"
+				item: "kubejs:molten_zinc_block"
+				type: "item"
+			}]
+			x: 29.125d
+			y: -3.125d
+		}
+		{
+			dependencies: ["3DC94DE9CD47EAE1"]
+			id: "07669EC77ADE87CB"
+			shape: "heart"
+			tasks: [{
+				id: "7109C42F02DB0052"
+				item: "kubejs:molten_brass_block"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -3.375d
+		}
+		{
+			dependencies: ["7B6C9C8359B502FA"]
+			id: "6DBEC398BB83BA72"
+			shape: "heart"
+			tasks: [{
+				id: "287716F89ACC19C6"
+				item: "kubejs:molten_tin_block"
+				type: "item"
+			}]
+			x: 30.875d
+			y: -3.125d
+		}
+		{
+			dependencies: ["69708A809D574953"]
+			id: "2BA91A0C7302BA98"
+			shape: "heart"
+			tasks: [{
+				id: "6003BB1029AEED38"
+				item: "kubejs:molten_bronze_block"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -2.375d
+		}
+		{
+			dependencies: ["419D49B1E88FCFBA"]
+			id: "12B37A1C4B0E9BDC"
+			shape: "heart"
+			tasks: [{
+				id: "2EADE09DC8B959AA"
+				item: "kubejs:molten_steel_block"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10E21983A3893B7A"]
+			id: "6F5AB7DFECF28C92"
+			shape: "heart"
+			tasks: [{
+				id: "6311EFFFDE4FFB9B"
+				item: "kubejs:molten_cast_iron_block"
+				type: "item"
+			}]
+			x: 31.0d
+			y: -0.75d
+		}
+		{
+			id: "21308ABC953708A4"
+			shape: "heart"
+			tasks: [{
+				id: "77BE001AAB876CAD"
+				item: "kubejs:molten_iron_ingot"
+				type: "item"
+			}]
+			x: 28.625d
+			y: 0.0d
+		}
+		{
+			id: "25E93E74042E607F"
+			shape: "heart"
+			tasks: [{
+				id: "728F5F686849B5C9"
+				item: "kubejs:molten_copper_ingot"
+				type: "item"
+			}]
+			x: 27.75d
+			y: -1.125d
+		}
+		{
+			id: "34396696F09C307E"
+			shape: "heart"
+			tasks: [{
+				id: "092108C5BC98C5C1"
+				item: "kubejs:molten_gold_ingot"
+				type: "item"
+			}]
+			x: 27.75d
+			y: -2.625d
+		}
+		{
+			id: "6D471E1E9517C0E2"
+			shape: "heart"
+			tasks: [{
+				id: "18C0D172DAFE7CFE"
+				item: "kubejs:molten_zinc_ingot"
+				type: "item"
+			}]
+			x: 28.5d
+			y: -3.875d
+		}
+		{
+			id: "3DC94DE9CD47EAE1"
+			shape: "heart"
+			tasks: [{
+				id: "46892C064526CFF8"
+				item: "kubejs:molten_brass_ingot"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -4.25d
+		}
+		{
+			id: "7B6C9C8359B502FA"
+			shape: "heart"
+			tasks: [{
+				id: "71001440B8171504"
+				item: "kubejs:molten_tin_ingot"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -3.875d
+		}
+		{
+			id: "69708A809D574953"
+			shape: "heart"
+			tasks: [{
+				id: "1692A0BCDC02042C"
+				item: "kubejs:molten_bronze_ingot"
+				type: "item"
+			}]
+			x: 32.375d
+			y: -2.625d
+		}
+		{
+			id: "419D49B1E88FCFBA"
+			shape: "heart"
+			tasks: [{
+				id: "7FA12FEB6F9B0B8D"
+				item: "kubejs:molten_steel_ingot"
+				type: "item"
+			}]
+			x: 32.375d
+			y: -1.125d
+		}
+		{
+			id: "10E21983A3893B7A"
+			shape: "heart"
+			tasks: [{
+				id: "3731AC59D73979BE"
+				item: "kubejs:molten_cast_iron_ingot"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55C80599C1761298"]
+			id: "295B4FAA046F36C4"
+			subtitle: "Unlimited Stress"
+			tasks: [{
+				id: "1219C0107607EA74"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: 31.75d
+			y: 1.75d
+		}
+		{
+			dependencies: ["55C80599C1761298"]
+			description: ["&7Powering stuff that requires electricity is now a breeze!"]
+			id: "557D91FE1B18E8DB"
+			subtitle: "Unlimited Power"
+			tasks: [{
+				id: "159371AC045ED3F8"
+				item: "createaddition:creative_energy"
+				type: "item"
+			}]
+			x: 29.125d
+			y: 1.375d
+		}
+		{
+			dependencies: ["55C80599C1761298"]
+			id: "5ED3680167601049"
+			subtitle: "Unlimited Fuel"
+			tasks: [{
+				id: "1F80D245DF0756F1"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+			x: 30.875d
+			y: 1.375d
+		}
+		{
+			dependencies: [
+				"557D91FE1B18E8DB"
+				"36665779B380B22E"
+				"295B4FAA046F36C4"
+				"5ED3680167601049"
+				"55C80599C1761298"
+			]
+			description: [
+				"You now have unlimited items!"
+				"&7Put any item into the Creative Crate and you can infinetly pull out more using a funnel or chute!"
+				""
+				"&7To help with your new found ability to create infinate items out of thin air, I have provided you with a infinate storage disk for your digital storage system if you wish to continue playing further."
+				""
+				"&6&lThank you for playing!"
+				"&r&eYou've completed the Modpack!"
+				""
+				"&3▶ Pack made by PINPAL "
+				"&7Find me on: &9pinpal.github.io"
+			]
+			id: "5C793E02A4F09CB2"
+			rewards: [
+				{
+					id: "7A4A963260F02B15"
+					item: "refinedstorage:creative_storage_disk"
+					type: "item"
+				}
+				{
+					id: "133A6EF5F0B08048"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Unlimited Items"
+			tasks: [{
+				id: "359FF772AB750152"
+				item: "create:creative_crate"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.125d
+		}
+		{
+			dependencies: ["101D4037778B6AB3"]
+			description: [
+				"Highly recommended to be created as your first Creative item."
+				""
+				"&7This item allows you to infinetly pull out fluids, this even works for the Molten Alloy Metals; meaning that you can now much easier make more Creative Fluid Tanks!"
+			]
+			id: "55C80599C1761298"
+			subtitle: "Unlimited Fluids"
+			tasks: [{
+				id: "45DE989A583A29F1"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55C80599C1761298"]
+			description: [
+				"You're nearly there!"
+				""
+				"&7The &6Creative Worldshaper &7does not require blocks to use, allowing easy duplication of blocks."
+			]
+			id: "36665779B380B22E"
+			subtitle: "Unlimited Building"
+			tasks: [{
+				id: "2591C76626CA6956"
+				item: "create:handheld_worldshaper"
+				type: "item"
+			}]
+			x: 28.25d
+			y: 1.75d
 		}
 	]
 	title: "Create Modpack"

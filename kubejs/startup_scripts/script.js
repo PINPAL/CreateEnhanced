@@ -1,5 +1,22 @@
 // priority: 0
 
+const moltenMetals = [
+  "iron",
+  "copper",
+  "gold",
+  "zinc",
+  "brass",
+  "tin",
+  "bronze",
+  "steel",
+  "cast_iron",
+];
+
+// function to replace _ with space and capitalise first letter of each word
+function formatName(name) {
+  return name.replace(/_/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+}
+
 // Add Items
 StartupEvents.registry("item", (event) => {
   event.create("empty_canister").displayName("Empty Canister");
@@ -14,10 +31,71 @@ StartupEvents.registry("item", (event) => {
     .tooltip("Brine: 1000/1000 mB")
     .unstackable();
   event.create("refined_stone").displayName("Refined Rock");
+
+  // Creative Items
+  moltenMetals.forEach((metal) => {
+    event
+      .create("molten_" + metal + "_ingot")
+      .displayName("Molten " + formatName(metal) + " Ingot")
+      .unstackable();
+  });
+
+  event.create("rainbow_toolbox").displayName("Rainbow Toolbox").unstackable();
+});
+
+// Add Blocks
+StartupEvents.registry("block", (event) => {
+  moltenMetals.forEach((metal) => {
+    event
+      .create("molten_" + metal + "_block")
+      .displayName("Molten " + formatName(metal) + " Block")
+      .material("metal")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .hardness(50);
+  });
+
+  event.create("belt_scroll").displayName("DEV ITEM");
+
+  event
+    .create("rainbow_wool")
+    .displayName("Rainbow Wool")
+    .material("wool")
+    .tagBlock("minecraft:mineable/paxel");
+
+  event
+    .create("rainbow_concrete")
+    .displayName("Rainbow Concrete")
+    .material("stone")
+    .tagBlock("minecraft:mineable/pickaxe");
+
+  event
+    .create("rainbow_valve_handle")
+    .displayName("Rainbow Valve Handle")
+    .material("stone")
+    .tagBlock("minecraft:mineable/pickaxe")
+    .renderType("cutout");
+
+  event
+    .create("metal_alloy_block")
+    .displayName("Metal Alloy Block")
+    .material("metal")
+    .tagBlock("minecraft:mineable/pickaxe")
+    .hardness(80);
 });
 
 // Add Fluids
 StartupEvents.registry("fluid", (event) => {
+  // Creative Items
+  moltenMetals.forEach((metal) => {
+    event
+      .create("molten_" + metal)
+      .displayName("Molten " + formatName(metal))
+      .stillTexture("kubejs:block/fluid/molten_" + metal)
+      .flowingTexture("kubejs:block/fluid/molten_" + metal)
+      .noBlock();
+  });
+
+  // Refined Storage
   event
     .create("biomethane")
     .displayName("Biomethane Gas")

@@ -73,7 +73,7 @@ MoreJSEvents.updateVillagerOffers((event) => {
         .getOutput()
         .getId()
         .match(
-          /_boots|_leggings|_chestplate|_helmet|_sword|_axe|_shovel|_pickaxe|_hoe|enchanted_book/g
+          /_boots|_leggings|_chestplate|_helmet|_sword|_axe|_shovel|_pickaxe|_hoe|enchanted_book|cake/g
         )
     ) {
       trade.setDisabled(true);

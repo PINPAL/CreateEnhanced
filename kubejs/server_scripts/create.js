@@ -143,6 +143,11 @@ ServerEvents.recipes((event) => {
     B: "create:brass_hand",
   });
 
+  // Only Create Cake Baking
+  event.remove({ id: "minecraft:cake" });
+  event.remove({ id: "farmersdelight:cake_from_milk_bottle" });
+  event.remove({ id: "create:crafting/curiosities/cake" });
+
   // Harder Item Vault
   event.remove({ id: "create:crafting/kinetics/item_vault" });
 

@@ -19,6 +19,18 @@ ItemEvents.tooltip((tooltip) => {
       ]);
     }
   );
+  customItems = [
+    "kubejs:rainbow_valve_handle",
+    "kubejs:rainbow_wool",
+    "kubejs:rainbow_concrete",
+    "kubejs:rainbow_trophy",
+    "kubejs:metal_alloy_block",
+  ].forEach((customItem) => {
+    tooltip.addAdvanced(customItem, (item, advanced, text) => {
+      text.add(1, [Text.of("End Game Crafting Ingredient").gray()]);
+      text.add(1, [Text.of("Functionally Useless").gold()]);
+    });
+  });
 });
 
 // const ItemDescription = Java.loadClass(

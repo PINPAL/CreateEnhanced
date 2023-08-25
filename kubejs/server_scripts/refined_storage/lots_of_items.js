@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
   // Crafting Grid
   event.shaped("refinedstorage:crafting_grid", ["BAB", "DCD", "BTB"], {
     B: "create:brass_casing",
-    A: "refinedstorage:advanced_processor",
+    A: "createindustry:plastic_block",
     D: "create:display_board",
     C: "refinedstorage:controller",
     T: "minecraft:crafting_table",
