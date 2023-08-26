@@ -126,4 +126,14 @@ ServerEvents.tags("item", (event) => {
   ].forEach((item) => {
     event.add("quests:storage_blocks", item);
   });
+
+  [/quark:.*blossom.*/, /quark:.*ancient.*/].forEach((item) => {
+    event.removeAllTagsFrom(item);
+  });
+});
+
+ServerEvents.tags("block", (event) => {
+  [/quark:.*blossom.*/, /quark:.*ancient.*/].forEach((item) => {
+    event.removeAllTagsFrom(item);
+  });
 });

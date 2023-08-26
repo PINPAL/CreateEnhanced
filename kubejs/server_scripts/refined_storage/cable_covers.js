@@ -3,7 +3,8 @@ ServerEvents.recipes((event) => {
   event.shapeless(
     Item.of(
       "refinedstorage:cover",
-      '{Item:{Count:8,id:"create:brass_casing"}}'
+      8,
+      '{Item:{Count:1,id:"create:brass_casing"}}'
     ),
     ["refinedstorage:cable", "create:brass_casing"]
   );
@@ -38,7 +39,8 @@ ServerEvents.recipes((event) => {
   event.shapeless(
     Item.of(
       "refinedstorage:cover",
-      '{Item:{Count:8,id:"create:andesite_casing"}}'
+      8,
+      '{Item:{Count:1,id:"create:andesite_casing"}}'
     ),
     ["refinedstorage:cable", "create:andesite_casing"]
   );

@@ -196,6 +196,7 @@ JEIEvents.addItems((event) => {
     "refinedstorageaddons:wireless_crafting_grid",
     "refinedstorage:cable",
     "refinedstorage:crafting_grid",
+    "refinedstorage:fluid_grid",
     "refinedstorage:pattern_grid",
     "refinedstorage:crafting_monitor",
     "refinedstorage:controller",

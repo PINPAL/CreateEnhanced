@@ -23,8 +23,20 @@ ServerEvents.recipes((event) => {
     "create:item_application/copper_casing_from_log_using_deployer",
     "create:item_application/copper_casing_from_wood",
     "create:item_application/copper_casing_from_log",
+    "create_dd:crafting/mechanical_arm",
+    "create_dd:crafting/gearbox",
+    "create_dd:crafting/gearbox_from_vertical_gearbox",
+    "create_dd:crafting/vertical_gearbox",
+    "create_dd:crafting/vertical_gearbox_from_gearbox",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
+  });
+
+  // Harder Rotation Speed Controller
+  event.remove({ output: "create:rotation_speed_controller" });
+  event.shaped("create:rotation_speed_controller", [" M ", " B ", "   "], {
+    M: "create_dd:integrated_mechanism",
+    B: "create:brass_casing",
   });
 
   // Cheap Millstone

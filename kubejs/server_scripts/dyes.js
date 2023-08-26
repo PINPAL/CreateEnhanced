@@ -104,7 +104,9 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "minecraft:" + colorObject.color + "_shulker_box" });
     event.remove({ output: "minecraft:" + colorObject.color + "_candle" });
     event.remove({ output: "quark:" + colorObject.color + "_rune" });
-    event.remove({ output: "create:" + colorObject.color + "_toolbox" });
+    if (colorObject.color != "brown") {
+      event.remove({ output: "create:" + colorObject.color + "_toolbox" });
+    }
     event.remove({
       output: "supplementaries:candle_holder_" + colorObject.color,
     });

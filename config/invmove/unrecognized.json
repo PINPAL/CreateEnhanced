@@ -93,7 +93,8 @@
     "net.mehvahdjukaar.supplementaries.client.screens.PulleyBlockScreen": true,
     "com.simibubi.create.content.redstone.thresholdSwitch.ThresholdSwitchScreen": true,
     "blusunrize.lib.manual.gui.ManualScreen": true,
-    "com.simibubi.create.content.equipment.toolbox.ToolboxScreen": true
+    "com.simibubi.create.content.equipment.toolbox.ToolboxScreen": true,
+    "com.refinedmods.refinedstorage.screen.ImporterScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
