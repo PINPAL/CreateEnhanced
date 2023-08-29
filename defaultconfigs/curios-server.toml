@@ -1,0 +1,33 @@
+
+#List of curio slot type settings
+[[curiosSettings]]
+identifier = "grid"
+size = 3
+visible = true
+icon = "curios:slot/grid"
+
+[[curiosSettings]]
+identifier = "belt"
+size = 0
+visible = false
+
+[[curiosSettings]]
+identifier = "back"
+size = 1
+
+[[curiosSettings]]
+identifier = "charm"
+size = 0
+visible = false
+
+[[curiosSettings]]
+identifier = "magnet"
+size = 1
+visible = true
+icon = "curios:slot/magnet"
+
+[[curiosSettings]]
+identifier = "totem"
+size = 1
+visible = true
+icon = "curios:slot/totem"

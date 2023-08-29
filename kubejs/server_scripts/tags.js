@@ -130,6 +130,12 @@ ServerEvents.tags("item", (event) => {
   [/quark:.*blossom.*/, /quark:.*ancient.*/].forEach((item) => {
     event.removeAllTagsFrom(item);
   });
+
+  event.remove("curios:charm", "minecraft:totem_of_undying");
+  event.add("curios:totem", "minecraft:totem_of_undying");
+
+  event.remove("curios:charm", "simplemagnets:advancedmagnet");
+  event.add("curios:magnet", "simplemagnets:advancedmagnet");
 });
 
 ServerEvents.tags("block", (event) => {

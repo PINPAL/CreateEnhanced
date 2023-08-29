@@ -11,5 +11,9 @@
   "block.createchunkloading.chunk_loader.tooltip.condition1": "When placed on contraption",
   "block.createchunkloading.chunk_loader.tooltip.behaviour1": "Loads chunks required for the contraption.",
   "block.createchunkloading.chunk_loader.tooltip.control1": "test",
-  "block.createchunkloading.chunk_loader.tooltip.action1": "test"
+  "block.createchunkloading.chunk_loader.tooltip.action1": "test",
+
+  "curios.identifier.grid": "Wireless Grid",
+  "curios.identifier.magnet": "Magnet",
+  "curios.identifier.totem": "Totem"
 }

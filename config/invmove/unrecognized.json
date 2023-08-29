@@ -95,7 +95,8 @@
     "blusunrize.lib.manual.gui.ManualScreen": true,
     "com.simibubi.create.content.equipment.toolbox.ToolboxScreen": true,
     "com.refinedmods.refinedstorage.screen.ImporterScreen": true,
-    "com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftScreen": true
+    "com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftScreen": true,
+    "com.refinedmods.refinedstorage.screen.DiskDriveScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
