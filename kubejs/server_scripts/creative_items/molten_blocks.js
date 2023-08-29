@@ -20,14 +20,14 @@ ServerEvents.recipes((event) => {
       .superheated();
 
     event.recipes.create.emptying(
-      [Fluid.of("kubejs:molten_" + metal.name, 83)],
+      [Fluid.of("kubejs:molten_" + metal.name, 10)],
       Item.of("kubejs:molten_" + metal.name + "_ingot")
     );
 
     event.recipes.create
       .mixing(
         [Item.of("kubejs:molten_" + metal.name + "_block")],
-        [Fluid.of("kubejs:molten_" + metal.name, 996)]
+        [Fluid.of("kubejs:molten_" + metal.name, 1000)]
       )
       .superheated();
   });

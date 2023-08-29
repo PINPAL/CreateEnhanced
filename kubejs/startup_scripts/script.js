@@ -92,7 +92,8 @@ StartupEvents.registry("fluid", (event) => {
       .displayName("Molten " + formatName(metal))
       .stillTexture("kubejs:block/fluid/molten_" + metal)
       .flowingTexture("kubejs:block/fluid/molten_" + metal)
-      .noBlock();
+      .noBlock()
+      .bucketItem.texture("kubejs:item/bucket/molten_" + metal + "_bucket");
   });
 
   // Refined Storage
