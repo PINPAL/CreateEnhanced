@@ -1,0 +1,7 @@
+{
+  "parent": "refinedstorage:item/wireless_crafting_monitor",
+  "textures": {
+    "0": "refinedstorageaddons:item/wireless_crafting_grid_disconnected",
+    "particle": "refinedstorageaddons:item/wireless_crafting_grid_disconnected"
+  }
+}

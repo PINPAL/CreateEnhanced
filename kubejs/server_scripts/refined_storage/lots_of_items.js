@@ -35,6 +35,13 @@ ServerEvents.recipes((event) => {
     "3x refinedstorage:advanced_processor",
   ]);
 
+  // Fluid Grid
+  event.shapeless("refinedstorage:fluid_grid", [
+    "refinedstorage:crafting_grid",
+    "minecraft:bucket",
+    "create:copper_casing",
+  ]);
+
   // Pattern
   event.recipes
     .createSequencedAssembly(

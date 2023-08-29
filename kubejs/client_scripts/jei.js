@@ -194,6 +194,8 @@ JEIEvents.addItems((event) => {
     "sophisticatedbackpacks:everlasting_upgrade",
     "refinedstorage:quartz_enriched_iron",
     "refinedstorageaddons:wireless_crafting_grid",
+    "refinedstorage:wireless_fluid_grid",
+    "refinedstorage:wireless_crafting_monitor",
     "refinedstorage:cable",
     "refinedstorage:crafting_grid",
     "refinedstorage:fluid_grid",

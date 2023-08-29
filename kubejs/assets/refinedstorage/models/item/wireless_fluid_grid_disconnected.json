@@ -1,0 +1,8 @@
+{
+  "parent": "refinedstorage:item/wireless_fluid_grid",
+  "textures": {
+    "0": "refinedstorage:item/wireless_fluid_grid_disconnected",
+    "particle": "refinedstorage:item/wireless_fluid_grid_disconnected",
+    "fluid": "refinedstorage:block/lights/disconnected"
+  }
+}

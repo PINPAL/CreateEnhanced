@@ -25,6 +25,10 @@ ServerEvents.recipes((event) => {
           "createaddition:brass_rod",
           "createaddition:tesla_coil",
         ]),
+        event.recipes.createDeploying("createaddition:brass_rod", [
+          "createaddition:brass_rod",
+          "createindustry:lpg_engine",
+        ]),
       ]
     )
     .transitionalItem("createaddition:brass_rod")
@@ -36,6 +40,22 @@ ServerEvents.recipes((event) => {
     [
       "refinedstorage:wireless_transmitter",
       "refinedstorage:crafting_grid",
+      Fluid.of("create_enchantment_industry:hyper_experience", 1000),
+    ]
+  );
+  // Wireless Fluid Grid
+  event.recipes.create.mixing(
+    [Item.of("refinedstorage:wireless_fluid_grid")],
+    [
+      "refinedstorage:fluid_grid",
+      Fluid.of("create_enchantment_industry:hyper_experience", 500),
+    ]
+  );
+  // Wireless Crafting Monitor
+  event.recipes.create.mixing(
+    [Item.of("refinedstorage:wireless_crafting_monitor")],
+    [
+      "refinedstorage:crafting_monitor",
       Fluid.of("create_enchantment_industry:hyper_experience", 500),
     ]
   );
