@@ -3970,6 +3970,24 @@
 			x: 28.25d
 			y: 1.75d
 		}
+		{
+			dependencies: ["26B607339F9A9909"]
+			id: "27C6A160DC38BA07"
+			rewards: [{
+				id: "14794A95DD0068FF"
+				item: "supplementaries:cog_block"
+				random_bonus: 4
+				type: "item"
+			}]
+			subtitle: "Redstone that goes up!"
+			tasks: [{
+				id: "3ACEF802C6E9FE36"
+				item: "supplementaries:cog_block"
+				type: "item"
+			}]
+			x: 2.125d
+			y: 11.125d
+		}
 	]
 	title: "Create Modpack"
 }

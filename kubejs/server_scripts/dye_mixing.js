@@ -15,6 +15,13 @@ ServerEvents.recipes((event) => {
     ]
   );
   event.recipes.create.mixing(
+    [Fluid.of("kubejs:green_dye_fluid", 1000)],
+    [
+      Fluid.of("kubejs:blue_dye_fluid", 500),
+      Fluid.of("kubejs:yellow_dye_fluid", 500),
+    ]
+  );
+  event.recipes.create.mixing(
     [Fluid.of("kubejs:gray_dye_fluid", 1000)],
     [
       Fluid.of("kubejs:black_dye_fluid", 500),
