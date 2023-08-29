@@ -24,10 +24,12 @@ ServerEvents.recipes((event) => {
       Item.of("kubejs:molten_" + metal.name + "_ingot")
     );
 
-    event.recipes.create.mixing(
-      [Item.of("kubejs:molten_" + metal.name + "_block")],
-      [Fluid.of("kubejs:molten_" + metal.name, 996)]
-    );
+    event.recipes.create
+      .mixing(
+        [Item.of("kubejs:molten_" + metal.name + "_block")],
+        [Fluid.of("kubejs:molten_" + metal.name, 996)]
+      )
+      .superheated();
   });
 
   event.recipes.create.mechanical_crafting(
