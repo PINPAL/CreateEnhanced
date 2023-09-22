@@ -39,7 +39,6 @@ ServerEvents.recipes((event) => {
 
   const automatedPacking = [
     { mod: "minecraft", item: "coal" },
-    { mod: "minecraft", item: "iron" },
     { mod: "minecraft", item: "gold" },
     { mod: "minecraft", item: "copper" },
     { mod: "minecraft", item: "redstone" },
@@ -80,7 +79,7 @@ ServerEvents.recipes((event) => {
   });
   // Cheap Hand Crank
   event.remove({ output: "create:hand_crank" });
-  event.shaped(Item.of("create:hand_crank"), ["PPP", "  S", "  "], {
+  event.shaped(Item.of("create:hand_crank"), ["PPP", "  S", "   "], {
     P: "#minecraft:planks",
     S: "minecraft:stick",
   });
@@ -180,10 +179,9 @@ ServerEvents.recipes((event) => {
 
   // Harder Deployer
   event.remove({ output: "create:deployer" });
-  event.shaped(Item.of("create:deployer"), [" E ", " A ", "LBL"], {
+  event.shaped(Item.of("create:deployer"), [" E ", " A ", " B "], {
     E: "create:electron_tube",
     A: "create:andesite_casing",
-    L: "create_dd:inductive_mechanism",
     B: "create:brass_hand",
   });
 
