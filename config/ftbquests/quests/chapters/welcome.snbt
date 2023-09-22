@@ -131,6 +131,7 @@
 		{
 			click: ""
 			corner: false
+			dependency: "4017886C8B817FCC"
 			dev: false
 			height: 3.0d
 			hover: [ ]
@@ -3644,6 +3645,7 @@
 				"12B37A1C4B0E9BDC"
 				"2BA91A0C7302BA98"
 			]
+			hide_dependent_lines: true
 			id: "101D4037778B6AB3"
 			rewards: [{
 				id: "168595E8EE39C0F3"

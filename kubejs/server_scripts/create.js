@@ -28,6 +28,11 @@ ServerEvents.recipes((event) => {
     "create_dd:crafting/gearbox_from_vertical_gearbox",
     "create_dd:crafting/vertical_gearbox",
     "create_dd:crafting/vertical_gearbox_from_gearbox",
+    "create_dd:crafting/item_interface",
+    "create_dd:crafting/adj_chain_gearshift",
+    "create_dd:crafting/mechanical_roller",
+    "create_dd:crafting/contraption_controls",
+    "create_dd:crafting/fluid_interface",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
   });

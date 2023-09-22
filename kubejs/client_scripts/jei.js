@@ -1,6 +1,8 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "create_dd:kinetic_motor",
+    "create_dd:accelerator_motor",
     "kubejs:belt_scroll",
     /createaddition:.*electrum.*/,
     "create_paper_line:frame",

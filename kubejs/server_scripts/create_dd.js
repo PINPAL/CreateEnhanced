@@ -26,6 +26,8 @@ ServerEvents.recipes((event) => {
     "create_dd:caramel_milkshake_bucket",
     "create_dd:hot_chocolate_bucket",
     "create_dd:chocolate_milkshake_bucket",
+    "create_dd:kinetic_motor",
+    "create_dd:accelerator_motor",
   ].forEach((item) => {
     event.remove({ output: item });
   });
