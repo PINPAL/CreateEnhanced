@@ -1,14 +1,14 @@
 name = "Create: Dreams & Desires"
-filename = "Create-Dreams-n-Desires-1.19.2-0.0.5a.ALPHA.jar"
+filename = "Create-Dreams-n-Desires-1.19.2-0.1a.PREBETA.jar"
 side = "both"
 
 [download]
 mode = "url"
-url = "https://cdn.modrinth.com/data/JmybsfWs/versions/Upt9XdjE/Create-Dreams-n-Desires-1.19.2-0.0.5a.ALPHA.jar"
+url = "https://cdn.modrinth.com/data/JmybsfWs/versions/8RIUrerx/Create-Dreams-n-Desires-1.19.2-0.1a.PREBETA.jar"
 hash-format = "sha512"
-hash = "f37eb51fca965ceb4c2e929c60f5982822719b5c248aa08f3c95c329c869a7ba31e2480968d2de109d1b110e7647208e17eb8a8a906131a8747f5706b07f8d1a"
+hash = "68e758084827c5e533518406105c87fa06866e57b94baf670de7f549f429c3acbcd78f215f36f1bf1169b0dcf0bee46ee72ba755a7cf813688f1f3fe2f4b7fe3"
 
 [update]
 [update.modrinth]
 mod-id = "JmybsfWs"
-version = "Upt9XdjE"
+version = "8RIUrerx"

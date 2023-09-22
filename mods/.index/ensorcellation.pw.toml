@@ -1,14 +1,14 @@
 name = "Ensorcellation"
-filename = "ensorcellation-1.19.2-4.2.0.14.jar"
+filename = "ensorcellation-1.19.2-4.3.0.18.jar"
 side = "both"
 
 [download]
 mode = "url"
-url = "https://cdn.modrinth.com/data/ImlP9deQ/versions/jpo4q0vl/ensorcellation-1.19.2-4.2.0.14.jar"
+url = "https://cdn.modrinth.com/data/ImlP9deQ/versions/VxA5DJex/ensorcellation-1.19.2-4.3.0.18.jar"
 hash-format = "sha512"
-hash = "c6f09cd996c07a0a02924328d0e2d46d7d9884459c0924c41246753738de72ca005064842d519570d167e0465dbd68a9c581c3d7c2591435678db143a8df9fa6"
+hash = "d863c2a183f3c03cca2324808913284550899c7657ac618bbcdb7b32229c51192fcb27ec2ef891e3cdec4ead630e701204b0ea3134d7a4569ff30b449f9ab4c6"
 
 [update]
 [update.modrinth]
 mod-id = "ImlP9deQ"
-version = "jpo4q0vl"
+version = "VxA5DJex"

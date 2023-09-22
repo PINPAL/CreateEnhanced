@@ -32,6 +32,33 @@ ServerEvents.recipes((event) => {
     event.remove({ id: recipeID });
   });
 
+  const automatedPacking = [
+    { mod: "minecraft", item: "coal" },
+    { mod: "minecraft", item: "iron" },
+    { mod: "minecraft", item: "gold" },
+    { mod: "minecraft", item: "copper" },
+    { mod: "minecraft", item: "redstone" },
+    { mod: "minecraft", item: "diamond" },
+    { mod: "minecraft", item: "netherite" },
+    { mod: "minecraft", item: "emerald" },
+    { mod: "minecraft", item: "lapis" },
+  ].forEach((block) => {
+    event.remove({ id: `${block.mod}:${block.item}_block` });
+
+    event.recipes.create.compacting(
+      `${block.mod}:${block.item}_block`,
+      `9x #forge:ingots/${block.item}`
+    );
+  });
+
+  // Harder Minecart Assembler
+  event.remove({ output: "create:cart_assembler" });
+  event.shaped("create:cart_assembler", ["   ", "TRT", "B B"], {
+    T: "create:railway_casing",
+    R: "create:controls",
+    B: "create:brass_casing",
+  });
+
   // Harder Rotation Speed Controller
   event.remove({ output: "create:rotation_speed_controller" });
   event.shaped("create:rotation_speed_controller", [" M ", " B ", "   "], {

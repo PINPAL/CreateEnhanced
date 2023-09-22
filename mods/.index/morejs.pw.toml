@@ -1,14 +1,14 @@
 name = "MoreJS"
-filename = "morejs-forge-1.19.2-0.2.0.jar"
+filename = "morejs-forge-1.19.2-0.2.1.jar"
 side = "both"
 
 [download]
 mode = "url"
-url = "https://cdn.modrinth.com/data/mo64mR1W/versions/XuuRcB3V/morejs-forge-1.19.2-0.2.0.jar"
+url = "https://cdn.modrinth.com/data/mo64mR1W/versions/QqkcJ3Gi/morejs-forge-1.19.2-0.2.1.jar"
 hash-format = "sha512"
-hash = "7561cdc9d2d2ce4a6108a525dcd1da6eb3b899ed1ceca3289e92aa24502a6820582088bd40e8234f2a7848f813bc640d1c4d6db69342fb6b6ff948919f8a98e5"
+hash = "8d8da4cb62ed47272cd4938fd07cbc6aca131ce09a635f4da5187f6fd3c4af39537fd43f0513d98b159815de221ce9e58af279aad7a15e9252c3cfea9b8598c2"
 
 [update]
 [update.modrinth]
 mod-id = "mo64mR1W"
-version = "XuuRcB3V"
+version = "QqkcJ3Gi"
