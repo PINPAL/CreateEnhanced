@@ -210,12 +210,24 @@ ServerEvents.recipes((event) => {
   // Brass Chest
   event.recipes.create.deploying(
     Item.of("sophisticatedstorage:netherite_chest", '{woodType: "dark_oak"}'),
-    ["#forge:chests", "create:andesite_alloy"]
+    [
+      Item.of(
+        "sophisticatedstorage:gold_chest",
+        '{woodType: "spruce"}'
+      ).strongNBT(),
+      "create:brass_ingot",
+    ]
   );
   // Brass Barrel
   event.recipes.create.deploying(
     Item.of("sophisticatedstorage:netherite_barrel", '{woodType: "dark_oak"}'),
-    ["#forge:barrels", "create:andesite_alloy"]
+    [
+      Item.of(
+        "sophisticatedstorage:gold_barrel",
+        '{woodType: "spruce"}'
+      ).strongNBT(),
+      "create:brass_ingot",
+    ]
   );
   // Brass Drawer 1
   event.shapeless(

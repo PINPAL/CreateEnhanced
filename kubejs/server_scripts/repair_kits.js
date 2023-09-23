@@ -21,12 +21,9 @@ ServerEvents.recipes((event) => {
       }
     );
 
-    event.shapeless(
-      "easypaxellite:" + material.paxelId + "_paxel", // arg 1: output
-      [
-        "easypaxellite:" + material.paxelId + "_paxel",
-        "kubejs:" + material.name + "_repair_kit",
-      ]
-    );
+    event.shapeless("easypaxellite:" + material.paxelId + "_paxel", [
+      "easypaxellite:" + material.paxelId + "_paxel",
+      "kubejs:" + material.name + "_repair_kit",
+    ]);
   });
 });
