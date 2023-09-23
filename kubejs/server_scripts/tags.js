@@ -92,6 +92,10 @@ ServerEvents.tags("item", (event) => {
     }
   );
 
+  ["minecraft:bread"].forEach((item) => {
+    event.add("forge:nutrients/carbs", item);
+  });
+
   [
     "sophisticatedstorage:gold_barrel",
     "sophisticatedstorage:gold_chest",
