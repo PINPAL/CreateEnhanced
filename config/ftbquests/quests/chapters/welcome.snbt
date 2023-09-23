@@ -662,7 +662,7 @@
 						value: "quests:andesite_storage"
 					}
 				}
-				title: "Any #quests:andesite_storage"
+				title: "Andesite Chest or Barrel"
 				type: "item"
 			}]
 			title: "Storage"

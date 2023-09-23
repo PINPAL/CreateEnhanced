@@ -33,6 +33,14 @@ ServerEvents.recipes((event) => {
     "create_dd:crafting/mechanical_roller",
     "create_dd:crafting/contraption_controls",
     "create_dd:crafting/fluid_interface",
+    "create_dd:industrial_iron/chute",
+    "create_dd:industrial_iron/cauldron",
+    "create_dd:industrial_iron/basin",
+    "create_dd:industrial_iron/blast_furnace",
+    "create_dd:industrial_iron/rail",
+    "create_dd:industrial_iron/smithing_table",
+    "create_dd:industrial_iron/detector_rail",
+    "create_dd:industrial_iron/hopper",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
   });
