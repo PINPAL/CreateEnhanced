@@ -1,0 +1,11 @@
+{
+  "Show My Coordinates": {
+    "Variables": {
+      "Coordinates": {
+        "Player X coord": "$x$",
+        "Player Y coord": "$y$",
+        "Player Z coord": "$z$"
+      }
+    }
+  }
+}
