@@ -64,6 +64,17 @@ ServerEvents.recipes((event) => {
     P: "easypaxellite:wood_paxel",
     R: "#forge:rods/wooden",
   });
+  // Stone Sword
+  event.shaped("minecraft:stone_sword", [" S ", " S ", " P "], {
+    S: "kubejs:refined_stone",
+    P: "minecraft:wooden_sword",
+  });
+  // Stone Hoe
+  event.shaped("minecraft:stone_hoe", ["SS ", " P ", " R "], {
+    S: "kubejs:refined_stone",
+    P: "minecraft:wooden_hoe",
+    R: "#forge:rods/wooden",
+  });
   // Create Netherite Armor Upgrades
   event.smithing(
     "create:netherite_diving_helmet",
@@ -285,12 +296,6 @@ function upgradingItemsRecipes(event) {
     },
     // Sword
     {
-      input_item: "minecraft:wooden_sword",
-      output_item: "minecraft:stone_sword",
-      upgrade_item: "kubejs:refined_stone",
-      upgrade_cost: 2,
-    },
-    {
       input_item: "minecraft:stone_sword",
       output_item: "minecraft:iron_sword",
       upgrade_item: "#forge:ingots/iron",
@@ -315,12 +320,6 @@ function upgradingItemsRecipes(event) {
       upgrade_cost: 1,
     },
     // Hoe
-    {
-      input_item: "minecraft:wooden_hoe",
-      output_item: "minecraft:stone_hoe",
-      upgrade_item: "kubejs:refined_stone",
-      upgrade_cost: 2,
-    },
     {
       input_item: "minecraft:stone_hoe",
       output_item: "minecraft:iron_hoe",
