@@ -12,7 +12,7 @@ nutrient_level_malnourished = 10
 nutrient_initial = 30.0
 #Boundary between low and target, above which good affects can occur. (default:100.0
 #Range: 0.0 ~ 1.7976931348623157E308
-nutrient_level_low_target = 90
+nutrient_level_low_target = 200.0
 #Boundary between target and high, below which good affects can occur. (default:120.0)
 #Range: 0.0 ~ 1.7976931348623157E308
 nutrient_level_target_high = 200.0
