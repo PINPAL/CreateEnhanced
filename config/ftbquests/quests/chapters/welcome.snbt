@@ -273,17 +273,24 @@
 			dependencies: ["6545EE475DD16057"]
 			icon: "create:iron_sheet"
 			id: "26C9C63835C84874"
+			rewards: [{
+				count: 3
+				id: "1EBFF53963F335AB"
+				item: "minecraft:raw_iron"
+				random_bonus: 7
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				consume_items: false
 				count: 8L
 				id: "220BC2544010367C"
-				item: "minecraft:iron_ore"
+				item: "minecraft:raw_iron"
 				title: "The Iron Age"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: 2.25d
+			y: 5.25d
 		}
 		{
 			id: "386A633F6CE57DC1"
@@ -321,7 +328,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["26C9C63835C84874"]
+			dependencies: ["05BEFB7D67ECA089"]
 			description: ["Combine &6Andesite&r and some nuggets to get &6Andesite Alloy&r."]
 			icon: "minecraft:andesite"
 			id: "06B04C606CE4187C"
@@ -580,8 +587,8 @@
 				type: "item"
 			}]
 			title: "Real Upgrades"
-			x: 1.5d
-			y: 6.0d
+			x: 3.875d
+			y: 5.25d
 		}
 		{
 			dependencies: ["26C9C63835C84874"]
@@ -602,8 +609,8 @@
 				type: "item"
 			}]
 			title: "Better Weaponary"
-			x: 2.75d
-			y: 6.0d
+			x: 5.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["26C9C63835C84874"]
@@ -624,8 +631,8 @@
 				type: "item"
 			}]
 			title: "Upgraded Farming"
-			x: 4.0d
-			y: 6.0d
+			x: 6.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6FEF3380D11818AF"]
@@ -633,14 +640,22 @@
 			size: 2.0d
 			subtitle: "Storing your items."
 			tasks: [{
-				id: "5B3F76282047352C"
-				item: {
+				icon: {
 					Count: 1b
 					id: "sophisticatedstorage:gold_barrel"
 					tag: {
 						woodType: "spruce"
 					}
 				}
+				id: "5B3F76282047352C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "quests:andesite_storage"
+					}
+				}
+				title: "Any #quests:andesite_storage"
 				type: "item"
 			}]
 			title: "Storage"
@@ -999,8 +1014,8 @@
 				type: "item"
 			}]
 			title: "Armor Upgrading"
-			x: -1.375d
-			y: 6.0d
+			x: 2.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["26D185F68C821538"]
@@ -1057,8 +1072,8 @@
 				type: "item"
 			}]
 			title: "Iron Armor"
-			x: -2.0d
-			y: 5.25d
+			x: 3.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["49F9FC411BF9B890"]
@@ -1086,8 +1101,8 @@
 				type: "item"
 			}]
 			title: "Steel Armor"
-			x: -2.625d
-			y: 6.0d
+			x: 4.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["11866A0A040998FA"]
@@ -1115,8 +1130,8 @@
 				type: "item"
 			}]
 			title: "Diamond Armor"
-			x: -3.375d
-			y: 5.25d
+			x: 5.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["2E7775FE373386DA"]
@@ -1144,8 +1159,8 @@
 				type: "item"
 			}]
 			title: "Netherite Armor"
-			x: -4.125d
-			y: 6.0d
+			x: 6.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["6DD58DEC49782F4E"]
@@ -2056,8 +2071,8 @@
 				type: "item"
 			}]
 			title: "Upgrading your Backpack"
-			x: 1.25d
-			y: 4.875d
+			x: 2.625d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4BEB29F474FAB0D4"]
@@ -2071,8 +2086,8 @@
 				item: "sophisticatedbackpacks:gold_backpack"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.875d
+			x: 3.625d
+			y: 4.0d
 		}
 		{
 			dependencies: ["75D93EB2CB71F281"]
@@ -2086,8 +2101,8 @@
 				item: "sophisticatedbackpacks:diamond_backpack"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 4.875d
+			x: 4.625d
+			y: 4.0d
 		}
 		{
 			dependencies: ["50A28D2866E46020"]
@@ -2102,8 +2117,8 @@
 				type: "item"
 			}]
 			title: "The Biggest Bag"
-			x: 5.0d
-			y: 4.875d
+			x: 5.625d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2F289DC495ECFC9E"]
@@ -2118,8 +2133,8 @@
 				type: "item"
 			}]
 			title: "Everlasting Upgrade"
-			x: 6.25d
-			y: 4.875d
+			x: 6.625d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5169F5136FEF5FD2"]
@@ -2312,7 +2327,6 @@
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
-			hide: true
 			icon: "minecraft:gravel"
 			id: "28DDB93015935685"
 			tasks: [
@@ -2374,7 +2388,6 @@
 		}
 		{
 			dependencies: ["7900CBBDF3093BC3"]
-			hide: true
 			icon: "minecraft:gold_ingot"
 			id: "2C83AEF36C0B1A70"
 			subtitle: "Pack nuggets into Gold Ingots"
@@ -2392,8 +2405,8 @@
 				}
 			]
 			title: "Gold"
-			x: -10.125d
-			y: -0.75d
+			x: -10.375d
+			y: -0.625d
 		}
 		{
 			dependencies: ["536C67D9469F3995"]
@@ -2484,7 +2497,6 @@
 		}
 		{
 			dependencies: ["03A9B3E2E879B706"]
-			hide: true
 			icon: "minecraft:iron_ingot"
 			id: "50F54C5799B05773"
 			subtitle: "Pack nuggets into Iron Ingots"
@@ -2510,7 +2522,6 @@
 				"44DA8CA6EC28944E"
 				"64EBC6558844AE7B"
 			]
-			hide: true
 			icon: "minecraft:copper_ingot"
 			id: "095C2A20F71534C3"
 			subtitle: "Pack nuggets into Copper Ingots"
@@ -2533,7 +2544,6 @@
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
-			hide: true
 			icon: "create:crushed_raw_copper"
 			id: "44DA8CA6EC28944E"
 			subtitle: "Crush Veridum for a chance at Copper"
@@ -2554,7 +2564,6 @@
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
-			hide: true
 			icon: "create:copper_nugget"
 			id: "64EBC6558844AE7B"
 			subtitle: "Crush Veridum for a chance at Copper"
@@ -2578,7 +2587,6 @@
 				"700C91B0F88E44E3"
 				"01A2F12E34418D14"
 			]
-			hide: true
 			icon: "create:veridium"
 			id: "13BEAFB67595B5CA"
 			subtitle: "Mix Tuff \\& Limestone for Veridum"
@@ -2628,7 +2636,7 @@
 				""
 				"{image:quests:textures/limestone_generator.png width:100 height:50 align:1 fit:true}"
 			]
-			hide: true
+			hide: false
 			icon: "create:limestone"
 			id: "01A2F12E34418D14"
 			subtitle: "Create a Limestone generator."
@@ -2710,7 +2718,6 @@
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
-			hide: true
 			hide_dependency_lines: true
 			icon: "minecraft:deepslate"
 			id: "41317116C417F243"
@@ -2733,7 +2740,6 @@
 		}
 		{
 			dependencies: ["6CD2D647D9EC2203"]
-			hide: true
 			icon: "minecraft:redstone"
 			id: "62FADB925CE1E8A7"
 			subtitle: "Wash Crushed Iron into Redstone"
@@ -2780,7 +2786,6 @@
 				"700C91B0F88E44E3"
 				"6BD16E91198EE0A8"
 			]
-			hide: true
 			icon: "create:crimsite"
 			id: "4519D70C199B08B5"
 			subtitle: "Mix Tuff \\& Diorite for Crimsite"
@@ -2927,10 +2932,7 @@
 			y: 0.375d
 		}
 		{
-			dependencies: [
-				"372F217BE8C60631"
-				"6C96662719E52E17"
-			]
+			dependencies: ["372F217BE8C60631"]
 			hide: true
 			hide_dependency_lines: true
 			icon: "minecraft:red_sand"
@@ -3064,7 +3066,6 @@
 				"095C2A20F71534C3"
 				"11947EC5FD458C8A"
 			]
-			hide: true
 			icon: "create:brass_ingot"
 			id: "69A390DE1BDEC2AA"
 			tasks: [
@@ -3989,6 +3990,77 @@
 			}]
 			x: 2.125d
 			y: 11.125d
+		}
+		{
+			dependencies: ["6545EE475DD16057"]
+			description: ["You will need to make a &6Mechanical Press&r in order to create copper sheets for the Paxel."]
+			icon: "create:copper_sheet"
+			id: "05BEFB7D67ECA089"
+			rewards: [{
+				count: 3
+				id: "0EF3568708B5C5F1"
+				item: "minecraft:raw_copper"
+				random_bonus: 7
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Copper provides access to new tools."
+			tasks: [{
+				count: 7L
+				id: "3B0A53B6FC314069"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			title: "The Copper Age"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"05BEFB7D67ECA089"
+				"497786B7F649F21B"
+			]
+			hide_dependency_lines: true
+			id: "08035B026259007F"
+			rewards: [{
+				id: "7816264CB97A3C8D"
+				item: "kubejs:copper_repair_kit"
+				type: "item"
+			}]
+			subtitle: "Copper tools provide great mining level."
+			tasks: [{
+				id: "7972858EC47BAEA9"
+				item: {
+					Count: 1b
+					id: "easypaxellite:golden_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Better Tools"
+			x: -1.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["05BEFB7D67ECA089"]
+			id: "0E1184C33CD06F00"
+			subtitle: "A more powerful weapon!"
+			tasks: [{
+				id: "3A3BE3505286ADEB"
+				item: {
+					Count: 1b
+					id: "minecraft:golden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Better Weaponary"
+			x: -2.25d
+			y: 6.0d
 		}
 	]
 	title: "Create Modpack"

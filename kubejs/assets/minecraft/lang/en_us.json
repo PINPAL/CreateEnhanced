@@ -49,5 +49,13 @@
   "enchantment.minecraft.fire_protection": "§f\uEfc3 §rFire Protection",
   "enchantment.minecraft.blast_protection": "§f\uEfc4 §rBlast Protection",
   "enchantment.minecraft.projectile_protection": "§f\uEfc5 §rProjectile Protection",
-  "enchantment.minecraft.thorns": "§f\uEfca §rThorns"
+  "enchantment.minecraft.thorns": "§f\uEfca §rThorns",
+
+  // Gold to Copper
+  "item.minecraft.golden_sword": "Copper Sword",
+  "item.minecraft.golden_hoe": "Copper Hoe",
+  "item.minecraft.golden_helmet": "Copper Helmet",
+  "item.minecraft.golden_chestplate": "Copper Chestplate",
+  "item.minecraft.golden_leggings": "Copper Leggings",
+  "item.minecraft.golden_boots": "Copper Boots"
 }

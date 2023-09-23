@@ -64,15 +64,32 @@ ServerEvents.recipes((event) => {
     P: "easypaxellite:wood_paxel",
     R: "#forge:rods/wooden",
   });
+  // Copper Paxel
+  event.shaped("easypaxellite:golden_paxel", ["SSS", "SPS", " R "], {
+    S: "#forge:plates/copper",
+    P: "easypaxellite:stone_paxel",
+    R: "#forge:rods/wooden",
+  });
   // Stone Sword
   event.shaped("minecraft:stone_sword", [" S ", " S ", " P "], {
     S: "kubejs:refined_stone",
     P: "minecraft:wooden_sword",
   });
+  // Copper Sword
+  event.shaped("minecraft:golden_sword", [" S ", " S ", " P "], {
+    S: "#forge:ingots/copper",
+    P: "minecraft:stone_sword",
+  });
   // Stone Hoe
   event.shaped("minecraft:stone_hoe", ["SS ", " P ", " R "], {
     S: "kubejs:refined_stone",
     P: "minecraft:wooden_hoe",
+    R: "#forge:rods/wooden",
+  });
+  // Copper Sword
+  event.shaped("minecraft:golden_hoe", ["SS ", " P ", " R "], {
+    S: "#forge:ingots/copper",
+    P: "minecraft:stone_hoe",
     R: "#forge:rods/wooden",
   });
   // Create Netherite Armor Upgrades
@@ -173,6 +190,12 @@ function upgradingItemsRecipes(event) {
     // Helmet
     {
       input_item: "minecraft:leather_helmet",
+      output_item: "minecraft:golden_helmet",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 5,
+    },
+    {
+      input_item: "minecraft:golden_helmet",
       output_item: "minecraft:chainmail_helmet",
       upgrade_item: "minecraft:chain",
       upgrade_cost: 5,
@@ -204,27 +227,33 @@ function upgradingItemsRecipes(event) {
     // Chestplate
     {
       input_item: "minecraft:leather_chestplate",
+      output_item: "minecraft:golden_chestplate",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 8,
+    },
+    {
+      input_item: "minecraft:golden_chestplate",
       output_item: "minecraft:chainmail_chestplate",
       upgrade_item: "minecraft:chain",
-      upgrade_cost: 5,
+      upgrade_cost: 8,
     },
     {
       input_item: "minecraft:chainmail_chestplate",
       output_item: "minecraft:iron_chestplate",
       upgrade_item: "#forge:ingots/iron",
-      upgrade_cost: 5,
+      upgrade_cost: 8,
     },
     {
       input_item: "minecraft:iron_chestplate",
       output_item: "alloyed:steel_chestplate",
       upgrade_item: "#forge:ingots/steel",
-      upgrade_cost: 5,
+      upgrade_cost: 8,
     },
     {
       input_item: "alloyed:steel_chestplate",
       output_item: "minecraft:diamond_chestplate",
       upgrade_item: "minecraft:diamond",
-      upgrade_cost: 5,
+      upgrade_cost: 8,
     },
     {
       input_item: "minecraft:diamond_chestplate",
@@ -232,30 +261,36 @@ function upgradingItemsRecipes(event) {
       upgrade_item: "minecraft:netherite_ingot",
       upgrade_cost: 1,
     },
-    // Leggins
+    // Leggings
     {
       input_item: "minecraft:leather_leggings",
+      output_item: "minecraft:golden_leggings",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 7,
+    },
+    {
+      input_item: "minecraft:golden_leggings",
       output_item: "minecraft:chainmail_leggings",
       upgrade_item: "minecraft:chain",
-      upgrade_cost: 5,
+      upgrade_cost: 7,
     },
     {
       input_item: "minecraft:chainmail_leggings",
       output_item: "minecraft:iron_leggings",
       upgrade_item: "#forge:ingots/iron",
-      upgrade_cost: 5,
+      upgrade_cost: 7,
     },
     {
       input_item: "minecraft:iron_leggings",
       output_item: "alloyed:steel_leggings",
       upgrade_item: "#forge:ingots/steel",
-      upgrade_cost: 5,
+      upgrade_cost: 7,
     },
     {
       input_item: "alloyed:steel_leggings",
       output_item: "minecraft:diamond_leggings",
       upgrade_item: "minecraft:diamond",
-      upgrade_cost: 5,
+      upgrade_cost: 7,
     },
     {
       input_item: "minecraft:diamond_leggings",
@@ -266,27 +301,33 @@ function upgradingItemsRecipes(event) {
     // Boots
     {
       input_item: "minecraft:leather_boots",
+      output_item: "minecraft:golden_boots",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 4,
+    },
+    {
+      input_item: "minecraft:golden_boots",
       output_item: "minecraft:chainmail_boots",
       upgrade_item: "minecraft:chain",
-      upgrade_cost: 5,
+      upgrade_cost: 4,
     },
     {
       input_item: "minecraft:chainmail_boots",
       output_item: "minecraft:iron_boots",
       upgrade_item: "#forge:ingots/iron",
-      upgrade_cost: 5,
+      upgrade_cost: 4,
     },
     {
       input_item: "minecraft:iron_boots",
       output_item: "alloyed:steel_boots",
       upgrade_item: "#forge:ingots/steel",
-      upgrade_cost: 5,
+      upgrade_cost: 4,
     },
     {
       input_item: "alloyed:steel_boots",
       output_item: "minecraft:diamond_boots",
       upgrade_item: "minecraft:diamond",
-      upgrade_cost: 5,
+      upgrade_cost: 4,
     },
     {
       input_item: "minecraft:diamond_boots",
@@ -308,7 +349,13 @@ function upgradingItemsRecipes(event) {
       upgrade_cost: 2,
     },
     {
-      input_item: "minecraft:iron_sword",
+      input_item: "minecraft:stone_sword",
+      output_item: "minecraft:golden_sword",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "minecraft:golden_sword",
       output_item: "alloyed:steel_sword",
       upgrade_item: "#forge:ingots/steel",
       upgrade_cost: 2,
@@ -334,6 +381,12 @@ function upgradingItemsRecipes(event) {
     },
     {
       input_item: "minecraft:stone_hoe",
+      output_item: "minecraft:golden_hoe",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "minecraft:golden_hoe",
       output_item: "minecraft:iron_hoe",
       upgrade_item: "#forge:ingots/iron",
       upgrade_cost: 2,
@@ -365,6 +418,12 @@ function upgradingItemsRecipes(event) {
     },
     {
       input_item: "easypaxellite:stone_paxel",
+      output_item: "easypaxellite:golden_paxel",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 5,
+    },
+    {
+      input_item: "easypaxellite:golden_paxel",
       output_item: "easypaxellite:iron_paxel",
       upgrade_item: "#forge:ingots/iron",
       upgrade_cost: 7,

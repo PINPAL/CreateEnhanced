@@ -93,6 +93,13 @@ ServerEvents.tags("item", (event) => {
   );
 
   [
+    "sophisticatedstorage:gold_barrel",
+    "sophisticatedstorage:gold_chest",
+  ].forEach((item) => {
+    event.add("quests:andesite_storage", item);
+  });
+
+  [
     "minecraft:iron_ingot",
     "minecraft:gold_ingot",
     "create:zinc_ingot",
