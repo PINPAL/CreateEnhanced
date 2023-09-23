@@ -131,7 +131,6 @@
 		{
 			click: ""
 			corner: false
-			dependency: "4017886C8B817FCC"
 			dev: false
 			height: 3.0d
 			hover: [ ]
@@ -228,7 +227,11 @@
 		}
 		{
 			dependencies: ["26D185F68C821538"]
-			description: ["Obtain a &6Millstone&r and take your very first steps to becoming a true engineer!"]
+			description: [
+				"Obtain a &6Millstone&r and take your very first steps to becoming a true engineer!"
+				""
+				"You can power the &6Millstone&r by placing your &6Hand Crank&r underneath it."
+			]
 			icon: "create:millstone"
 			id: "3B237ADD59BDB02A"
 			shape: "octagon"
@@ -451,11 +454,11 @@
 				type: "item"
 			}]
 			title: "Sanding"
-			x: 4.0d
-			y: 10.25d
+			x: 3.0d
+			y: 7.75d
 		}
 		{
-			dependencies: ["6E931AE38AE91C4F"]
+			dependencies: ["7DB05CBC8B579FD8"]
 			hide: true
 			id: "664B341348EFB352"
 			subtitle: "A pair of giants."
@@ -465,8 +468,8 @@
 				type: "item"
 			}]
 			title: "Crushing"
-			x: 2.875d
-			y: 7.75d
+			x: 4.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["06B04C606CE4187C"]
@@ -563,8 +566,12 @@
 			y: 12.25d
 		}
 		{
-			dependencies: ["26C9C63835C84874"]
+			dependencies: [
+				"26C9C63835C84874"
+				"6FEF3380D11818AF"
+			]
 			hide: true
+			hide_dependency_lines: true
 			hide_details_until_startable: false
 			id: "06AD2AF50AE0F143"
 			optional: true
@@ -968,8 +975,12 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["26C9C63835C84874"]
+			dependencies: [
+				"26C9C63835C84874"
+				"6FEF3380D11818AF"
+			]
 			hide: true
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "minecraft:chainmail_chestplate"
@@ -994,8 +1005,8 @@
 				type: "item"
 			}]
 			title: "Armor Upgrading"
-			x: 2.875d
-			y: 6.375d
+			x: 3.875d
+			y: 6.25d
 		}
 		{
 			dependencies: ["26D185F68C821538"]
@@ -1052,8 +1063,8 @@
 				type: "item"
 			}]
 			title: "Iron Armor"
-			x: 3.875d
-			y: 6.375d
+			x: 4.875d
+			y: 6.25d
 		}
 		{
 			dependencies: ["49F9FC411BF9B890"]
@@ -1081,8 +1092,8 @@
 				type: "item"
 			}]
 			title: "Steel Armor"
-			x: 4.875d
-			y: 6.375d
+			x: 5.875d
+			y: 6.25d
 		}
 		{
 			dependencies: ["11866A0A040998FA"]
@@ -1110,8 +1121,8 @@
 				type: "item"
 			}]
 			title: "Diamond Armor"
-			x: 5.875d
-			y: 6.375d
+			x: 6.875d
+			y: 6.25d
 		}
 		{
 			dependencies: ["2E7775FE373386DA"]
@@ -1139,8 +1150,8 @@
 				type: "item"
 			}]
 			title: "Netherite Armor"
-			x: 6.875d
-			y: 6.375d
+			x: 7.875d
+			y: 6.25d
 		}
 		{
 			dependencies: ["6DD58DEC49782F4E"]
@@ -2039,8 +2050,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["26C9C63835C84874"]
+			dependencies: [
+				"26C9C63835C84874"
+				"6FEF3380D11818AF"
+			]
 			hide: true
+			hide_dependency_lines: true
 			id: "4BEB29F474FAB0D4"
 			optional: true
 			shape: "circle"
@@ -2051,8 +2066,8 @@
 				type: "item"
 			}]
 			title: "Upgrading your Backpack"
-			x: 2.625d
-			y: 4.0d
+			x: 3.875d
+			y: 4.25d
 		}
 		{
 			dependencies: ["4BEB29F474FAB0D4"]
@@ -2066,8 +2081,8 @@
 				item: "sophisticatedbackpacks:gold_backpack"
 				type: "item"
 			}]
-			x: 3.625d
-			y: 4.0d
+			x: 4.875d
+			y: 4.25d
 		}
 		{
 			dependencies: ["75D93EB2CB71F281"]
@@ -2081,8 +2096,8 @@
 				item: "sophisticatedbackpacks:diamond_backpack"
 				type: "item"
 			}]
-			x: 4.625d
-			y: 4.0d
+			x: 5.875d
+			y: 4.25d
 		}
 		{
 			dependencies: ["50A28D2866E46020"]
@@ -2097,8 +2112,8 @@
 				type: "item"
 			}]
 			title: "The Biggest Bag"
-			x: 5.625d
-			y: 4.0d
+			x: 6.875d
+			y: 4.25d
 		}
 		{
 			dependencies: ["2F289DC495ECFC9E"]
@@ -2113,8 +2128,8 @@
 				type: "item"
 			}]
 			title: "Everlasting Upgrade"
-			x: 6.625d
-			y: 4.0d
+			x: 7.875d
+			y: 4.25d
 		}
 		{
 			dependencies: ["5169F5136FEF5FD2"]
@@ -4060,6 +4075,58 @@
 			}]
 			x: 4.75d
 			y: 8.5d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "4369ACED943A4388"
+			subtitle: "Rolling up rods!"
+			tasks: [{
+				id: "0845E01AF7940888"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			title: "Rolling"
+			x: 4.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			description: ["You can use this to create a &6Nether Portal&r before you have access to Diamond tools."]
+			icon: "minecraft:lava_bucket"
+			id: "5A659D4B33A27415"
+			rewards: [{
+				id: "4609569B381E84F9"
+				item: {
+					Count: 1b
+					id: "minecraft:flint_and_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Lava and Water make Obsidian!"
+			tasks: [
+				{
+					id: "16A398E41AB81FBA"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "082B04F1659AF6ED"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "62A591EC17CCB100"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Bucket Obsidian"
+			x: 1.75d
+			y: 6.375d
 		}
 	]
 	title: "Create Modpack"
