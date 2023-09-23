@@ -233,6 +233,22 @@ ServerEvents.recipes((event) => {
     }
   );
 
+  // Radar
+  event.remove({ output: "create_things_and_misc:radar" });
+  event.shaped("create_things_and_misc:radar", ["ASA", "AMA", "AAA"], {
+    A: "create:andesite_alloy",
+    S: "create:display_board",
+    M: "create_dd:integrated_mechanism",
+  });
+
+  // Electron Tube
+  event.remove({ id: "createindustry:crafting/electron_tube_from_plastic" });
+  event.shaped("8x create:electron_tube", [" R ", " N ", " P "], {
+    R: "create:polished_rose_quartz",
+    N: "#forge:nuggets/copper",
+    P: "createindustry:plastic_sheet",
+  });
+
   // Fix slime recipe
   event.remove({ id: "create:crafting/appliances/slime_ball" });
   event.shapeless("minecraft:slime_ball", [
