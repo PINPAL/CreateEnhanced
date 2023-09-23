@@ -4126,7 +4126,77 @@
 			]
 			title: "Bucket Obsidian"
 			x: 1.75d
+			y: 4.125d
+		}
+		{
+			dependencies: ["26C9C63835C84874"]
+			hide: true
+			id: "15A889CC22700F09"
+			tasks: [{
+				id: "0EADA06D6CCD8FE8"
+				item: {
+					Count: 1b
+					id: "minecraft:shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.75d
 			y: 6.375d
+		}
+		{
+			dependencies: ["15A889CC22700F09"]
+			id: "39E9857E217FD35B"
+			tasks: [{
+				id: "0E8E7B52D01571BE"
+				item: "minecraft:honeycomb"
+				type: "item"
+			}]
+			x: 1.875d
+			y: 6.875d
+		}
+		{
+			dependencies: [
+				"39E9857E217FD35B"
+				"05BEFB7D67ECA089"
+			]
+			icon: "create:copper_casing"
+			id: "736729461C40555C"
+			rewards: [{
+				count: 3
+				id: "66B49C63B9D6DEBE"
+				item: "create:copper_casing"
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "23C71EAA95B6021A"
+					item: {
+						Count: 1b
+						id: "createindustry:water_insulation"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50741BCD63CE8A19"
+					item: "createindustry:waterproof_planks"
+					type: "item"
+				}
+				{
+					id: "3564B6016E92AC94"
+					item: "create:copper_casing"
+					type: "item"
+				}
+			]
+			title: "Working with Liquids"
+			x: 1.0d
+			y: 6.5d
 		}
 	]
 	title: "Create Modpack"
