@@ -1,4 +1,8 @@
 ServerEvents.recipes((event) => {
+  // Remove Vertical Slabs
+  event.remove({ output: /createdeco:.*slab_vert/ });
+  event.remove({ output: /alloyed:.*vertical_slab/ });
+  event.remove({ output: /supplementaries:.*vertical_slab/ });
   // Cheap Netherite Building Blocks
   event.remove({ output: "createdeco:netherite_bars" });
   event.stonecutting(

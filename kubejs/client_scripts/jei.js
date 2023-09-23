@@ -1,6 +1,10 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    /supplementaries:.*vertical_slab/,
+    /alloyed:.*vertical_slab/,
+    /doubleslabs:.*/,
+    /createdeco:.*slab_vert/,
     "create_dd:kinetic_motor",
     "create_dd:accelerator_motor",
     "kubejs:belt_scroll",
