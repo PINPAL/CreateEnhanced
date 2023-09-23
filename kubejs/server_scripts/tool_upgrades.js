@@ -296,6 +296,12 @@ function upgradingItemsRecipes(event) {
     },
     // Sword
     {
+      input_item: "minecraft:wooden_sword",
+      output_item: "minecraft:stone_sword",
+      upgrade_item: "kubejs:refined_stone",
+      upgrade_cost: 2,
+    },
+    {
       input_item: "minecraft:stone_sword",
       output_item: "minecraft:iron_sword",
       upgrade_item: "#forge:ingots/iron",
@@ -321,6 +327,12 @@ function upgradingItemsRecipes(event) {
     },
     // Hoe
     {
+      input_item: "minecraft:wooden_hoe",
+      output_item: "minecraft:stone_hoe",
+      upgrade_item: "kubejs:refined_stone",
+      upgrade_cost: 2,
+    },
+    {
       input_item: "minecraft:stone_hoe",
       output_item: "minecraft:iron_hoe",
       upgrade_item: "#forge:ingots/iron",
@@ -345,6 +357,12 @@ function upgradingItemsRecipes(event) {
       upgrade_cost: 1,
     },
     // Paxel
+    {
+      input_item: "easypaxellite:wood_paxel",
+      output_item: "easypaxellite:stone_paxel",
+      upgrade_item: "kubejs:refined_stone",
+      upgrade_cost: 5,
+    },
     {
       input_item: "easypaxellite:stone_paxel",
       output_item: "easypaxellite:iron_paxel",
