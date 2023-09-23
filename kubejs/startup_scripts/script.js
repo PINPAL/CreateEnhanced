@@ -32,6 +32,22 @@ StartupEvents.registry("item", (event) => {
     .unstackable();
   event.create("refined_stone").displayName("Refined Rock");
 
+  // Repair Kits
+  const materials = [
+    "netherite",
+    "diamond",
+    "copper",
+    "steel",
+    "iron",
+    "stone",
+    "wood",
+  ].forEach((material) => {
+    event
+      .create(material + "_repair_kit")
+      .displayName(formatName(material) + " Repair Kit")
+      .unstackable();
+  });
+
   // Creative Items
   moltenMetals.forEach((metal) => {
     event

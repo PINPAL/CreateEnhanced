@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
   // Cooking Pot
   event.remove({ output: "farmersdelight:cooking_pot" });
-  event.shaped(Item.of("farmersdelight:cooking_pots"), ["B B", "IWI", "III"], {
+  event.shaped("farmersdelight:cooking_pot", ["B B", "IWI", "III"], {
     B: "minecraft:brick",
     W: "minecraft:water_bucket",
     I: "#forge:ingots/iron",
