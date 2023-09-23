@@ -371,7 +371,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["6E931AE38AE91C4F"]
+			dependencies: ["3EAE622A37F47CC4"]
 			hide: true
 			id: "497786B7F649F21B"
 			subtitle: "BONK!"
@@ -381,8 +381,8 @@
 				type: "item"
 			}]
 			title: "Pressing"
-			x: 4.75d
-			y: 8.5d
+			x: 5.625d
+			y: 8.125d
 		}
 		{
 			dependencies: ["6E931AE38AE91C4F"]
@@ -678,8 +678,8 @@
 				type: "item"
 			}]
 			title: "Bulk Storage"
-			x: 7.5d
-			y: 9.25d
+			x: 8.375d
+			y: 9.875d
 		}
 		{
 			dependencies: ["5AA93F61C816FF09"]
@@ -711,8 +711,8 @@
 				}
 			]
 			title: "Auto Compacting!"
-			x: 7.0d
-			y: 8.25d
+			x: 8.75d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5AA93F61C816FF09"]
@@ -726,28 +726,8 @@
 				type: "item"
 			}]
 			title: "Configuring Barrels?"
-			x: 8.5d
-			y: 8.75d
-		}
-		{
-			dependencies: ["7EFE09C7A87A4FD3"]
-			id: "71BC4F7FCFB29E9E"
-			optional: true
-			subtitle: "No problem!"
-			tasks: [{
-				id: "332B1CD8669E5E7E"
-				item: {
-					Count: 1b
-					id: "sophisticatedstorage:gold_chest"
-					tag: {
-						woodType: "spruce"
-					}
-				}
-				type: "item"
-			}]
-			title: "Prefer Chests?"
-			x: 8.25d
-			y: 11.125d
+			x: 9.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["06B04C606CE4187C"]
@@ -1619,8 +1599,8 @@
 				type: "item"
 			}]
 			title: "Rotate, reverse repeat!"
-			x: 5.125d
-			y: 7.375d
+			x: 6.75d
+			y: 7.625d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]
@@ -1648,8 +1628,8 @@
 				item: "create:goggles"
 				type: "item"
 			}]
-			x: 5.75d
-			y: 8.0d
+			x: 6.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
@@ -3008,7 +2988,7 @@
 			]
 			title: "Storage System"
 			x: 8.375d
-			y: 9.875d
+			y: 11.125d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]
@@ -3033,8 +3013,8 @@
 				type: "item"
 			}]
 			title: "Toolbox"
-			x: 5.75d
-			y: 8.875d
+			x: 6.125d
+			y: 9.125d
 		}
 		{
 			dependencies: [
@@ -4061,6 +4041,25 @@
 			title: "Better Weaponary"
 			x: -2.25d
 			y: 6.0d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			hide: true
+			id: "3EAE622A37F47CC4"
+			rewards: [{
+				id: "489E41DBABEC589E"
+				item: "create:crushed_raw_iron"
+				random_bonus: 4
+				type: "item"
+			}]
+			subtitle: "Can be smelted into an Iron Block."
+			tasks: [{
+				id: "630AA1A1C01FE535"
+				item: "minecraft:raw_iron_block"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 8.5d
 		}
 	]
 	title: "Create Modpack"

@@ -40,6 +40,7 @@ ServerEvents.recipes((event) => {
   const automatedPacking = [
     { mod: "minecraft", item: "coal" },
     { mod: "minecraft", item: "gold" },
+    { mod: "minecraft", item: "iron" },
     { mod: "minecraft", item: "copper" },
     { mod: "minecraft", item: "redstone" },
     { mod: "minecraft", item: "diamond" },
