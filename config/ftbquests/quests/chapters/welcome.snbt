@@ -394,6 +394,11 @@
 			hide_details_until_startable: true
 			id: "01D1C7A267CC448A"
 			optional: true
+			rewards: [{
+				id: "3AB4C06D7C6D939C"
+				item: "kubejs:wood_repair_kit"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "Create your first weapon."
 			tasks: [{
@@ -1905,20 +1910,6 @@
 			dependencies: ["11E1B19181CD6D2D"]
 			hide: true
 			id: "56A83A4BF3CEFC3E"
-			rewards: [{
-				id: "561F140DE5AB8AE9"
-				item: {
-					Count: 1b
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:mending"
-							lvl: 1s
-						}]
-					}
-				}
-				type: "item"
-			}]
 			subtitle: "Hyper experience can be used to increase the level of an enchantment."
 			tasks: [{
 				id: "479B815D6A1FA36B"
