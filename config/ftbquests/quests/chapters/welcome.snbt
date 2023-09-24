@@ -4323,6 +4323,7 @@
 		}
 		{
 			dependencies: ["4FCC8858C5E88628"]
+			hide: true
 			id: "059C2B000A9CECFD"
 			shape: "circle"
 			tasks: [{
@@ -4335,6 +4336,7 @@
 		}
 		{
 			dependencies: ["4FCC8858C5E88628"]
+			hide: true
 			id: "5CAC99B1F00A04D2"
 			shape: "circle"
 			tasks: [{
@@ -4347,6 +4349,7 @@
 		}
 		{
 			dependencies: ["4FCC8858C5E88628"]
+			hide: true
 			id: "418D441387C795CA"
 			shape: "circle"
 			tasks: [{
@@ -4359,6 +4362,7 @@
 		}
 		{
 			dependencies: ["4FCC8858C5E88628"]
+			hide: true
 			id: "5F5F9377FCA3EBF2"
 			shape: "circle"
 			tasks: [{
@@ -4370,10 +4374,11 @@
 			y: 14.0d
 		}
 		{
+			description: [""]
 			icon: "create:spout"
 			id: "4FCC8858C5E88628"
 			size: 2.0d
-			subtitle: "With these colors you can make any color!"
+			subtitle: "&7With &cRed&7, &9Blue&7, &aGreen &7\\& &fWhite&7 you can make any color!"
 			tasks: [
 				{
 					id: "58319D8F6A012530"
@@ -4395,6 +4400,7 @@
 				"418D441387C795CA"
 				"5CAC99B1F00A04D2"
 			]
+			hide: true
 			id: "4811D5A21D2356E8"
 			shape: "circle"
 			tasks: [{
@@ -4410,6 +4416,7 @@
 				"4811D5A21D2356E8"
 				"5F5F9377FCA3EBF2"
 			]
+			hide: true
 			id: "5C406823B666D49C"
 			shape: "circle"
 			tasks: [{
@@ -4426,6 +4433,7 @@
 				"4811D5A21D2356E8"
 				"059C2B000A9CECFD"
 			]
+			hide: true
 			id: "3B9C5CC32178CD89"
 			shape: "circle"
 			tasks: [{
@@ -4441,6 +4449,7 @@
 				"5CAC99B1F00A04D2"
 				"059C2B000A9CECFD"
 			]
+			hide: true
 			id: "10936814925924BD"
 			shape: "circle"
 			tasks: [{
@@ -4456,6 +4465,7 @@
 				"5F5F9377FCA3EBF2"
 				"059C2B000A9CECFD"
 			]
+			hide: true
 			id: "6DFB6959E8456FA5"
 			shape: "circle"
 			tasks: [{
@@ -4471,6 +4481,7 @@
 				"6DFB6959E8456FA5"
 				"48020D6DC307DD53"
 			]
+			hide: true
 			id: "0D097809C11E0116"
 			shape: "circle"
 			tasks: [{
@@ -4486,6 +4497,7 @@
 				"418D441387C795CA"
 				"059C2B000A9CECFD"
 			]
+			hide: true
 			id: "48020D6DC307DD53"
 			shape: "circle"
 			tasks: [{
@@ -4501,6 +4513,7 @@
 				"418D441387C795CA"
 				"4811D5A21D2356E8"
 			]
+			hide: true
 			id: "024930B88807D754"
 			shape: "circle"
 			tasks: [{
@@ -4516,6 +4529,7 @@
 				"4811D5A21D2356E8"
 				"059C2B000A9CECFD"
 			]
+			hide: true
 			id: "6B4B014F37FA7DA8"
 			shape: "circle"
 			tasks: [{
@@ -4531,6 +4545,7 @@
 				"418D441387C795CA"
 				"5F5F9377FCA3EBF2"
 			]
+			hide: true
 			id: "0DF4E0139E18D4AF"
 			shape: "circle"
 			tasks: [{
@@ -4546,6 +4561,7 @@
 				"5F5F9377FCA3EBF2"
 				"3CAE78AFBD8F50A5"
 			]
+			hide: true
 			id: "1C66069F1291C30C"
 			shape: "circle"
 			tasks: [{
@@ -4561,6 +4577,7 @@
 				"5F5F9377FCA3EBF2"
 				"3B9C5CC32178CD89"
 			]
+			hide: true
 			id: "3CAE78AFBD8F50A5"
 			shape: "circle"
 			tasks: [{
@@ -4572,7 +4589,10 @@
 			y: 18.5d
 		}
 		{
-			dependencies: ["760FAADDDB75AF02"]
+			dependencies: [
+				"760FAADDDB75AF02"
+				"15AE25C7E70FF992"
+			]
 			id: "4D195C7EF19B4541"
 			rewards: [{
 				id: "4034A91FE41BA05A"
@@ -4594,7 +4614,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["15AE25C7E70FF992"]
 			id: "760FAADDDB75AF02"
 			rewards: [{
 				id: "0F22948203E21071"
@@ -4631,7 +4650,6 @@
 			y: 11.375d
 		}
 		{
-			dependencies: ["15AE25C7E70FF992"]
 			id: "598450BB3E317E7E"
 			rewards: [{
 				id: "70267C74BD1AF832"
@@ -4648,7 +4666,10 @@
 			y: 11.875d
 		}
 		{
-			dependencies: ["598450BB3E317E7E"]
+			dependencies: [
+				"598450BB3E317E7E"
+				"15AE25C7E70FF992"
+			]
 			id: "33E167ABA3F3DE02"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -4676,6 +4697,7 @@
 				"60C7C41AB2EA1289"
 				"2BA7197F9079E35E"
 			]
+			hide: true
 			id: "6985516773978EDF"
 			size: 1.5d
 			subtitle: "Powerful Crafting Ingredient for Creative Items."
@@ -4688,6 +4710,26 @@
 			y: 19.25d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "create:brown_toolbox"
 			id: "431E215274CADE2E"
 			tasks: [{
@@ -4699,6 +4741,26 @@
 			y: 20.5d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "minecraft:white_wool"
 			id: "38654838E1C4B897"
 			tasks: [{
@@ -4710,6 +4772,26 @@
 			y: 18.75d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "createindustry:concrete"
 			id: "0ECFD073085092CB"
 			tasks: [{
@@ -4721,6 +4803,26 @@
 			y: 17.875d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "create:copper_valve_handle"
 			id: "48C2697AB205AD08"
 			tasks: [{
@@ -4732,6 +4834,26 @@
 			y: 19.75d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "minecraft:white_dye"
 			id: "2BA7197F9079E35E"
 			tasks: [{
@@ -4743,6 +4865,26 @@
 			y: 18.75d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "create:placard"
 			id: "0AD292588A5325DE"
 			tasks: [{
@@ -4754,6 +4896,26 @@
 			y: 19.75d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "farmersdelight:canvas_sign"
 			id: "60C7C41AB2EA1289"
 			tasks: [{
@@ -4765,6 +4927,26 @@
 			y: 18.0d
 		}
 		{
+			dependencies: [
+				"024930B88807D754"
+				"6DFB6959E8456FA5"
+				"10936814925924BD"
+				"1C66069F1291C30C"
+				"5CAC99B1F00A04D2"
+				"0D097809C11E0116"
+				"3CAE78AFBD8F50A5"
+				"3B9C5CC32178CD89"
+				"0DF4E0139E18D4AF"
+				"418D441387C795CA"
+				"6B4B014F37FA7DA8"
+				"4811D5A21D2356E8"
+				"5C406823B666D49C"
+				"5F5F9377FCA3EBF2"
+				"48020D6DC307DD53"
+				"059C2B000A9CECFD"
+			]
+			hide: true
+			hide_dependency_lines: true
 			icon: "minecraft:candle"
 			id: "69302FD0E065C41D"
 			tasks: [{
