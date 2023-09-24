@@ -153,6 +153,82 @@
 			x: 30.0d
 			y: -7.0d
 		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 17.5d
+			hover: [ ]
+			image: "quests:textures/copper_background.png"
+			rotation: 0.0d
+			width: 17.5d
+			x: -30.0d
+			y: 14.625d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: -15.75d
+			y: 18.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: -18.3d
+			y: 18.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: -20.85d
+			y: 18.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "kubejs:block/belt_scroll"
+			order: -100
+			rotation: 90.0d
+			width: 3.0d
+			x: -23.4d
+			y: 18.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "quests:textures/dyeing_title.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: -30.0d
+			y: 7.5d
+		}
 	]
 	order_index: 0
 	progression_mode: "linear"
@@ -3935,12 +4011,16 @@
 			y: 3.125d
 		}
 		{
-			dependencies: ["101D4037778B6AB3"]
+			dependencies: [
+				"101D4037778B6AB3"
+				"6985516773978EDF"
+			]
 			description: [
 				"Highly recommended to be created as your first Creative item."
 				""
 				"&7This item allows you to infinetly pull out fluids, this even works for the Molten Alloy Metals; meaning that you can now much easier make more Creative Fluid Tanks!"
 			]
+			hide_dependency_lines: true
 			id: "55C80599C1761298"
 			subtitle: "Unlimited Fluids"
 			tasks: [{
@@ -4197,6 +4277,454 @@
 			title: "Working with Liquids"
 			x: 1.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["4FCC8858C5E88628"]
+			id: "059C2B000A9CECFD"
+			shape: "circle"
+			tasks: [{
+				id: "7B4C1FEE99CE0860"
+				item: "kubejs:red_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -28.25d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4FCC8858C5E88628"]
+			id: "5CAC99B1F00A04D2"
+			shape: "circle"
+			tasks: [{
+				id: "0EC808EAB57CCED5"
+				item: "kubejs:yellow_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -25.375d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4FCC8858C5E88628"]
+			id: "418D441387C795CA"
+			shape: "circle"
+			tasks: [{
+				id: "760EA44905FC4F4D"
+				item: "kubejs:blue_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -31.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4FCC8858C5E88628"]
+			id: "5F5F9377FCA3EBF2"
+			shape: "circle"
+			tasks: [{
+				id: "5A9A4B6120B05EE2"
+				item: "kubejs:white_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -34.625d
+			y: 14.0d
+		}
+		{
+			icon: "create:spout"
+			id: "4FCC8858C5E88628"
+			size: 2.0d
+			subtitle: "With these colors you can make any color!"
+			tasks: [
+				{
+					id: "58319D8F6A012530"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "4359180172C9FA08"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "Primary Colors"
+			x: -29.875d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"418D441387C795CA"
+				"5CAC99B1F00A04D2"
+			]
+			id: "4811D5A21D2356E8"
+			shape: "circle"
+			tasks: [{
+				id: "1EEC11A0BC765473"
+				item: "kubejs:green_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -27.625d
+			y: 17.125d
+		}
+		{
+			dependencies: [
+				"4811D5A21D2356E8"
+				"5F5F9377FCA3EBF2"
+			]
+			id: "5C406823B666D49C"
+			shape: "circle"
+			tasks: [{
+				id: "374C9DAAF9E2ACD5"
+				item: "kubejs:lime_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -32.75d
+			y: 17.125d
+		}
+		{
+			dependencies: [
+				"418D441387C795CA"
+				"4811D5A21D2356E8"
+				"059C2B000A9CECFD"
+			]
+			id: "3B9C5CC32178CD89"
+			shape: "circle"
+			tasks: [{
+				id: "6C9FED6A3A98CE55"
+				item: "kubejs:black_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -29.875d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"5CAC99B1F00A04D2"
+				"059C2B000A9CECFD"
+			]
+			id: "10936814925924BD"
+			shape: "circle"
+			tasks: [{
+				id: "307E9A3C07A2CA5C"
+				item: "kubejs:orange_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -26.875d
+			y: 14.875d
+		}
+		{
+			dependencies: [
+				"5F5F9377FCA3EBF2"
+				"059C2B000A9CECFD"
+			]
+			id: "6DFB6959E8456FA5"
+			shape: "circle"
+			tasks: [{
+				id: "22DB5911B1255BB3"
+				item: "kubejs:pink_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -30.0d
+			y: 10.25d
+		}
+		{
+			dependencies: [
+				"6DFB6959E8456FA5"
+				"48020D6DC307DD53"
+			]
+			id: "0D097809C11E0116"
+			shape: "circle"
+			tasks: [{
+				id: "64D67DFA525B4323"
+				item: "kubejs:magenta_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -30.5d
+			y: 11.75d
+		}
+		{
+			dependencies: [
+				"418D441387C795CA"
+				"059C2B000A9CECFD"
+			]
+			id: "48020D6DC307DD53"
+			shape: "circle"
+			tasks: [{
+				id: "0F8E95EDD2D23D57"
+				item: "kubejs:purple_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -29.875d
+			y: 12.625d
+		}
+		{
+			dependencies: [
+				"418D441387C795CA"
+				"4811D5A21D2356E8"
+			]
+			id: "024930B88807D754"
+			shape: "circle"
+			tasks: [{
+				id: "5615AC75B8410125"
+				item: "kubejs:cyan_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -29.875d
+			y: 16.125d
+		}
+		{
+			dependencies: [
+				"4811D5A21D2356E8"
+				"059C2B000A9CECFD"
+			]
+			id: "6B4B014F37FA7DA8"
+			shape: "circle"
+			tasks: [{
+				id: "17887C1B7ADB2C0C"
+				item: "kubejs:brown_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -27.875d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"418D441387C795CA"
+				"5F5F9377FCA3EBF2"
+			]
+			id: "0DF4E0139E18D4AF"
+			shape: "circle"
+			tasks: [{
+				id: "6E7D56FE8DBA0C2C"
+				item: "kubejs:light_blue_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -33.0d
+			y: 15.125d
+		}
+		{
+			dependencies: [
+				"5F5F9377FCA3EBF2"
+				"3CAE78AFBD8F50A5"
+			]
+			id: "1C66069F1291C30C"
+			shape: "circle"
+			tasks: [{
+				id: "12758D4E380C689B"
+				item: "kubejs:light_gray_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -35.625d
+			y: 16.125d
+		}
+		{
+			dependencies: [
+				"5F5F9377FCA3EBF2"
+				"3B9C5CC32178CD89"
+			]
+			id: "3CAE78AFBD8F50A5"
+			shape: "circle"
+			tasks: [{
+				id: "3E07E2359C472C63"
+				item: "kubejs:gray_dye_fluid_bucket"
+				type: "item"
+			}]
+			x: -34.625d
+			y: 18.5d
+		}
+		{
+			dependencies: ["760FAADDDB75AF02"]
+			id: "4D195C7EF19B4541"
+			rewards: [{
+				id: "4034A91FE41BA05A"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				id: "78DC217647284516"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -26.625d
+			y: 10.5d
+		}
+		{
+			dependencies: ["15AE25C7E70FF992"]
+			id: "760FAADDDB75AF02"
+			rewards: [{
+				id: "0F22948203E21071"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			subtitle: "Required for making Super Glue"
+			tasks: [{
+				id: "11FDCEE6A82060DD"
+				item: "create_things_and_misc:glue_packaging"
+				type: "item"
+			}]
+			x: -25.75d
+			y: 10.875d
+		}
+		{
+			dependencies: ["23C71EAA95B6021A"]
+			hide_dependency_lines: true
+			id: "15AE25C7E70FF992"
+			rewards: [{
+				id: "4A3FAB540D45B7D5"
+				item: "create:depot"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Pouring Fluid onto Items"
+			tasks: [{
+				id: "62AD38CC303C8177"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "Squirting Liquids"
+			x: -24.625d
+			y: 11.375d
+		}
+		{
+			dependencies: ["15AE25C7E70FF992"]
+			id: "598450BB3E317E7E"
+			rewards: [{
+				id: "70267C74BD1AF832"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			subtitle: "The base of a powerful cake."
+			tasks: [{
+				id: "7941D5594F64BB84"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
+			x: -25.75d
+			y: 11.875d
+		}
+		{
+			dependencies: ["598450BB3E317E7E"]
+			id: "33E167ABA3F3DE02"
+			subtitle: "Superheating!"
+			tasks: [{
+				id: "2D9CB1DBE72889DE"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: -26.625d
+			y: 12.25d
+		}
+		{
+			dependencies: [
+				"48C2697AB205AD08"
+				"0ECFD073085092CB"
+				"0AD292588A5325DE"
+				"69302FD0E065C41D"
+				"431E215274CADE2E"
+				"38654838E1C4B897"
+				"60C7C41AB2EA1289"
+				"2BA7197F9079E35E"
+			]
+			id: "6985516773978EDF"
+			size: 1.5d
+			subtitle: "Powerful Crafting Ingredient for Creative Items."
+			tasks: [{
+				id: "2DC80BA5A7E10098"
+				item: "kubejs:rainbow_core"
+				type: "item"
+			}]
+			x: -25.625d
+			y: 19.25d
+		}
+		{
+			icon: "create:brown_toolbox"
+			id: "431E215274CADE2E"
+			tasks: [{
+				id: "3976BC26BA5C7A69"
+				item: "kubejs:rainbow_toolbox"
+				type: "item"
+			}]
+			x: -25.125d
+			y: 20.5d
+		}
+		{
+			icon: "minecraft:white_wool"
+			id: "38654838E1C4B897"
+			tasks: [{
+				id: "2A49E856EFED145B"
+				item: "kubejs:rainbow_wool"
+				type: "item"
+			}]
+			x: -24.375d
+			y: 18.75d
+		}
+		{
+			icon: "createindustry:concrete"
+			id: "0ECFD073085092CB"
+			tasks: [{
+				id: "6E88192FF674F31B"
+				item: "kubejs:rainbow_concrete"
+				type: "item"
+			}]
+			x: -25.0d
+			y: 17.875d
+		}
+		{
+			icon: "create:copper_valve_handle"
+			id: "48C2697AB205AD08"
+			tasks: [{
+				id: "7BD0186A24F625E0"
+				item: "kubejs:rainbow_valve_handle"
+				type: "item"
+			}]
+			x: -24.375d
+			y: 19.75d
+		}
+		{
+			icon: "minecraft:white_dye"
+			id: "2BA7197F9079E35E"
+			tasks: [{
+				id: "07F99F93C928D946"
+				item: "kubejs:rainbow_dye"
+				type: "item"
+			}]
+			x: -26.875d
+			y: 18.75d
+		}
+		{
+			icon: "create:placard"
+			id: "0AD292588A5325DE"
+			tasks: [{
+				id: "2BEEB550237175F0"
+				item: "kubejs:rainbow_placard"
+				type: "item"
+			}]
+			x: -26.875d
+			y: 19.75d
+		}
+		{
+			icon: "farmersdelight:canvas_sign"
+			id: "60C7C41AB2EA1289"
+			tasks: [{
+				id: "573A587E3A51FF77"
+				item: "kubejs:rainbow_canvas_sign"
+				type: "item"
+			}]
+			x: -26.125d
+			y: 18.0d
+		}
+		{
+			icon: "minecraft:candle"
+			id: "69302FD0E065C41D"
+			tasks: [{
+				id: "27E25650E1E5DA2D"
+				item: "kubejs:rainbow_candle"
+				type: "item"
+			}]
+			x: -26.125d
+			y: 20.5d
 		}
 	]
 	title: "Create Modpack"
