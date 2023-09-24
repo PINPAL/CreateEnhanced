@@ -331,6 +331,11 @@
 		{
 			dependencies: ["37E5D108BDCEA53B"]
 			id: "6545EE475DD16057"
+			rewards: [{
+				id: "7831560463923F73"
+				item: "kubejs:stone_repair_kit"
+				type: "item"
+			}]
 			subtitle: "You can mine ores now!"
 			tasks: [{
 				consume_items: false
@@ -651,11 +656,18 @@
 			hide_details_until_startable: false
 			id: "06AD2AF50AE0F143"
 			optional: true
-			rewards: [{
-				id: "19BD22EF0BEB30C9"
-				type: "xp"
-				xp: 50
-			}]
+			rewards: [
+				{
+					id: "19BD22EF0BEB30C9"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4236AF9F055C24A9"
+					item: "kubejs:iron_repair_kit"
+					type: "item"
+				}
+			]
 			shape: "circle"
 			subtitle: "Forging better tools."
 			tasks: [{
@@ -985,6 +997,7 @@
 		}
 		{
 			dependencies: ["7453758780D4848F"]
+			icon: "createaddition:large_connector"
 			id: "389F49B8EA9807B9"
 			subtitle: "Connectors are used to transfer your electricity around your machines."
 			tasks: [{
@@ -1212,6 +1225,13 @@
 			}
 			id: "165135DFCF0DE1E4"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "46176DCA2ED2BBFC"
+				item: "kubejs:netherite_repair_kit"
+				random_bonus: 3
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "67EF0A6F9B34C957"
@@ -1270,6 +1290,12 @@
 		{
 			dependencies: ["1EC42DB4CEEF6909"]
 			id: "5169F5136FEF5FD2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "740937EFEADD7579"
+				table_id: 4644817619437582358L
+				type: "choice"
+			}]
 			subtitle: "A late game crafting item."
 			tasks: [{
 				id: "3C98D76D1FA98B36"
@@ -1679,6 +1705,12 @@
 			dependencies: ["497786B7F649F21B"]
 			hide: true
 			id: "46B6445D0861E943"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E31CA56DEEE5683"
+				table_id: 4644817619437582358L
+				type: "choice"
+			}]
 			subtitle: "The heart of create."
 			tasks: [{
 				id: "30E4CBD3F13963FA"
@@ -1873,6 +1905,20 @@
 			dependencies: ["11E1B19181CD6D2D"]
 			hide: true
 			id: "56A83A4BF3CEFC3E"
+			rewards: [{
+				id: "561F140DE5AB8AE9"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:mending"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "Hyper experience can be used to increase the level of an enchantment."
 			tasks: [{
 				id: "479B815D6A1FA36B"
@@ -3322,6 +3368,12 @@
 					random_bonus: 4
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "0029D8FB3382E5A3"
+					table_id: 4644817619437582358L
+					type: "choice"
+				}
 			]
 			shape: "gear"
 			size: 5.0d
@@ -4607,6 +4659,12 @@
 		{
 			dependencies: ["598450BB3E317E7E"]
 			id: "33E167ABA3F3DE02"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FDD765D704C103D"
+				table_id: 4644817619437582358L
+				type: "choice"
+			}]
 			subtitle: "Superheating!"
 			tasks: [{
 				id: "2D9CB1DBE72889DE"

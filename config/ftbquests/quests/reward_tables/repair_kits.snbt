@@ -1,0 +1,15 @@
+{
+	id: "4075B503FD0D7816"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "kubejs:steel_repair_kit" }
+		{ item: "kubejs:netherite_repair_kit" }
+		{ item: "kubejs:diamond_repair_kit" }
+		{ item: "kubejs:copper_repair_kit" }
+		{ item: "kubejs:iron_repair_kit" }
+		{ item: "kubejs:stone_repair_kit" }
+		{ item: "kubejs:wood_repair_kit" }
+	]
+	title: "Repair Kits"
+}
