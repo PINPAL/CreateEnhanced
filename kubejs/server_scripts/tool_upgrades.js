@@ -343,7 +343,7 @@ function upgradingItemsRecipes(event) {
       upgrade_cost: 2,
     },
     {
-      input_item: "minecraft:stone_sword",
+      input_item: "minecraft:golden_sword",
       output_item: "minecraft:iron_sword",
       upgrade_item: "#forge:ingots/iron",
       upgrade_cost: 2,
@@ -355,7 +355,7 @@ function upgradingItemsRecipes(event) {
       upgrade_cost: 2,
     },
     {
-      input_item: "minecraft:golden_sword",
+      input_item: "minecraft:iron_sword",
       output_item: "alloyed:steel_sword",
       upgrade_item: "#forge:ingots/steel",
       upgrade_cost: 2,
