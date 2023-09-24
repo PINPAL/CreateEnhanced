@@ -234,8 +234,9 @@ ServerEvents.recipes((event) => {
       "3x #minecraft:planks",
     ]);
     // Shulker Box
+    event.remove({ output: `minecraft:${colorObject.color}_shulker_box` });
     event.recipes.create.mixing(
-      ["minecraft:" + colorObject.color + "_shulker_box"],
+      [`minecraft:${colorObject.color}_shulker_box`],
       [
         "minecraft:shulker_box",
         Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125),
@@ -300,6 +301,35 @@ ServerEvents.recipes((event) => {
       ["create:" + colorObject.color + "_valve_handle"],
       [
         "create:copper_valve_handle",
+        Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125),
+      ]
+    );
+    // Supplementaries Present
+    event.remove({
+      output: `supplementaries:present_${colorObject.color}`,
+    });
+    event.recipes.create.mixing(
+      [`supplementaries:present_${colorObject.color}`],
+      [
+        "supplementaries:present",
+        Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500),
+      ]
+    );
+  });
+
+  // Create Deco Bricks
+  const decoBrickColors = [
+    { color: "light_gray", output: "pearl" },
+    { color: "blue", output: "blue" },
+    { color: "red", output: "scarlet" },
+    { color: "yellow", output: "dean" },
+    { color: "black", output: "dusk" },
+  ].forEach((colorObject) => {
+    event.remove({ output: "createdeco:" + colorObject.output + "_brick" });
+    event.recipes.create.mixing(
+      ["createdeco:" + colorObject.output + "_brick"],
+      [
+        "#forge:ingots/brick",
         Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125),
       ]
     );
