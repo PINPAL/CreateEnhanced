@@ -12,10 +12,8 @@
 !config
 !defaultconfigs
 # Ignore subdirectory and all including directories and files to match pattern as valid for the next pattern
-/mods/*
 /kubejs/*
 # This pattern only works with the two previous patterns
-!/mods/.index/
 !/kubejs/assets
 !/kubejs/client_scripts/
 !/kubejs/server_scripts/
