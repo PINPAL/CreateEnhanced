@@ -1,14 +1,11 @@
 ServerEvents.recipes((event) => {
   event.recipes.create.mechanical_crafting(
     "create:creative_fluid_tank",
-    [" TVT ", "CQQQC", "WRMRW", "CQQQC", " TVT "],
+    [" ZZZ ", "ZBRBZ", "ZRMRZ", "ZBRBZ", " ZZZ "],
     {
       M: "kubejs:metal_alloy_block",
-      Q: "create_things_and_misc:vibration_mechanism",
-      W: "kubejs:rainbow_wool",
-      C: "kubejs:rainbow_concrete",
-      T: "kubejs:rainbow_toolbox",
-      V: "kubejs:rainbow_valve_handle",
+      B: "everycomp:q/create_dd/smoked_bookshelf",
+      Z: "kubejs:rainbow_core",
       R: "minecraft:recovery_compass",
     }
   );

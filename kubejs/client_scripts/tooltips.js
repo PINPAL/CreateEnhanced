@@ -23,9 +23,12 @@ ItemEvents.tooltip((tooltip) => {
     "kubejs:rainbow_valve_handle",
     "kubejs:rainbow_wool",
     "kubejs:rainbow_concrete",
-    "kubejs:rainbow_trophy",
     "kubejs:metal_alloy_block",
     "kubejs:rainbow_toolbox",
+    "kubejs:rainbow_canvas_sign",
+    "kubejs:rainbow_placard",
+    "kubejs:rainbow_dye",
+    "kubejs:rainbow_candle",
   ].forEach((customItem) => {
     tooltip.addAdvanced(customItem, (item, advanced, text) => {
       text.add(1, [Text.of("End Game Crafting Ingredient").gray()]);
