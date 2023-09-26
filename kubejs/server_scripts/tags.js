@@ -53,22 +53,11 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:netherite_armor", item);
   });
 
-  [
-    "create:track",
-    "railways:track_acacia",
-    "railways:track_birch",
-    "railways:track_dark_oak",
-    "railways:track_jungle",
-    "railways:track_oak",
-    "railways:track_spruce",
-    "railways:track_crimson",
-    "railways:track_warped",
-    "railways:track_blackstone",
-    "railways:track_mangrove",
-    "railways:track_ender",
-  ].forEach((item) => {
+  ["create:track", /railways:track.*/].forEach((item) => {
+    console.log(item);
     event.add("kubejs:train_tracks", item);
   });
+  event.remove("kubejs:train_tracks", /railways:track_switch.*/);
 
   ["create:brass_funnel", "create:brass_tunnel", "create:smart_chute"].forEach(
     (item) => {
