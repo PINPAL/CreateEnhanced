@@ -41,6 +41,7 @@ ServerEvents.recipes((event) => {
     "create_dd:industrial_iron/smithing_table",
     "create_dd:industrial_iron/detector_rail",
     "create_dd:industrial_iron/hopper",
+    "create_things_and_misc:mangrove_sail_craft_backport",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
   });

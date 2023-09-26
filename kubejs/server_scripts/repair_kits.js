@@ -41,14 +41,22 @@ ServerEvents.recipes((event) => {
       noArmor: true,
     },
   ].forEach((material) => {
-    event.shaped(
-      "kubejs:" + material.name + "_repair_kit",
-      [" A ", "ALA", " A "],
-      {
-        A: material.material,
-        L: "minecraft:leather",
-      }
-    );
+    if (material.name == "netherite") {
+      event.smithing(
+        "kubejs:netherite_repair_kit",
+        "kubejs:diamond_repair_kit",
+        "#forge:ingots/netherite"
+      );
+    } else {
+      event.shaped(
+        "kubejs:" + material.name + "_repair_kit",
+        [" A ", "ALA", " A "],
+        {
+          A: material.material,
+          L: "minecraft:leather",
+        }
+      );
+    }
 
     // Paxel
     event.shapeless("easypaxellite:" + material.paxelId + "_paxel", [
