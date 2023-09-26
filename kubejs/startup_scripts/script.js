@@ -48,6 +48,16 @@ StartupEvents.registry("item", (event) => {
       .unstackable();
   });
 
+  event
+    .create("incomplete_saddle")
+    .displayName("Incomplete Saddle")
+    .unstackable();
+
+  event
+    .create("incomplete_totem_of_undying")
+    .displayName("Incomplete Totem of Undying")
+    .unstackable();
+
   // Creative Items
   moltenMetals.forEach((metal) => {
     event
