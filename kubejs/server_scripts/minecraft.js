@@ -19,19 +19,23 @@ ServerEvents.recipes((event) => {
   event.recipes
     .createSequencedAssembly(
       ["minecraft:totem_of_undying"],
-      "#forge:blocks/gold",
+      "createdeco:gold_coin",
       [
         event.recipes.createDeploying("kubejs:incomplete_totem_of_undying", [
           "kubejs:incomplete_totem_of_undying",
           "minecraft:golden_apple",
         ]),
+        event.recipes.create.filling("kubejs:incomplete_totem_of_undying", [
+          Fluid.of("kubejs:molten_gold", 40),
+          "kubejs:incomplete_totem_of_undying",
+        ]),
         event.recipes.createDeploying("kubejs:incomplete_totem_of_undying", [
           "kubejs:incomplete_totem_of_undying",
           "minecraft:emerald",
         ]),
-        event.recipes.create.filling("kubejs:incomplete_totem_of_undying", [
-          Fluid.of("kubejs:molten_gold", 40),
+        event.recipes.createDeploying("kubejs:incomplete_totem_of_undying", [
           "kubejs:incomplete_totem_of_undying",
+          "create:experience_nugget",
         ]),
       ]
     )
