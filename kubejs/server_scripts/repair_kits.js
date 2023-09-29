@@ -59,30 +59,13 @@ ServerEvents.recipes((event) => {
     }
 
     // Paxel
-    event.shapeless("easypaxellite:" + material.paxelId + "_paxel", [
+    event.smithing(
       "easypaxellite:" + material.paxelId + "_paxel",
-      "kubejs:" + material.name + "_repair_kit",
-    ]);
+      `kubejs:broken_${material.name}_paxel`,
+      `kubejs:${material.name}_repair_kit`
+    );
     // Sword / Hoe
-    const items = [
-      "sword",
-      "hoe",
-      "helmet",
-      "chestplate",
-      "leggings",
-      "boots",
-    ].forEach((item) => {
-      // Skip armor for wooden and stone
-      if (
-        item == "helmet" ||
-        item == "chestplate" ||
-        item == "leggings" ||
-        item == "boots"
-      ) {
-        if (material.hasOwnProperty("noArmor")) {
-          return;
-        }
-      }
+    const swordHoe = ["sword", "hoe"].forEach((item) => {
       // Get the repair item
       // If the material has a modId, use that, otherwise use minecraft (eg: alloyed:steel instead of minecraft:steel)
       // If the material has a minecraftId, use that, otherwise use the material name (eg: wooden instead of wood)
@@ -96,10 +79,37 @@ ServerEvents.recipes((event) => {
         "_" +
         item;
       // Recipe
-      event.shapeless(repairedItem, [
+      event.smithing(
         repairedItem,
-        "kubejs:" + material.name + "_repair_kit",
-      ]);
+        `kubejs:broken_${material.name}_${item}`,
+        `kubejs:${material.name}_repair_kit`
+      );
     });
+
+    const armors = ["helmet", "chestplate", "leggings", "boots"].forEach(
+      (item) => {
+        // Skip armor for wooden and stone
+        if (material.hasOwnProperty("noArmor")) {
+          return;
+        }
+        // Get the repair item
+        // If the material has a modId, use that, otherwise use minecraft (eg: alloyed:steel instead of minecraft:steel)
+        // If the material has a minecraftId, use that, otherwise use the material name (eg: wooden instead of wood)
+        // Add the item name (eg: sword)
+        let repairedItem =
+          (material.hasOwnProperty("modId") ? material.modId : "minecraft") +
+          ":" +
+          (material.hasOwnProperty("minecraftId")
+            ? material.minecraftId
+            : material.name) +
+          "_" +
+          item;
+        // Recipe
+        event.shapeless(repairedItem, [
+          repairedItem,
+          "kubejs:" + material.name + "_repair_kit",
+        ]);
+      }
+    );
   });
 });

@@ -19,7 +19,7 @@ ItemEvents.tooltip((tooltip) => {
       ]);
     }
   );
-  customItems = [
+  const customItems = [
     "kubejs:rainbow_valve_handle",
     "kubejs:rainbow_wool",
     "kubejs:rainbow_concrete",
@@ -29,10 +29,34 @@ ItemEvents.tooltip((tooltip) => {
     "kubejs:rainbow_placard",
     "kubejs:rainbow_dye",
     "kubejs:rainbow_candle",
-  ].forEach((customItem) => {
+  ];
+  customItems.forEach((customItem) => {
     tooltip.addAdvanced(customItem, (item, advanced, text) => {
       text.add(1, [Text.of("End Game Crafting Ingredient").gray()]);
       text.add(1, [Text.of("Functionally Useless").gold()]);
+    });
+  });
+
+  const brokenItemMaterials = [
+    "netherite",
+    "diamond",
+    "steel",
+    "iron",
+    "copper",
+    "stone",
+    "wood",
+  ];
+  const breakableTools = ["paxel", "sword", "hoe"];
+  brokenItemMaterials.forEach((material) => {
+    breakableTools.forEach((tool) => {
+      console.log(`kubejs:broken_${material}_${tool}`);
+      tooltip.addAdvanced(
+        `kubejs:broken_${material}_${tool}`,
+        (item, advanced, text) => {
+          text.add(1, [Text.of("Tool is Broken").darkRed()]);
+          text.add(2, [Text.of("Requires Repair").red()]);
+        }
+      );
     });
   });
 });

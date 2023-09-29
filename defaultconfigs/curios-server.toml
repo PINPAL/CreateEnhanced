@@ -2,7 +2,7 @@
 #List of curio slot type settings
 [[curiosSettings]]
 identifier = "grid"
-size = 3
+size = 2
 visible = true
 icon = "curios:slot/grid"
 
@@ -31,3 +31,8 @@ identifier = "totem"
 size = 1
 visible = true
 icon = "curios:slot/totem"
+
+[[curiosSettings]]
+identifier = "hands"
+size = 1
+visible = true

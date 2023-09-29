@@ -32,7 +32,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable();
   event.create("refined_stone").displayName("Refined Rock");
 
-  // Repair Kits
+  // Repair Kits & Broken Tools
   const materials = [
     "netherite",
     "diamond",
@@ -45,6 +45,18 @@ StartupEvents.registry("item", (event) => {
     event
       .create(material + "_repair_kit")
       .displayName(formatName(material) + " Repair Kit")
+      .unstackable();
+    event
+      .create(`broken_${material}_paxel`)
+      .displayName("Broken " + formatName(material) + " Paxel")
+      .unstackable();
+    event
+      .create(`broken_${material}_sword`)
+      .displayName("Broken " + formatName(material) + " Sword")
+      .unstackable();
+    event
+      .create(`broken_${material}_hoe`)
+      .displayName("Broken " + formatName(material) + " Hoe")
       .unstackable();
   });
 

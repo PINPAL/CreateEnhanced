@@ -1,6 +1,7 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    /kubejs:broken_.*/,
     /kubejs:incomplete_.*/,
     /supplementaries:.*vertical_slab/,
     /alloyed:.*vertical_slab/,
