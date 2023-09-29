@@ -38,7 +38,9 @@ function handleDurability(event) {
     // If tool is broken, replace it
     if (durability <= 1) {
       player.setHeldItem("MAIN_HAND", replacementItem.enchant(itemEnchants));
-      player.playSound("minecraft:item.shield.break");
+      event.server.runCommandSilent(
+        `playsound minecraft:item.shield.break player @a ${player.getX()} ${player.getY()} ${player.getZ()} 1 1`
+      );
     }
   }
 }
