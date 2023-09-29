@@ -32,8 +32,14 @@ ServerEvents.tags("item", (event) => {
     "alloyed:steel_boots",
     "alloyed:steel_helmet",
   ].forEach((item) => {
+    event.add("forge:armors", item);
     event.add("kubejs:steel_armor", item);
   });
+
+  event.add("forge:helmets", "alloyed:steel_helmet");
+  event.add("forge:chestplates", "alloyed:steel_chestplate");
+  event.add("forge:leggings", "alloyed:steel_leggings");
+  event.add("forge:boots", "alloyed:steel_boots");
 
   [
     "minecraft:diamond_chestplate",
