@@ -59,6 +59,33 @@ StartupEvents.registry("item", (event) => {
       .displayName("Broken " + formatName(material) + " Hoe")
       .unstackable();
   });
+  // Armor only repair kits
+  event
+    .create("leather_repair_kit")
+    .displayName("Leather Repair Kit")
+    .unstackable();
+  event
+    .create("chainmail_repair_kit")
+    .displayName("Chainmail Repair Kit")
+    .unstackable();
+  // Broken Armor
+  const armors = ["helmet", "chestplate", "leggings", "boots"];
+  const armorMaterials = [
+    "leather",
+    "copper",
+    "chainmail",
+    "iron",
+    "steel",
+    "diamond",
+    "netherite",
+  ].forEach((material) => {
+    armors.forEach((armor) => {
+      event
+        .create(`broken_${material}_${armor}`)
+        .displayName(`Broken ${formatName(material)} ${formatName(armor)}`)
+        .unstackable();
+    });
+  });
 
   event
     .create("incomplete_saddle")

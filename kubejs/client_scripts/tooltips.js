@@ -37,27 +37,9 @@ ItemEvents.tooltip((tooltip) => {
     });
   });
 
-  const brokenItemMaterials = [
-    "netherite",
-    "diamond",
-    "steel",
-    "iron",
-    "copper",
-    "stone",
-    "wood",
-  ];
-  const breakableTools = ["paxel", "sword", "hoe"];
-  brokenItemMaterials.forEach((material) => {
-    breakableTools.forEach((tool) => {
-      console.log(`kubejs:broken_${material}_${tool}`);
-      tooltip.addAdvanced(
-        `kubejs:broken_${material}_${tool}`,
-        (item, advanced, text) => {
-          text.add(1, [Text.of("Tool is Broken").darkRed()]);
-          text.add(2, [Text.of("Requires Repair").red()]);
-        }
-      );
-    });
+  tooltip.addAdvanced(/kubejs:broken_.*/, (item, advanced, text) => {
+    text.add(1, [Text.of("Item is Broken").darkRed()]);
+    text.add(2, [Text.of("Requires Repair").red()]);
   });
 });
 
