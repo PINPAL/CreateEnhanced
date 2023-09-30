@@ -1,6 +1,7 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "create_things_and_misc:zinc_knife",
     /kubejs:broken_.*/,
     /kubejs:incomplete_.*/,
     /supplementaries:.*vertical_slab/,

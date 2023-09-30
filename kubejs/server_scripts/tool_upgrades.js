@@ -1,5 +1,12 @@
 ServerEvents.recipes((event) => {
   // Remove Recipes
+  [
+    "minecraft:gold_nugget_from_blasting",
+    "farmersdelight:iron_nugget_from_blasting_knife",
+    "farmersdelight:iron_nugget_from_smelting_knife",
+  ].forEach((item) => {
+    event.remove({ id: item });
+  });
   event.remove({ mod: "easypaxellite" });
   [
     "#forge:pickaxes",
@@ -80,6 +87,11 @@ ServerEvents.recipes((event) => {
     S: "#forge:ingots/copper",
     P: "minecraft:stone_sword",
   });
+  // Copper Knife
+  event.shaped("create_things_and_misc:copper_knife", [" C ", " C ", " K "], {
+    C: "#forge:ingots/copper",
+    K: "farmersdelight:flint_knife",
+  });
   // Stone Hoe
   event.shaped("minecraft:stone_hoe", ["SS ", " P ", " R "], {
     S: "kubejs:refined_stone",
@@ -150,42 +162,36 @@ function upgradingItemsRecipes(event) {
     // Knife
     {
       input_item: "farmersdelight:flint_knife",
+      output_item: "create_things_and_misc:copper_knife",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "create_things_and_misc:copper_knife",
       output_item: "farmersdelight:iron_knife",
       upgrade_item: "#forge:ingots/iron",
       upgrade_cost: 2,
     },
     {
       input_item: "farmersdelight:iron_knife",
-      output_item: "create_things_and_misc:copper_knife",
-      upgrade_item: "#forge:ingots/copper",
-      upgrade_cost: 2,
-    },
-    {
-      input_item: "farmersdelight:iron_knife",
-      output_item: "create_things_and_misc:zinc_knife",
-      upgrade_item: "#forge:ingots/zinc",
-      upgrade_cost: 2,
-    },
-    {
-      input_item: "#kubejs:mid_tier_knives",
-      output_item: "farmersdelight:diamond_knife",
-      upgrade_item: "minecraft:diamond",
-      upgrade_cost: 2,
-    },
-    {
-      input_item: "farmersdelight:diamond_knife",
       output_item: "alloyed:steel_knife",
       upgrade_item: "#forge:ingots/steel",
       upgrade_cost: 2,
     },
     {
       input_item: "alloyed:steel_knife",
+      output_item: "farmersdelight:diamond_knife",
+      upgrade_item: "minecraft:diamond",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "farmersdelight:diamond_knife",
       output_item: Item.of(
         "farmersdelight:netherite_knife",
         "{Unbreakable:1b}"
       ),
       upgrade_item: "minecraft:netherite_ingot",
-      upgrade_cost: 2,
+      upgrade_cost: 1,
     },
     // Helmet
     {

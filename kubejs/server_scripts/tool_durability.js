@@ -1,11 +1,9 @@
-PlayerEvents.tick((event) => {
-  let p = event.player;
-  if (p.swingTime == 1 && p.persistentData.swinging != 1) {
-    handleDurability(event);
-  }
+PlayerEvents.inventoryChanged((event) => {
+  handleDurability(event);
+  handleArmorDurability(event);
 });
 
-PlayerEvents.inventoryChanged((event) => {
+function handleArmorDurability(event) {
   let player = event.player;
 
   let helmet = player.getHeadArmorItem();
@@ -50,7 +48,7 @@ PlayerEvents.inventoryChanged((event) => {
       }
     }
   });
-});
+}
 
 function handleDurability(event) {
   let player = event.player;
