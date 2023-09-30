@@ -32,8 +32,8 @@ StartupEvents.registry("item", (event) => {
     .unstackable();
   event.create("refined_stone").displayName("Refined Rock");
 
-  // Repair Kits & Broken Tools
-  const materials = [
+  // Repair Kits
+  const repairKitMaterials = [
     "netherite",
     "diamond",
     "copper",
@@ -41,11 +41,26 @@ StartupEvents.registry("item", (event) => {
     "iron",
     "stone",
     "wood",
-  ].forEach((material) => {
+    "leather",
+    "chainmail",
+  ];
+  repairKitMaterials.forEach((material) => {
     event
       .create(material + "_repair_kit")
       .displayName(formatName(material) + " Repair Kit")
       .unstackable();
+  });
+  // Broken Tools
+  const toolMaterials = [
+    "netherite",
+    "diamond",
+    "copper",
+    "steel",
+    "iron",
+    "stone",
+    "wood",
+  ];
+  toolMaterials.forEach((material) => {
     event
       .create(`broken_${material}_paxel`)
       .displayName("Broken " + formatName(material) + " Paxel")
@@ -59,15 +74,14 @@ StartupEvents.registry("item", (event) => {
       .displayName("Broken " + formatName(material) + " Hoe")
       .unstackable();
   });
-  // Armor only repair kits
-  event
-    .create("leather_repair_kit")
-    .displayName("Leather Repair Kit")
-    .unstackable();
-  event
-    .create("chainmail_repair_kit")
-    .displayName("Chainmail Repair Kit")
-    .unstackable();
+  // Broken Knives
+  const knifeMaterials = ["copper", "iron", "steel", "diamond", "netherite"];
+  knifeMaterials.forEach((material) => {
+    event
+      .create(`broken_${material}_knife`)
+      .displayName("Broken " + formatName(material) + " Knife")
+      .unstackable();
+  });
   // Broken Armor
   const armors = ["helmet", "chestplate", "leggings", "boots"];
   const armorMaterials = [
@@ -78,13 +92,27 @@ StartupEvents.registry("item", (event) => {
     "steel",
     "diamond",
     "netherite",
-  ].forEach((material) => {
+  ];
+  armorMaterials.forEach((material) => {
     armors.forEach((armor) => {
       event
         .create(`broken_${material}_${armor}`)
         .displayName(`Broken ${formatName(material)} ${formatName(armor)}`)
         .unstackable();
     });
+  });
+  // Broken Diving Gear
+  const divingGear = [
+    "netherite_diving_helmet",
+    "netherite_diving_boots",
+    "copper_diving_helmet",
+    "copper_diving_boots",
+  ];
+  divingGear.forEach((item) => {
+    event
+      .create(`broken_${item}`)
+      .displayName("Broken " + formatName(item))
+      .unstackable();
   });
 
   event

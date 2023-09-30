@@ -173,7 +173,7 @@
 			hover: [ ]
 			image: "kubejs:block/belt_scroll"
 			order: -100
-			rotation: 90.0d
+			rotation: -90.0d
 			width: 3.0d
 			x: -15.75d
 			y: 18.25d
@@ -186,7 +186,7 @@
 			hover: [ ]
 			image: "kubejs:block/belt_scroll"
 			order: -100
-			rotation: 90.0d
+			rotation: -90.0d
 			width: 3.0d
 			x: -18.3d
 			y: 18.25d
@@ -199,7 +199,7 @@
 			hover: [ ]
 			image: "kubejs:block/belt_scroll"
 			order: -100
-			rotation: 90.0d
+			rotation: -90.0d
 			width: 3.0d
 			x: -20.85d
 			y: 18.25d
@@ -212,7 +212,7 @@
 			hover: [ ]
 			image: "kubejs:block/belt_scroll"
 			order: -100
-			rotation: 90.0d
+			rotation: -90.0d
 			width: 3.0d
 			x: -23.4d
 			y: 18.25d
@@ -1084,6 +1084,12 @@
 			}
 			id: "568E4C255A477E20"
 			optional: true
+			rewards: [{
+				id: "4BE5F467DAB66478"
+				item: "kubejs:chainmail_repair_kit"
+				random_bonus: 2
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "Forging Better Armor"
 			tasks: [{
@@ -1113,6 +1119,11 @@
 				}
 			}
 			id: "79672686765C7030"
+			rewards: [{
+				id: "088D496A6584BC6D"
+				item: "kubejs:leather_repair_kit"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "Create your first armor."
 			tasks: [{
@@ -1231,10 +1242,9 @@
 			id: "165135DFCF0DE1E4"
 			optional: true
 			rewards: [{
-				count: 2
 				id: "46176DCA2ED2BBFC"
 				item: "kubejs:netherite_repair_kit"
-				random_bonus: 3
+				random_bonus: 2
 				type: "item"
 			}]
 			shape: "circle"
