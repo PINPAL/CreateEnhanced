@@ -1,11 +1,5 @@
 const CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
 
-function set_private_field(cls, field, value) {
-  let cls_field = cls.class.getDeclaredField(field);
-  cls_field.setAccessible(true);
-  cls_field.set(cls, value);
-}
-
 PlayerEvents.tick((event) => {
   const api = new CuriosApi();
   const equipped = api
@@ -19,7 +13,6 @@ PlayerEvents.tick((event) => {
     // If the player has an extendo grip equipped, increase their reach distance
     if (e.id == "create:extendo_grip") {
       // FIXME: Protected property needs setter method instead?
-      set_private_field(event.player, "reachDistance", 8);
       //event.player.reachDistance = 8;
     }
   });
