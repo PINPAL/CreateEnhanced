@@ -18,6 +18,29 @@ ServerEvents.tags("item", (event) => {
   });
 
   [
+    "create:netherite_diving_boots",
+    "create:netherite_diving_helmet",
+    "create:copper_diving_boots",
+    "create:copper_diving_helmet",
+  ].forEach((item) => {
+    event.add("forge:armors", item);
+  });
+
+  ["create:netherite_diving_boots", "create:copper_diving_boots"].forEach(
+    (item) => {
+      event.add("forge:armors/boots", item);
+      event.add("forge:boots", item);
+    }
+  );
+
+  ["create:netherite_diving_helmet", "create:copper_diving_helmet"].forEach(
+    (item) => {
+      event.add("forge:armors/helmets", item);
+      event.add("forge:helmets", item);
+    }
+  );
+
+  [
     "minecraft:iron_chestplate",
     "minecraft:iron_leggings",
     "minecraft:iron_boots",
