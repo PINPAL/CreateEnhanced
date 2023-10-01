@@ -156,6 +156,8 @@ ServerEvents.tags("item", (event) => {
   event.remove("forge:ingots/bronze", "alloyed:bronze_ingot");
   event.remove("forge:nuggets/bronze", "alloyed:bronze_nugget");
   event.remove("forge:plates/bronze", "alloyed:bronze_sheet");
+  // Create Dreams & Desires: Bronze
+  event.add("forge:ingots/bronze", "create_dd:bronze_ingot");
 
   // Create: The Factory Must Grow
   event.remove("forge:ingots/steel", "createindustry:steel_ingot");

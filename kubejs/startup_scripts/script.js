@@ -10,6 +10,10 @@ const moltenMetals = [
   "bronze",
   "steel",
   "cast_iron",
+  "diamond",
+  "emerald",
+  "powdered_obsidian",
+  "redstone",
 ];
 
 // function to replace _ with space and capitalise first letter of each word

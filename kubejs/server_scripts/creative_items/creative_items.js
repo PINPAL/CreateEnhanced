@@ -1,12 +1,23 @@
 ServerEvents.recipes((event) => {
   event.recipes.create.mechanical_crafting(
     "create:creative_fluid_tank",
-    [" ZZZ ", "ZBRBZ", "ZRMRZ", "ZBRBZ", " ZZZ "],
+    [
+      "    Z    ",
+      "   ZOZ   ",
+      "ZZZOBOZZZ",
+      "ZOOBRBOOZ",
+      " ZBRMRBZ ",
+      "  ZBRBZ  ",
+      " ZOOBOOZ ",
+      "ZOOZ ZOOZ",
+      "ZZZ   ZZZ",
+    ],
     {
       M: "kubejs:metal_alloy_block",
-      B: "everycomp:q/create_dd/smoked_bookshelf",
+      O: "everycomp:q/create_dd/smoked_bookshelf",
       Z: "kubejs:rainbow_core",
       R: "minecraft:recovery_compass",
+      B: "create_dd:overcharge_alloy",
     }
   );
 

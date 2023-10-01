@@ -22,6 +22,19 @@ ServerEvents.recipes((event) => {
     "createdeco:cast_iron_block",
     "minecraft:iron_block"
   );
+  // Cheap Asphalt
+  event.replaceOutput(
+    { input: "create_dd:asphalt_block" },
+    "create_dd:asphalt_block",
+    "16x create_dd:asphalt_block"
+  );
+  event.remove("create_dd:mixing/asphalt");
+  event.recipes.create
+    .mixing("16x create_dd:asphalt_block", [
+      "2x create:scoria",
+      "minecraft:slime_ball",
+    ])
+    .heated();
   // Cheaper Everything else
   const lampColors = ["yellow", "red", "green", "blue"];
   const decorativeMats = [
