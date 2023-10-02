@@ -104,6 +104,14 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:simple_nuggets", item);
   });
 
+  [
+    /create:.*sail/,
+    /create_things_and_misc:.*_sail/,
+    "#minecraft:wool",
+  ].forEach((item) => {
+    event.add("kubejs:windmill_sails", item);
+  });
+
   ["createaddition:connector", "createaddition:large_connector"].forEach(
     (item) => {
       event.add("kubejs:electric_connector", item);

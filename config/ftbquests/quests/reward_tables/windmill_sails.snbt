@@ -1,0 +1,20 @@
+{
+	icon: "create:white_sail"
+	id: "47EBDBCF8D9DA1A3"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 8, item: "create:white_sail" }
+		{ count: 8, item: "create:sail_frame" }
+		{ count: 8, item: "create_things_and_misc:oak_sail" }
+		{ count: 8, item: "create_things_and_misc:acacia_sail" }
+		{ count: 8, item: "create_things_and_misc:spruce_sail" }
+		{ count: 8, item: "create_things_and_misc:birch_sail" }
+		{ count: 8, item: "create_things_and_misc:dark_oak_sail" }
+		{ count: 8, item: "create_things_and_misc:warped_sail" }
+		{ count: 8, item: "create_things_and_misc:crimson_sail" }
+		{ count: 8, item: "create_things_and_misc:mangrove_sail" }
+		{ count: 8, item: "create_things_and_misc:bamboo_sail" }
+	]
+	title: "Windmill Sails"
+}

@@ -611,13 +611,37 @@
 		{
 			dependencies: ["3017843FE3F03B3F"]
 			hide: true
+			icon: "create:windmill_bearing"
 			id: "0F29039F69FF4A7D"
-			subtitle: "Your mid-game power source."
-			tasks: [{
-				id: "5F7DF74C129D3016"
-				item: "create:windmill_bearing"
-				type: "item"
+			rewards: [{
+				auto: "disabled"
+				exclude_from_claim_all: true
+				id: "587287A05F0A6868"
+				table_id: 5182477480700518819L
+				type: "choice"
 			}]
+			subtitle: "Your mid-game power source."
+			tasks: [
+				{
+					id: "5F7DF74C129D3016"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					icon: "create:white_sail"
+					id: "77DA0BF17E05E9BC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:windmill_sails"
+						}
+					}
+					title: "Any Windmill Sail Block"
+					type: "item"
+				}
+			]
 			title: "Save the environment!"
 			x: -6.25d
 			y: 8.125d
@@ -1306,6 +1330,7 @@
 			dependencies: ["1EC42DB4CEEF6909"]
 			id: "5169F5136FEF5FD2"
 			rewards: [{
+				auto: "disabled"
 				exclude_from_claim_all: true
 				id: "740937EFEADD7579"
 				table_id: 4644817619437582358L
@@ -3370,6 +3395,7 @@
 					type: "item"
 				}
 				{
+					auto: "disabled"
 					exclude_from_claim_all: true
 					id: "0029D8FB3382E5A3"
 					table_id: 4644817619437582358L
