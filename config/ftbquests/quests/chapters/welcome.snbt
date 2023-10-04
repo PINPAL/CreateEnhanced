@@ -4993,6 +4993,46 @@
 			x: -26.125d
 			y: 20.5d
 		}
+		{
+			id: "728003A590563CFF"
+			tasks: [{
+				id: "4820442033370142"
+				item: "kubejs:molten_diamond_ingot"
+				type: "item"
+			}]
+			x: 44.0d
+			y: -7.5d
+		}
+		{
+			id: "425DF7375B638CA2"
+			tasks: [{
+				id: "423B83D889121E84"
+				item: "kubejs:molten_emerald_ingot"
+				type: "item"
+			}]
+			x: 44.75d
+			y: -6.25d
+		}
+		{
+			id: "4F4975BA76304064"
+			tasks: [{
+				id: "676B58CB9C74CA79"
+				item: "kubejs:molten_redstone_ingot"
+				type: "item"
+			}]
+			x: 46.75d
+			y: -6.5d
+		}
+		{
+			id: "747E9C0584F5805A"
+			tasks: [{
+				id: "21860815E62A872C"
+				item: "kubejs:molten_powdered_obsidian_ingot"
+				type: "item"
+			}]
+			x: 45.0d
+			y: -9.0d
+		}
 	]
 	title: "Create Modpack"
 }
