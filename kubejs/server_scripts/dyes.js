@@ -329,7 +329,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create.mixing(
       ["createdeco:" + colorObject.output + "_brick"],
       [
-        "#forge:ingots/brick",
+        `#kubejs:bricks_not_${colorObject.output}`,
         Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125),
       ]
     );

@@ -168,11 +168,14 @@ ServerEvents.tags("item", (event) => {
     event.removeAllTagsFrom(item);
   });
 
-  event.remove("curios:charm", "minecraft:totem_of_undying");
-  event.add("curios:totem", "minecraft:totem_of_undying");
-
-  event.remove("curios:charm", "simplemagnets:advancedmagnet");
-  event.add("curios:magnet", "simplemagnets:advancedmagnet");
+  const brickTypes = ["blue", "scarlet", "dean", "dusk", "pearl"];
+  const bricks = event.get("forge:ingots/brick").getObjectIds();
+  brickTypes.forEach((type) => {
+    let blacklist = Ingredient.of(`createdeco:${type}_brick`);
+    bricks.forEach((item) => {
+      if (!blacklist.test(item)) event.add(`kubejs:bricks_not_${type}`, item);
+    });
+  });
 });
 
 ServerEvents.tags("block", (event) => {
