@@ -4,5 +4,6 @@
 
   "item.create_things_and_misc.glue_packaging": "Empty Glue Brush",
 
-  "fluid_type.create_things_and_misc.slime": "Liquid Slime"
+  "fluid_type.create_things_and_misc.slime": "Liquid Slime",
+  "fluid_type.create_things_and_misc.diluted_bonemeal": "Diluted Bonemeal"
 }

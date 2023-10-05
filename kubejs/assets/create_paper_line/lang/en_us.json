@@ -1,3 +1,5 @@
 {
-  "create.recipe.drying": "Drying"
+  "create.recipe.drying": "Drying",
+  "fluid.create_paper_line.whitened_wood_pulp": "Whitened Wood Pulp",
+  "fluid.create_paper_line.wood_pulp": "Wood Pulp"
 }
