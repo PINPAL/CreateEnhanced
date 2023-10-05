@@ -159,19 +159,24 @@ StartupEvents.registry("block", (event) => {
     .create("rainbow_placard")
     .displayName("Rainbow Placard")
     .material("metal")
-    .tagBlock("minecraft:mineable/paxel");
+    .tagBlock("minecraft:mineable/paxel")
+    .defaultCutout();
 
   event
     .create("rainbow_candle")
     .displayName("Rainbow Candle")
     .material("wool")
-    .tagBlock("minecraft:mineable/paxel");
+    .tagBlock("minecraft:mineable/paxel")
+    .defaultCutout();
 
   event
     .create("rainbow_canvas_sign")
     .displayName("Rainbow Canvas Sign")
     .material("wood")
-    .tagBlock("minecraft:mineable/paxel");
+    .tagBlock("minecraft:mineable/paxel")
+    .opaque(false)
+    .fullBlock(false)
+    .noCollision();
 
   event
     .create("rainbow_wool")
@@ -190,7 +195,7 @@ StartupEvents.registry("block", (event) => {
     .displayName("Rainbow Valve Handle")
     .material("stone")
     .tagBlock("minecraft:mineable/pickaxe")
-    .renderType("cutout");
+    .defaultCutout();
 
   event
     .create("metal_alloy_block")
