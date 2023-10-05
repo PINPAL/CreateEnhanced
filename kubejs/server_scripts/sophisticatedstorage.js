@@ -21,18 +21,6 @@ ServerEvents.recipes((event) => {
     O: "#forge:obsidian",
   });
 
-  // Compression Upgrade
-  event.shaped(
-    "sophisticatedstorage:compression_upgrade",
-    [" B ", " U ", "I N"],
-    {
-      B: "#kubejs:simple_blocks",
-      U: "sophisticatedstorage:upgrade_base",
-      I: "#kubejs:simple_ingots",
-      N: "#kubejs:simple_nuggets",
-    }
-  );
-
   // Stack Upgrades
   // =================
   // Tier 1

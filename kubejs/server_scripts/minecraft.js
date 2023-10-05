@@ -43,3 +43,8 @@ ServerEvents.recipes((event) => {
     .loops(1)
     .id("kubejs:totem_of_undying");
 });
+
+ServerEvents.tags("item", (event) => {
+  event.remove("curios:charm", "minecraft:totem_of_undying");
+  event.add("curios:totem", "minecraft:totem_of_undying");
+});

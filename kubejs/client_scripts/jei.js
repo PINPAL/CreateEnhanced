@@ -146,7 +146,6 @@ JEIEvents.addItems((event) => {
     "createindustry:concrete_pillar",
     "ftbquests:book",
     "sophisticatedstorage:upgrade_base",
-    "sophisticatedstorage:compression_upgrade",
     "sophisticatedstorage:stack_upgrade_tier_1",
     "sophisticatedstorage:stack_upgrade_tier_2",
     "sophisticatedstorage:stack_upgrade_tier_3",

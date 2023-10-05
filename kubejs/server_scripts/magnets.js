@@ -24,3 +24,8 @@ ServerEvents.recipes((event) => {
     }
   );
 });
+
+ServerEvents.tags("item", (event) => {
+  event.remove("curios:charm", "simplemagnets:advancedmagnet");
+  event.add("curios:magnet", "simplemagnets:advancedmagnet");
+});

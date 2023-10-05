@@ -820,39 +820,6 @@
 		}
 		{
 			dependencies: ["5AA93F61C816FF09"]
-			description: [
-				"&7The &rBarrel &6Drawer 3 &7is the perfect drawer size to pair with a &rCompression Upgrade &7as it allows you to fit in your blocks, ingots and nuggets into one."
-				""
-				"&7The &rCompression Upgrade&7 automatically converts all contents in the drawer between types."
-			]
-			hide: true
-			icon: "sophisticatedstorage:compression_upgrade"
-			id: "1B384151A6E111CE"
-			subtitle: "Automatically convert blocks/nuggets/ingots!"
-			tasks: [
-				{
-					id: "70820AB8830DD508"
-					item: {
-						Count: 1b
-						id: "sophisticatedstorage:limited_gold_barrel_3"
-						tag: {
-							woodType: "spruce"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "059E1A0916E1951E"
-					item: "sophisticatedstorage:compression_upgrade"
-					type: "item"
-				}
-			]
-			title: "Auto Compacting!"
-			x: 8.75d
-			y: 9.0d
-		}
-		{
-			dependencies: ["5AA93F61C816FF09"]
 			description: ["&7The &rBarrel Wrench&7 allows you to easily manage your storage including locking drawers so they can only accept certain item types."]
 			hide: true
 			id: "75F594821E72D1B4"
