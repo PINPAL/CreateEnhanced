@@ -2,7 +2,8 @@
   "render_type": "minecraft:cutout",
   "parent": "block/block",
   "textures": {
-    "all": "kubejs:block/rainbow_candle"
+    "all": "kubejs:block/rainbow_candle",
+    "particle": "kubejs:block/rainbow_canvas_sign"
   },
   "elements": [
     {
