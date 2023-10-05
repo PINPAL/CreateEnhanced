@@ -137,6 +137,7 @@ JEIEvents.hideItems((event) => {
 JEIEvents.addItems((event) => {
   // Add Items
   const addToJEI = [
+    "create:copper_nugget",
     "createindustry:liquid_concrete_bucket",
     "createindustry:concrete",
     "createindustry:concrete_slab",
