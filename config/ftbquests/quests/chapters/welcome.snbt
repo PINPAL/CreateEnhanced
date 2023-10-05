@@ -2444,8 +2444,11 @@
 			y: 12.75d
 		}
 		{
-			dependencies: ["6545EE475DD16057"]
-			description: ["In this area you can tick off Items as you automate them."]
+			description: [
+				"In this area you can tick off Items as you automate them."
+				""
+				"None of these quests grant rewards and instead work on a \"trust\" system where you can mark off items as you automate them; which you will need to do if you have any hope to reach end game!"
+			]
 			icon: "minecraft:farmland"
 			id: "372F217BE8C60631"
 			size: 2.0d
@@ -2456,12 +2459,11 @@
 				type: "checkmark"
 			}]
 			title: "Farming"
-			x: -4.25d
-			y: 2.625d
+			x: -22.25d
+			y: -12.125d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
-			hide: true
 			icon: "minecraft:cobblestone"
 			id: "6C96662719E52E17"
 			subtitle: "The basis for everything."
@@ -2478,11 +2480,12 @@
 				}
 			]
 			title: "Cobblestone Generator"
-			x: -5.375d
-			y: 0.125d
+			x: -23.375d
+			y: -14.625d
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
+			hide: false
 			icon: "minecraft:gravel"
 			id: "28DDB93015935685"
 			tasks: [
@@ -2497,11 +2500,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.5d
-			y: 1.125d
+			x: -25.5d
+			y: -13.625d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
+			hide: false
 			icon: "minecraft:iron_nugget"
 			id: "03A9B3E2E879B706"
 			subtitle: "Wash some gravel for a chance at Iron."
@@ -2518,8 +2522,8 @@
 				}
 			]
 			title: "Renewable Iron"
-			x: -6.5d
-			y: 1.625d
+			x: -24.5d
+			y: -13.125d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
@@ -2539,8 +2543,8 @@
 				}
 			]
 			title: "Sand"
-			x: -6.375d
-			y: -1.125d
+			x: -24.375d
+			y: -15.875d
 		}
 		{
 			dependencies: ["7900CBBDF3093BC3"]
@@ -2561,8 +2565,8 @@
 				}
 			]
 			title: "Gold"
-			x: -10.375d
-			y: -0.625d
+			x: -28.375d
+			y: -15.375d
 		}
 		{
 			dependencies: ["536C67D9469F3995"]
@@ -2623,8 +2627,8 @@
 				}
 			]
 			title: "Soul Sand"
-			x: -7.75d
-			y: -0.625d
+			x: -25.75d
+			y: -15.375d
 		}
 		{
 			dependencies: [
@@ -2648,11 +2652,15 @@
 				}
 			]
 			title: "Gold Washing"
-			x: -9.25d
-			y: -1.125d
+			x: -27.25d
+			y: -15.875d
 		}
 		{
-			dependencies: ["03A9B3E2E879B706"]
+			dependencies: [
+				"03A9B3E2E879B706"
+				"372F217BE8C60631"
+			]
+			hide: false
 			icon: "minecraft:iron_ingot"
 			id: "50F54C5799B05773"
 			subtitle: "Pack nuggets into Iron Ingots"
@@ -2670,8 +2678,8 @@
 				}
 			]
 			title: "Iron"
-			x: -5.625d
-			y: 2.0d
+			x: -23.625d
+			y: -12.75d
 		}
 		{
 			dependencies: [
@@ -2695,8 +2703,8 @@
 				}
 			]
 			title: "Copper"
-			x: -5.5d
-			y: 5.5d
+			x: -23.5d
+			y: -9.25d
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
@@ -2715,8 +2723,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.5d
-			y: 5.875d
+			x: -24.5d
+			y: -8.875d
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
@@ -2735,8 +2743,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.875d
-			y: 6.5d
+			x: -23.875d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -2759,8 +2767,8 @@
 				}
 			]
 			title: "Veridum"
-			x: -8.625d
-			y: 7.375d
+			x: -26.625d
+			y: -7.375d
 		}
 		{
 			dependencies: [
@@ -2783,8 +2791,8 @@
 				}
 			]
 			title: "Tuff"
-			x: -10.0d
-			y: 3.75d
+			x: -28.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["24259E89F817F74C"]
@@ -2792,7 +2800,6 @@
 				""
 				"{image:quests:textures/limestone_generator.png width:100 height:50 align:1 fit:true}"
 			]
-			hide: false
 			icon: "create:limestone"
 			id: "01A2F12E34418D14"
 			subtitle: "Create a Limestone generator."
@@ -2809,12 +2816,11 @@
 				}
 			]
 			title: "Limestone"
-			x: -9.5d
-			y: 7.75d
+			x: -25.625d
+			y: -6.875d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
-			hide: true
 			hide_dependency_lines: true
 			id: "24259E89F817F74C"
 			subtitle: "Collect a honey bucket for use in a Limestone Generator"
@@ -2823,8 +2829,8 @@
 				item: "create:honey_bucket"
 				type: "item"
 			}]
-			x: -10.375d
-			y: 8.125d
+			x: -24.625d
+			y: -6.375d
 		}
 		{
 			dependencies: ["16BDF42199C1D968"]
@@ -2848,8 +2854,8 @@
 				}
 			]
 			title: "Scoria"
-			x: -11.0d
-			y: 1.625d
+			x: -29.0d
+			y: -8.625d
 		}
 		{
 			dependencies: ["41317116C417F243"]
@@ -2869,8 +2875,8 @@
 				}
 			]
 			title: "Cobbled Deepslate"
-			x: -11.125d
-			y: 4.25d
+			x: -29.125d
+			y: -10.5d
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
@@ -2891,8 +2897,8 @@
 				}
 			]
 			title: "Deepslate"
-			x: -12.25d
-			y: 4.75d
+			x: -30.25d
+			y: -10.0d
 		}
 		{
 			dependencies: ["6CD2D647D9EC2203"]
@@ -2913,8 +2919,8 @@
 				}
 			]
 			title: "Redstone"
-			x: -8.875d
-			y: 2.375d
+			x: -29.875d
+			y: -14.375d
 		}
 		{
 			dependencies: ["4519D70C199B08B5"]
@@ -2934,8 +2940,8 @@
 				}
 			]
 			title: "Crushed Iron"
-			x: -9.25d
-			y: 1.5d
+			x: -29.0d
+			y: -14.0d
 		}
 		{
 			dependencies: [
@@ -2958,8 +2964,8 @@
 				}
 			]
 			title: "Crimsite"
-			x: -10.125d
-			y: 1.125d
+			x: -28.125d
+			y: -13.625d
 		}
 		{
 			dependencies: ["39CB9E508F498A79"]
@@ -2979,8 +2985,8 @@
 				}
 			]
 			title: "Diorite"
-			x: -9.0d
-			y: 0.625d
+			x: -27.0d
+			y: -14.125d
 		}
 		{
 			dependencies: ["2A209E76D9014317"]
@@ -2998,15 +3004,14 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.125d
-			y: 0.25d
+			x: -26.125d
+			y: -14.5d
 		}
 		{
 			dependencies: [
 				"372F217BE8C60631"
 				"07752CB64C52E070"
 			]
-			hide: true
 			icon: "minecraft:stripped_oak_log"
 			id: "12BF690370E321C4"
 			subtitle: "Saw logs into stripped varients."
@@ -3031,12 +3036,14 @@
 				}
 			]
 			title: "Strippin' It"
-			x: -3.75d
-			y: 1.25d
+			x: -21.75d
+			y: -13.5d
 		}
 		{
-			dependencies: ["372F217BE8C60631"]
-			hide: true
+			dependencies: [
+				"372F217BE8C60631"
+				"32F3AE994CB94CF4"
+			]
 			icon: "minecraft:dried_kelp"
 			id: "71EB5EDE441893EE"
 			subtitle: "Create a Kelp farm for Belts."
@@ -3054,12 +3061,11 @@
 				}
 			]
 			title: "Kelp for Belts"
-			x: -2.875d
-			y: 2.0d
+			x: -20.875d
+			y: -12.75d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
-			hide: true
 			hide_dependency_lines: true
 			icon: "minecraft:oak_log"
 			id: "07752CB64C52E070"
@@ -3084,12 +3090,11 @@
 				}
 			]
 			title: "Wood"
-			x: -3.375d
-			y: 0.375d
+			x: -21.375d
+			y: -14.375d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
-			hide: true
 			hide_dependency_lines: true
 			icon: "minecraft:red_sand"
 			id: "2899086A083BF7FA"
@@ -3108,8 +3113,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.125d
-			y: -1.625d
+			x: -26.125d
+			y: -16.375d
 		}
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
@@ -3214,13 +3219,14 @@
 				}
 			]
 			title: "Tin"
-			x: -12.875d
-			y: 1.625d
+			x: -30.875d
+			y: -13.125d
 		}
 		{
 			dependencies: [
 				"095C2A20F71534C3"
 				"11947EC5FD458C8A"
+				"372F217BE8C60631"
 			]
 			icon: "create:brass_ingot"
 			id: "69A390DE1BDEC2AA"
@@ -3238,8 +3244,8 @@
 				}
 			]
 			title: "Brass"
-			x: -4.875d
-			y: 3.875d
+			x: -22.875d
+			y: -10.875d
 		}
 		{
 			dependencies: [
@@ -3263,8 +3269,8 @@
 				}
 			]
 			title: "Zinc"
-			x: -6.5d
-			y: 4.5d
+			x: -24.5d
+			y: -10.25d
 		}
 		{
 			dependencies: ["700C91B0F88E44E3"]
@@ -3284,8 +3290,8 @@
 				}
 			]
 			title: "Potassic"
-			x: -11.5d
-			y: 3.0d
+			x: -29.5d
+			y: -11.75d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
@@ -3304,8 +3310,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.75d
-			y: 3.625d
+			x: -26.75d
+			y: -11.125d
 		}
 		{
 			dependencies: ["74357F6CF5298E38"]
@@ -3316,8 +3322,8 @@
 				item: "create:crushed_raw_tin"
 				type: "item"
 			}]
-			x: -11.875d
-			y: 2.0d
+			x: -29.875d
+			y: -12.75d
 		}
 		{
 			dependencies: ["74357F6CF5298E38"]
@@ -3328,8 +3334,8 @@
 				item: "create_dd:tin_nugget"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 2.625d
+			x: -30.5d
+			y: -12.125d
 		}
 		{
 			dependencies: [
@@ -3351,8 +3357,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.375d
-			y: 4.625d
+			x: -26.375d
+			y: -10.125d
 		}
 		{
 			dependencies: ["22FC90F2B547E4C2"]
@@ -3362,8 +3368,8 @@
 				item: "create:crushed_raw_zinc"
 				type: "item"
 			}]
-			x: -7.375d
-			y: 5.0d
+			x: -25.375d
+			y: -9.75d
 		}
 		{
 			dependencies: ["22FC90F2B547E4C2"]
@@ -3373,14 +3379,15 @@
 				item: "create:zinc_nugget"
 				type: "item"
 			}]
-			x: -7.375d
-			y: 4.125d
+			x: -25.375d
+			y: -10.625d
 		}
 		{
 			dependencies: [
 				"03A9B3E2E879B706"
 				"52B32743C4765B1B"
 			]
+			hide: false
 			id: "109C601D3098D036"
 			subtitle: "Mix Andesite \\& Nuggets for Andesite Alloy"
 			tasks: [{
@@ -3388,8 +3395,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -7.125d
-			y: 3.0d
+			x: -25.125d
+			y: -11.75d
 		}
 		{
 			description: ["Enjoy some nice Chocolate Cake for your work :)"]
@@ -3729,7 +3736,6 @@
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
-			hide: true
 			hide_dependency_lines: true
 			id: "16BDF42199C1D968"
 			subtitle: "Collect a chocolate bucket for use in a Scoria Generator"
@@ -3738,8 +3744,8 @@
 				item: "create:chocolate_bucket"
 				type: "item"
 			}]
-			x: -11.5d
-			y: 0.625d
+			x: -28.625d
+			y: -7.625d
 		}
 		{
 			dependencies: ["3013996FDD5C82B3"]
@@ -5101,6 +5107,152 @@
 			}]
 			x: 29.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["3F3F68F7424872F8"]
+			icon: "create_dd:coal_piece"
+			id: "06785BB89B771136"
+			subtitle: "Crush Scoria into Coal Pieces"
+			tasks: [
+				{
+					id: "1EB42BE7B084B199"
+					item: "create_dd:coal_piece"
+					type: "item"
+				}
+				{
+					id: "0D26B76468669A1F"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -30.125d
+			y: -8.125d
+		}
+		{
+			id: "32F3AE994CB94CF4"
+			tasks: [{
+				id: "35F1D515CE43DCC9"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -13.125d
+		}
+		{
+			dependencies: ["06785BB89B771136"]
+			icon: "minecraft:coal"
+			id: "72F9EC0EF8DF7F80"
+			subtitle: "Mix 8 Coal Pieces into Coal"
+			tasks: [
+				{
+					count: 256L
+					id: "17D0EC826829A1A9"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "23EB263AC250E5C6"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Coal"
+			x: -31.0d
+			y: -7.75d
+		}
+		{
+			dependencies: ["0DB98EEA322B623F"]
+			id: "3EE22F912CE4780D"
+			subtitle: "Bulk Super Heat Coal Blocks into Diamond Shards"
+			tasks: [{
+				id: "7FAE8E1A6260E55C"
+				item: "create_dd:diamond_shard"
+				type: "item"
+			}]
+			x: -29.625d
+			y: -6.5d
+		}
+		{
+			dependencies: ["72F9EC0EF8DF7F80"]
+			icon: "minecraft:coal_block"
+			id: "0DB98EEA322B623F"
+			subtitle: "Compact Coal into Coal Blocks"
+			tasks: [
+				{
+					id: "3B57002CD965E793"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					id: "26051EF5C724D78B"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: -30.625d
+			y: -6.875d
+		}
+		{
+			dependencies: ["3EE22F912CE4780D"]
+			id: "34D86C430479325D"
+			subtitle: "Pack Diamond Shards into Diamonds"
+			tasks: [{
+				count: 256L
+				id: "20EF6A8D6C374E1B"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Diamond"
+			x: -28.625d
+			y: -6.125d
+		}
+		{
+			id: "30C3739EA802E915"
+			subtitle: "Obtain a live Villager"
+			tasks: [{
+				id: "31CC6ED6E2122C56"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
+			x: -19.75d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"372F217BE8C60631"
+				"43E0BF7423D2E58D"
+			]
+			icon: "minecraft:emerald"
+			id: "015B10C45EDD63CD"
+			subtitle: "Feed produce into the auto trader for Emeralds"
+			tasks: [
+				{
+					count: 256L
+					id: "67FF48EDD6E40527"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "572619AC25EF66FD"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			title: "Emerald"
+			x: -20.75d
+			y: -11.5d
+		}
+		{
+			dependencies: ["30C3739EA802E915"]
+			id: "43E0BF7423D2E58D"
+			subtitle: "Put your villager into an auto trader."
+			tasks: [{
+				id: "449EA69581183630"
+				item: "easy_villagers:auto_trader"
+				type: "item"
+			}]
+			x: -20.25d
+			y: -10.5d
 		}
 	]
 	title: "Create Modpack"
