@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 0,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.0
+        }
+      ],
+      "entries": []
+    }
+  ]
+}

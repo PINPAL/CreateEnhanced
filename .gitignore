@@ -19,6 +19,7 @@
 !/kubejs/server_scripts/
 !/kubejs/startup_scripts/
 !/kubejs/assets/
+!kubejs/data/
 ###############################
 
 # ignore user files

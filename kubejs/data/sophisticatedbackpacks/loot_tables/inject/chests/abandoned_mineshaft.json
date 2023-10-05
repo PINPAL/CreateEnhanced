@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "main",
+      "rolls": 0.0,
+      "bonus_rolls": 0.0,
+      "entries": []
+    }
+  ]
+}
