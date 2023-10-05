@@ -59,18 +59,6 @@
 			click: ""
 			corner: false
 			dev: false
-			height: 1.0d
-			hover: [ ]
-			image: "create_things_and_misc:items/vibration_mechanism2"
-			rotation: 0.0d
-			width: 0.125d
-			x: -1.25d
-			y: -23.0d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
 			height: 17.5d
 			hover: [ ]
 			image: "quests:textures/creative_background.png"
@@ -228,6 +216,31 @@
 			width: 15.0d
 			x: -30.0d
 			y: 7.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 17.5d
+			hover: [ ]
+			image: "quests:textures/iron_background.png"
+			order: -9999
+			rotation: 0.0d
+			width: 17.5d
+			x: -25.0d
+			y: -12.125d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "quests:textures/farming_title.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: -25.0d
+			y: -18.875d
 		}
 	]
 	order_index: 0
@@ -3781,8 +3794,8 @@
 				item: "kubejs:molten_iron_block"
 				type: "item"
 			}]
-			x: 29.125d
-			y: -0.75d
+			x: 27.88d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -3795,6 +3808,10 @@
 				"1DDE32BF702B6BB6"
 				"12B37A1C4B0E9BDC"
 				"2BA91A0C7302BA98"
+				"0DAD5D4226AA94F4"
+				"0F34168CD59163AE"
+				"0E9BF5FDF542D81C"
+				"07D50148883D872A"
 			]
 			hide_dependent_lines: true
 			id: "101D4037778B6AB3"
@@ -3812,7 +3829,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["25E93E74042E607F"]
@@ -3823,8 +3840,8 @@
 				item: "kubejs:molten_copper_block"
 				type: "item"
 			}]
-			x: 28.625d
-			y: -1.5d
+			x: 27.75d
+			y: -2.0d
 		}
 		{
 			dependencies: ["34396696F09C307E"]
@@ -3835,8 +3852,8 @@
 				item: "kubejs:molten_gold_block"
 				type: "item"
 			}]
-			x: 28.625d
-			y: -2.375d
+			x: 28.38d
+			y: -2.75d
 		}
 		{
 			dependencies: ["6D471E1E9517C0E2"]
@@ -3848,7 +3865,7 @@
 				type: "item"
 			}]
 			x: 29.125d
-			y: -3.125d
+			y: -3.25d
 		}
 		{
 			dependencies: ["3DC94DE9CD47EAE1"]
@@ -3860,7 +3877,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -3.375d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7B6C9C8359B502FA"]
@@ -3872,7 +3889,7 @@
 				type: "item"
 			}]
 			x: 30.875d
-			y: -3.125d
+			y: -3.25d
 		}
 		{
 			dependencies: ["69708A809D574953"]
@@ -3883,8 +3900,8 @@
 				item: "kubejs:molten_bronze_block"
 				type: "item"
 			}]
-			x: 31.5d
-			y: -2.375d
+			x: 31.625d
+			y: -2.75d
 		}
 		{
 			dependencies: ["419D49B1E88FCFBA"]
@@ -3895,8 +3912,8 @@
 				item: "kubejs:molten_steel_block"
 				type: "item"
 			}]
-			x: 31.5d
-			y: -1.5d
+			x: 32.125d
+			y: -2.0d
 		}
 		{
 			dependencies: ["10E21983A3893B7A"]
@@ -3907,8 +3924,8 @@
 				item: "kubejs:molten_cast_iron_block"
 				type: "item"
 			}]
-			x: 31.0d
-			y: -0.75d
+			x: 32.125d
+			y: -1.0d
 		}
 		{
 			id: "21308ABC953708A4"
@@ -3918,8 +3935,8 @@
 				item: "kubejs:molten_iron_ingot"
 				type: "item"
 			}]
-			x: 28.625d
-			y: 0.0d
+			x: 26.875d
+			y: -0.75d
 		}
 		{
 			id: "25E93E74042E607F"
@@ -3929,8 +3946,8 @@
 				item: "kubejs:molten_copper_ingot"
 				type: "item"
 			}]
-			x: 27.75d
-			y: -1.125d
+			x: 26.75d
+			y: -2.25d
 		}
 		{
 			id: "34396696F09C307E"
@@ -3940,8 +3957,8 @@
 				item: "kubejs:molten_gold_ingot"
 				type: "item"
 			}]
-			x: 27.75d
-			y: -2.625d
+			x: 27.625d
+			y: -3.375d
 		}
 		{
 			id: "6D471E1E9517C0E2"
@@ -3951,8 +3968,8 @@
 				item: "kubejs:molten_zinc_ingot"
 				type: "item"
 			}]
-			x: 28.5d
-			y: -3.875d
+			x: 28.625d
+			y: -4.125d
 		}
 		{
 			id: "3DC94DE9CD47EAE1"
@@ -3963,7 +3980,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -4.25d
+			y: -4.5d
 		}
 		{
 			id: "7B6C9C8359B502FA"
@@ -3973,8 +3990,8 @@
 				item: "kubejs:molten_tin_ingot"
 				type: "item"
 			}]
-			x: 31.5d
-			y: -3.875d
+			x: 31.25d
+			y: -4.125d
 		}
 		{
 			id: "69708A809D574953"
@@ -3985,7 +4002,7 @@
 				type: "item"
 			}]
 			x: 32.375d
-			y: -2.625d
+			y: -3.375d
 		}
 		{
 			id: "419D49B1E88FCFBA"
@@ -3995,8 +4012,8 @@
 				item: "kubejs:molten_steel_ingot"
 				type: "item"
 			}]
-			x: 32.375d
-			y: -1.125d
+			x: 33.0d
+			y: -2.25d
 		}
 		{
 			id: "10E21983A3893B7A"
@@ -4006,8 +4023,8 @@
 				item: "kubejs:molten_cast_iron_ingot"
 				type: "item"
 			}]
-			x: 31.5d
-			y: 0.0d
+			x: 33.125d
+			y: -0.75d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4019,7 +4036,7 @@
 				type: "item"
 			}]
 			x: 31.75d
-			y: 1.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4032,7 +4049,7 @@
 				type: "item"
 			}]
 			x: 29.125d
-			y: 1.375d
+			y: 2.875d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4044,7 +4061,7 @@
 				type: "item"
 			}]
 			x: 30.875d
-			y: 1.375d
+			y: 2.875d
 		}
 		{
 			dependencies: [
@@ -4087,7 +4104,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: 3.125d
+			y: 4.625d
 		}
 		{
 			dependencies: [
@@ -4108,7 +4125,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4125,7 +4142,7 @@
 				type: "item"
 			}]
 			x: 28.25d
-			y: 1.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["26B607339F9A9909"]
@@ -4995,43 +5012,95 @@
 		}
 		{
 			id: "728003A590563CFF"
+			shape: "heart"
 			tasks: [{
 				id: "4820442033370142"
 				item: "kubejs:molten_diamond_ingot"
 				type: "item"
 			}]
-			x: 44.0d
-			y: -7.5d
+			x: 28.5d
+			y: 1.375d
 		}
 		{
 			id: "425DF7375B638CA2"
+			shape: "heart"
 			tasks: [{
 				id: "423B83D889121E84"
 				item: "kubejs:molten_emerald_ingot"
 				type: "item"
 			}]
-			x: 44.75d
-			y: -6.25d
+			x: 27.5d
+			y: 0.5d
 		}
 		{
 			id: "4F4975BA76304064"
+			shape: "heart"
 			tasks: [{
 				id: "676B58CB9C74CA79"
 				item: "kubejs:molten_redstone_ingot"
 				type: "item"
 			}]
-			x: 46.75d
-			y: -6.5d
+			x: 31.5d
+			y: 1.375d
 		}
 		{
 			id: "747E9C0584F5805A"
+			shape: "heart"
 			tasks: [{
 				id: "21860815E62A872C"
 				item: "kubejs:molten_powdered_obsidian_ingot"
 				type: "item"
 			}]
-			x: 45.0d
-			y: -9.0d
+			x: 32.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["747E9C0584F5805A"]
+			id: "07D50148883D872A"
+			shape: "heart"
+			tasks: [{
+				id: "5D793A4733D80325"
+				item: "kubejs:molten_powdered_obsidian_block"
+				type: "item"
+			}]
+			x: 31.75d
+			y: -0.125d
+		}
+		{
+			dependencies: ["425DF7375B638CA2"]
+			id: "0DAD5D4226AA94F4"
+			shape: "heart"
+			tasks: [{
+				id: "0FD616D5023D277B"
+				item: "kubejs:molten_emerald_block"
+				type: "item"
+			}]
+			x: 28.25d
+			y: -0.125d
+		}
+		{
+			dependencies: ["4F4975BA76304064"]
+			id: "0F34168CD59163AE"
+			shape: "heart"
+			tasks: [{
+				id: "4F5A0A0342D244B5"
+				item: "kubejs:molten_redstone_block"
+				type: "item"
+			}]
+			x: 31.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["728003A590563CFF"]
+			id: "0E9BF5FDF542D81C"
+			shape: "heart"
+			tasks: [{
+				id: "2EE76D6F754594EF"
+				item: "kubejs:molten_diamond_block"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 0.5d
 		}
 	]
 	title: "Create Modpack"

@@ -168,6 +168,11 @@ ServerEvents.tags("item", (event) => {
     event.removeAllTagsFrom(item);
   });
 
+  const newGems = ["coal", "redstone"];
+  newGems.forEach((gem) => {
+    event.add(`forge:gems/${gem}`, `minecraft:${gem}`);
+  });
+
   const brickTypes = ["blue", "scarlet", "dean", "dusk", "pearl"];
   const bricks = event.get("forge:ingots/brick").getObjectIds();
   brickTypes.forEach((type) => {

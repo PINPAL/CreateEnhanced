@@ -42,26 +42,43 @@ ServerEvents.recipes((event) => {
     "create_dd:industrial_iron/detector_rail",
     "create_dd:industrial_iron/hopper",
     "create_things_and_misc:mangrove_sail_craft_backport",
+    "createindustry:compacting/steel_block",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
   });
 
   const automatedPacking = [
-    { mod: "minecraft", item: "coal" },
-    { mod: "minecraft", item: "gold" },
-    { mod: "minecraft", item: "iron" },
-    { mod: "minecraft", item: "copper" },
-    { mod: "minecraft", item: "redstone" },
-    { mod: "minecraft", item: "diamond" },
-    { mod: "minecraft", item: "netherite" },
-    { mod: "minecraft", item: "emerald" },
-    { mod: "minecraft", item: "lapis" },
+    { mod: "minecraft", item: "coal", type: "gems" },
+    { mod: "minecraft", item: "gold", type: "ingots" },
+    { mod: "minecraft", item: "iron", type: "ingots" },
+    { mod: "minecraft", item: "copper", type: "ingots" },
+    { mod: "minecraft", item: "redstone", type: "gems" },
+    { mod: "minecraft", item: "diamond", type: "gems" },
+    { mod: "minecraft", item: "netherite", type: "ingots" },
+    { mod: "minecraft", item: "emerald", type: "gems" },
+    { mod: "minecraft", item: "lapis", type: "gems" },
+    { mod: "create_dd", item: "tin", type: "ingots" },
+    { mod: "create", item: "zinc", type: "ingots" },
+    { mod: "create", item: "brass", type: "ingots" },
+    { mod: "create_dd", item: "bronze", type: "ingots" },
+    { mod: "alloyed", item: "steel", type: "ingots" },
+    { mod: "create_dd", item: "mithril", type: "ingots" },
   ].forEach((block) => {
-    event.remove({ id: `${block.mod}:${block.item}_block` });
+    if (block.mod == "create") {
+      event.remove({
+        id: `${block.mod}:crafting/materials/${block.item}_block_from_compacting`,
+      });
+    } else if (block.mod == "create_dd" || block.mod == "alloyed") {
+      event.remove({
+        id: `${block.mod}:crafting/${block.item}_block_from_compacting`,
+      });
+    } else {
+      event.remove({ id: `${block.mod}:${block.item}_block` });
+    }
 
     event.recipes.create.compacting(
       `${block.mod}:${block.item}_block`,
-      `9x #forge:ingots/${block.item}`
+      `9x #forge:${block.type}/${block.item}`
     );
   });
 
