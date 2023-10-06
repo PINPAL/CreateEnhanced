@@ -98,7 +98,9 @@
     "com.simibubi.create.content.kinetics.transmission.sequencer.SequencedGearshiftScreen": true,
     "com.refinedmods.refinedstorage.screen.DiskDriveScreen": true,
     "xaero.map.gui.GuiMap": true,
-    "xaero.map.gui.GuiWorldMapSettings": true
+    "xaero.map.gui.GuiWorldMapSettings": true,
+    "com.mrcrayfish.configured.client.screen.ChangeEnumScreen": true,
+    "com.simibubi.create.content.contraptions.elevator.ElevatorContactScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
