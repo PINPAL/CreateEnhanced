@@ -17,5 +17,5 @@
 	#PLACE_WHEN_SNEAKING - Only place vertical slabs when you are sneaking
 	#DYNAMIC - Place vertical slabs when clicking on the side of a block unless you are sneaking and place vertical slabs when sneaking when looking at the top or bottom face of a block but place regular slabs by default
 	#Allowed Values: PLACE_WHEN_SNEAKING, DYNAMIC, KEYBINDING
-	verticalSlabPlacementMethod = "DYNAMIC"
+	verticalSlabPlacementMethod = "PLACE_WHEN_SNEAKING"
 
