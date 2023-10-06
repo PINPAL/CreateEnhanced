@@ -323,6 +323,12 @@ JEIEvents.information((event) => {
       id: "minecraft:andesite",
       desc: ["Spawns in massive veins underground in Forest biomes."],
     },
+    {
+      id: "supplementaries:ash",
+      desc: [
+        "Spawns in veins around the nether, most commonly in Basalt Deltas.",
+      ],
+    },
   ].forEach((item) => event.addItem(item.id, item.desc));
 
   const undergroundStoneTypes = [
@@ -340,7 +346,7 @@ JEIEvents.information((event) => {
   const netherStoneTypes = [
     "create:scoria",
     "create:scorchia",
-    "supplementaries:ash",
+    "createindustry:sulfur",
   ].forEach((item) =>
     event.addItem(item, ["Spawns in veins around The Nether."])
   );

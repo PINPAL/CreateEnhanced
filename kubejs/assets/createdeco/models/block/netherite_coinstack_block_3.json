@@ -1,0 +1,7 @@
+{
+  "parent": "createdeco:block/coinpiles/coin_pile_decor_3",
+  "textures": {
+    "coin": "createdeco:block/coins/netherite_coin",
+    "particle": "createdeco:block/coins/netherite_coin_particle"
+  }
+}

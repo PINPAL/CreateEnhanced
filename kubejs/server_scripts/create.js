@@ -43,6 +43,7 @@ ServerEvents.recipes((event) => {
     "create_dd:industrial_iron/hopper",
     "create_things_and_misc:mangrove_sail_craft_backport",
     "createindustry:compacting/steel_block",
+    "create:crushing/tuff",
   ].forEach((recipeID) => {
     event.remove({ id: recipeID });
   });

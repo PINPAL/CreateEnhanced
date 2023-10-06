@@ -13,8 +13,8 @@ ServerEvents.recipes((event) => {
   // Remove Items
   event.remove({ output: "supplementaries:bubble_blower" });
   event.remove({ id: "supplementaries:item_lore_display" });
-  event.remove({ id: "supplementaries:crank" });
-  event.remove({ id: "supplementaries:faucet" });
+  event.remove({ output: "supplementaries:crank" });
+  event.remove({ output: "supplementaries:faucet" });
   event.remove({ id: "supplementaries:soap/dirty_glass" });
   event.remove({ id: "supplementaries:soap/dirty_shard" });
   event.remove({ id: "supplementaries:soap/piston" });
@@ -33,4 +33,8 @@ ServerEvents.recipes((event) => {
     ),
   });
   event.remove({ output: "supplementaries:bomb" });
+
+  // Bones into Ash
+  event.remove({ id: "quark:tweaks/smelting/bone_meal_utility" });
+  event.smelting("3x supplementaries:ash", "minecraft:bone");
 });

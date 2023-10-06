@@ -1,0 +1,7 @@
+{
+  "parent": "createdeco:block/coinpiles/coin_pile_decor_4",
+  "textures": {
+    "coin": "createdeco:block/coins/copper_coin",
+    "particle": "createdeco:block/coins/copper_coin_particle"
+  }
+}
