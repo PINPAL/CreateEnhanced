@@ -19,4 +19,20 @@ Ponder.tags((event) => {
       "refinedstorage:crafter",
     ]
   );
+
+  event.createTag(
+    "kubejs:coin_stacks",
+    "createdeco:gold_coinstack",
+    "Coin Stacking",
+    "Display Your Wealth in Style",
+    [
+      "createdeco:zinc_coinstack",
+      "createdeco:copper_coinstack",
+      "createdeco:brass_coinstack",
+      "createdeco:iron_coinstack",
+      "createdeco:gold_coinstack",
+      "createdeco:netherite_coinstack",
+      "createdeco:cast_iron_coinstack",
+    ]
+  );
 });
