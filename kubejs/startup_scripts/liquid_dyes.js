@@ -14,6 +14,7 @@ StartupEvents.registry("fluid", (event) => {
     { name: "blue", hex: 0x345ec3 },
     { name: "brown", hex: 0x7a4621 },
     { name: "green", hex: 0x4a6b18 },
+    { name: "red", hex: 0xb02e26 },
     { name: "black", hex: 0x27263d },
   ];
 
