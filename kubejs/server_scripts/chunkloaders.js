@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
   // Chunkloader
-  event.remove({ mod: "chunkloaders" });
   event.shaped(
     Item.of("chunkloaders:ultimate_chunk_loader"),
     [" N ", "NVN", " N "],
@@ -11,7 +10,6 @@ ServerEvents.recipes((event) => {
   );
 
   // Contraption Chunkloader
-  event.remove({ mod: "createchunkloading" });
   event.shaped(
     Item.of("createchunkloading:chunk_loader"),
     ["GBG", "BCB", "GBG"],

@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "shrink" });
-
   event.recipes.createMechanicalCrafting(
     "shrink:shrinking_device",
     [" DQD ", "TSSST", "SBSRS", "TSSST"],

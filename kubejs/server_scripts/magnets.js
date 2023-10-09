@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "simplemagnets" });
-
   // Demagnetization Coil
   event.shaped(
     Item.of("simplemagnets:advanced_demagnetization_coil"),

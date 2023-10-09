@@ -1,21 +1,5 @@
 ServerEvents.recipes((event) => {
-  event.remove({ output: "createindustry:sawdust" });
-  [
-    "minecraft:book",
-    "farmersdelight:book_from_canvas",
-    "minecraft:paper",
-    "quark:tweaks/crafting/utility/bent/paper",
-    "farmersdelight:paper_from_tree_bark",
-    "create:pressing/sugar_cane",
-    "create_paper_line:mixing/wood_pulp",
-    "create_paper_line:mixing/wood_pulp_with_saw_dust",
-    "create_paper_line:mixing/wood_pulp_from_saw_dust",
-  ].forEach((recipeID) => {
-    event.remove({ id: recipeID });
-  });
-
-  // Fix Dryer Recipe
-  event.remove({ output: "create_paper_line:dryer" });
+  // Fix Dryer Recipe;
   event.shaped(Item.of("create_paper_line:dryer"), ["SSS", "   ", "SSS"], {
     S: "#minecraft:wooden_slabs",
   });
@@ -44,7 +28,6 @@ ServerEvents.recipes((event) => {
   );
 
   // Replace white dye with white dye liquid
-  event.remove({ id: "create_paper_line:mixing/whitened_wood_pulp" });
   event.recipes.create.mixing(
     [Fluid.of("create_paper_line:whitened_wood_pulp", 100)],
     [
@@ -54,7 +37,6 @@ ServerEvents.recipes((event) => {
   );
 
   // Replace frame with supplementalies frame
-  event.remove({ output: "create_paper_line:frame" });
   event.replaceInput(
     { input: "create_paper_line:frame" },
     "create_paper_line:frame",

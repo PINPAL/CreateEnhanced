@@ -1,5 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ output: "create:extendo_grip" });
   event.recipes.createMechanicalCrafting(
     Item.of(
       "create:extendo_grip",

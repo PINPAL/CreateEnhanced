@@ -1,38 +1,4 @@
 ServerEvents.recipes((event) => {
-  // Remove Recipes
-  [
-    "minecraft:gold_nugget_from_blasting",
-    "farmersdelight:iron_nugget_from_blasting_knife",
-    "farmersdelight:iron_nugget_from_smelting_knife",
-  ].forEach((item) => {
-    event.remove({ id: item });
-  });
-  event.remove({ mod: "easypaxellite" });
-  [
-    "#forge:pickaxes",
-    "#forge:shovels",
-    "#forge:axes",
-    "#forge:swords",
-    "#forge:hoes",
-    "#forge:tools/knives",
-    "#forge:armors/chestplates",
-    "#forge:armors/helmets",
-    "#forge:armors/leggings",
-    "#forge:armors/boots",
-    "alloyed:steel_pickaxe",
-    "alloyed:steel_shovel",
-    "alloyed:steel_axe",
-    "alloyed:steel_shears",
-    "alloyed:steel_fishing_rod",
-    "alloyed:steel_sword",
-    "alloyed:steel_hoe",
-    "alloyed:steel_helmet",
-    "alloyed:steel_chestplate",
-    "alloyed:steel_leggings",
-    "alloyed:steel_boots",
-  ].forEach((item) => {
-    event.remove({ output: item });
-  });
   // Wooden Tier Recipes
   event.shaped("easypaxellite:wood_paxel", ["AAA", " B ", " B "], {
     A: "#minecraft:planks",

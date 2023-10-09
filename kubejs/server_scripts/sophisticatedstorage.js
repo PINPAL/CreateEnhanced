@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "sophisticatedstorage" });
-
   // Storage Tool
   event.shapeless("sophisticatedstorage:storage_tool", [
     "create:wrench",

@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "easy_villagers" });
-
   // Trader Block
   event.shaped(Item.of("easy_villagers:trader"), ["AAA", "A A", "CPC"], {
     A: "createdeco:andesite_bars",

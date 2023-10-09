@@ -1,10 +1,5 @@
 ServerEvents.recipes((event) => {
-  // Remove Vertical Slabs
-  event.remove({ output: /createdeco:.*slab_vert/ });
-  event.remove({ output: /alloyed:.*vertical_slab/ });
-  event.remove({ output: /supplementaries:.*vertical_slab/ });
   // Cheap Netherite Building Blocks
-  event.remove({ output: "createdeco:netherite_bars" });
   event.stonecutting(
     "16x createdeco:netherite_bars",
     "#forge:ingots/netherite"
@@ -13,7 +8,6 @@ ServerEvents.recipes((event) => {
     S: "#forge:ingots/netherite",
   });
   // Cheap Cast Iron
-  event.remove({ id: "minecraft:compacting/cast_iron_ingot" });
   event.recipes.create.compacting(
     "createdeco:cast_iron_ingot",
     "minecraft:iron_ingot"
@@ -28,7 +22,6 @@ ServerEvents.recipes((event) => {
     "create_dd:asphalt_block",
     "16x create_dd:asphalt_block"
   );
-  event.remove("create_dd:mixing/asphalt");
   event.recipes.create
     .mixing("16x create_dd:asphalt_block", [
       "2x create:scoria",

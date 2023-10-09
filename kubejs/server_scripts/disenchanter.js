@@ -1,8 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ output: "minecraft:enchanting_table" });
-  event.remove({ output: "minecraft:anvil" });
-  event.remove({ mod: "disenchanting" });
-
   event.recipes.createMechanicalCrafting(
     "disenchanting:disenchanter",
     ["  D  ", " EAE ", "GDBDG", "OPPPO", " OOO "],

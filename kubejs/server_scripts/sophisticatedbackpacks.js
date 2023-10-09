@@ -1,5 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "sophisticatedbackpacks" });
   // Backpack Base
   // Upgrades in kubejs/server_scripts/tool_upgrades.js
   event.shaped("sophisticatedbackpacks:backpack", ["SLS", "SCS", "LLL"], {

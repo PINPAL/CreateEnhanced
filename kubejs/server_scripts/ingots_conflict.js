@@ -1,24 +1,5 @@
 ServerEvents.recipes((event) => {
-  //Remove
-  const itemsToRemove = [
-    "createindustry:steel_ingot",
-    "createindustry:cast_iron_ingot",
-    "createindustry:cast_iron_block",
-    "createindustry:heavy_plate",
-    "createindustry:steel_scaffolding",
-    "create_dd:industrial_iron_ingot",
-    "create_dd:industrial_iron_nugget",
-    "create_dd:industrial_iron_sheet",
-    "create_dd:industrial_iron_block",
-  ].forEach((item) => {
-    event.remove({ output: item });
-  });
-
   // Remove Steel from Create: Alloyed
-  event.remove({ output: "alloyed:steel_ingot" });
-  event.remove({ output: "alloyed:steel_nugget" });
-  event.remove({ output: "alloyed:steel_sheet" });
-  event.remove({ output: "create_dd:steel_block" });
   event.stonecutting("create_dd:steel_block", "#forge:storage_blocks/steel");
   event.stonecutting(
     "createindustry:steel_block",
@@ -26,10 +7,6 @@ ServerEvents.recipes((event) => {
   );
 
   // Remove Bronze from Create: Alloyed
-  event.remove({ output: "alloyed:bronze_ingot" });
-  event.remove({ output: "alloyed:bronze_nugget" });
-  event.remove({ output: "alloyed:bronze_sheet" });
-  event.remove({ output: "alloyed:bronze_block" });
   event.stonecutting("alloyed:bronze_block", "#forge:storage_blocks/bronze");
 
   // Replace all industrial_iron with cast iron

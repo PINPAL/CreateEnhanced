@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
   // Explorer Compass
-  event.remove({ output: "explorerscompass:explorerscompass" });
   event.shapeless("explorerscompass:explorerscompass", [
     "naturescompass:naturescompass",
   ]);

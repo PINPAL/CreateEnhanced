@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "ironjetpacks" });
-
   // Elite Coil
   event.shaped(Item.of("ironjetpacks:elite_coil"), [" DR", "DPD", "RD "], {
     D: "minecraft:diamond",

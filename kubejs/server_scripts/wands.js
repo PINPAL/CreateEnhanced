@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-  event.remove({ mod: "wands" });
-
   // Palette
   event.shaped(Item.of("wands:palette"), ["III", "IVI", "III"], {
     I: "minecraft:item_frame",
