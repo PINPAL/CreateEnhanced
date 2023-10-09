@@ -15,6 +15,8 @@ ServerEvents.tags("item", (event) => {
   event.add("as:bamboo", /bamboo($|_)/);
   event.add("as:azalea", /azalea($|_)/);
 
+  event.remove("as:oak", "#as:dark_oak");
+
   // Minecarts
   event.add("as:minecart", /.*minecart($|_)/);
 
