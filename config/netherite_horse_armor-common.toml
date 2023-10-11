@@ -1,0 +1,4 @@
+#How much weight you want your horse armor to be in the loot table (bastion treasure) ? Set to 0 to disable. (default: 8)
+#Range: > 0
+weight = 8
+

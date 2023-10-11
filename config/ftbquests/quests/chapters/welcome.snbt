@@ -5223,6 +5223,7 @@
 		}
 		{
 			dependencies: ["26D185F68C821538"]
+			hide: true
 			icon: "minecraft:saddle"
 			id: "56AF1ABDDA4C0874"
 			rewards: [{
@@ -5250,6 +5251,26 @@
 			]
 			title: "Early Game Transport"
 			x: -2.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56AF1ABDDA4C0874"]
+			hide: true
+			id: "60EC2DACD3C92008"
+			rewards: [{
+				count: 5
+				id: "4B3D67AE3D97AB6E"
+				item: "farmersdelight:horse_feed"
+				random_bonus: 5
+				type: "item"
+			}]
+			tasks: [{
+				id: "2CA9611357E22F34"
+				item: "netherite_horse_armor:netherite_horse_armor"
+				type: "item"
+			}]
+			title: "The Ultimate Horse"
+			x: -3.875d
 			y: 1.0d
 		}
 	]

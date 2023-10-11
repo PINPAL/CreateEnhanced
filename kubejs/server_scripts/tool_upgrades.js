@@ -119,6 +119,12 @@ function upgradingItemsRecipes(event) {
       upgrade_item: "#forge:gems/diamond",
       upgrade_cost: 2,
     },
+    {
+      input_item: "minecraft:diamond_horse_armor",
+      output_item: "netherite_horse_armor:netherite_horse_armor",
+      upgrade_item: "#forge:ingots/netherite",
+      upgrade_cost: 1,
+    },
     // Backpack
     {
       input_item: "sophisticatedbackpacks:backpack",

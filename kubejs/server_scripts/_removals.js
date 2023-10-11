@@ -15,6 +15,7 @@ const modsToRemove = [
   "easypaxellite",
   "easy_villagers",
   "wands",
+  "netherite_horse_armor",
 ];
 
 const outputsToRemove = [
