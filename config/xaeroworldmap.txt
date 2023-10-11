@@ -31,7 +31,7 @@ adjustHeightForCarpetLikeBlocks:true
 onlyCurrentMapWaypoints:false
 minZoomForLocalWaypoints:0.0
 arrowColour:-2
-minimapRadar:true
+minimapRadar:false
 renderWaypoints:true
 partialYTeleportation:true
 displayStainedGlass:true
@@ -48,7 +48,7 @@ multipleImagesExport:false
 nightExport:false
 highlightsExport:false
 exportScaleDownSquare:20
-displayClaims:true
+displayClaims:false
 claimsFillOpacity:46
 claimsBorderOpacity:80
 globalVersion:1

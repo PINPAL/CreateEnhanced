@@ -1,0 +1,14 @@
+name = "Horse Statistics"
+filename = "horsestatsmod-MC1.19.x-1.4.5.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "a0a6b0a9470cae12c8ea7867ef28b0c268d19c0e"
+
+[update]
+[update.curseforge]
+file-id = 3951585
+project-id = 409126

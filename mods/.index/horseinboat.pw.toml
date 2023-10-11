@@ -1,0 +1,14 @@
+name = "HorseInBoat"
+filename = "horseinboat-forge-1.1.3.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "08cb82a044eac024552ee957e04f391e7247da00"
+
+[update]
+[update.curseforge]
+file-id = 3855753
+project-id = 576601
