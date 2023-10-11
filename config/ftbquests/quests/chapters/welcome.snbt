@@ -412,7 +412,6 @@
 				item: "kubejs:wood_repair_kit"
 				type: "item"
 			}]
-			shape: "circle"
 			subtitle: "Create your first weapon."
 			tasks: [{
 				id: "1645AF99B5B4BD07"
@@ -1128,7 +1127,6 @@
 				item: "kubejs:leather_repair_kit"
 				type: "item"
 			}]
-			shape: "circle"
 			subtitle: "Create your first armor."
 			tasks: [{
 				id: "0C231792360146AC"
@@ -2167,7 +2165,6 @@
 			hide: true
 			id: "2A8EB2589707FAE3"
 			optional: true
-			shape: "circle"
 			subtitle: "Lots of items on you? No problem."
 			tasks: [{
 				id: "1456FE0905BE050C"
@@ -5227,6 +5224,7 @@
 			icon: "minecraft:saddle"
 			id: "56AF1ABDDA4C0874"
 			rewards: [{
+				auto: "disabled"
 				exclude_from_claim_all: true
 				id: "6263BA60C63D6FBD"
 				table_id: 1792698340290304743L
@@ -5257,6 +5255,7 @@
 			dependencies: ["56AF1ABDDA4C0874"]
 			hide: true
 			id: "60EC2DACD3C92008"
+			optional: true
 			rewards: [{
 				count: 5
 				id: "4B3D67AE3D97AB6E"
