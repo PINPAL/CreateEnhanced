@@ -1,9 +1,9 @@
-let woodTypes = [
+const woodTypes = [
   { name: "hardened", namespace: "createindustry" },
   { name: "waterproof", namespace: "createindustry" },
 ];
 
-let woodVariants = [
+const woodVariants = [
   "stairs",
   "slab",
   "fence",
