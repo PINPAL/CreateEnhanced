@@ -5221,6 +5221,37 @@
 			x: -20.25d
 			y: -10.5d
 		}
+		{
+			dependencies: ["26D185F68C821538"]
+			icon: "minecraft:saddle"
+			id: "56AF1ABDDA4C0874"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6263BA60C63D6FBD"
+				table_id: 1792698340290304743L
+				title: "Horse Starter Kit"
+				type: "choice"
+			}]
+			subtitle: "Without trains, a horse is your best friend!"
+			tasks: [
+				{
+					icon: "minecraft:leather_horse_armor"
+					id: "6E6DBC70613AB4B5"
+					stat: "minecraft:horse_one_cm"
+					title: "Ride a Horse"
+					type: "stat"
+					value: 1
+				}
+				{
+					id: "2F5E4BF553CEB1AF"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+			]
+			title: "Early Game Transport"
+			x: -2.75d
+			y: 1.0d
+		}
 	]
 	title: "Create Modpack"
 }

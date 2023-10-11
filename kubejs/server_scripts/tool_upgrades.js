@@ -100,6 +100,25 @@ function upgradingItemsRecipes(event) {
    * @param {Number} upgrade_cost  the number upgrade items needed to upgrade
    */
   [
+    // Horse Armor
+    {
+      input_item: "minecraft:leather_horse_armor",
+      output_item: "minecraft:golden_horse_armor",
+      upgrade_item: "#forge:ingots/copper",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "minecraft:golden_horse_armor",
+      output_item: "minecraft:iron_horse_armor",
+      upgrade_item: "#forge:ingots/iron",
+      upgrade_cost: 2,
+    },
+    {
+      input_item: "minecraft:iron_horse_armor",
+      output_item: "minecraft:diamond_horse_armor",
+      upgrade_item: "#forge:gems/diamond",
+      upgrade_cost: 2,
+    },
     // Backpack
     {
       input_item: "sophisticatedbackpacks:backpack",

@@ -1,0 +1,12 @@
+{
+	icon: "farmersdelight:horse_feed"
+	id: "18E0F1A4726F9AE7"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "minecraft:name_tag" }
+		{ count: 2, item: "farmersdelight:horse_feed", random_bonus: 3 }
+		{ item: "minecraft:leather_horse_armor" }
+	]
+	title: "Horse Starter Kit"
+}
