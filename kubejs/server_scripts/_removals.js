@@ -248,7 +248,6 @@ const idsToRemove = [
   "create:item_application/copper_casing_from_wood",
   "create:item_application/copper_casing_from_log",
   "create:crafting/kinetics/super_glue",
-  "create:crafting/appliances/slime_ball",
   "create:crafting/curiosities/cake",
   "create:pressing/sugar_cane",
 ];

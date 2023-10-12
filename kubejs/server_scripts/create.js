@@ -200,11 +200,13 @@ ServerEvents.recipes((event) => {
     P: "createindustry:plastic_sheet",
   });
 
-  // Fix slime recipe
-  event.shapeless("minecraft:slime_ball", [
-    "minecraft:lime_dye",
-    "#forge:dough",
-  ]);
+  // Fix Dough
+  event.replaceInput({ input: "create:dough" }, "create:dough", "#forge:dough");
+  event.replaceInput(
+    { input: "farmersdelight:wheat_dough" },
+    "farmersdelight:wheat_dough",
+    "#forge:dough"
+  );
 
   // Nerf Tuff Crusing
   event.recipes.create.crushing(
