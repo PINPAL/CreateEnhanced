@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
   // Andesite Chest
   event.recipes.create.deploying(
     Item.of("sophisticatedstorage:gold_chest", '{woodType: "spruce"}'),
-    ["#forge:chests", "create:andesite_alloy"]
+    ["#forge:chests/wooden", "create:andesite_alloy"]
   );
   // Andesite Barrel
   event.recipes.create.deploying(

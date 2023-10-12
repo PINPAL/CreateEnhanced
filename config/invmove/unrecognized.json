@@ -104,7 +104,9 @@
     "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": true,
     "at.ridgo8.moreoverlays.gui.ConfigScreen": true,
     "xaero.common.gui.GuiAddWaypoint": true,
-    "xaero.common.gui.GuiMinimapMain": true
+    "xaero.common.gui.GuiMinimapMain": true,
+    "dev.emi.emi.screen.RecipeScreen": true,
+    "dev.emi.emi.screen.BoMScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

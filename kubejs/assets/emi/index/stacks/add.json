@@ -1,0 +1,144 @@
+{
+  "added": [
+    {
+      "stack": {
+        "type": "item",
+        "id": "create:extendo_grip",
+        "nbt": "{Unbreakable:1b,CurioAttributeModifiers:[{AttributeName:\"forge:attack_range\",Name:\"forge:attack_range\",Amount:3,Operation:0,UUID:[I;-1826537097,-1713487428,-1545263740,-720620157],Slot:\"hands\"},{AttributeName:\"forge:reach_distance\",Name:\"forge:reach_distance\",Amount:3,Operation:0,UUID:[I;775495772,434720553,-1780503515,1389346287],Slot:\"hands\"}]}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:water_bucket",
+        "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:1s}],CustomModelData:1,HideFlags:1,display:{Name:'{\"text\":\"Infinite Water Bucket\",\"italic\":false}'}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:gold_chest",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:gold_barrel",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_gold_barrel_1",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_gold_barrel_2",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_gold_barrel_3",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_gold_barrel_4",
+        "nbt": "{woodType: \"spruce\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:netherite_chest",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:netherite_barrel",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_netherite_barrel_1",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_netherite_barrel_2",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_netherite_barrel_3",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "sophisticatedstorage:limited_netherite_barrel_4",
+        "nbt": "{woodType: \"dark_oak\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "refinedstorage:cover",
+        "nbt": "{Item:{Count:1,id:\"create:brass_casing\"}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "refinedstorage:hollow_cover",
+        "nbt": "{Item:{Count:1,id:\"create:brass_casing\"}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "refinedstorage:cover",
+        "nbt": "{Item:{Count:1,id:\"create:andesite_casing\"}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "refinedstorage:hollow_cover",
+        "nbt": "{Item:{Count:1,id:\"create:andesite_casing\"}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:enchanted_book",
+        "nbt": "{display:{Lore:['[{\"text\":\"Can contain \",\"color\":\"gray\",\"italic\":false},{\"text\":\"ANY \",\"color\":\"red\",\"italic\":false},{\"text\":\"enchantment.\",\"color\":\"gray\",\"italic\":false}]','{\"text\":\" \"}','{\"text\":\"Equal chance of all enchants.\",\"color\":\"gold\",\"italic\":false}','{\"text\":\"Will always be Level I\",\"color\":\"yellow\",\"italic\":false}'],Name:'{\"text\":\"Random Enchanted Book\",\"color\":\"gold\",\"italic\":false}'}}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "wands:netherite_wand",
+        "nbt": "{Unbreakable: 1b}"
+      }
+    }
+  ]
+}

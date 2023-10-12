@@ -1,6 +1,10 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    /create_central_kitchen:incomplete_.*/,
+    "supplementaries:wrench",
+    "supplementaries:flute",
+    /create_crystal_clear:.*encased.*/,
     "create_things_and_misc:brass_knife",
     "create_things_and_misc:zinc_knife",
     /kubejs:broken_.*/,
@@ -16,22 +20,6 @@ JEIEvents.hideItems((event) => {
     "create_paper_line:frame",
     "create_paper_line:saw_dust",
     "create_paper_line:wood_chips",
-    "kubejs:white_dye_fluid_bucket",
-    "kubejs:orange_dye_fluid_bucket",
-    "kubejs:magenta_dye_fluid_bucket",
-    "kubejs:light_blue_dye_fluid_bucket",
-    "kubejs:yellow_dye_fluid_bucket",
-    "kubejs:lime_dye_fluid_bucket",
-    "kubejs:pink_dye_fluid_bucket",
-    "kubejs:gray_dye_fluid_bucket",
-    "kubejs:light_gray_dye_fluid_bucket",
-    "kubejs:cyan_dye_fluid_bucket",
-    "kubejs:purple_dye_fluid_bucket",
-    "kubejs:blue_dye_fluid_bucket",
-    "kubejs:brown_dye_fluid_bucket",
-    "kubejs:green_dye_fluid_bucket",
-    "kubejs:red_dye_fluid_bucket",
-    "kubejs:black_dye_fluid_bucket",
     "create_dd:condense_milk_bucket",
     "create_dd:cream_bucket",
     "create_dd:vanilla_bucket",
@@ -75,7 +63,7 @@ JEIEvents.hideItems((event) => {
     "supplementaries:bellows",
     "supplementaries:pulley_block",
     "supplementaries:bubble_blower",
-    /cofh_core:/,
+    /cofh_core:*/,
     /spawn_egg/,
     "minecraft:infested_stone",
     "minecraft:infested_cobblestone",
@@ -153,50 +141,50 @@ JEIEvents.addItems((event) => {
     "sophisticatedstorage:stack_upgrade_tier_4",
     "sophisticatedstorage:void_upgrade",
     "sophisticatedstorage:storage_tool",
-    Item.of(
-      "create:extendo_grip",
-      '{Unbreakable:1b,CurioAttributeModifiers:[{AttributeName:"forge:attack_range",Name:"forge:attack_range",Amount:3,Operation:0,UUID:[I;-1826537097,-1713487428,-1545263740,-720620157],Slot:"hands"},{AttributeName:"forge:reach_distance",Name:"forge:reach_distance",Amount:3,Operation:0,UUID:[I;775495772,434720553,-1780503515,1389346287],Slot:"hands"}]}'
-    ),
-    Item.of(
-      "minecraft:water_bucket",
-      '{CustomModelData:1,HideFlags:1,display:{Name:\'{"text":"Infinite Water Bucket","italic":false}\'}}'
-    ).enchant("minecraft:infinity", 1),
-    Item.of("sophisticatedstorage:gold_chest", '{woodType: "spruce"}'),
-    Item.of("sophisticatedstorage:gold_barrel", '{woodType: "spruce"}'),
-    Item.of(
-      "sophisticatedstorage:limited_gold_barrel_1",
-      '{woodType: "spruce"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_gold_barrel_2",
-      '{woodType: "spruce"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_gold_barrel_3",
-      '{woodType: "spruce"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_gold_barrel_4",
-      '{woodType: "spruce"}'
-    ),
-    Item.of("sophisticatedstorage:netherite_chest", '{woodType: "dark_oak"}'),
-    Item.of("sophisticatedstorage:netherite_barrel", '{woodType: "dark_oak"}'),
-    Item.of(
-      "sophisticatedstorage:limited_netherite_barrel_1",
-      '{woodType: "dark_oak"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_netherite_barrel_2",
-      '{woodType: "dark_oak"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_netherite_barrel_3",
-      '{woodType: "dark_oak"}'
-    ),
-    Item.of(
-      "sophisticatedstorage:limited_netherite_barrel_4",
-      '{woodType: "dark_oak"}'
-    ),
+    // Item.of(
+    //   "create:extendo_grip",
+    //   '{Unbreakable:1b,CurioAttributeModifiers:[{AttributeName:"forge:attack_range",Name:"forge:attack_range",Amount:3,Operation:0,UUID:[I;-1826537097,-1713487428,-1545263740,-720620157],Slot:"hands"},{AttributeName:"forge:reach_distance",Name:"forge:reach_distance",Amount:3,Operation:0,UUID:[I;775495772,434720553,-1780503515,1389346287],Slot:"hands"}]}'
+    // ),
+    // Item.of(
+    //   "minecraft:water_bucket",
+    //   '{CustomModelData:1,HideFlags:1,display:{Name:\'{"text":"Infinite Water Bucket","italic":false}\'}}'
+    // ).enchant("minecraft:infinity", 1),
+    // Item.of("sophisticatedstorage:gold_chest", '{woodType: "spruce"}'),
+    // Item.of("sophisticatedstorage:gold_barrel", '{woodType: "spruce"}'),
+    // Item.of(
+    //   "sophisticatedstorage:limited_gold_barrel_1",
+    //   '{woodType: "spruce"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_gold_barrel_2",
+    //   '{woodType: "spruce"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_gold_barrel_3",
+    //   '{woodType: "spruce"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_gold_barrel_4",
+    //   '{woodType: "spruce"}'
+    // ),
+    // Item.of("sophisticatedstorage:netherite_chest", '{woodType: "dark_oak"}'),
+    // Item.of("sophisticatedstorage:netherite_barrel", '{woodType: "dark_oak"}'),
+    // Item.of(
+    //   "sophisticatedstorage:limited_netherite_barrel_1",
+    //   '{woodType: "dark_oak"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_netherite_barrel_2",
+    //   '{woodType: "dark_oak"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_netherite_barrel_3",
+    //   '{woodType: "dark_oak"}'
+    // ),
+    // Item.of(
+    //   "sophisticatedstorage:limited_netherite_barrel_4",
+    //   '{woodType: "dark_oak"}'
+    // ),
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:iron_backpack",
     "sophisticatedbackpacks:gold_backpack",
@@ -239,27 +227,27 @@ JEIEvents.addItems((event) => {
     "simplemagnets:advanced_demagnetization_coil",
     "wands:palette",
     "chunkloaders:ultimate_chunk_loader",
-    Item.of("wands:netherite_wand", "{Unbreakable: 1b}"),
-    Item.of(
-      "minecraft:enchanted_book",
-      '{display:{Lore:[\'[{"text":"Can contain ","color":"gray","italic":false},{"text":"ANY ","color":"red","italic":false},{"text":"enchantment.","color":"gray","italic":false}]\',\'{"text":" "}\',\'{"text":"Equal chance of all enchants.","color":"gold","italic":false}\',\'{"text":"Will always be Level I","color":"yellow","italic":false}\'],Name:\'{"text":"Random Enchanted Book","color":"gold","italic":false}\'}}'
-    ),
-    Item.of(
-      "refinedstorage:cover",
-      '{Item:{Count:1,id:"create:brass_casing"}}'
-    ),
-    Item.of(
-      "refinedstorage:hollow_cover",
-      '{Item:{Count:1,id:"create:brass_casing"}}'
-    ),
-    Item.of(
-      "refinedstorage:cover",
-      '{Item:{Count:1,id:"create:andesite_casing"}}'
-    ),
-    Item.of(
-      "refinedstorage:hollow_cover",
-      '{Item:{Count:1,id:"create:andesite_casing"}}'
-    ),
+    // Item.of("wands:netherite_wand", "{Unbreakable: 1b}"),
+    // Item.of(
+    //   "minecraft:enchanted_book",
+    //   '{display:{Lore:[\'[{"text":"Can contain ","color":"gray","italic":false},{"text":"ANY ","color":"red","italic":false},{"text":"enchantment.","color":"gray","italic":false}]\',\'{"text":" "}\',\'{"text":"Equal chance of all enchants.","color":"gold","italic":false}\',\'{"text":"Will always be Level I","color":"yellow","italic":false}\'],Name:\'{"text":"Random Enchanted Book","color":"gold","italic":false}\'}}'
+    // ),
+    // Item.of(
+    //   "refinedstorage:cover",
+    //   '{Item:{Count:1,id:"create:brass_casing"}}'
+    // ),
+    // Item.of(
+    //   "refinedstorage:hollow_cover",
+    //   '{Item:{Count:1,id:"create:brass_casing"}}'
+    // ),
+    // Item.of(
+    //   "refinedstorage:cover",
+    //   '{Item:{Count:1,id:"create:andesite_casing"}}'
+    // ),
+    // Item.of(
+    //   "refinedstorage:hollow_cover",
+    //   '{Item:{Count:1,id:"create:andesite_casing"}}'
+    // ),
   ];
   addToJEI.forEach((item) => {
     event.add(item);

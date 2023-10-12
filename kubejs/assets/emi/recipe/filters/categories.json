@@ -1,0 +1,15 @@
+{
+  "filters": [
+    {
+      "id": "/emi:/crafting/repairing/",
+      "category": "minecraft:crafting"
+    },
+    {
+      "id": "/emi:/grindstone/repairing/",
+      "category": "emi:grinding"
+    },
+    {
+      "category": "emi:anvil_repairing"
+    }
+  ]
+}
