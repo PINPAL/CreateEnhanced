@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
       "sophisticatedstorage:limited_gold_barrel_1",
       '{woodType: "spruce"}'
     ),
-    [" L ", " B ", "   "],
+    [" B ", " L ", "   "],
     {
       L: "#minecraft:logs",
       B: "create:item_vault",
@@ -162,7 +162,7 @@ ServerEvents.recipes((event) => {
       "sophisticatedstorage:limited_gold_barrel_2",
       '{woodType: "spruce"}'
     ),
-    ["   ", "LBL", "   "],
+    ["   ", "BLB", "   "],
     {
       L: "#minecraft:logs",
       B: "create:item_vault",
@@ -174,7 +174,7 @@ ServerEvents.recipes((event) => {
       "sophisticatedstorage:limited_gold_barrel_3",
       '{woodType: "spruce"}'
     ),
-    [" L ", " B ", "L L"],
+    [" B ", " L ", "B B"],
     {
       L: "#minecraft:logs",
       B: "create:item_vault",
@@ -186,7 +186,7 @@ ServerEvents.recipes((event) => {
       "sophisticatedstorage:limited_gold_barrel_4",
       '{woodType: "spruce"}'
     ),
-    ["L L", " B ", "L L"],
+    ["B B", " L ", "B B"],
     {
       L: "#minecraft:logs",
       B: "create:item_vault",
