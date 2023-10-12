@@ -102,7 +102,9 @@
     "com.mrcrayfish.configured.client.screen.ChangeEnumScreen": true,
     "com.simibubi.create.content.contraptions.elevator.ElevatorContactScreen": true,
     "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": true,
-    "at.ridgo8.moreoverlays.gui.ConfigScreen": true
+    "at.ridgo8.moreoverlays.gui.ConfigScreen": true,
+    "xaero.common.gui.GuiAddWaypoint": true,
+    "xaero.common.gui.GuiMinimapMain": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

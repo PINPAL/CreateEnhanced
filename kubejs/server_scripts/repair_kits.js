@@ -60,7 +60,16 @@ ServerEvents.recipes((event) => {
       noTools: true,
       noKnife: true,
     },
-  ].forEach((material) => {
+  ];
+
+  // Shield
+  event.smithing(
+    "minecraft:shield",
+    "kubejs:broken_shield",
+    "kubejs:iron_repair_kit"
+  );
+
+  materials.forEach((material) => {
     if (material.name == "netherite") {
       event.smithing(
         "kubejs:netherite_repair_kit",

@@ -128,6 +128,7 @@ JEIEvents.hideItems((event) => {
     "minecraft:damaged_anvil",
     /chunkloaders:*/,
     "minecraft:enchanted_book",
+    "create:extendo_grip",
   ];
   hideFromJEI.forEach((item) => {
     event.hide(item);
@@ -152,6 +153,14 @@ JEIEvents.addItems((event) => {
     "sophisticatedstorage:stack_upgrade_tier_4",
     "sophisticatedstorage:void_upgrade",
     "sophisticatedstorage:storage_tool",
+    Item.of(
+      "create:extendo_grip",
+      '{Unbreakable:1b,CurioAttributeModifiers:[{AttributeName:"forge:attack_range",Name:"forge:attack_range",Amount:3,Operation:0,UUID:[I;-1826537097,-1713487428,-1545263740,-720620157],Slot:"hands"},{AttributeName:"forge:reach_distance",Name:"forge:reach_distance",Amount:3,Operation:0,UUID:[I;775495772,434720553,-1780503515,1389346287],Slot:"hands"}]}'
+    ),
+    Item.of(
+      "minecraft:water_bucket",
+      '{CustomModelData:1,HideFlags:1,display:{Name:\'{"text":"Infinite Water Bucket","italic":false}\'}}'
+    ).enchant("minecraft:infinity", 1),
     Item.of("sophisticatedstorage:gold_chest", '{woodType: "spruce"}'),
     Item.of("sophisticatedstorage:gold_barrel", '{woodType: "spruce"}'),
     Item.of(
