@@ -42,10 +42,7 @@ const outputsToRemove = [
   "supplementaries:crank",
   "supplementaries:faucet",
   "supplementaries:bamboo_spikes",
-  Item.of(
-    "supplementaries:bamboo_spikes_tipped",
-    '{Damage:0,Potion:"minecraft:poison"}'
-  ),
+  "supplementaries:bamboo_spikes_tipped",
   "supplementaries:bomb",
 
   // Nutritional Balance

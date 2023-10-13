@@ -41,24 +41,6 @@ ServerEvents.recipes((event) => {
 // ============================================================================
 // Remove villager trades for tools, armor, and enchantments.
 // ============================================================================
-/* TODO: USE THIS BETTER IMPLEMENTATION: 
-  BUT IT'S NOT WORKING YET:
-  Issues:
-  - The villager cannot be traded with if all trades are disabled.
-    > Potential Fix: Add a trade that is always enabled.
-*/
-// MoreJSEvents.updateVillagerOffers((event) => {
-//   // Remove all offers that are tools, armor, or enchantments.
-//   event.getOffers().removeIf((trade) => {
-//     let isNotAllowedTrade = trade
-//       .getOutput()
-//       .getId()
-//       .match(
-//         /.*_boots|_leggings|_chestplate|_helmet|_sword|_axe|_shovel|_pickaxe|_hoe|enchanted_book|bow|fishing_rod/g
-//       );
-//     return !!isNotAllowedTrade;
-//   });
-// });
 // FIXME: THIS IS THE WORKAROUND IMPLEMENTATION:
 MoreJSEvents.updateVillagerOffers((event) => {
   // Returns the offers that were added to the villager.

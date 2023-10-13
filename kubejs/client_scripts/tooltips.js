@@ -56,29 +56,3 @@ ItemEvents.tooltip((tooltip) => {
     text.add(2, [Text.of("Requires Repair").red()]);
   });
 });
-
-// const ItemDescription = Java.loadClass(
-//   "com.simibubi.create.foundation.item.ItemDescription$Modifier"
-// );
-// const TooltipModifier = Java.loadClass(
-//   "com.simibubi.create.foundation.item.TooltipModifier"
-// );
-// const Palette = Java.loadClass(
-//   "com.simibubi.create.foundation.item.TooltipHelper$Palette"
-// );
-
-// ItemEvents.tooltip((event) => {
-//   event.addAdvanced("chunkloaders:ultimate_chunk_loader", (item) => {
-//     TooltipModifier.REGISTRY.register(
-//       item.item,
-//       new ItemDescription(item.item, Palette.STANDARD_CREATE)
-//     );
-//   });
-
-//   event.addAdvanced("createchunkloading:chunk_loader", (item) => {
-//     TooltipModifier.REGISTRY.register(
-//       item.item,
-//       new ItemDescription(item.item, Palette.STANDARD_CREATE)
-//     );
-//   });
-// });

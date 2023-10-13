@@ -8,7 +8,6 @@ const hideFromJEI = [
   /wands:*/,
   /ftbquests:*/,
   /chunkloaders:*/,
-  /cofh_core:*/,
   /doubleslabs:.*/,
 
   // Regex Match
