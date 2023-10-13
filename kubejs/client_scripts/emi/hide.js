@@ -1,24 +1,44 @@
 const hideFromJEI = [
-  "create_things_and_misc:cherry_sail",
   /create_central_kitchen:incomplete_.*/,
-  "supplementaries:wrench",
-  "supplementaries:flute",
   /create_crystal_clear:.*encased.*/,
-  "create_things_and_misc:brass_knife",
-  "create_things_and_misc:zinc_knife",
   /kubejs:broken_.*/,
   /kubejs:incomplete_.*/,
   /supplementaries:.*vertical_slab/,
   /alloyed:.*vertical_slab/,
   /doubleslabs:.*/,
   /createdeco:.*slab_vert/,
-  "create_dd:kinetic_motor",
-  "create_dd:accelerator_motor",
-  "kubejs:belt_scroll",
   /createaddition:.*electrum.*/,
+  /createindustry:.*concrete.*/,
+  /cofh_core:*/,
+  /spawn_egg/,
+  /sophisticatedbackpacks:*/,
+  /sophisticatedstorage:*/,
+  /refinedstorage:*/,
+  /itemfilters:*/,
+  /simplemagnets:*/,
+  /wands:*/,
+  /ftbquests:*/,
+  /supplementaries:.*present.*/,
+  /chunkloaders:*/,
+
+  "#forge:pickaxes",
+  "#forge:shovels",
+  "#forge:axes",
+
+  "kubejs:belt_scroll",
+
+  "create:extendo_grip",
+
+  "create_things_and_misc:cherry_sail",
+  "create_things_and_misc:brass_knife",
+  "create_things_and_misc:zinc_knife",
+
   "create_paper_line:frame",
   "create_paper_line:saw_dust",
   "create_paper_line:wood_chips",
+
+  "create_dd:kinetic_motor",
+  "create_dd:accelerator_motor",
   "create_dd:condense_milk_bucket",
   "create_dd:cream_bucket",
   "create_dd:vanilla_bucket",
@@ -34,11 +54,13 @@ const hideFromJEI = [
   "create_dd:industrial_iron_ingot",
   "create_dd:industrial_iron_nugget",
   "create_dd:industrial_iron_sheet",
+  "create_dd:deforester_saw",
+
   "createaddition:digital_adapter",
+
   "createindustry:napalm_bomb",
   "createindustry:napalm_bucket",
   "createindustry:thermite_grenade",
-  /createindustry:.*concrete.*/,
   "createindustry:mesh",
   "createindustry:thermite_powder",
   "createindustry:napalm",
@@ -51,8 +73,13 @@ const hideFromJEI = [
   "createindustry:steel_scaffolding",
   "createindustry:industrial_barrel",
   "createindustry:caution_block",
+
   "nutritionalbalance:lunchbox",
-  "create_dd:deforester_saw",
+
+  "supplementaries:crank",
+  "supplementaries:faucet",
+  "supplementaries:wrench",
+  "supplementaries:flute",
   "supplementaries:soap",
   "supplementaries:soap_block",
   "supplementaries:bamboo_spikes",
@@ -62,8 +89,9 @@ const hideFromJEI = [
   "supplementaries:bellows",
   "supplementaries:pulley_block",
   "supplementaries:bubble_blower",
-  /cofh_core:*/,
-  /spawn_egg/,
+
+  "shrink:mob_bottle",
+
   "minecraft:infested_stone",
   "minecraft:infested_cobblestone",
   "minecraft:infested_stone_bricks",
@@ -71,11 +99,9 @@ const hideFromJEI = [
   "minecraft:infested_cracked_stone_bricks",
   "minecraft:infested_chiseled_stone_bricks",
   "minecraft:infested_deepslate",
-  "shrink:mob_bottle",
-  "#forge:pickaxes",
-  "#forge:shovels",
-  "#forge:axes",
+
   "farmersdelight:golden_knife",
+
   "alloyed:steel_pickaxe",
   "alloyed:steel_shovel",
   "alloyed:steel_axe",
@@ -87,16 +113,11 @@ const hideFromJEI = [
   "alloyed:bronze_ingot",
   "alloyed:bronze_nugget",
   "alloyed:bronze_sheet",
-  "supplementaries:crank",
-  "supplementaries:faucet",
-  /supplementaries:.*present.*/,
+
   "easypaxellite:netherite_paxel_ingot",
-  /sophisticatedbackpacks:*/,
-  /sophisticatedstorage:*/,
-  /refinedstorage:*/,
-  /itemfilters:*/,
-  /simplemagnets:*/,
+
   "refinedstorageaddons:creative_wireless_crafting_grid",
+
   "ironjetpacks:strap",
   "ironjetpacks:thruster",
   "ironjetpacks:capacitor",
@@ -104,18 +125,16 @@ const hideFromJEI = [
   "ironjetpacks:basic_coil",
   "ironjetpacks:advanced_coil",
   "ironjetpacks:ultimate_coil",
-  "minecraft:elytra",
-  /wands:*/,
-  /ftbquests:*/,
+
   "easy_villagers:iron_farm",
   "easy_villagers:farmer",
+
+  "minecraft:elytra",
   "minecraft:anvil",
   "minecraft:chipped_anvil",
   "minecraft:damaged_anvil",
   "minecraft:brewing_stand",
-  /chunkloaders:*/,
   "minecraft:enchanted_book",
-  "create:extendo_grip",
 ];
 
 JEIEvents.hideItems((event) => {
