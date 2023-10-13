@@ -1,6 +1,7 @@
 JEIEvents.hideItems((event) => {
   // Hide Items
   const hideFromJEI = [
+    "create_things_and_misc:cherry_sail",
     /create_central_kitchen:incomplete_.*/,
     "supplementaries:wrench",
     "supplementaries:flute",

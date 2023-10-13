@@ -219,7 +219,7 @@ ServerEvents.recipes((event) => {
     .mixing("createindustry:coal_coke", "#minecraft:coals")
     .heated();
 
-  // Harder steel
+  // Harder Steel
   event.recipes.create
     .compacting("create_dd:steel_ingot", [
       "2x #forge:ingots/cast_iron",
@@ -227,4 +227,25 @@ ServerEvents.recipes((event) => {
     ])
     .heated()
     .id("kubejs:steel_ingot");
+
+  // Harder Sails
+  const sailWoods = [
+    "oak",
+    "spruce",
+    "birch",
+    "jungle",
+    "acacia",
+    "dark_oak",
+    "crimson",
+    "warped",
+    "mangrove",
+    "bamboo",
+  ];
+  sailWoods.forEach((wood) => {
+    event.remove({ output: `create_things_and_misc:${wood}_sail` });
+    event.shapeless(`create_things_and_misc:${wood}_sail`, [
+      "create:white_sail",
+      wood == "bamboo" ? `quark:bamboo_planks` : `minecraft:${wood}_planks`,
+    ]);
+  });
 });
