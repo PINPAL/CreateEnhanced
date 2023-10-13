@@ -4,14 +4,18 @@ StartupEvents.registry("block", (event) => {
     .displayName("Rainbow Placard")
     .material("metal")
     .tagBlock("minecraft:mineable/paxel")
-    .defaultCutout();
+    .defaultCutout()
+    // collision box is 2 pixels of a full block on all sides and 3 pixels tall
+    .box(2, 0, 2, 14, 3, 14);
 
   event
     .create("rainbow_candle")
     .displayName("Rainbow Candle")
     .material("wool")
     .tagBlock("minecraft:mineable/paxel")
-    .defaultCutout();
+    .defaultCutout()
+    // collision box is 7 pixels of a full block on all sides and 6 pixels tall
+    .box(7, 0, 7, 9, 6, 9);
 
   event
     .create("rainbow_canvas_sign")
@@ -20,7 +24,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/paxel")
     .opaque(false)
     .fullBlock(false)
-    .noCollision();
+    .noCollision()
+    // collision box is 4 pixels of a full block on all sides and 16 pixels tall
+    .box(4, 0, 4, 12, 16, 12);
 
   event
     .create("rainbow_wool")
@@ -39,7 +45,9 @@ StartupEvents.registry("block", (event) => {
     .displayName("Rainbow Valve Handle")
     .material("stone")
     .tagBlock("minecraft:mineable/pickaxe")
-    .defaultCutout();
+    .defaultCutout()
+    // collision box is 1 pixels of a full block on all sides and 8 pixels tall
+    .box(1, 0, 1, 15, 8, 15);
 });
 
 StartupEvents.registry("item", (event) => {

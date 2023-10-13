@@ -36,9 +36,6 @@ const outputsToRemove = [
   /alloyed:.*vertical_slab/,
   /supplementaries:.*vertical_slab/,
 
-  // Minecraft
-  "minecraft:anvil",
-
   // Supplementaries
   "supplementaries:cog_block",
   "supplementaries:bubble_blower",

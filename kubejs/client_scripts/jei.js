@@ -114,6 +114,7 @@ JEIEvents.hideItems((event) => {
     "minecraft:anvil",
     "minecraft:chipped_anvil",
     "minecraft:damaged_anvil",
+    "minecraft:brewing_stand",
     /chunkloaders:*/,
     "minecraft:enchanted_book",
     "create:extendo_grip",

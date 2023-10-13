@@ -37,7 +37,13 @@ ItemEvents.tooltip((tooltip) => {
     });
   });
 
-  const disabledItems = ["minecraft:enchanting_table", "minecraft:anvil"];
+  const disabledItems = [
+    "minecraft:enchanting_table",
+    "minecraft:anvil",
+    "minecraft:brewing_stand",
+    "kubejs:anvil",
+    "kubejs:brewing_stand",
+  ];
   disabledItems.forEach((disabledItem) => {
     tooltip.addAdvanced(disabledItem, (item, advanced, text) => {
       text.add(1, [Text.of("Decorative Only").gray()]);
