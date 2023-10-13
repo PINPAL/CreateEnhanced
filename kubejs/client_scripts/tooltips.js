@@ -37,6 +37,14 @@ ItemEvents.tooltip((tooltip) => {
     });
   });
 
+  const disabledItems = ["minecraft:enchanting_table", "minecraft:anvil"];
+  disabledItems.forEach((disabledItem) => {
+    tooltip.addAdvanced(disabledItem, (item, advanced, text) => {
+      text.add(1, [Text.of("Decorative Only").gray()]);
+      text.add(1, [Text.of("Functionally Useless").gold()]);
+    });
+  });
+
   tooltip.addAdvanced(/kubejs:broken_.*/, (item, advanced, text) => {
     text.add(1, [Text.of("Item is Broken").darkRed()]);
     text.add(2, [Text.of("Requires Repair").red()]);

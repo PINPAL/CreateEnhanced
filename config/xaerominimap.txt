@@ -42,12 +42,12 @@ waypointsDistanceMin:0.0
 defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
 defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
 arrowScale:1.5
-arrowColour:0
+arrowColour:5
 smoothDots:true
 worldMap:true
 terrainDepth:true
 terrainSlopes:2
-mainEntityAs:0
+mainEntityAs:2
 blockTransparency:true
 waypointOpacityIngame:80
 waypointOpacityMap:90

@@ -111,7 +111,6 @@ JEIEvents.hideItems((event) => {
     /ftbquests:*/,
     "easy_villagers:iron_farm",
     "easy_villagers:farmer",
-    "minecraft:enchanting_table",
     "minecraft:anvil",
     "minecraft:chipped_anvil",
     "minecraft:damaged_anvil",

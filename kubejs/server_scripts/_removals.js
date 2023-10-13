@@ -38,7 +38,6 @@ const outputsToRemove = [
 
   // Minecraft
   "minecraft:anvil",
-  "minecraft:enchanting_table",
 
   // Supplementaries
   "supplementaries:cog_block",
