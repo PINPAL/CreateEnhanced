@@ -1,16 +1,5 @@
 const hideFromJEI = [
-  /create_central_kitchen:incomplete_.*/,
-  /create_crystal_clear:.*encased.*/,
-  /kubejs:broken_.*/,
-  /kubejs:incomplete_.*/,
-  /supplementaries:.*vertical_slab/,
-  /alloyed:.*vertical_slab/,
-  /doubleslabs:.*/,
-  /createdeco:.*slab_vert/,
-  /createaddition:.*electrum.*/,
-  /createindustry:.*concrete.*/,
-  /cofh_core:*/,
-  /spawn_egg/,
+  // Mod Match
   /sophisticatedbackpacks:*/,
   /sophisticatedstorage:*/,
   /refinedstorage:*/,
@@ -18,13 +7,29 @@ const hideFromJEI = [
   /simplemagnets:*/,
   /wands:*/,
   /ftbquests:*/,
-  /supplementaries:.*present.*/,
   /chunkloaders:*/,
+  /cofh_core:*/,
+  /doubleslabs:.*/,
 
+  // Regex Match
+  /create_central_kitchen:incomplete_.*/,
+  /create_crystal_clear:.*encased.*/,
+  /kubejs:broken_.*/,
+  /kubejs:incomplete_.*/,
+  /supplementaries:.*vertical_slab/,
+  /alloyed:.*vertical_slab/,
+  /createdeco:.*slab_vert/,
+  /createaddition:.*electrum.*/,
+  /createindustry:.*concrete.*/,
+  /spawn_egg/,
+  /supplementaries:.*present.*/,
+
+  // Tag Match
   "#forge:pickaxes",
   "#forge:shovels",
   "#forge:axes",
 
+  // Item Match
   "kubejs:belt_scroll",
 
   "create:extendo_grip",
