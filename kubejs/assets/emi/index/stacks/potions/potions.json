@@ -1,0 +1,291 @@
+{
+  "added": [
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:water\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:mundane\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:thick\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:awkward\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:night_vision\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_night_vision\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:invisibility\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_invisibility\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:leaping\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_leaping\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_leaping\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:fire_resistance\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_fire_resistance\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:swiftness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_swiftness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_swiftness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:slowness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_slowness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_slowness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:turtle_master\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_turtle_master\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_turtle_master\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:water_breathing\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_water_breathing\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:healing\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_healing\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:harming\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_harming\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:poison\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_poison\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_poison\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:regeneration\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_regeneration\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_regeneration\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strength\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_strength\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:strong_strength\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:weakness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_weakness\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:slow_falling\"}"
+      }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_slow_falling\"}"
+      }
+    }
+  ]
+}
