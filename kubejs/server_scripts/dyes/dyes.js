@@ -79,6 +79,12 @@ const colors = [
 ];
 
 ServerEvents.recipes((event) => {
+  // Hazard Block
+  event.recipes.create.mixing(
+    ["create_dd:hazard_block"],
+    ["create_dd:asphalt_block", Fluid.of("kubejs:yellow_dye_fluid", 125)]
+  );
+
   colors.forEach((colorObject) => {
     event.remove({ output: "minecraft:" + colorObject.color + "_dye" });
     event.remove({

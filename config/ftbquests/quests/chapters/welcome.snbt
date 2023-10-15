@@ -1716,8 +1716,8 @@
 				type: "item"
 			}]
 			title: "Full Steam Ahead!"
-			x: 0.875d
-			y: 15.375d
+			x: 2.75d
+			y: 14.625d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]
@@ -2335,7 +2335,7 @@
 			]
 			title: "Automatic Trains"
 			x: 0.25d
-			y: 14.625d
+			y: 14.5d
 		}
 		{
 			dependencies: ["2B04669626480B2F"]
@@ -5271,6 +5271,35 @@
 			title: "The Ultimate Horse"
 			x: -3.875d
 			y: 1.0d
+		}
+		{
+			dependencies: ["5D83A0E68CAC463B"]
+			id: "3A9F73A91D116F87"
+			subtitle: "Controlling your train."
+			tasks: [{
+				id: "0AA9CFD0EA625474"
+				item: "create:controls"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.25d
+		}
+		{
+			dependencies: ["3A9F73A91D116F87"]
+			id: "0B4BACB9974CBF49"
+			rewards: [{
+				id: "0FB53CD46D23DFDB"
+				item: "minecraft:minecart"
+				type: "item"
+			}]
+			subtitle: "Mini Trains!"
+			tasks: [{
+				id: "037AA77BFC8928A1"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: 0.625d
+			y: 16.125d
 		}
 	]
 	title: "Create Modpack"

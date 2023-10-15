@@ -106,7 +106,9 @@
     "xaero.common.gui.GuiAddWaypoint": true,
     "xaero.common.gui.GuiMinimapMain": true,
     "dev.emi.emi.screen.RecipeScreen": true,
-    "dev.emi.emi.screen.BoMScreen": true
+    "dev.emi.emi.screen.BoMScreen": true,
+    "xaero.common.gui.GuiWaypoints": true,
+    "com.simibubi.create.content.equipment.toolbox.RadialToolboxMenu": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

@@ -193,7 +193,7 @@ ServerEvents.recipes((event) => {
     M: "create_dd:integrated_mechanism",
   });
 
-  // Fix Mithril Recipe
+  // Mithril Ingot
   event.recipes.create
     .mixing(
       ["create_dd:mithril_ingot"],
@@ -206,6 +206,14 @@ ServerEvents.recipes((event) => {
       ]
     )
     .superheated();
+
+  // Asphalt
+  event.recipes.create
+    .mixing(
+      ["16x create_dd:asphalt_block"],
+      ["2x create:scoria", Fluid.of("create_things_and_misc:slime", 100)]
+    )
+    .heated();
 
   // Electron Tube
   event.shaped("8x create:electron_tube", [" R ", " N ", " P "], {

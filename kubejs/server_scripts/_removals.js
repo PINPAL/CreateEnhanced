@@ -31,6 +31,9 @@ const outputsToRemove = [
   "#forge:armors/leggings",
   "#forge:armors/boots",
 
+  // Minecraft
+  "minecraft:lodestone",
+
   // Vertical Slabs
   /createdeco:.*slab_vert/,
   /alloyed:.*vertical_slab/,
@@ -114,6 +117,7 @@ const outputsToRemove = [
   "create_dd:caramel_milkshake_bucket",
   "create_dd:hot_chocolate_bucket",
   "create_dd:chocolate_milkshake_bucket",
+
   "create_dd:steel_block",
   "create_dd:kinetic_motor",
   "create_dd:accelerator_motor",
@@ -214,6 +218,7 @@ const idsToRemove = [
   "create_dd:industrial_iron/detector_rail",
   "create_dd:industrial_iron/hopper",
   "create_dd:compacting/steel_ingot",
+  "create_dd:crafting/asphalt_hazard_block",
 
   // Create Paper Line
   "create_paper_line:mixing/wood_pulp",

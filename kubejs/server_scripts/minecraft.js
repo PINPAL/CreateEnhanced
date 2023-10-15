@@ -1,4 +1,10 @@
 ServerEvents.recipes((event) => {
+  // Lodestone
+  event.shaped("8x minecraft:lodestone", ["III", "IDI", "III"], {
+    I: "minecraft:chiseled_stone_bricks",
+    D: "#forge:ingots/brass",
+  });
+
   // Saddle
   event.recipes
     .createSequencedAssembly(["minecraft:saddle"], "#forge:nuggets/iron", [
