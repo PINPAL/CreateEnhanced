@@ -1,0 +1,65 @@
+
+["forge:foods"]
+	#Whether the tag forge:foods should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:foods.
+	blacklist = []
+	#Items that should be given the tag forge:foods, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:furnace_fuels"]
+	#Whether the tag forge:furnace_fuels should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:furnace_fuels.
+	blacklist = []
+	#Items that should be given the tag forge:furnace_fuels, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:blocks"]
+	#Whether the tag forge:blocks should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:blocks.
+	blacklist = []
+	#Items that should be given the tag forge:blocks, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:damageable"]
+	#Whether the tag forge:damageable should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:damageable.
+	blacklist = []
+	#Items that should be given the tag forge:damageable, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:unstackable"]
+	#Whether the tag forge:unstackable should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:unstackable.
+	blacklist = []
+	#Items that should be given the tag forge:unstackable, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:redstone_components"]
+	#Whether the tag forge:redstone_components should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:redstone_components.
+	blacklist = []
+	#Items that should be given the tag forge:redstone_components, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:brewing_ingredients"]
+	#Whether the tag forge:brewing_ingredients should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:brewing_ingredients.
+	blacklist = []
+	#Items that should be given the tag forge:brewing_ingredients, even if they do not meet it's conditions
+	whitelist = []
+
+["forge:potions"]
+	#Whether the tag forge:potions should be enabled.
+	enabled = true
+	#Items that should never be given the tag forge:potions.
+	blacklist = []
+	#Items that should be given the tag forge:potions, even if they do not meet it's conditions
+	whitelist = []
+

@@ -78,5 +78,8 @@
   },
   "corpse": {
     "corpse": true
+  },
+  "melter": {
+    "melter_data": true
   }
 }

@@ -16,22 +16,40 @@ const metals = [
 
 ServerEvents.recipes((event) => {
   metals.forEach((metal) => {
+    // iron block -> molten iron fluid
+    event.recipes
+      .melterMelting(
+        Fluid.of("kubejs:molten_" + metal.name, 10),
+        `${metal.mod}:${metal.name}_block`
+      )
+      .processingTime(200)
+      .minimumHeat(16);
+
+    // molten iron fluid -> molten iron ingot
+    event.custom({
+      type: "create_dd:freezing",
+      ingredients: [
+        {
+          item: `kubejs:molten_${metal.name}_bucket`,
+        },
+      ],
+      results: [
+        {
+          item: `kubejs:molten_${metal.name}_ingot`,
+          count: 1,
+        },
+        {
+          item: "minecraft:bucket",
+          count: 1,
+        },
+      ],
+    });
+
+    // molten iron ingot -> molten iron block
     event.recipes.create
       .compacting(
-        Item.of(`kubejs:molten_${metal.name}_ingot`),
-        Item.of(`${metal.mod}:${metal.name}_block`)
-      )
-      .superheated();
-
-    event.recipes.create.emptying(
-      [Fluid.of("kubejs:molten_" + metal.name, 10)],
-      Item.of("kubejs:molten_" + metal.name + "_ingot")
-    );
-
-    event.recipes.create
-      .mixing(
-        [Item.of("kubejs:molten_" + metal.name + "_block")],
-        [Fluid.of("kubejs:molten_" + metal.name, 1000)]
+        Item.of(`kubejs:molten_${metal.name}_block`),
+        Item.of(`11x kubejs:molten_${metal.name}_ingot`)
       )
       .superheated();
   });

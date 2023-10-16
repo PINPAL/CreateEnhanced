@@ -40,6 +40,37 @@ ItemEvents.tooltip((tooltip) => {
     });
   });
 
+  const moltenMetals = [
+    { name: "iron", type: "ingot" },
+    { name: "copper", type: "ingot" },
+    { name: "gold", type: "ingot" },
+    { name: "zinc", type: "ingot" },
+    { name: "brass", type: "ingot" },
+    { name: "tin", type: "ingot" },
+    { name: "bronze", type: "ingot" },
+    { name: "steel", type: "ingot" },
+    { name: "cast_iron", type: "ingot" },
+    { name: "diamond", type: "plural" },
+    { name: "emerald", type: "plural" },
+    { name: "powdered_obsidian", type: "gem" },
+    { name: "redstone", type: "gem" },
+  ];
+  moltenMetals.forEach((moltenMetal) => {
+    tooltip.addAdvanced(
+      `kubejs:molten_${moltenMetal.name}_block`,
+      (item, advanced, text) => {
+        text.add(1, [
+          Text.of("Consists of ").gray(),
+          Text.of("1080").aqua(),
+          Text.of("x ").gray(),
+          Text.of(formatName(moltenMetal.name)).darkAqua(),
+          Text.of(moltenMetal.type == "ingot" ? " Ingots" : "").gray(),
+          Text.of(moltenMetal.type == "plural" ? "s" : "").gray(),
+        ]);
+      }
+    );
+  });
+
   const endGameIngredients = ["kubejs:creative_omega_potion"];
   endGameIngredients.forEach((customItem) => {
     tooltip.addAdvanced(customItem, (item, advanced, text) => {

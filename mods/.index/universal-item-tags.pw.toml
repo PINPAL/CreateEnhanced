@@ -1,0 +1,14 @@
+name = "Universal Item Tags"
+filename = "Universal-Item-Tags-1.19-20-1.0.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "7e358e3ee6d853f8e401f5f5d5f0d5a0e75958a6"
+
+[update]
+[update.curseforge]
+file-id = 4762435
+project-id = 915421

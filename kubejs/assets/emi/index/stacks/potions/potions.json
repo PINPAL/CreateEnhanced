@@ -11,27 +11,6 @@
       "stack": {
         "type": "item",
         "id": "minecraft:potion",
-        "nbt": "{Potion:\"minecraft:mundane\"}"
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "minecraft:potion",
-        "nbt": "{Potion:\"minecraft:thick\"}"
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "minecraft:potion",
-        "nbt": "{Potion:\"minecraft:awkward\"}"
-      }
-    },
-    {
-      "stack": {
-        "type": "item",
-        "id": "minecraft:potion",
         "nbt": "{Potion:\"minecraft:night_vision\"}"
       }
     },

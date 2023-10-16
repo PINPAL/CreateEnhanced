@@ -16,6 +16,7 @@ const modsToRemove = [
   "easy_villagers",
   "wands",
   "netherite_horse_armor",
+  "melter",
 ];
 
 ServerEvents.recipes((event) => {

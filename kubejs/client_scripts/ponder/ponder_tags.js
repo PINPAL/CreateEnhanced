@@ -21,6 +21,14 @@ Ponder.tags((event) => {
   );
 
   event.createTag(
+    "kubejs:melting",
+    "melter:melter",
+    "Melter",
+    "Melting Blocks into Fluids",
+    ["melter:melter"]
+  );
+
+  event.createTag(
     "kubejs:coin_stacks",
     "createdeco:gold_coinstack",
     "Coin Stacking",
