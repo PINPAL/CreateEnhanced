@@ -7,7 +7,10 @@ StartupEvents.registry("item", (event) => {
     .create("chlorine_canister")
     .displayName("Chlorine Gas Canister")
     .tooltip("Chlorine Gas: 1000/1000 mB")
-    .unstackable();
+    .unstackable()
+    .food((food) => {
+      food.alwaysEdible().effect("minecraft:poison", 300, 1, 1);
+    });
   event
     .create("brine_canister")
     .displayName("Brine Canister")
