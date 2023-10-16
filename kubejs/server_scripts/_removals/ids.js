@@ -85,6 +85,12 @@ const idsToRemove = [
   "create:crafting/kinetics/super_glue",
   "create:crafting/curiosities/cake",
   "create:pressing/sugar_cane",
+
+  // Create Allyoed
+  "alloyed:item_application/steel_casing_from_log",
+  "alloyed:item_application/steel_casing_from_wood",
+  "alloyed:item_application/steel_casing_from_log_using_deployer",
+  "alloyed:item_application/steel_casing_from_wood_using_deployer",
 ];
 
 ServerEvents.recipes((event) => {

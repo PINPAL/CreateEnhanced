@@ -1,4 +1,29 @@
 ServerEvents.recipes((event) => {
+  // Cheap Alloyed Steel Casing
+  event.recipes.create
+    .deploying("alloyed:steel_casing", [
+      "#forge:stripped_logs",
+      "#forge:nuggets/steel",
+    ])
+    .keepHeldItem();
+  event.recipes.create
+    .deploying("alloyed:steel_casing", [
+      "#forge:stripped_wood",
+      "#forge:nuggets/steel",
+    ])
+    .keepHeldItem();
+  event.recipes
+    .createItemApplication("alloyed:steel_casing", [
+      "#forge:stripped_logs",
+      "#forge:nuggets/steel",
+    ])
+    .keepHeldItem();
+  event.recipes
+    .createItemApplication("alloyed:steel_casing", [
+      "#forge:stripped_wood",
+      "#forge:nuggets/steel",
+    ])
+    .keepHeldItem();
   // Cheap Netherite Building Blocks
   event.stonecutting(
     "16x createdeco:netherite_bars",

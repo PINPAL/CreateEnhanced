@@ -63,7 +63,7 @@
 	"Jukebox Automation" = true
 	"Iron Rod" = false
 	Gravisand = false
-	"Feeding Trough" = false
+	"Feeding Trough" = true
 	"Ender Watcher" = true
 	"Dispensers Place Blocks" = false
 	Chute = false
