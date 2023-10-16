@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
     ],
     {
       M: "kubejs:metal_alloy_block",
-      O: "everycomp:q/create_dd/smoked_bookshelf",
+      O: "kubejs:creative_omega_potion",
       Z: "kubejs:rainbow_core",
       R: "minecraft:recovery_compass",
       B: "create_dd:overcharge_alloy",

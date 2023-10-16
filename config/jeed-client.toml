@@ -3,7 +3,7 @@ effect_color = true
 #Draw a black box behind effect icons
 effect_box = true
 #A list of effects that should not be registered nor shown in JEI
-hidden_effects = ["cofh_core:cold_resistance", "cofh_core:explosion_resistance", "cofh_core:lightning_resistance", "cofh_core:magic_resistance", "cofh_core:supercharge", "cofh_core:clarity", "cofh_core:love", "cofh_core:panacea", "cofh_core:enderference", "cofh_core:slimed", "cofh_core:chilled", "cofh_core:shocked", "cofh_core:sundered", "cofh_core:wrenched", "nutritionalbalance:engorged_effect", "quark:resilience"]
+hidden_effects = [""]
 #Show ingredients list along with an effect description
 ingredients_list = true
 #Renders individual slots instead of a big one. Only works for REI

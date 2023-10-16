@@ -1,4 +1,8 @@
-const incompleteAssemblies = ["saddle", "totem_of_undying"];
+const incompleteAssemblies = [
+  "saddle",
+  "totem_of_undying",
+  "creative_omega_potion",
+];
 
 StartupEvents.registry("item", (event) => {
   incompleteAssemblies.forEach((assembly) => {

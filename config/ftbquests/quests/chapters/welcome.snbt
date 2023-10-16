@@ -65,7 +65,7 @@
 			rotation: 0.0d
 			width: 17.5d
 			x: 30.0d
-			y: 0.0d
+			y: -5.0d
 		}
 		{
 			click: ""
@@ -139,7 +139,7 @@
 			rotation: 0.0d
 			width: 15.0d
 			x: 30.0d
-			y: -7.0d
+			y: -12.0d
 		}
 		{
 			click: ""
@@ -227,8 +227,8 @@
 			order: -9999
 			rotation: 0.0d
 			width: 17.5d
-			x: -25.0d
-			y: -12.125d
+			x: -30.0d
+			y: -5.0d
 		}
 		{
 			click: ""
@@ -239,8 +239,200 @@
 			image: "quests:textures/farming_title.png"
 			rotation: 0.0d
 			width: 15.0d
-			x: -25.0d
-			y: -18.875d
+			x: -30.0d
+			y: -12.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 17.5d
+			hover: [ ]
+			image: "quests:textures/potions_background.png"
+			rotation: 0.0d
+			width: 17.5d
+			x: 30.0d
+			y: 14.62d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.0d
+			hover: [ ]
+			image: "quests:textures/potion_title.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 30.0d
+			y: 7.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 6.5d
+			hover: [ ]
+			image: "quests:textures/brewing_guide.png"
+			rotation: 0.0d
+			width: 6.5d
+			x: 35.375d
+			y: 13.625d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.5d
+			hover: [ ]
+			image: "quests:textures/pin.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 36.3d
+			y: 11.05d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 35.325d
+			y: 12.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 35.325d
+			y: 13.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 35.325d
+			y: 14.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 36.7d
+			y: 12.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 36.7d
+			y: 13.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 36.7d
+			y: 14.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "quests:textures/brewing_strong.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 37.375d
+			y: 12.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "quests:textures/brewing_lingering.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.0d
+			y: 15.625d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "quests:textures/brewing_splash.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 37.375d
+			y: 14.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "quests:textures/brewing_long.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 37.375d
+			y: 13.25d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow_down.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 37.375d
+			y: 14.925d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: [ ]
+			image: "quests:textures/brewing_arrow_invert.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 36.7d
+			y: 15.625d
 		}
 	]
 	order_index: 0
@@ -2423,8 +2615,8 @@
 				type: "checkmark"
 			}]
 			title: "Farming"
-			x: -22.25d
-			y: -12.125d
+			x: -26.75d
+			y: -5.25d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
@@ -2444,8 +2636,8 @@
 				}
 			]
 			title: "Cobblestone Generator"
-			x: -23.375d
-			y: -14.625d
+			x: -27.875d
+			y: -7.75d
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
@@ -2464,8 +2656,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -25.5d
-			y: -13.625d
+			x: -30.0d
+			y: -6.75d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
@@ -2486,8 +2678,8 @@
 				}
 			]
 			title: "Renewable Iron"
-			x: -24.5d
-			y: -13.125d
+			x: -29.0d
+			y: -6.25d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
@@ -2507,8 +2699,8 @@
 				}
 			]
 			title: "Sand"
-			x: -24.375d
-			y: -15.875d
+			x: -28.875d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7900CBBDF3093BC3"]
@@ -2529,8 +2721,8 @@
 				}
 			]
 			title: "Gold"
-			x: -28.375d
-			y: -15.375d
+			x: -32.875d
+			y: -8.5d
 		}
 		{
 			dependencies: ["536C67D9469F3995"]
@@ -2591,8 +2783,8 @@
 				}
 			]
 			title: "Soul Sand"
-			x: -25.75d
-			y: -15.375d
+			x: -30.25d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -2616,8 +2808,8 @@
 				}
 			]
 			title: "Gold Washing"
-			x: -27.25d
-			y: -15.875d
+			x: -31.75d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -2642,8 +2834,8 @@
 				}
 			]
 			title: "Iron"
-			x: -23.625d
-			y: -12.75d
+			x: -28.125d
+			y: -5.875d
 		}
 		{
 			dependencies: [
@@ -2667,8 +2859,8 @@
 				}
 			]
 			title: "Copper"
-			x: -23.5d
-			y: -9.25d
+			x: -28.0d
+			y: -2.375d
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
@@ -2687,8 +2879,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -24.5d
-			y: -8.875d
+			x: -29.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["13BEAFB67595B5CA"]
@@ -2707,8 +2899,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -23.875d
-			y: -8.25d
+			x: -28.375d
+			y: -1.375d
 		}
 		{
 			dependencies: [
@@ -2731,8 +2923,8 @@
 				}
 			]
 			title: "Veridum"
-			x: -26.625d
-			y: -7.375d
+			x: -31.125d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -2755,8 +2947,8 @@
 				}
 			]
 			title: "Tuff"
-			x: -28.0d
-			y: -11.0d
+			x: -32.5d
+			y: -4.125d
 		}
 		{
 			dependencies: ["24259E89F817F74C"]
@@ -2780,8 +2972,8 @@
 				}
 			]
 			title: "Limestone"
-			x: -25.625d
-			y: -6.875d
+			x: -30.125d
+			y: 0.0d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
@@ -2793,8 +2985,8 @@
 				item: "create:honey_bucket"
 				type: "item"
 			}]
-			x: -24.625d
-			y: -6.375d
+			x: -29.125d
+			y: 0.5d
 		}
 		{
 			dependencies: ["16BDF42199C1D968"]
@@ -2818,8 +3010,8 @@
 				}
 			]
 			title: "Scoria"
-			x: -29.0d
-			y: -8.625d
+			x: -33.5d
+			y: -1.75d
 		}
 		{
 			dependencies: ["41317116C417F243"]
@@ -2839,8 +3031,8 @@
 				}
 			]
 			title: "Cobbled Deepslate"
-			x: -29.125d
-			y: -10.5d
+			x: -33.625d
+			y: -3.625d
 		}
 		{
 			dependencies: ["6C96662719E52E17"]
@@ -2861,8 +3053,8 @@
 				}
 			]
 			title: "Deepslate"
-			x: -30.25d
-			y: -10.0d
+			x: -34.75d
+			y: -3.125d
 		}
 		{
 			dependencies: ["6CD2D647D9EC2203"]
@@ -2883,8 +3075,8 @@
 				}
 			]
 			title: "Redstone"
-			x: -29.875d
-			y: -14.375d
+			x: -33.25d
+			y: -6.875d
 		}
 		{
 			dependencies: ["4519D70C199B08B5"]
@@ -2904,8 +3096,8 @@
 				}
 			]
 			title: "Crushed Iron"
-			x: -29.0d
-			y: -14.0d
+			x: -32.375d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -2928,8 +3120,8 @@
 				}
 			]
 			title: "Crimsite"
-			x: -28.125d
-			y: -13.625d
+			x: -31.5d
+			y: -6.125d
 		}
 		{
 			dependencies: ["39CB9E508F498A79"]
@@ -2949,8 +3141,8 @@
 				}
 			]
 			title: "Diorite"
-			x: -27.0d
-			y: -14.125d
+			x: -31.5d
+			y: -7.25d
 		}
 		{
 			dependencies: ["2A209E76D9014317"]
@@ -2968,8 +3160,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -26.125d
-			y: -14.5d
+			x: -30.625d
+			y: -7.625d
 		}
 		{
 			dependencies: [
@@ -3000,8 +3192,8 @@
 				}
 			]
 			title: "Strippin' It"
-			x: -21.75d
-			y: -13.5d
+			x: -26.25d
+			y: -6.625d
 		}
 		{
 			dependencies: [
@@ -3025,8 +3217,8 @@
 				}
 			]
 			title: "Kelp for Belts"
-			x: -20.875d
-			y: -12.75d
+			x: -25.375d
+			y: -5.875d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
@@ -3054,8 +3246,8 @@
 				}
 			]
 			title: "Wood"
-			x: -21.375d
-			y: -14.375d
+			x: -25.875d
+			y: -7.5d
 		}
 		{
 			dependencies: ["372F217BE8C60631"]
@@ -3077,8 +3269,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -26.125d
-			y: -16.375d
+			x: -30.625d
+			y: -9.5d
 		}
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
@@ -3183,8 +3375,8 @@
 				}
 			]
 			title: "Tin"
-			x: -30.875d
-			y: -13.125d
+			x: -35.375d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -3208,8 +3400,8 @@
 				}
 			]
 			title: "Brass"
-			x: -22.875d
-			y: -10.875d
+			x: -27.375d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -3233,8 +3425,8 @@
 				}
 			]
 			title: "Zinc"
-			x: -24.5d
-			y: -10.25d
+			x: -29.0d
+			y: -3.375d
 		}
 		{
 			dependencies: ["700C91B0F88E44E3"]
@@ -3254,8 +3446,8 @@
 				}
 			]
 			title: "Potassic"
-			x: -29.5d
-			y: -11.75d
+			x: -34.0d
+			y: -4.875d
 		}
 		{
 			dependencies: ["28DDB93015935685"]
@@ -3274,8 +3466,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -26.75d
-			y: -11.125d
+			x: -31.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["74357F6CF5298E38"]
@@ -3286,8 +3478,8 @@
 				item: "create:crushed_raw_tin"
 				type: "item"
 			}]
-			x: -29.875d
-			y: -12.75d
+			x: -34.375d
+			y: -5.875d
 		}
 		{
 			dependencies: ["74357F6CF5298E38"]
@@ -3298,8 +3490,8 @@
 				item: "create_dd:tin_nugget"
 				type: "item"
 			}]
-			x: -30.5d
-			y: -12.125d
+			x: -35.0d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -3321,8 +3513,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -26.375d
-			y: -10.125d
+			x: -30.875d
+			y: -3.25d
 		}
 		{
 			dependencies: ["22FC90F2B547E4C2"]
@@ -3332,8 +3524,8 @@
 				item: "create:crushed_raw_zinc"
 				type: "item"
 			}]
-			x: -25.375d
-			y: -9.75d
+			x: -29.875d
+			y: -2.875d
 		}
 		{
 			dependencies: ["22FC90F2B547E4C2"]
@@ -3343,8 +3535,8 @@
 				item: "create:zinc_nugget"
 				type: "item"
 			}]
-			x: -25.375d
-			y: -10.625d
+			x: -29.875d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -3359,8 +3551,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -25.125d
-			y: -11.75d
+			x: -29.625d
+			y: -4.875d
 		}
 		{
 			description: ["Enjoy some nice Chocolate Cake for your work :)"]
@@ -3708,8 +3900,8 @@
 				item: "create:chocolate_bucket"
 				type: "item"
 			}]
-			x: -28.625d
-			y: -7.625d
+			x: -33.125d
+			y: -0.75d
 		}
 		{
 			dependencies: ["3013996FDD5C82B3"]
@@ -3765,7 +3957,7 @@
 				type: "item"
 			}]
 			x: 27.88d
-			y: -1.0d
+			y: -5.875d
 		}
 		{
 			dependencies: [
@@ -3799,7 +3991,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -1.5d
+			y: -6.375d
 		}
 		{
 			dependencies: ["25E93E74042E607F"]
@@ -3811,7 +4003,7 @@
 				type: "item"
 			}]
 			x: 27.75d
-			y: -2.0d
+			y: -6.875d
 		}
 		{
 			dependencies: ["34396696F09C307E"]
@@ -3823,7 +4015,7 @@
 				type: "item"
 			}]
 			x: 28.38d
-			y: -2.75d
+			y: -7.625d
 		}
 		{
 			dependencies: ["6D471E1E9517C0E2"]
@@ -3835,7 +4027,7 @@
 				type: "item"
 			}]
 			x: 29.125d
-			y: -3.25d
+			y: -8.125d
 		}
 		{
 			dependencies: ["3DC94DE9CD47EAE1"]
@@ -3847,7 +4039,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -3.5d
+			y: -8.375d
 		}
 		{
 			dependencies: ["7B6C9C8359B502FA"]
@@ -3859,7 +4051,7 @@
 				type: "item"
 			}]
 			x: 30.875d
-			y: -3.25d
+			y: -8.125d
 		}
 		{
 			dependencies: ["69708A809D574953"]
@@ -3871,7 +4063,7 @@
 				type: "item"
 			}]
 			x: 31.625d
-			y: -2.75d
+			y: -7.625d
 		}
 		{
 			dependencies: ["419D49B1E88FCFBA"]
@@ -3883,7 +4075,7 @@
 				type: "item"
 			}]
 			x: 32.125d
-			y: -2.0d
+			y: -6.875d
 		}
 		{
 			dependencies: ["10E21983A3893B7A"]
@@ -3895,7 +4087,7 @@
 				type: "item"
 			}]
 			x: 32.125d
-			y: -1.0d
+			y: -5.875d
 		}
 		{
 			id: "21308ABC953708A4"
@@ -3906,7 +4098,7 @@
 				type: "item"
 			}]
 			x: 26.875d
-			y: -0.75d
+			y: -5.625d
 		}
 		{
 			id: "25E93E74042E607F"
@@ -3917,7 +4109,7 @@
 				type: "item"
 			}]
 			x: 26.75d
-			y: -2.25d
+			y: -7.125d
 		}
 		{
 			id: "34396696F09C307E"
@@ -3928,7 +4120,7 @@
 				type: "item"
 			}]
 			x: 27.625d
-			y: -3.375d
+			y: -8.25d
 		}
 		{
 			id: "6D471E1E9517C0E2"
@@ -3939,7 +4131,7 @@
 				type: "item"
 			}]
 			x: 28.625d
-			y: -4.125d
+			y: -9.0d
 		}
 		{
 			id: "3DC94DE9CD47EAE1"
@@ -3950,7 +4142,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: -4.5d
+			y: -9.375d
 		}
 		{
 			id: "7B6C9C8359B502FA"
@@ -3961,7 +4153,7 @@
 				type: "item"
 			}]
 			x: 31.25d
-			y: -4.125d
+			y: -9.0d
 		}
 		{
 			id: "69708A809D574953"
@@ -3972,7 +4164,7 @@
 				type: "item"
 			}]
 			x: 32.375d
-			y: -3.375d
+			y: -8.25d
 		}
 		{
 			id: "419D49B1E88FCFBA"
@@ -3983,7 +4175,7 @@
 				type: "item"
 			}]
 			x: 33.0d
-			y: -2.25d
+			y: -7.125d
 		}
 		{
 			id: "10E21983A3893B7A"
@@ -3994,7 +4186,7 @@
 				type: "item"
 			}]
 			x: 33.125d
-			y: -0.75d
+			y: -5.625d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4006,7 +4198,7 @@
 				type: "item"
 			}]
 			x: 31.75d
-			y: 3.25d
+			y: -1.625d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4019,7 +4211,7 @@
 				type: "item"
 			}]
 			x: 29.125d
-			y: 2.875d
+			y: -2.0d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4031,7 +4223,7 @@
 				type: "item"
 			}]
 			x: 30.875d
-			y: 2.875d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -4045,7 +4237,7 @@
 				"You now have unlimited items!"
 				"&7Put any item into the Creative Crate and you can infinetly pull out more using a funnel or chute!"
 				""
-				"&7To help with your new found ability to create infinate items out of thin air, I have provided you with a infinate storage disk for your digital storage system if you wish to continue playing further."
+				"&7To help with your new found ability to create infinite items out of thin air, I have provided you with a infinite storage block for your digital storage system if you wish to continue playing further."
 				""
 				"&6&lThank you for playing!"
 				"&r&eYou've completed the Modpack!"
@@ -4054,18 +4246,11 @@
 				"&7Find me on: &9pinpal.github.io"
 			]
 			id: "5C793E02A4F09CB2"
-			rewards: [
-				{
-					id: "7A4A963260F02B15"
-					item: "refinedstorage:creative_storage_disk"
-					type: "item"
-				}
-				{
-					id: "133A6EF5F0B08048"
-					item: "refinedstorage:disk_drive"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "630AE99E95FCC1D0"
+				item: "refinedstorage:creative_storage_block"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "Unlimited Items"
 			tasks: [{
@@ -4074,17 +4259,24 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: 4.625d
+			y: -0.25d
 		}
 		{
 			dependencies: [
 				"101D4037778B6AB3"
 				"6985516773978EDF"
+				"503713645100C198"
 			]
 			description: [
 				"Highly recommended to be created as your first Creative item."
 				""
 				"&7This item allows you to infinetly pull out fluids, this even works for the Molten Alloy Metals; meaning that you can now much easier make more Creative Fluid Tanks!"
+				""
+				"&l&f&nDependencies:"
+				""
+				"  &7• Molten Alloy Block"
+				"  &7• Rainbow Core"
+				"  &7• Creative Divine Potion"
 			]
 			hide_dependency_lines: true
 			id: "55C80599C1761298"
@@ -4095,7 +4287,7 @@
 				type: "item"
 			}]
 			x: 30.0d
-			y: 2.5d
+			y: -2.375d
 		}
 		{
 			dependencies: ["55C80599C1761298"]
@@ -4112,7 +4304,7 @@
 				type: "item"
 			}]
 			x: 28.25d
-			y: 3.25d
+			y: -1.625d
 		}
 		{
 			dependencies: ["26B607339F9A9909"]
@@ -4989,7 +5181,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: 1.375d
+			y: -3.5d
 		}
 		{
 			id: "425DF7375B638CA2"
@@ -5000,7 +5192,7 @@
 				type: "item"
 			}]
 			x: 27.5d
-			y: 0.5d
+			y: -4.375d
 		}
 		{
 			id: "4F4975BA76304064"
@@ -5011,7 +5203,7 @@
 				type: "item"
 			}]
 			x: 31.5d
-			y: 1.375d
+			y: -3.5d
 		}
 		{
 			id: "747E9C0584F5805A"
@@ -5022,7 +5214,7 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: 0.5d
+			y: -4.375d
 		}
 		{
 			dependencies: ["747E9C0584F5805A"]
@@ -5034,7 +5226,7 @@
 				type: "item"
 			}]
 			x: 31.75d
-			y: -0.125d
+			y: -5.0d
 		}
 		{
 			dependencies: ["425DF7375B638CA2"]
@@ -5046,7 +5238,7 @@
 				type: "item"
 			}]
 			x: 28.25d
-			y: -0.125d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4F4975BA76304064"]
@@ -5058,7 +5250,7 @@
 				type: "item"
 			}]
 			x: 31.0d
-			y: 0.5d
+			y: -4.375d
 		}
 		{
 			dependencies: ["728003A590563CFF"]
@@ -5070,7 +5262,7 @@
 				type: "item"
 			}]
 			x: 29.0d
-			y: 0.5d
+			y: -4.375d
 		}
 		{
 			dependencies: ["3F3F68F7424872F8"]
@@ -5089,8 +5281,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -30.125d
-			y: -8.125d
+			x: -34.625d
+			y: -1.25d
 		}
 		{
 			id: "32F3AE994CB94CF4"
@@ -5099,8 +5291,8 @@
 				item: "minecraft:kelp"
 				type: "item"
 			}]
-			x: -20.0d
-			y: -13.125d
+			x: -24.5d
+			y: -6.25d
 		}
 		{
 			dependencies: ["06785BB89B771136"]
@@ -5121,8 +5313,8 @@
 				}
 			]
 			title: "Coal"
-			x: -31.0d
-			y: -7.75d
+			x: -35.5d
+			y: -0.875d
 		}
 		{
 			dependencies: ["0DB98EEA322B623F"]
@@ -5133,8 +5325,8 @@
 				item: "create_dd:diamond_shard"
 				type: "item"
 			}]
-			x: -29.625d
-			y: -6.5d
+			x: -34.125d
+			y: 0.375d
 		}
 		{
 			dependencies: ["72F9EC0EF8DF7F80"]
@@ -5153,8 +5345,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -30.625d
-			y: -6.875d
+			x: -35.125d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3EE22F912CE4780D"]
@@ -5167,8 +5359,8 @@
 				type: "item"
 			}]
 			title: "Diamond"
-			x: -28.625d
-			y: -6.125d
+			x: -33.125d
+			y: 0.75d
 		}
 		{
 			id: "30C3739EA802E915"
@@ -5178,8 +5370,8 @@
 				item: "easy_villagers:villager"
 				type: "item"
 			}]
-			x: -19.75d
-			y: -9.5d
+			x: -24.25d
+			y: -2.625d
 		}
 		{
 			dependencies: [
@@ -5203,8 +5395,8 @@
 				}
 			]
 			title: "Emerald"
-			x: -20.75d
-			y: -11.5d
+			x: -25.25d
+			y: -4.625d
 		}
 		{
 			dependencies: ["30C3739EA802E915"]
@@ -5215,8 +5407,8 @@
 				item: "easy_villagers:auto_trader"
 				type: "item"
 			}]
-			x: -20.25d
-			y: -10.5d
+			x: -24.75d
+			y: -3.625d
 		}
 		{
 			dependencies: ["26D185F68C821538"]
@@ -5300,6 +5492,1014 @@
 			}]
 			x: 0.625d
 			y: 16.125d
+		}
+		{
+			dependencies: ["042AF426A016A44A"]
+			icon: "minecraft:nether_wart"
+			id: "0C1AAE9CF97D56A3"
+			tasks: [
+				{
+					id: "751993B0A4C34E20"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "7F4FFCE9CFB55340"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 29.75d
+			y: 15.625d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:glistering_melon_slice"
+			id: "1335A8D160CF57B0"
+			tasks: [
+				{
+					id: "1BC7BCE44C0B87D1"
+					item: "minecraft:glistering_melon_slice"
+					type: "item"
+				}
+				{
+					id: "4EAF3711106A7D57"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.125d
+			y: 14.875d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:spider_eye"
+			id: "301841AACDF3F6FE"
+			tasks: [
+				{
+					id: "551CD21162677E2D"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "7E3562B2042DECBA"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 31.375d
+			y: 14.875d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:golden_carrot"
+			id: "1772D6FD91D7C43A"
+			tasks: [
+				{
+					id: "37474868E6782BEC"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "5DE668981F2CE7B4"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 14.875d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:rabbit_foot"
+			id: "1625247354325070"
+			tasks: [
+				{
+					id: "2618EA7A0DF6CF05"
+					item: "minecraft:rabbit_foot"
+					type: "item"
+				}
+				{
+					id: "2DC3A107D9A83102"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.875d
+			y: 14.875d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:sugar"
+			id: "082C430EB95745A6"
+			tasks: [
+				{
+					id: "603E9958E5D076F9"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "61251D27C4C1CCA3"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 27.625d
+			y: 14.875d
+		}
+		{
+			dependencies: ["082C430EB95745A6"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:swiftness"
+				}
+			}
+			id: "0170CCC0B33BA9A2"
+			tasks: [
+				{
+					id: "4249F706E0CE296A"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "467A6B7911EFAA5D"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 27.625d
+			y: 13.75d
+		}
+		{
+			dependencies: ["1625247354325070"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:leaping"
+				}
+			}
+			id: "3195F070CE7BF9D8"
+			tasks: [
+				{
+					id: "302DEDC8D78BE6CD"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:leaping"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "356BA3A7EE676303"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.875d
+			y: 13.75d
+		}
+		{
+			dependencies: ["1335A8D160CF57B0"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:healing"
+				}
+			}
+			id: "07A83D1E762AC9B7"
+			tasks: [
+				{
+					id: "6DBF23ECB20A9113"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "342816D34DCD7D51"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.125d
+			y: 13.75d
+		}
+		{
+			dependencies: ["301841AACDF3F6FE"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:poison"
+				}
+			}
+			id: "6D261C7B35AF0FFB"
+			tasks: [
+				{
+					id: "5801AF07E6229D89"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:poison"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77DC829162FAD648"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 31.375d
+			y: 13.75d
+		}
+		{
+			dependencies: ["1772D6FD91D7C43A"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:night_vision"
+				}
+			}
+			id: "0EA26BE7897D027B"
+			tasks: [
+				{
+					id: "7257CFCC4A55E7CC"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01282B2163127A61"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 13.75d
+		}
+		{
+			dependencies: [
+				"3195F070CE7BF9D8"
+				"0170CCC0B33BA9A2"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:fermented_spider_eye"
+			id: "5673AFEC35A85D43"
+			tasks: [
+				{
+					id: "17DBAA0A4A2E4918"
+					item: "minecraft:fermented_spider_eye"
+					type: "item"
+				}
+				{
+					id: "33C2CC7AA7954E7A"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.25d
+			y: 12.625d
+		}
+		{
+			dependencies: ["5673AFEC35A85D43"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:slowness"
+				}
+			}
+			id: "6BA608BDB34F9A16"
+			tasks: [
+				{
+					id: "655513783F63DFA3"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:slowness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "297BF46AAF5B21AD"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.25d
+			y: 11.625d
+		}
+		{
+			dependencies: [
+				"6D261C7B35AF0FFB"
+				"07A83D1E762AC9B7"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:fermented_spider_eye"
+			id: "51B9D2A57DFF2A7C"
+			tasks: [
+				{
+					id: "0DE92B78389A1F9A"
+					item: "minecraft:fermented_spider_eye"
+					type: "item"
+				}
+				{
+					id: "51AC77427640CFB6"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.75d
+			y: 12.625d
+		}
+		{
+			dependencies: ["0EA26BE7897D027B"]
+			icon: "minecraft:fermented_spider_eye"
+			id: "743508D9053EB0D6"
+			tasks: [
+				{
+					id: "66543F0095F0DDE1"
+					item: "minecraft:fermented_spider_eye"
+					type: "item"
+				}
+				{
+					id: "2B0EA2D6567FC809"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 12.625d
+		}
+		{
+			dependencies: ["51B9D2A57DFF2A7C"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:harming"
+				}
+			}
+			id: "23E02898D0419158"
+			tasks: [
+				{
+					id: "720248DE5340132B"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:harming"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10E96E6AEB7ADF50"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.75d
+			y: 11.625d
+		}
+		{
+			dependencies: ["743508D9053EB0D6"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:invisibility"
+				}
+			}
+			id: "0E5FFCEAEA3349B4"
+			tasks: [
+				{
+					id: "55F4F175DB9FCC4A"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:invisibility"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59648E2157ADA87B"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 11.625d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:water"
+				}
+			}
+			id: "042AF426A016A44A"
+			size: 1.5d
+			tasks: [
+				{
+					id: "058B54DBC74D7FC4"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A5A942E784E9B4B"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 27.875d
+			y: 16.619999999999997d
+		}
+		{
+			dependencies: ["042AF426A016A44A"]
+			icon: "minecraft:fermented_spider_eye"
+			id: "2CAFDA58643DD9A7"
+			tasks: [
+				{
+					id: "0F7F1187CB476D76"
+					item: "minecraft:fermented_spider_eye"
+					type: "item"
+				}
+				{
+					id: "576BD0B69064876F"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 26.375d
+			y: 16.625d
+		}
+		{
+			dependencies: ["2CAFDA58643DD9A7"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:weakness"
+				}
+			}
+			id: "490E949733FC0EF1"
+			tasks: [
+				{
+					id: "416E1BC9F489295D"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:weakness"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4608ABB2C802C793"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 26.375d
+			y: 14.875d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:blaze_powder"
+			id: "074BD881AC214C0C"
+			tasks: [
+				{
+					id: "791E9E0E29BD234F"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "5D5550777A64167B"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 27.625d
+			y: 18.375d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: {
+				Count: 1b
+				id: "minecraft:turtle_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6BFED5A3753A50BA"
+			tasks: [
+				{
+					id: "10BF26FC62E27732"
+					item: {
+						Count: 1b
+						id: "minecraft:turtle_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E4DA80C618EDB81"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 26.375d
+			y: 18.375d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:ghast_tear"
+			id: "617C506C5B7979EB"
+			tasks: [
+				{
+					id: "64990E815DC20597"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "2828019300DC24EB"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.875d
+			y: 18.375d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:magma_cream"
+			id: "0006F0F40F552FCA"
+			tasks: [
+				{
+					id: "7AE8F442FF33C65D"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+				{
+					id: "2F9D08D39ED90AAE"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.125d
+			y: 18.375d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:pufferfish"
+			id: "328C416F38F3A883"
+			tasks: [
+				{
+					id: "5FE1BC7FF8F3B7A0"
+					item: "minecraft:pufferfish"
+					type: "item"
+				}
+				{
+					id: "3AC5F2726FB5DA3E"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 31.375d
+			y: 18.375d
+		}
+		{
+			dependencies: ["0C1AAE9CF97D56A3"]
+			icon: "minecraft:phantom_membrane"
+			id: "2AF1986F0EAC8BD6"
+			tasks: [
+				{
+					id: "53204E515CE5CCFF"
+					item: "minecraft:phantom_membrane"
+					type: "item"
+				}
+				{
+					id: "009C5BA407E82379"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 18.375d
+		}
+		{
+			dependencies: ["2AF1986F0EAC8BD6"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:slow_falling"
+				}
+			}
+			id: "33941523609A3CA3"
+			tasks: [
+				{
+					id: "2917074D9DA6F292"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:slow_falling"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28EE86E735CA8BD4"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 32.625d
+			y: 19.5d
+		}
+		{
+			dependencies: ["328C416F38F3A883"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:water_breathing"
+				}
+			}
+			id: "726EBE4AAAE67C63"
+			tasks: [
+				{
+					id: "0F285F7481AE8676"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:water_breathing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09D32C9BA5799EB0"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 31.375d
+			y: 19.5d
+		}
+		{
+			dependencies: ["0006F0F40F552FCA"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:fire_resistance"
+				}
+			}
+			id: "697DB07B80D7A632"
+			tasks: [
+				{
+					id: "0D131E4F5021E468"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EBCE85B3E1E9395"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 30.125d
+			y: 19.5d
+		}
+		{
+			dependencies: ["617C506C5B7979EB"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:regeneration"
+				}
+			}
+			id: "7A899E5CD8053596"
+			tasks: [
+				{
+					id: "762367AAF50E88EA"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B4458230792AEFE"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 28.875d
+			y: 19.5d
+		}
+		{
+			dependencies: ["074BD881AC214C0C"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strength"
+				}
+			}
+			id: "3B2456CF6D5D3389"
+			tasks: [
+				{
+					id: "2738E78EEC4C2DF3"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7EDF6B97F03E52D2"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 27.625d
+			y: 19.5d
+		}
+		{
+			dependencies: ["6BFED5A3753A50BA"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:turtle_master"
+				}
+			}
+			id: "121E682EFB99D26B"
+			tasks: [
+				{
+					id: "075475829F8C03B6"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:turtle_master"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37945595F66C43F7"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 26.375d
+			y: 19.5d
+		}
+		{
+			icon: "minecraft:glowstone_dust"
+			id: "0062CC28481FAAC7"
+			shape: "square"
+			tasks: [
+				{
+					id: "6D2772C5648D4A6A"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "2CE1E2B7214E6461"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 36.0d
+			y: 12.25d
+		}
+		{
+			icon: "minecraft:redstone"
+			id: "317FCA1486F54A01"
+			shape: "square"
+			tasks: [
+				{
+					id: "03A35F216DB024F0"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "622475E933FE3B25"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 36.0d
+			y: 13.25d
+		}
+		{
+			icon: "minecraft:gunpowder"
+			id: "636C85513040BF8B"
+			shape: "square"
+			tasks: [
+				{
+					id: "5E04C524A05D2E88"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "5B856D79444226EE"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 36.0d
+			y: 14.25d
+		}
+		{
+			icon: "minecraft:dragon_breath"
+			id: "1DC1D000D29C8E63"
+			shape: "square"
+			tasks: [
+				{
+					id: "3D5B97B24BC6E188"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "00DE5253C953C5AC"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
+			x: 37.375d
+			y: 15.625d
+		}
+		{
+			dependencies: ["042AF426A016A44A"]
+			hide_dependency_lines: true
+			id: "292C577E7EE1ACF8"
+			shape: "square"
+			tasks: [{
+				id: "3EACDEBBED7CA0AB"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				type: "item"
+			}]
+			title: "Potion"
+			x: 34.625d
+			y: 12.25d
+		}
+		{
+			dependencies: ["042AF426A016A44A"]
+			hide_dependency_lines: true
+			id: "28444E5D08F2C0E6"
+			shape: "square"
+			tasks: [{
+				id: "6DC96800AF314628"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				type: "item"
+			}]
+			title: "Potion"
+			x: 34.625d
+			y: 13.25d
+		}
+		{
+			dependencies: ["042AF426A016A44A"]
+			hide_dependency_lines: true
+			id: "4C9E51A196F8F0AE"
+			shape: "square"
+			tasks: [{
+				id: "1BDA0FCE38CB47A3"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				type: "item"
+			}]
+			title: "Potion"
+			x: 34.625d
+			y: 14.25d
+		}
+		{
+			dependencies: [
+				"41402DC79E3C3EA9"
+				"03E8D8A7DCA37326"
+				"07106C82ECF9B126"
+			]
+			description: ["This item is a key ingredient for crafting &dCreative Items&r."]
+			id: "503713645100C198"
+			shape: "circle"
+			size: 1.5d
+			subtitle: "Potion Mastery!"
+			tasks: [{
+				id: "72583D159DF9E70E"
+				item: "kubejs:creative_omega_potion"
+				type: "item"
+			}]
+			x: 26.25d
+			y: 11.75d
+		}
+		{
+			icon: "kubejs:creative_splash_potion"
+			id: "41402DC79E3C3EA9"
+			tasks: [{
+				id: "726EC2730F24A207"
+				item: "kubejs:creative_splash_potion"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 11.75d
+		}
+		{
+			icon: "kubejs:creative_lingering_potion"
+			id: "03E8D8A7DCA37326"
+			tasks: [{
+				id: "064BB5E8F6ED9D74"
+				item: "kubejs:creative_lingering_potion"
+				type: "item"
+			}]
+			x: 26.25d
+			y: 10.5d
+		}
+		{
+			icon: "kubejs:creative_potion"
+			id: "07106C82ECF9B126"
+			tasks: [{
+				id: "419B9C8AA125F225"
+				item: "kubejs:creative_potion"
+				type: "item"
+			}]
+			x: 25.375d
+			y: 10.875d
 		}
 	]
 	title: "Create Modpack"

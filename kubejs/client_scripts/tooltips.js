@@ -29,11 +29,21 @@ ItemEvents.tooltip((tooltip) => {
     "kubejs:rainbow_placard",
     "kubejs:rainbow_dye",
     "kubejs:rainbow_candle",
+    "kubejs:creative_potion",
+    "kubejs:creative_splash_potion",
+    "kubejs:creative_lingering_potion",
   ];
   customItems.forEach((customItem) => {
     tooltip.addAdvanced(customItem, (item, advanced, text) => {
       text.add(1, [Text.of("End Game Crafting Ingredient").gray()]);
       text.add(1, [Text.of("Functionally Useless").gold()]);
+    });
+  });
+
+  const endGameIngredients = ["kubejs:creative_omega_potion"];
+  endGameIngredients.forEach((customItem) => {
+    tooltip.addAdvanced(customItem, (item, advanced, text) => {
+      text.add(1, [Text.of("End Game Crafting Ingredient").aqua()]);
     });
   });
 
