@@ -24,6 +24,7 @@ const idsToRemove = [
   // Quark
   "quark:tweaks/crafting/utility/bent/paper",
   "quark:tweaks/smelting/bone_meal_utility",
+  "quark:tweaks/crafting/utility/misc/easy_sticks",
 
   // Farmers Delight
   "farmersdelight:book_from_canvas",
