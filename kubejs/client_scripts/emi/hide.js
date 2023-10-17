@@ -105,6 +105,7 @@ const hideFromJEI = [
   "minecraft:infested_deepslate",
 
   "farmersdelight:golden_knife",
+  "farmersdelight:netherite_knife",
 
   "alloyed:steel_pickaxe",
   "alloyed:steel_shovel",

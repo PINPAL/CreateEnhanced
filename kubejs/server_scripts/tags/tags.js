@@ -181,6 +181,26 @@ ServerEvents.tags("item", (event) => {
       if (!blacklist.test(item)) event.add(`kubejs:bricks_not_${type}`, item);
     });
   });
+
+  const notAllowedtoSlice = [
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:iron_axe",
+    "minecraft:golden_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe",
+    "alloyed:steel_axe",
+    "minecraft:wooden_shovel",
+    "minecraft:stone_shovel",
+    "minecraft:iron_shovel",
+    "minecraft:golden_shovel",
+    "minecraft:diamond_shovel",
+    "minecraft:netherite_shovel",
+    "alloyed:steel_shovel",
+  ];
+  notAllowedtoSlice.forEach((item) => {
+    event.remove("sliceanddice:allowed_tools", item);
+  });
 });
 
 ServerEvents.tags("block", (event) => {

@@ -139,6 +139,13 @@
         "id": "wands:netherite_wand",
         "nbt": "{Unbreakable: 1b}"
       }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "farmersdelight:netherite_knife",
+        "nbt": "{Unbreakable: 1b}"
+      }
     }
   ]
 }

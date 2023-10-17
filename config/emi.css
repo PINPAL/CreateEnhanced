@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -379,17 +379,17 @@
 	/**
 	 * Cheat in one of an item into the inventory.
 	 */
-	cheat-one-to-inventory: "ctrl key.mouse.right";
+	cheat-one-to-inventory: "alt key.mouse.right";
 
 	/**
 	 * Cheat in a stack of an item into the inventory.
 	 */
-	cheat-stack-to-inventory: "ctrl key.mouse.left";
+	cheat-stack-to-inventory: "alt key.mouse.left";
 
 	/**
 	 * Cheat in one of an item into the cursor.
 	 */
-	cheat-one-to-cursor: "ctrl key.mouse.middle";
+	cheat-one-to-cursor: "key.keyboard.unknown";
 
 	/**
 	 * Cheat in a stack of an item into the cursor.
