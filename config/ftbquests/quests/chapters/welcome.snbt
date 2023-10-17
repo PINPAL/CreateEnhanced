@@ -750,11 +750,19 @@
 		{
 			dependencies: ["7DB05CBC8B579FD8"]
 			hide: true
+			icon: "create:crushing_wheel"
 			id: "664B341348EFB352"
 			subtitle: "A pair of giants."
 			tasks: [{
 				id: "66F68E9621BE389A"
-				item: "create:crushing_wheel"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "design_decor:crushing_wheels"
+					}
+				}
+				title: "Any Crushing Wheels"
 				type: "item"
 			}]
 			title: "Crushing"
