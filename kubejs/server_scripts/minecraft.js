@@ -5,6 +5,18 @@ ServerEvents.recipes((event) => {
     D: "#forge:ingots/brass",
   });
 
+  // Hanging Roots
+  event.recipes.create.haunting(
+    "minecraft:hanging_roots",
+    "minecraft:mangrove_propagule"
+  );
+
+  // Rooted Dirt
+  event.recipes.create.deploying("minecraft:rooted_dirt", [
+    "minecraft:dirt",
+    "minecraft:hanging_roots",
+  ]);
+
   // Saddle
   event.recipes
     .createSequencedAssembly(["minecraft:saddle"], "#forge:nuggets/iron", [
