@@ -111,7 +111,10 @@
     "com.simibubi.create.content.equipment.toolbox.RadialToolboxMenu": true,
     "net.mehvahdjukaar.supplementaries.client.screens.SpeakerBlockScreen": true,
     "vazkii.quark.base.client.config.screen.QuarkConfigHomeScreen": true,
-    "vazkii.quark.base.client.config.screen.CategoryScreen": true
+    "vazkii.quark.base.client.config.screen.CategoryScreen": true,
+    "dev.emi.emi.screen.ConfigScreen": true,
+    "plus.dragons.createcentralkitchen.content.logistics.item.guide.cooking.CookingGuideScreen": true,
+    "fi.dy.masa.minihud.gui.GuiConfigs": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
