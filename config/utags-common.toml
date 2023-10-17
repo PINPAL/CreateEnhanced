@@ -17,7 +17,7 @@
 
 ["forge:blocks"]
 	#Whether the tag forge:blocks should be enabled.
-	enabled = true
+	enabled = false
 	#Items that should never be given the tag forge:blocks.
 	blacklist = []
 	#Items that should be given the tag forge:blocks, even if they do not meet it's conditions
