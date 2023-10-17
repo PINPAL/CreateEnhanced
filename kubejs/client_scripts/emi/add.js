@@ -25,6 +25,8 @@ const addToJEI = [
   "sophisticatedbackpacks:advanced_deposit_upgrade",
   "sophisticatedbackpacks:advanced_refill_upgrade",
   "sophisticatedbackpacks:everlasting_upgrade",
+  "sophisticatedbackpacks:crafting_upgrade",
+  "sophisticatedbackpacks:stonecutter_upgrade",
   "refinedstorage:quartz_enriched_iron",
   "refinedstorageaddons:wireless_crafting_grid",
   "refinedstorage:wireless_fluid_grid",

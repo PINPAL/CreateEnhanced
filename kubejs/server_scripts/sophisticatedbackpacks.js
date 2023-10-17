@@ -63,6 +63,28 @@ ServerEvents.recipes((event) => {
     }
   );
 
+  // Crafting Upgrade
+  event.shaped(
+    "sophisticatedbackpacks:advanced_refill_upgrade",
+    ["SCS", "CUC", "SCS"],
+    {
+      S: "#forge:string",
+      C: "minecraft:crafting_table",
+      U: "sophisticatedstorage:upgrade_base",
+    }
+  );
+
+  // Stonecutter Upgrade
+  event.shaped(
+    "sophisticatedbackpacks:advanced_refill_upgrade",
+    ["SCS", "CUC", "SCS"],
+    {
+      S: "#forge:string",
+      C: "minecraft:stonecutter",
+      U: "sophisticatedstorage:upgrade_base",
+    }
+  );
+
   // Deposit Upgrade
   event.shaped(
     "sophisticatedbackpacks:advanced_deposit_upgrade",
