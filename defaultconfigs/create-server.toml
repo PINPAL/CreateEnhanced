@@ -230,17 +230,17 @@ andesite_encased_shaft = 0.0
 mechanical_press = 8.0
 mechanical_drill = 4.0
 stressometer = 0.0
-shaft = 0.0
-gearshift = 0.0
+shaft = 0.5
+gearshift = 0.5
 weighted_ejector = 2.0
-andesite_encased_cogwheel = 0.0
+andesite_encased_cogwheel = 0.5
 mechanical_crafter = 2.0
 display_board = 0.0
 mechanical_piston = 4.0
 mechanical_bearing = 4.0
-encased_chain_drive = 0.0
+encased_chain_drive = 0.5
 rotation_speed_controller = 0.0
-brass_encased_large_cogwheel = 0.0
+brass_encased_large_cogwheel = 0.5
 mysterious_cuckoo_clock = 1.0
 hose_pulley = 4.0
 millstone = 4.0
@@ -248,10 +248,10 @@ speedometer = 0.0
 mechanical_saw = 4.0
 crushing_wheel = 8.0
 gantry_shaft = 0.0
-large_cogwheel = 0.0
-andesite_encased_large_cogwheel = 0.0
+large_cogwheel = 0.5
+andesite_encased_large_cogwheel = 0.5
 sequenced_gearshift = 0.0
-gearbox = 0.0
+gearbox = 0.5
 clockwork_bearing = 4.0
 clutch = 0.0
 encased_fan = 2.0
@@ -259,9 +259,9 @@ rope_pulley = 4.0
 brass_encased_shaft = 0.0
 turntable = 4.0
 sticky_mechanical_piston = 4.0
-cogwheel = 0.0
-belt = 0.0
-brass_encased_cogwheel = 0.0
+cogwheel = 0.5
+belt = 0.5
+brass_encased_cogwheel = 0.5
 
 #.
 #[in Stress Units]
@@ -384,7 +384,7 @@ psiTimeout = 20
 #.
 #Maximum distance in blocks a Mechanical Arm can reach across.
 #Range: > 1
-mechanicalArmRange = 5
+mechanicalArmRange = 7
 #.
 #Maximum possible range in blocks of redstone link connections.
 #Range: > 1
@@ -409,12 +409,12 @@ creativePrintIncludesAir = false
 #[in KiloBytes]
 #The maximum allowed file size of uploaded Schematics.
 #Range: > 16
-maxSchematics = 1024
+maxSchematics = 2048
 #.
 #[in Bytes]
 #The maximum packet size uploaded Schematics are split into.
 #Range: 256 ~ 32767
-maxSchematicPacketSize = 1024
+maxSchematicPacketSize = 2048
 #.
 #Amount of game ticks without new packets arriving until an active schematic upload process is discarded.
 #Range: > 100
@@ -459,7 +459,7 @@ airInBacktank = 1800
 #.
 #The volume of Air added by each level of the backtanks Capacity Enchantment
 #Range: > 1
-enchantedBacktankCapacity = 600
+enchantedBacktankCapacity = 1800
 #.
 #Amount of free Extendo Grip actions provided by one filled Copper Backtank. Set to 0 makes Extendo Grips unbreakable
 #Range: > 0
