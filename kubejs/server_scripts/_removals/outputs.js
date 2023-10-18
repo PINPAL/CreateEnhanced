@@ -119,6 +119,7 @@ const outputsToRemove = [
 
   // Create Addition
   "createaddition:digital_adapter",
+  Item.of("createaddition:diamond_grit_sandpaper").weakNBT(),
 
   // Create Paper Line
   "create_paper_line:dryer",

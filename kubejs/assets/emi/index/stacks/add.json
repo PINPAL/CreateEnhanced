@@ -146,6 +146,13 @@
         "id": "farmersdelight:netherite_knife",
         "nbt": "{Unbreakable: 1b}"
       }
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "createaddition:diamond_grit_sandpaper",
+        "nbt": "{Unbreakable: 1b}"
+      }
     }
   ]
 }

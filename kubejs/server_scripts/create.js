@@ -34,6 +34,14 @@ ServerEvents.recipes((event) => {
     );
   });
 
+  // Diamond Grit Sandpaper
+  event.shapeless(
+    Item.of("createaddition:diamond_grit_sandpaper").withNBT(
+      "{Unbreakable:1b}"
+    ),
+    ["#create:sandpaper", "kubejs:molten_diamond_ingot"]
+  );
+
   // Harder Minecart Assembler
   event.shaped("create:cart_assembler", ["   ", "TRT", "B B"], {
     T: "create:railway_casing",

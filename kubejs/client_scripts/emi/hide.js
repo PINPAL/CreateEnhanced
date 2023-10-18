@@ -61,6 +61,7 @@ const hideFromJEI = [
   "create_dd:deforester_saw",
 
   "createaddition:digital_adapter",
+  Item.of("createaddition:diamond_grit_sandpaper").weakNBT(),
 
   "createindustry:napalm_bomb",
   "createindustry:napalm_bucket",
