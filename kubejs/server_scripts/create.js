@@ -34,6 +34,12 @@ ServerEvents.recipes((event) => {
     );
   });
 
+  // Lapis Alloy
+  event.recipes.create.mixing("create_dd:lapis_alloy", [
+    "minecraft:lapis_lazuli",
+    "#forge:nuggets/tin",
+  ]);
+
   // Diamond Grit Sandpaper
   event.shapeless(
     Item.of("createaddition:diamond_grit_sandpaper").withNBT(

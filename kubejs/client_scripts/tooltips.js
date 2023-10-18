@@ -40,6 +40,38 @@ ItemEvents.tooltip((tooltip) => {
     });
   });
 
+  const decalSigns = [
+    "create_things_and_misc:train_sing",
+    "create_things_and_misc:train_sing_2",
+    "create_things_and_misc:train_sing_3",
+    "create_things_and_misc:train_sing_4",
+    "create_things_and_misc:train_sing_5",
+    "create_things_and_misc:train_sing_yellow_1",
+    "create_things_and_misc:train_sing_yellow_2",
+    "create_things_and_misc:train_sing_yellow_3",
+    "create_things_and_misc:train_sing_yellow_4",
+    "create_things_and_misc:train_sing_yellow_5",
+    "create_things_and_misc:redsing",
+    "create_things_and_misc:redsing_1",
+    "create_things_and_misc:redsing_2",
+    "create_things_and_misc:green_sing",
+    "create_things_and_misc:green_sing_1",
+    "create_things_and_misc:green_sing_2",
+    "create_things_and_misc:green_sing_3",
+    "create_things_and_misc:green_sing_4",
+    "create_things_and_misc:green_sing_5",
+    "create_things_and_misc:green_sing_6",
+    "create_things_and_misc:speed_25",
+    "create_things_and_misc:speed_50",
+    "create_things_and_misc:speed_75",
+    "create_things_and_misc:speed_100",
+  ];
+  decalSigns.forEach((decalSign) => {
+    tooltip.addAdvanced(decalSign, (item, advanced, text) => {
+      text.remove(1);
+    });
+  });
+
   const decorativeItems = ["alloyed:steel_casing"];
   decorativeItems.forEach((decorativeItem) => {
     tooltip.addAdvanced(decorativeItem, (item, advanced, text) => {

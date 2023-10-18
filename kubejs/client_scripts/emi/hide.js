@@ -94,6 +94,10 @@ const hideFromJEI = [
   "supplementaries:bellows",
   "supplementaries:pulley_block",
   "supplementaries:bubble_blower",
+  "supplementaries:lapis_bricks",
+  "supplementaries:lapis_bricks_slab",
+  "supplementaries:lapis_bricks_stairs",
+  "supplementaries:lapis_bricks_wall",
 
   "shrink:mob_bottle",
 
