@@ -378,7 +378,7 @@ _version = 1
 			# This indicates how quickly fake chunks decrease in quality the further away they are. 
 			# Higher settings will render higher quality fake chunks farther away, 
 			# but will increase memory and GPU usage.
-			horizontalQuality = "MEDIUM"
+			horizontalQuality = "LOWEST"
 			# This indicates how quickly fake chunks decrease in quality the further away they are. 
 			# Higher settings will render higher quality fake chunks farther away, 
 			# but will increase memory and GPU usage.
@@ -405,7 +405,7 @@ _version = 1
 			# HIGH: uses at max 8 columns per position. 
 			#
 			# Lowest Quality: LOW Highest Quality: HIGH
-			verticalQuality = "MEDIUM"
+			verticalQuality = "LOW"
 			# What is the maximum detail fake chunks should be drawn at? 
 			# This setting will only affect closer chunks.
 			# Higher settings will increase memory and GPU usage. 

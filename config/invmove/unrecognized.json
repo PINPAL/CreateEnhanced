@@ -115,7 +115,8 @@
     "dev.emi.emi.screen.ConfigScreen": true,
     "plus.dragons.createcentralkitchen.content.logistics.item.guide.cooking.CookingGuideScreen": true,
     "fi.dy.masa.minihud.gui.GuiConfigs": true,
-    "fi.dy.masa.malilib.gui.GuiColorEditorHSV": true
+    "fi.dy.masa.malilib.gui.GuiColorEditorHSV": true,
+    "fi.dy.masa.malilib.MaLiLibConfigGui": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
 
   // Crafting Upgrade
   event.shaped(
-    "sophisticatedbackpacks:advanced_refill_upgrade",
+    "sophisticatedbackpacks:crafting_upgrade",
     ["SCS", "CUC", "SCS"],
     {
       S: "#forge:string",
@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 
   // Stonecutter Upgrade
   event.shaped(
-    "sophisticatedbackpacks:advanced_refill_upgrade",
+    "sophisticatedbackpacks:stonecutter_upgrade",
     ["SCS", "CUC", "SCS"],
     {
       S: "#forge:string",
