@@ -116,7 +116,10 @@
     "plus.dragons.createcentralkitchen.content.logistics.item.guide.cooking.CookingGuideScreen": true,
     "fi.dy.masa.minihud.gui.GuiConfigs": true,
     "fi.dy.masa.malilib.gui.GuiColorEditorHSV": true,
-    "fi.dy.masa.malilib.MaLiLibConfigGui": true
+    "fi.dy.masa.malilib.MaLiLibConfigGui": true,
+    "com.simibubi.create.content.equipment.clipboard.ClipboardScreen": true,
+    "com.simibubi.create.content.redstone.displayLink.DisplayLinkScreen": true,
+    "com.simibubi.create.content.schematics.cannon.SchematicannonScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
