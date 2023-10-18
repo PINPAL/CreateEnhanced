@@ -3,7 +3,7 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
-  renderorder = foreground
+  renderorder = background
   randommode = false
   randomonlyfirsttime = false
 }
@@ -29,7 +29,7 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 18
+  y = 41
 }
 
 customization {
@@ -47,11 +47,16 @@ customization {
 }
 
 customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = 42
+  y = 65
 }
 
 customization {
@@ -68,7 +73,7 @@ customization {
   orientation = mid-centered
   x = 2
   action = movebutton
-  y = 42
+  y = 65
 }
 
 customization {
@@ -90,7 +95,7 @@ customization {
   orientation = mid-centered
   x = -100
   action = movebutton
-  y = -6
+  y = 17
 }
 
 customization {
@@ -100,6 +105,11 @@ customization {
   action = setbuttontexture
   backgroundhovered = config/fancymenu/assets/button_hover.png
   backgroundnormal = config/fancymenu/assets/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = hidebutton
 }
 
 customization {
@@ -176,25 +186,15 @@ customization {
 }
 
 customization {
-  advanced_height = 75
+  advanced_height = 180
   path = config/fancymenu/assets/title-banner.png
   orientation = mid-centered
-  x = -128
-  width = 257
+  x = -120
+  width = 240
   action = addtexture
   actionid = 0b3bed74-dbeb-441e-aaad-26dd9877352b1671476199964
-  y = -96
-  advanced_width = 257
-  height = 75
-}
-
-customization {
-  identifier = %id=376322%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  action = hidebutton
+  y = -153
+  advanced_width = 240
+  height = 180
 }
 
