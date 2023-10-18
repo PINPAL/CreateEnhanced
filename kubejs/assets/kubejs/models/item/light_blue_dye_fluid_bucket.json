@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kubejs:item/bucket/dyes/blue_dye_bucket"
+    "layer0": "kubejs:item/bucket/dyes/light_blue_dye_bucket"
   }
 }
