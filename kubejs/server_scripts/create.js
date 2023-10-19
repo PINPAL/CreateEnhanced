@@ -40,6 +40,12 @@ ServerEvents.recipes((event) => {
     "#forge:nuggets/tin",
   ]);
 
+  // Raw Iron Washing
+  event.recipes.create.splashing(
+    "9x minecraft:iron_nugget",
+    "create:crushed_raw_iron"
+  );
+
   // Diamond Grit Sandpaper
   event.shapeless(
     Item.of("createaddition:diamond_grit_sandpaper").withNBT(

@@ -5,6 +5,9 @@ ServerEvents.recipes((event) => {
     D: "#forge:ingots/brass",
   });
 
+  // White Wool
+  event.recipes.create.compacting("4x #forge:string", "minecraft:white_wool");
+
   // Hanging Roots
   event.recipes.create.haunting(
     "minecraft:hanging_roots",

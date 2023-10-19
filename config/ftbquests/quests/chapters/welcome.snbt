@@ -3065,28 +3065,6 @@
 			y: -3.125d
 		}
 		{
-			dependencies: ["6CD2D647D9EC2203"]
-			icon: "minecraft:redstone"
-			id: "62FADB925CE1E8A7"
-			subtitle: "Wash Crushed Iron into Redstone"
-			tasks: [
-				{
-					count: 256L
-					id: "0DBAD0DFB321C643"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-				{
-					id: "33A0F7FB5C29007C"
-					title: "I've automated it!"
-					type: "checkmark"
-				}
-			]
-			title: "Redstone"
-			x: -33.25d
-			y: -6.875d
-		}
-		{
 			dependencies: ["4519D70C199B08B5"]
 			icon: "create:crushed_raw_iron"
 			id: "6CD2D647D9EC2203"

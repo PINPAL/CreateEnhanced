@@ -92,6 +92,7 @@ const idsToRemove = [
   "create:crafting/curiosities/cake",
   "create:pressing/sugar_cane",
   "create:milling/cobblestone",
+  "create:splashing/crushed_raw_iron",
 
   // Create Allyoed
   "alloyed:item_application/steel_casing_from_log",
