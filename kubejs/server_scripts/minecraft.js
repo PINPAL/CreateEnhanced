@@ -6,12 +6,19 @@ ServerEvents.recipes((event) => {
   });
 
   // White Wool
-  event.recipes.create.compacting("4x #forge:string", "minecraft:white_wool");
+  event.recipes.create.compacting("minecraft:white_wool", "4x #forge:string");
 
   // Hanging Roots
   event.recipes.create.haunting(
     "minecraft:hanging_roots",
     "minecraft:mangrove_propagule"
+  );
+
+  // Cheaper Jukebox
+  event.replaceInput(
+    { id: "minecraft:jukebox" },
+    "minecraft:diamond",
+    "#forge:ingots/cast_iron"
   );
 
   // Rooted Dirt
