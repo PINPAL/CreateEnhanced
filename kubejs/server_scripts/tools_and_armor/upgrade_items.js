@@ -23,13 +23,13 @@ ServerEvents.recipes((event) => {
         [`kubejs:${material.name}_blade`],
         "kubejs:wood_blade",
         [
-          event.recipes.createDeploying("kubejs:wood_blade", [
-            "kubejs:wood_blade",
-            material.cost,
-          ]),
+          event.recipes.createDeploying(
+            `kubejs:incomplete_${material.name}_blade`,
+            [`kubejs:incomplete_${material.name}_blade`, material.cost]
+          ),
         ]
       )
-      .transitionalItem("kubejs:wood_blade")
+      .transitionalItem(`kubejs:incomplete_${material.name}_blade`)
       .loops(2);
     // Paxel Head
     event.recipes.create
@@ -37,13 +37,13 @@ ServerEvents.recipes((event) => {
         [`kubejs:${material.name}_head`],
         "kubejs:wood_head",
         [
-          event.recipes.createDeploying("kubejs:wood_head", [
-            "kubejs:wood_head",
-            material.cost,
-          ]),
+          event.recipes.createDeploying(
+            `kubejs:incomplete_${material.name}_head`,
+            [`kubejs:incomplete_${material.name}_head`, material.cost]
+          ),
         ]
       )
-      .transitionalItem("kubejs:wood_head")
+      .transitionalItem(`kubejs:incomplete_${material.name}_head`)
       .loops(7);
   });
   armorUpgradeMats.forEach((material) => {
@@ -53,13 +53,13 @@ ServerEvents.recipes((event) => {
         [`kubejs:${material.name}_stitching`],
         "kubejs:leather_stitching",
         [
-          event.recipes.createDeploying("kubejs:leather_stitching", [
-            "kubejs:leather_stitching",
-            material.cost,
-          ]),
+          event.recipes.createDeploying(
+            `kubejs:incomplete_${material.name}_stitching`,
+            [`kubejs:incomplete_${material.name}_stitching`, material.cost]
+          ),
         ]
       )
-      .transitionalItem("kubejs:leather_stitching")
+      .transitionalItem(`kubejs:incomplete_${material.name}_stitching`)
       .loops(6);
   });
 });
