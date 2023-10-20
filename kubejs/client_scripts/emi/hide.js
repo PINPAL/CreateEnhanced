@@ -15,6 +15,7 @@ const hideFromJEI = [
   /create_crystal_clear:.*encased.*/,
   /kubejs:broken_.*/,
   /kubejs:incomplete_.*/,
+  /create_central_kitchen:incomplete_.*/,
   /supplementaries:.*vertical_slab/,
   /alloyed:.*vertical_slab/,
   /createdeco:.*slab_vert/,
@@ -47,7 +48,7 @@ const hideFromJEI = [
   "alloyed:steel_pickaxe",
 
   // Item Match
-  "kubejs:incomplete_leather_stitching",
+  "kubejs:unfinished_leather_stitching",
   "kubejs:belt_scroll",
 
   "create:extendo_grip",
