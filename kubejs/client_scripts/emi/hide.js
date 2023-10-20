@@ -131,6 +131,7 @@ const hideFromJEI = [
   "minecraft:infested_cracked_stone_bricks",
   "minecraft:infested_chiseled_stone_bricks",
   "minecraft:infested_deepslate",
+  "minecraft:bedrock",
 
   "farmersdelight:golden_knife",
   "farmersdelight:netherite_knife",

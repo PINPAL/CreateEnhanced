@@ -8,6 +8,9 @@ ServerEvents.recipes((event) => {
   // White Wool
   event.recipes.create.compacting("minecraft:white_wool", "4x #forge:string");
 
+  // Cobweb
+  event.recipes.create.compacting("minecraft:cobweb", "9x #forge:string");
+
   // Hanging Roots
   event.recipes.create.haunting(
     "minecraft:hanging_roots",

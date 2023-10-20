@@ -2293,7 +2293,7 @@
 				random_bonus: 2
 				type: "item"
 			}]
-			subtitle: "Obtain enough &6Protien&r to last a while."
+			subtitle: "Obtain enough &6Protein&r to last a while."
 			tasks: [{
 				count: 32L
 				id: "596E8F5AC1ABC8C7"
@@ -6480,6 +6480,99 @@
 			title: "Milling"
 			x: 4.75d
 			y: 9.5d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			description: [
+				"The &6Sprinkler &rfrom &9Slice \\& Dice&r allows you to water your crops without need for water in the ground!"
+				""
+				"The &6Sprinkler&r from &9Misc \\& Things&r allows you to use dilluted bonemeal to bonemeal your crops easily!"
+			]
+			icon: "create_things_and_misc:sprinkler"
+			id: "61E794076BA52E76"
+			rewards: [{
+				count: 5
+				id: "424C0FA85CE15E2B"
+				item: "minecraft:bone_meal"
+				random_bonus: 5
+				type: "item"
+			}]
+			subtitle: "Faster crop farms!"
+			tasks: [
+				{
+					id: "6EEE77656D26FAA1"
+					item: "sliceanddice:sprinkler"
+					type: "item"
+				}
+				{
+					id: "4A0D493221DEB768"
+					item: "create_things_and_misc:sprinkler"
+					type: "item"
+				}
+			]
+			x: 4.625d
+			y: 1.625d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			description: [
+				"The &6Slicer&r allows you to slice up vegtables and meat as if they were on a cutting board."
+				""
+				"This allows for automation of all the complex food types!"
+			]
+			id: "49E968EA9138E274"
+			rewards: [{
+				id: "7562399834313560"
+				item: {
+					Count: 1b
+					id: "farmersdelight:iron_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Slicing things up!"
+			tasks: [{
+				id: "54ECE2ADA8FEDE05"
+				item: "sliceanddice:slicer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7407910917C9F8A9"]
+			description: ["The &6Cooking Guide&r allows you to automate cooking recipes. See the ponder on it for more information."]
+			icon: "farmersdelight:cooking_pot"
+			id: "49FD66E3F7CA3132"
+			rewards: [{
+				id: "12962FF386E387AF"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			subtitle: "Automated cooking!"
+			tasks: [
+				{
+					id: "7FD1C475C7B55E32"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_central_kitchen:cooking_guide"
+					}
+					type: "item"
+				}
+				{
+					id: "1E84D37F48E9AA82"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+			]
+			title: "Cooking"
+			x: 6.5d
+			y: 2.375d
 		}
 	]
 	title: "Create Modpack"
