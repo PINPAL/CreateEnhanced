@@ -89,6 +89,7 @@ ServerEvents.tags("item", (event) => {
   });
   event.remove("kubejs:train_tracks", /railways:track_switch.*/);
   event.remove("kubejs:train_tracks", "railways:track_coupler");
+  event.remove("kubejs:train_tracks", /railways:track_incomplete_.*/);
 
   ["create:brass_funnel", "create:brass_tunnel", "create:smart_chute"].forEach(
     (item) => {
