@@ -30,9 +30,7 @@ StartupEvents.registry("block", (event) => {
         // Tag with minecraft:wooden_stairs or minecraft:wooden_slabs
         // Depending on the variant append an s to the end of the variant
         .tagBoth(
-          `minecraft:wooden_${variant}${
-            variant.substring(0, variant.length - 1) == "s" ? "" : "s"
-          }`
+          `minecraft:wooden_${variant}${variant.slice(-1) == "s" ? "" : "s"}`
         );
     });
   });

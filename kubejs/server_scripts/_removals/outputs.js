@@ -111,6 +111,7 @@ const outputsToRemove = [
   "create_dd:industrial_iron_nugget",
   "create_dd:industrial_iron_sheet",
   "create_dd:industrial_iron_block",
+  "createdeco:zinc_sheet",
 
   // Create Things and Misc
   "create_things_and_misc:radar",
@@ -118,6 +119,10 @@ const outputsToRemove = [
 
   // Create Addition
   "createaddition:digital_adapter",
+  "createaddition:electrum_rod",
+  "createaddition:electrum_sheet",
+  "createaddition:electrum_wire",
+  "createaddition:zinc_sheet",
   Item.of("createaddition:diamond_grit_sandpaper").weakNBT(),
 
   // Create Paper Line

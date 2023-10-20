@@ -250,6 +250,13 @@ ServerEvents.recipes((event) => {
     "#create:stone_types/tuff"
   );
 
+  // Remove Electrum
+  event.replaceOutput(
+    { output: "createaddition:electrum_nugget" },
+    "#forge:nuggets/electrum",
+    Item.of("minecraft:air")
+  );
+
   // Fix Coal Coke
   event.recipes.create
     .mixing("createindustry:coal_coke", "#minecraft:coals")

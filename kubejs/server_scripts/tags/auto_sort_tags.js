@@ -24,7 +24,9 @@ ServerEvents.tags("item", (event) => {
 
   // Resources
   event.add("as:iron", /(_|:)iron($|_)/);
+  event.add("as:cast_iron", /(_|:)cast_iron($|_)/);
   event.add("as:gold", /(_|:)gold($|_)/);
+  event.add("as:gold", /(_|:)golden($|_)/);
   event.add("as:coal", /(_|:)coal($|_)/);
   event.add("as:charcoal", /(_|:)charcoal($|_)/);
   event.add("as:quartz", /(_|:)quartz($|_)/);
@@ -80,6 +82,14 @@ ServerEvents.tags("item", (event) => {
   event.add("as:green", /(_|:)green($|_)/);
   event.add("as:red", /(_|:)red($|_)/);
   event.add("as:black", /(_|:)black($|_)/);
+
+  // Broken Tools
+  event.add("as:broken", /kubejs:broken($|_)/);
+
+  // Upgrading Materials
+  event.add("as:upgrade_material", /kubejs:.*_blade/);
+  event.add("as:upgrade_material", /kubejs:.*_head/);
+  event.add("as:upgrade_material", /kubejs:.*_stitching/);
 
   // Lighting
   event.add("as:lamp", /.*(_|:)lamp.*($|_)/);

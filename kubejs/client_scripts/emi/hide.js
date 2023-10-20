@@ -79,8 +79,10 @@ const hideFromJEI = [
   "create_dd:industrial_iron_nugget",
   "create_dd:industrial_iron_sheet",
   "create_dd:deforester_saw",
+  "createdeco:zinc_sheet",
 
   "createaddition:digital_adapter",
+  "createadditon:zinc_sheet",
   Item.of("createaddition:diamond_grit_sandpaper").weakNBT(),
 
   "createindustry:napalm_bomb",
@@ -132,6 +134,7 @@ const hideFromJEI = [
   "minecraft:infested_chiseled_stone_bricks",
   "minecraft:infested_deepslate",
   "minecraft:bedrock",
+  "minecraft:end_portal_frame",
 
   "farmersdelight:golden_knife",
   "farmersdelight:netherite_knife",
