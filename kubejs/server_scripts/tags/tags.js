@@ -82,7 +82,8 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:netherite_armor", item);
   });
 
-  ["create:track", /railways:track.*/].forEach((item) => {
+  const createTrainTracks = ["create:track", /railways:track_.*/];
+  createTrainTracks.forEach((item) => {
     console.log(item);
     event.add("kubejs:train_tracks", item);
   });

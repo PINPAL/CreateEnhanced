@@ -12,11 +12,4 @@ ServerEvents.recipes((event) => {
       S: "#forge:string",
     })
     .id("kubejs:chainmail_stitching");
-
-  event
-    .shaped("kubejs:copper_stitching", ["M M", "MSM", "M M"], {
-      M: "#forge:ingots/copper",
-      S: "#forge:string",
-    })
-    .id("kubejs:copper_stitching");
 });

@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
         ]
       )
       .transitionalItem(`kubejs:incomplete_${material.name}_blade`)
-      .loops(2);
+      .loops(material.name == "netherite" ? 1 : 2);
     // Paxel Head
     event.recipes.create
       .sequenced_assembly(
@@ -44,22 +44,26 @@ ServerEvents.recipes((event) => {
         ]
       )
       .transitionalItem(`kubejs:incomplete_${material.name}_head`)
-      .loops(7);
+      .loops(material.name == "netherite" ? 3 : 7);
   });
   armorUpgradeMats.forEach((material) => {
     // Stitching
+    event.recipes.createDeploying(
+      `kubejs:unfinished_${material.name}_stitching`,
+      ["kubejs:leather_stitching", material.cost]
+    );
     event.recipes.create
       .sequenced_assembly(
         [`kubejs:${material.name}_stitching`],
-        "kubejs:leather_stitching",
+        `kubejs:unfinished_${material.name}_stitching`,
         [
           event.recipes.createDeploying(
-            `kubejs:incomplete_${material.name}_stitching`,
-            [`kubejs:incomplete_${material.name}_stitching`, material.cost]
+            `kubejs:unfinished_${material.name}_stitching`,
+            [`kubejs:unfinished_${material.name}_stitching`, material.cost]
           ),
         ]
       )
-      .transitionalItem(`kubejs:incomplete_${material.name}_stitching`)
-      .loops(6);
+      .transitionalItem(`kubejs:unfinished_${material.name}_stitching`)
+      .loops(material.name == "netherite" ? 1 : 5);
   });
 });

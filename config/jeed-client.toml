@@ -3,42 +3,11 @@ effect_color = false
 #Draw a black box behind effect icons
 effect_box = true
 #A list of effects that should not be registered nor shown in JEI
-hidden_effects = [
-    "cofh_core:cold_resistance",
-    "cofh_core:explosion_resistance",
-    "cofh_core:lightning_resistance",
-    "cofh_core:magic_resistance",
-    "cofh_core:supercharge",
-    "cofh_core:clarity",
-    "cofh_core:love",
-    "cofh_core:panacea",
-    "cofh_core:true_invisibility",
-    "cofh_core:enderference",
-    "cofh_core:slimed",
-    "cofh_core:chilled",
-    "cofh_core:shocked",
-    "cofh_core:sundered",
-    "cofh_core:wrenched",
-    "nutritionalbalance:engorged_effect",
-    "nutritionalbalance:nourished_effect",
-    "xaeroworldmap:no_world_map",
-    "xaeroworldmap:no_world_map_harmful",
-    "xaeroworldmap:no_cave_maps",
-    "xaeroworldmap:no_cave_maps_harmful",
-    "xaerominimap:no_minimap",
-    "xaerominimap:no_minimap_harmful",
-    "xaerominimap:no_entity_radar",
-    "xaerominimap:no_entity_radar_harmful",
-    "xaerominimap:no_waypoints",
-    "xaerominimap:no_waypoints_harmful",
-    "xaerominimap:no_cave_maps",
-    "xaerominimap:no_cave_maps_harmful",
-    "quark:resilience",
-    "supplementaries:overencumbered",
-]
+hidden_effects = ["cofh_core:cold_resistance", "cofh_core:explosion_resistance", "cofh_core:lightning_resistance", "cofh_core:magic_resistance", "cofh_core:supercharge", "cofh_core:clarity", "cofh_core:love", "cofh_core:panacea", "cofh_core:true_invisibility", "cofh_core:enderference", "cofh_core:slimed", "cofh_core:chilled", "cofh_core:shocked", "cofh_core:sundered", "cofh_core:wrenched", "nutritionalbalance:engorged_effect", "nutritionalbalance:nourished_effect", "xaeroworldmap:no_world_map", "xaeroworldmap:no_world_map_harmful", "xaeroworldmap:no_cave_maps", "xaeroworldmap:no_cave_maps_harmful", "xaerominimap:no_minimap", "xaerominimap:no_minimap_harmful", "xaerominimap:no_entity_radar", "xaerominimap:no_entity_radar_harmful", "xaerominimap:no_waypoints", "xaerominimap:no_waypoints_harmful", "xaerominimap:no_cave_maps", "xaerominimap:no_cave_maps_harmful", "quark:resilience", "supplementaries:overencumbered"]
 #Show ingredients list along with an effect description
 ingredients_list = true
 #Renders individual slots instead of a big one. Only works for REI
 render_slots = false
 #Removes vanilla tooltips rendered when an effect renders small (square box)
 replace_vanilla_tooltips = true
+

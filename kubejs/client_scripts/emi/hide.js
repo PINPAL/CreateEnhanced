@@ -23,12 +23,31 @@ const hideFromJEI = [
   /spawn_egg/,
   /supplementaries:.*present.*/,
 
-  // Tag Match
-  "#forge:pickaxes",
-  "#forge:shovels",
-  "#forge:axes",
+  // Pixel, Axe & Shovel
+  "minecraft:wooden_axe",
+  "minecraft:stone_axe",
+  "minecraft:iron_axe",
+  "minecraft:golden_axe",
+  "minecraft:diamond_axe",
+  "minecraft:netherite_axe",
+  "alloyed:steel_axe",
+  "minecraft:wooden_shovel",
+  "minecraft:stone_shovel",
+  "minecraft:iron_shovel",
+  "minecraft:golden_shovel",
+  "minecraft:diamond_shovel",
+  "minecraft:netherite_shovel",
+  "alloyed:steel_shovel",
+  "minecraft:wooden_pickaxe",
+  "minecraft:stone_pickaxe",
+  "minecraft:iron_pickaxe",
+  "minecraft:golden_pickaxe",
+  "minecraft:diamond_pickaxe",
+  "minecraft:netherite_pickaxe",
+  "alloyed:steel_pickaxe",
 
   // Item Match
+  "kubejs:incomplete_leather_stitching",
   "kubejs:belt_scroll",
 
   "create:extendo_grip",
