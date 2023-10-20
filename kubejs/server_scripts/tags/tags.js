@@ -164,10 +164,6 @@ ServerEvents.tags("item", (event) => {
     event.add("quests:storage_blocks", item);
   });
 
-  [/quark:.*blossom.*/, /quark:.*ancient.*/].forEach((item) => {
-    event.removeAllTagsFrom(item);
-  });
-
   const newGems = ["coal", "redstone"];
   newGems.forEach((gem) => {
     event.add(`forge:gems/${gem}`, `minecraft:${gem}`);
@@ -272,4 +268,6 @@ ServerEvents.tags("block", (event) => {
   [/quark:.*blossom.*/, /quark:.*ancient.*/].forEach((item) => {
     event.removeAllTagsFrom(item);
   });
+
+  event.remove("forge:stone", /quark:/);
 });

@@ -487,7 +487,7 @@
 				"27F8B5F7212E9412"
 				"3B237ADD59BDB02A"
 			]
-			description: ["Drop some Cobble into your millstone then place your &6Hand Crank&r underneath your &6Millstone&r and start cranking."]
+			description: ["Drop some Cobble into your &6Sifter&r then power it using your &6Hand Crank&r from underneath or use your free &6Cogwheel&r reward to power it from the side."]
 			id: "37E5D108BDCEA53B"
 			rewards: [{
 				id: "49F46CF713A78F98"
@@ -496,7 +496,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			subtitle: "Sand down raw rock."
+			subtitle: "Sift down raw rock."
 			tasks: [{
 				consume_items: false
 				id: "2A10947119CE65C9"
@@ -508,24 +508,25 @@
 		}
 		{
 			dependencies: ["26D185F68C821538"]
-			description: [
-				"Obtain a &6Millstone&r and take your very first steps to becoming a true engineer!"
-				""
-				"You can power the &6Millstone&r by placing your &6Hand Crank&r underneath it."
-			]
-			icon: "create:millstone"
+			description: ["Obtain a &6Sifter&r and take your very first steps to becoming a true engineer!"]
+			icon: "createsifter:sifter"
 			id: "3B237ADD59BDB02A"
+			rewards: [{
+				id: "0196F9D03F55B790"
+				item: "create:cogwheel"
+				type: "item"
+			}]
 			shape: "octagon"
-			subtitle: "Obtain a Millstone"
+			subtitle: "Obtain a Sifter"
 			tasks: [
-				{
-					id: "2DA826BDD32BA410"
-					item: "create:millstone"
-					type: "item"
-				}
 				{
 					id: "6CC5A5F38B7B6472"
 					item: "create:hand_crank"
+					type: "item"
+				}
+				{
+					id: "397232ACAC0DC3FB"
+					item: "createsifter:sifter"
 					type: "item"
 				}
 			]
@@ -650,7 +651,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["6E931AE38AE91C4F"]
+			dependencies: ["26B607339F9A9909"]
 			hide: true
 			id: "6FEF3380D11818AF"
 			subtitle: "Don't poke it too hard.."
@@ -660,8 +661,8 @@
 				type: "item"
 			}]
 			title: "Deploying"
-			x: 4.75d
-			y: 9.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3EAE622A37F47CC4"]
@@ -766,8 +767,8 @@
 				type: "item"
 			}]
 			title: "Crushing"
-			x: 4.5d
-			y: 14.5d
+			x: 5.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["06B04C606CE4187C"]
@@ -995,8 +996,8 @@
 				type: "item"
 			}]
 			title: "Storage"
-			x: 7.0d
-			y: 10.5d
+			x: 5.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
@@ -1014,11 +1015,11 @@
 				type: "item"
 			}]
 			title: "Bulk Storage"
-			x: 8.375d
-			y: 9.875d
+			x: 6.875d
+			y: 10.375d
 		}
 		{
-			dependencies: ["5AA93F61C816FF09"]
+			dependencies: ["7EFE09C7A87A4FD3"]
 			description: ["&7The &rBarrel Wrench&7 allows you to easily manage your storage including locking drawers so they can only accept certain item types."]
 			hide: true
 			id: "75F594821E72D1B4"
@@ -1029,8 +1030,8 @@
 				type: "item"
 			}]
 			title: "Configuring Barrels?"
-			x: 9.25d
-			y: 10.25d
+			x: 7.875d
+			y: 10.0d
 		}
 		{
 			dependencies: ["06B04C606CE4187C"]
@@ -1082,14 +1083,11 @@
 				type: "item"
 			}]
 			title: "The Brass Age"
-			x: 0.5625d
-			y: 11.8125d
+			x: 0.9375d
+			y: 12.875d
 		}
 		{
-			dependencies: [
-				"7EFE09C7A87A4FD3"
-				"26B607339F9A9909"
-			]
+			dependencies: ["7EFE09C7A87A4FD3"]
 			hide: true
 			id: "15CC2A8854A12C33"
 			subtitle: "More slots and upgrades!"
@@ -1105,7 +1103,7 @@
 				type: "item"
 			}]
 			title: "Upgrading your storage."
-			x: 5.0d
+			x: 6.875d
 			y: 11.5d
 		}
 		{
@@ -1124,11 +1122,11 @@
 				type: "item"
 			}]
 			title: "Now that's bulk!"
-			x: 6.0d
+			x: 7.875d
 			y: 12.0d
 		}
 		{
-			dependencies: ["13F8366D9B6C934A"]
+			dependencies: ["7EFE09C7A87A4FD3"]
 			hide: true
 			id: "2142527C3A2204CA"
 			subtitle: "Increasing your stack size by two!"
@@ -1137,8 +1135,8 @@
 				item: "sophisticatedstorage:stack_upgrade_tier_1"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 12.5d
+			x: 6.125d
+			y: 12.625d
 		}
 		{
 			dependencies: ["2142527C3A2204CA"]
@@ -1149,8 +1147,8 @@
 				item: "sophisticatedstorage:stack_upgrade_tier_2"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 12.125d
+			x: 7.125d
+			y: 13.0d
 		}
 		{
 			dependencies: ["23EF04B35C62461B"]
@@ -1161,8 +1159,8 @@
 				item: "sophisticatedstorage:stack_upgrade_tier_3"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 12.5d
+			x: 8.125d
+			y: 13.5d
 		}
 		{
 			dependencies: ["0A1CD692562DF490"]
@@ -1173,8 +1171,8 @@
 				item: "sophisticatedstorage:stack_upgrade_tier_4"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 12.0d
+			x: 9.25d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7453758780D4848F"]
@@ -1236,8 +1234,8 @@
 				type: "dimension"
 			}]
 			title: "END Game"
-			x: -0.75d
-			y: 12.375d
+			x: -0.25d
+			y: 13.375d
 		}
 		{
 			dependencies: ["504EA82C987ABA3F"]
@@ -1612,8 +1610,8 @@
 				type: "item"
 			}]
 			title: "Unlimited Range"
-			x: -1.75d
-			y: 16.0d
+			x: -1.125d
+			y: 14.625d
 		}
 		{
 			dependencies: ["3B0E2FC24BF6085C"]
@@ -1625,8 +1623,8 @@
 				type: "item"
 			}]
 			title: "Truly anywhere!"
-			x: -1.75d
-			y: 17.0d
+			x: -0.25d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5169F5136FEF5FD2"]
@@ -1846,8 +1844,8 @@
 				type: "item"
 			}]
 			title: "The Train Age"
-			x: 1.5d
-			y: 14.0d
+			x: 2.375d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
@@ -1867,8 +1865,8 @@
 				type: "item"
 			}]
 			title: "Train Tracks"
-			x: 0.25d
-			y: 13.5d
+			x: 1.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
@@ -1881,8 +1879,8 @@
 				type: "item"
 			}]
 			title: "Choo Choo!"
-			x: 2.75d
-			y: 13.5d
+			x: 3.625d
+			y: 16.0d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
@@ -1893,6 +1891,7 @@
 				"Therefore it's highly recommended to atleast power your player transport trains."
 			]
 			hide: true
+			icon: "minecraft:coal"
 			id: "6B5FB36353FEBED1"
 			rewards: [{
 				id: "42CA577D3BB87147"
@@ -1916,8 +1915,8 @@
 				type: "item"
 			}]
 			title: "Full Steam Ahead!"
-			x: 2.75d
-			y: 14.625d
+			x: 3.625d
+			y: 17.125d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]
@@ -1999,27 +1998,8 @@
 				value: 1L
 			}]
 			title: "Enchanting"
-			x: 2.75d
-			y: 16.75d
-		}
-		{
-			dependencies: ["11E1B19181CD6D2D"]
-			hide: true
-			id: "7CB45649FE5D0AC6"
-			rewards: [{
-				id: "5F94BD60FFF0D90D"
-				item: "easy_villagers:breeder"
-				type: "item"
-			}]
-			subtitle: "Villagers aren't wizards. Therefore they don't trade you books."
-			tasks: [{
-				id: "7AA43BED53ECBF85"
-				item: "easy_villagers:villager"
-				type: "item"
-			}]
-			title: "No Villagers Here."
-			x: 4.0d
-			y: 16.25d
+			x: -0.125d
+			y: 17.5d
 		}
 		{
 			dependencies: ["11E1B19181CD6D2D"]
@@ -2041,8 +2021,8 @@
 				type: "item"
 			}]
 			title: "Blaze Enchanting"
-			x: 3.25d
-			y: 15.5d
+			x: -0.625d
+			y: 16.25d
 		}
 		{
 			dependencies: ["11E1B19181CD6D2D"]
@@ -2079,8 +2059,8 @@
 				type: "item"
 			}]
 			title: "Enchanting Your Books"
-			x: 4.0d
-			y: 17.25d
+			x: 1.125d
+			y: 18.0d
 		}
 		{
 			dependencies: ["11E1B19181CD6D2D"]
@@ -2098,8 +2078,8 @@
 				item: "create_enchantment_industry:disenchanter"
 				type: "item"
 			}]
-			x: 2.25d
-			y: 18.0d
+			x: -0.625d
+			y: 18.75d
 		}
 		{
 			dependencies: ["56A83A4BF3CEFC3E"]
@@ -2116,8 +2096,8 @@
 				type: "item"
 			}]
 			title: "Disenchanting"
-			x: 3.75d
-			y: 19.0d
+			x: 0.875d
+			y: 19.75d
 		}
 		{
 			dependencies: ["11E1B19181CD6D2D"]
@@ -2130,8 +2110,8 @@
 				type: "item"
 			}]
 			title: "Leveling Up"
-			x: 3.375d
-			y: 18.0d
+			x: 0.5d
+			y: 18.875d
 		}
 		{
 			dependencies: ["11E1B19181CD6D2D"]
@@ -2158,8 +2138,8 @@
 				type: "item"
 			}]
 			title: "Storing XP"
-			x: 1.5d
-			y: 17.25d
+			x: -1.375d
+			y: 18.0d
 		}
 		{
 			dependencies: ["26B607339F9A9909"]
@@ -2172,8 +2152,8 @@
 				type: "item"
 			}]
 			title: "Crafting but Bigger."
-			x: 5.0d
-			y: 13.25d
+			x: 6.0d
+			y: 14.75d
 		}
 		{
 			dependencies: ["7DB05CBC8B579FD8"]
@@ -2191,8 +2171,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.25d
-			y: 13.75d
+			x: 7.375d
+			y: 15.375d
 		}
 		{
 			dependencies: ["5169F5136FEF5FD2"]
@@ -2487,8 +2467,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: 14.5d
+			x: 6.625d
+			y: 16.125d
 		}
 		{
 			dependencies: ["0F4CCCBB88406D91"]
@@ -2506,12 +2486,13 @@
 				item: "simplemagnets:advanced_demagnetization_coil"
 				type: "item"
 			}]
-			x: 6.375d
-			y: 14.875d
+			x: 7.0d
+			y: 17.125d
 		}
 		{
 			dependencies: ["5D83A0E68CAC463B"]
 			hide: true
+			icon: "railways:white_conductor_cap"
 			id: "5A7DAF971DB8B4D3"
 			subtitle: "Hire somebody else to drive!"
 			tasks: [
@@ -2534,8 +2515,8 @@
 				}
 			]
 			title: "Automatic Trains"
-			x: 0.25d
-			y: 14.5d
+			x: 2.875d
+			y: 15.25d
 		}
 		{
 			dependencies: ["2B04669626480B2F"]
@@ -3310,8 +3291,8 @@
 				}
 			]
 			title: "Storage System"
-			x: 8.375d
-			y: 11.125d
+			x: 5.0d
+			y: 12.375d
 		}
 		{
 			dependencies: ["497786B7F649F21B"]
@@ -4307,8 +4288,8 @@
 				item: "supplementaries:cog_block"
 				type: "item"
 			}]
-			x: 2.125d
-			y: 11.125d
+			x: -0.25d
+			y: 12.375d
 		}
 		{
 			dependencies: ["6545EE475DD16057"]
@@ -5459,8 +5440,8 @@
 				item: "create:controls"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 15.25d
+			x: 2.875d
+			y: 17.875d
 		}
 		{
 			dependencies: ["3A9F73A91D116F87"]
@@ -5476,8 +5457,8 @@
 				item: "create:cart_assembler"
 				type: "item"
 			}]
-			x: 0.625d
-			y: 16.125d
+			x: 3.25d
+			y: 18.875d
 		}
 		{
 			dependencies: ["042AF426A016A44A"]
@@ -6486,6 +6467,19 @@
 			}]
 			x: 25.375d
 			y: 10.875d
+		}
+		{
+			dependencies: ["6E931AE38AE91C4F"]
+			id: "68096FBDE5C98E4C"
+			subtitle: "Crushing on a budget!"
+			tasks: [{
+				id: "0C8093F5A5BF97DC"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Milling"
+			x: 4.75d
+			y: 9.5d
 		}
 	]
 	title: "Create Modpack"

@@ -64,7 +64,6 @@ const outputsToRemove = [
   // Create
   "create:cart_assembler",
   "create:rotation_speed_controller",
-  "create:millstone",
   "create:hand_crank",
   "create:spout",
   "create:steam_engine",

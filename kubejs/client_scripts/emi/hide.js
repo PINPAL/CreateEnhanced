@@ -79,6 +79,9 @@ const hideFromJEI = [
   "createindustry:industrial_barrel",
   "createindustry:caution_block",
 
+  "createsifter:custom_mesh",
+  "createsifter:zinc_mesh",
+
   "nutritionalbalance:lunchbox",
 
   "supplementaries:crank",

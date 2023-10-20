@@ -67,12 +67,6 @@ ServerEvents.recipes((event) => {
     B: "create:brass_casing",
   });
 
-  // Cheap Millstone
-  event.shaped(Item.of("create:millstone"), [" F ", " P ", " S "], {
-    F: "minecraft:flint",
-    P: "#minecraft:planks",
-    S: "minecraft:stone",
-  });
   // Cheap Hand Crank
   event.shaped(Item.of("create:hand_crank"), ["PPP", "  S", "   "], {
     P: "#minecraft:planks",

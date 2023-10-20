@@ -91,7 +91,6 @@ const idsToRemove = [
   "create:crafting/kinetics/super_glue",
   "create:crafting/curiosities/cake",
   "create:pressing/sugar_cane",
-  "create:milling/cobblestone",
   "create:splashing/crushed_raw_iron",
 
   // Create Allyoed

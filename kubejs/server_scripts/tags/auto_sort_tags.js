@@ -1,3 +1,5 @@
+// priority: 1
+
 ServerEvents.tags("item", (event) => {
   // Wood Types
   event.add("as:oak", /oak($|_)/);

@@ -17,6 +17,7 @@ const modsToRemove = [
   "wands",
   "netherite_horse_armor",
   "melter",
+  "createsifter",
 ];
 
 ServerEvents.recipes((event) => {

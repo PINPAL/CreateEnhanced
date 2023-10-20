@@ -7,12 +7,6 @@ ServerEvents.tags("item", (event) => {
 
   // Add paxel tag
   event.add("kubejs:paxel", /easypaxellite:.*_paxel$/);
-
-  // Add Knives Together
-  event.add("kubejs:mid_tier_knives", "create_things_and_misc:zinc_knife");
-  event
-    .get("kubejs:mid_tier_knives")
-    .add("create_things_and_misc:copper_knife");
 });
 
 ServerEvents.tags("block", (event) => {
