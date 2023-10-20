@@ -233,7 +233,7 @@ ServerEvents.recipes((event) => {
       event.smithing(
         tier.properties.horseArmor,
         tier.previousTier.horseArmor,
-        `kubejs:${tier.tier}_stitching`
+        Item.of(`kubejs:unfinished_${tier.tier}_stitching`).weakNBT()
       );
     }
   });

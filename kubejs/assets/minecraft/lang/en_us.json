@@ -58,5 +58,25 @@
   "item.minecraft.golden_chestplate": "Copper Chestplate",
   "item.minecraft.golden_leggings": "Copper Leggings",
   "item.minecraft.golden_boots": "Copper Boots",
-  "item.minecraft.golden_horse_armor": "Copper Horse Armor"
+  "item.minecraft.golden_horse_armor": "Copper Horse Armor",
+
+  // Rename Axes/Pickaxe/Shovel to "Any Paxel"
+  "item.minecraft.wooden_axe": "Any Paxel",
+  "item.minecraft.wooden_pickaxe": "Any Paxel",
+  "item.minecraft.wooden_shovel": "Any Paxel",
+  "item.minecraft.stone_axe": "Any Paxel",
+  "item.minecraft.stone_pickaxe": "Any Paxel",
+  "item.minecraft.stone_shovel": "Any Paxel",
+  "item.minecraft.iron_axe": "Any Paxel",
+  "item.minecraft.iron_pickaxe": "Any Paxel",
+  "item.minecraft.iron_shovel": "Any Paxel",
+  "item.minecraft.golden_axe": "Any Paxel",
+  "item.minecraft.golden_pickaxe": "Any Paxel",
+  "item.minecraft.golden_shovel": "Any Paxel",
+  "item.minecraft.diamond_axe": "Any Paxel",
+  "item.minecraft.diamond_pickaxe": "Any Paxel",
+  "item.minecraft.diamond_shovel": "Any Paxel",
+  "item.minecraft.netherite_axe": "Any Paxel",
+  "item.minecraft.netherite_pickaxe": "Any Paxel",
+  "item.minecraft.netherite_shovel": "Any Paxel"
 }

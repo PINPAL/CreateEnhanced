@@ -23,7 +23,7 @@ StartupEvents.registry("item", (event) => {
       .displayName(formatName(material) + " Stitching")
       .unstackable();
     event
-      .create("incomplete_" + material + "_stitching")
+      .create("unfinished_" + material + "_stitching")
       .displayName("Incomplete " + formatName(material) + " Stitching")
       .unstackable();
   });
