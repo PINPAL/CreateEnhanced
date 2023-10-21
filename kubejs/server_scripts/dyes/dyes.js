@@ -79,6 +79,11 @@ const colors = [
 ];
 
 ServerEvents.recipes((event) => {
+  // Dark Prismarine
+  event.recipes.create.mixing("minecraft:dark_prismarine", [
+    "minecraft:prismarine",
+    Fluid.of("kubejs:black_dye_fluid", 125),
+  ]);
   // Hazard Block
   event.recipes.create.mixing(
     ["create_dd:hazard_block"],
