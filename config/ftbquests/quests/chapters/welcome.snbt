@@ -5252,12 +5252,20 @@
 			y: -1.25d
 		}
 		{
+			icon: "minecraft:kelp"
 			id: "32F3AE994CB94CF4"
-			tasks: [{
-				id: "35F1D515CE43DCC9"
-				item: "minecraft:kelp"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "35F1D515CE43DCC9"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "70845527A6F224E9"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
 			x: -24.5d
 			y: -6.25d
 		}
