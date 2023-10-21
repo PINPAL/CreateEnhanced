@@ -1,15 +1,16 @@
 // priority: -1
 
 const removedItems = [
-  /quark:.*quark:jasper.*/,
-  /quark:.*quark:limestone.*/,
-  /quark:.*quark:permafrost.*/,
-  /quark:.*quark:shale.*/,
+  /quark:.*jasper.*/,
+  /quark:.*limestone.*/,
+  /quark:.*permafrost.*/,
+  /quark:.*shale.*/,
   /quark:.*myalite.*/,
   /quark:.*soul_sandstone.*/,
   "quark:iron_rod",
   /quark:.*blossom.*/,
   /quark:.*ancient.*/,
+  /quark:.*azalea.*/,
   /quark:.*corundum.*/,
   /quark:.*crystal_lamp.*/,
   /quark:.*lantern.*/,

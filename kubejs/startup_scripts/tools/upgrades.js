@@ -10,11 +10,11 @@ StartupEvents.registry("item", (event) => {
       .unstackable();
     event
       .create(material + "_head")
-      .displayName(formatName(material) + " Paxel Head")
+      .displayName(formatName(material) + " Tool Head")
       .unstackable();
     event
       .create("incomplete_" + material + "_head")
-      .displayName("Incomplete " + formatName(material) + " Paxel Head")
+      .displayName("Incomplete " + formatName(material) + " Tool Head")
       .unstackable();
   });
   armorMaterials.forEach((material) => {

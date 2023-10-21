@@ -11,6 +11,7 @@ const hideFromJEI = [
   /doubleslabs:.*/,
 
   // Regex Match
+  /everycomp:.*hollow.*log.*/,
   /create_central_kitchen:incomplete_.*/,
   /create_crystal_clear:.*encased.*/,
   /kubejs:broken_.*/,

@@ -16,6 +16,9 @@ ServerEvents.tags("item", (event) => {
   event.add("as:spirit", /.*create_dd.*spirit($|_)/);
   event.add("as:bamboo", /bamboo($|_)/);
   event.add("as:azalea", /azalea($|_)/);
+  event.add("as:flowering_azalea", /flowering_azalea($|_)/);
+  event.add("as:walnut", /walnut($|_)/);
+  event.add("as:coconut", /coconut($|_)/);
 
   event.remove("as:oak", "#as:dark_oak");
 

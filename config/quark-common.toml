@@ -786,7 +786,7 @@
 	"Chorus Vegetation" = false
 	"Blossom Trees" = false
 	"Big Stone Clusters" = true
-	"Azalea Wood" = true
+	"Azalea Wood" = false
 	"Ancient Wood" = false
 
 	[world.spiral_spires]
