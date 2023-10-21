@@ -76,10 +76,6 @@
 	fodder = true
 	hourglass = true
 
-	[functional.present]
-		enabled = true
-		trapped_present = true
-
 	[functional.rope]
 		enabled = true
 		#Allows ropes to be supported & attached to solid block sides
@@ -180,6 +176,10 @@
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 100
 			attempts_per_patch = 35
+
+	[functional.present]
+		enabled = true
+		trapped_present = true
 
 [building]
 	daub = true
@@ -321,13 +321,13 @@
 		#Arrow stacks that can fit inside a quiver. Requires reboot
 		#Range: 1 ~ 9
 		slots = 6
+		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
+		#Range: 0.0 ~ 1.0
+		quiver_skeleton_spawn_chance = 0.025
 		#Allows quiver to only be used when in offhand or in curio slot
 		only_works_in_curio = false
 		#Arrows you pickup will try to go in a quiver if available provided it has some arrow of the same type
 		quiver_pickup = true
-		#Increase this number to alter the probability for a Skeleton with quiver to spawn. Note that this also depends on local difficulty so you wont ever see them on easy and very rarely on normal. Similar logic to equipment
-		#Range: 0.0 ~ 1.0
-		quiver_skeleton_spawn_chance = 0.025
 
 	[tools.bubble_blower]
 		enabled = true
@@ -433,6 +433,10 @@
 		axe_strip = true
 		#Enables shooting ender pearls with dispensers
 		shoot_ender_pearls = true
+
+	[tweaks.dye_blocks]
+		#Allows using dyes on blocks just like soap
+		enabled = false
 
 	[tweaks.cake_tweaks]
 		#Allows you to place a cake on top of another
@@ -547,8 +551,4 @@
 		rideable_underwater = true
 		#Convert a zombie horse back by feeding it a golden carrot
 		zombie_horse_inverse_conversion = true
-
-	[tweaks.dye_blocks]
-		#Allows using dyes on blocks just like soap
-		enabled = false
 

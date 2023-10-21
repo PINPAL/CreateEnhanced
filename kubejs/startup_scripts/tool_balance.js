@@ -19,6 +19,11 @@ ItemEvents.modification((event) => {
     item.maxDamage = 200;
   });
 
+  // Neon Torch
+  event.modify("create_things_and_misc:neon_tube", (item) => {
+    item.maxDamage = 16;
+  });
+
   // Paxel
   event.modify("easypaxellite:golden_paxel", (item) => {
     item.maxDamage = 500;
