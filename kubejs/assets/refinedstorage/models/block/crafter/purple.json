@@ -1,0 +1,6 @@
+{
+  "parent": "refinedstorage:block/crafter/disconnected",
+  "textures": {
+    "lights": "refinedstorage:block/lights/purple"
+  }
+}

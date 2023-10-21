@@ -1,0 +1,6 @@
+{
+  "parent": "refinedstorage:block/crafting_monitor/disconnected",
+  "textures": {
+    "lights": "refinedstorage:block/lights/orange"
+  }
+}

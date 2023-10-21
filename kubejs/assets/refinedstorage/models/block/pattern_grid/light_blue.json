@@ -1,7 +1,6 @@
 {
-  "render_type": "minecraft:cutout",
   "parent": "refinedstorage:block/pattern_grid/disconnected",
   "textures": {
-    "screen": "refinedstorage:block/lights/connected"
+    "lights": "refinedstorage:block/lights/light_blue"
   }
 }

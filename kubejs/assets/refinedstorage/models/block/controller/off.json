@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "create:block/brass_block",
-		"3": "refinedstorage:block/lights/disconnected",
 		"4": "create:block/brass_casing",
 		"5": "refinedstorage:block/controller/middle",
-		"particle": "create:block/brass_block"
+		"particle": "create:block/brass_block",
+		"lights": "refinedstorage:block/lights/disconnected"
 	},
 	"elements": [
 		{
@@ -937,10 +937,10 @@
 			"from": [3, 3, 3],
 			"to": [13, 13, 13],
 			"faces": {
-				"north": {"uv": [3, 3, 13, 13], "texture": "#3"},
-				"east": {"uv": [3, 3, 13, 13], "texture": "#3"},
-				"south": {"uv": [3, 3, 13, 13], "texture": "#3"},
-				"west": {"uv": [3, 3, 13, 13], "texture": "#3"}
+				"north": {"uv": [3, 3, 13, 13], "texture": "#lights"},
+				"east": {"uv": [3, 3, 13, 13], "texture": "#lights"},
+				"south": {"uv": [3, 3, 13, 13], "texture": "#lights"},
+				"west": {"uv": [3, 3, 13, 13], "texture": "#lights"}
 			}
 		}
 	],
