@@ -1,13 +1,13 @@
 {
   "globalToggles": {
-    "skyFog": "DEFAULT",
-    "terrainFog": "DEFAULT",
-    "thickFog": "DEFAULT",
-    "waterFog": "DEFAULT",
-    "lavaFog": "DEFAULT",
-    "powderSnowFog": "DEFAULT",
-    "blindnessFog": "DEFAULT",
-    "darknessFog": "DEFAULT"
+    "skyFog": "FALSE",
+    "terrainFog": "FALSE",
+    "thickFog": "FALSE",
+    "waterFog": "FALSE",
+    "lavaFog": "FALSE",
+    "powderSnowFog": "TRUE",
+    "blindnessFog": "TRUE",
+    "darknessFog": "TRUE"
   },
   "dimensionToggles": {
     "minecraft:overworld": {
@@ -31,6 +31,26 @@
       "darknessFog": "DEFAULT"
     },
     "minecraft:the_end": {
+      "skyFog": "DEFAULT",
+      "terrainFog": "DEFAULT",
+      "thickFog": "DEFAULT",
+      "waterFog": "DEFAULT",
+      "lavaFog": "DEFAULT",
+      "powderSnowFog": "DEFAULT",
+      "blindnessFog": "DEFAULT",
+      "darknessFog": "DEFAULT"
+    },
+    "create_dd:ponder": {
+      "skyFog": "DEFAULT",
+      "terrainFog": "DEFAULT",
+      "thickFog": "DEFAULT",
+      "waterFog": "DEFAULT",
+      "lavaFog": "DEFAULT",
+      "powderSnowFog": "DEFAULT",
+      "blindnessFog": "DEFAULT",
+      "darknessFog": "DEFAULT"
+    },
+    "minecraft:overworld_caves": {
       "skyFog": "DEFAULT",
       "terrainFog": "DEFAULT",
       "thickFog": "DEFAULT",
@@ -663,6 +683,36 @@
       "darknessFog": "DEFAULT"
     },
     "minecraft:wooded_badlands": {
+      "skyFog": "DEFAULT",
+      "terrainFog": "DEFAULT",
+      "thickFog": "DEFAULT",
+      "waterFog": "DEFAULT",
+      "lavaFog": "DEFAULT",
+      "powderSnowFog": "DEFAULT",
+      "blindnessFog": "DEFAULT",
+      "darknessFog": "DEFAULT"
+    },
+    "create_dd:dark": {
+      "skyFog": "DEFAULT",
+      "terrainFog": "DEFAULT",
+      "thickFog": "DEFAULT",
+      "waterFog": "DEFAULT",
+      "lavaFog": "DEFAULT",
+      "powderSnowFog": "DEFAULT",
+      "blindnessFog": "DEFAULT",
+      "darknessFog": "DEFAULT"
+    },
+    "create_dd:light": {
+      "skyFog": "DEFAULT",
+      "terrainFog": "DEFAULT",
+      "thickFog": "DEFAULT",
+      "waterFog": "DEFAULT",
+      "lavaFog": "DEFAULT",
+      "powderSnowFog": "DEFAULT",
+      "blindnessFog": "DEFAULT",
+      "darknessFog": "DEFAULT"
+    },
+    "quark:glimmering_weald": {
       "skyFog": "DEFAULT",
       "terrainFog": "DEFAULT",
       "thickFog": "DEFAULT",
