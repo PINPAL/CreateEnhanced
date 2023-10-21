@@ -119,7 +119,8 @@
     "fi.dy.masa.malilib.MaLiLibConfigGui": true,
     "com.simibubi.create.content.equipment.clipboard.ClipboardScreen": true,
     "com.simibubi.create.content.redstone.displayLink.DisplayLinkScreen": true,
-    "com.simibubi.create.content.schematics.cannon.SchematicannonScreen": true
+    "com.simibubi.create.content.schematics.cannon.SchematicannonScreen": true,
+    "net.minecraft.client.gui.screens.social.SocialInteractionsScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false
