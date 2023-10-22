@@ -123,7 +123,8 @@
     "net.minecraft.client.gui.screens.social.SocialInteractionsScreen": true,
     "xaero.common.gui.GuiWaypointSettings": true,
     "com.hrznstudio.titanium.client.screen.container.BasicAddonScreen": true,
-    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot1": true
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot1": true,
+    "tfar.metalbarrels.screens.MetalBarrelScreen": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

@@ -9,6 +9,7 @@ const hideFromJEI = [
   /ftbquests:*/,
   /chunkloaders:*/,
   /doubleslabs:.*/,
+  /metalbarrels:.*/,
 
   // Regex Match
   /everycomp:.*hollow.*log.*/,

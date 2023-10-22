@@ -51,6 +51,12 @@ const addToJEI = [
   "simplemagnets:advanced_demagnetization_coil",
   "wands:palette",
   "chunkloaders:ultimate_chunk_loader",
+  "metalbarrels:iron_barrel",
+  "metalbarrels:gold_barrel",
+  "metalbarrels:diamond_barrel",
+  "metalbarrels:wood_to_iron",
+  "metalbarrels:iron_to_gold",
+  "metalbarrels:gold_to_diamond",
 ];
 
 JEIEvents.addItems((event) => {

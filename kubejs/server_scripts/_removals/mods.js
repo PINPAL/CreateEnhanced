@@ -19,6 +19,7 @@ const modsToRemove = [
   "melter",
   "createsifter",
   "storagedrawers",
+  "metalbarrels",
 ];
 
 ServerEvents.recipes((event) => {
