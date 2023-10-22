@@ -265,6 +265,38 @@ ServerEvents.tags("item", (event) => {
   decals.forEach((decal) => {
     event.add("kubejs:create_decals", decal);
   });
+
+  event.add("kubejs:oak_drawers", /storagedrawers:oak_full_drawers_.*/);
+  event.add("kubejs:spruce_drawers", /storagedrawers:spruce_full_drawers_.*/);
+  event.add("kubejs:birch_drawers", /storagedrawers:birch_full_drawers_.*/);
+  event.add("kubejs:jungle_drawers", /storagedrawers:jungle_full_drawers_.*/);
+  event.add("kubejs:acacia_drawers", /storagedrawers:acacia_full_drawers_.*/);
+  event.add(
+    "kubejs:dark_oak_drawers",
+    /storagedrawers:dark_oak_full_drawers_.*/
+  );
+  event.add("kubejs:crimson_drawers", /storagedrawers:crimson_full_drawers_.*/);
+  event.add("kubejs:warped_drawers", /storagedrawers:warped_full_drawers_.*/);
+  event.add(
+    "kubejs:bamboo_drawers",
+    /everycomp:sd\/quark\/bamboo_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:spirit_drawers",
+    /everycomp:sd\/create_dd\/spirit_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:smoked_drawers",
+    /everycomp:sd\/create_dd\/smoked_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:spirit_drawers",
+    /everycomp:sd\/create_dd\/spirit_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:rose_drawers",
+    /everycomp:sd\/create_dd\/rose_full_drawers_.*/
+  );
 });
 
 ServerEvents.tags("block", (event) => {

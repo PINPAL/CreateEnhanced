@@ -7,6 +7,13 @@ ServerEvents.recipes((event) => {
     C: "#forge:chests/wooden",
   });
 
+  // Upgrade Base
+  event.shapeless("sophisticatedbackpacks:upgrade_base", [
+    "minecraft:paper",
+    "2x #forge:string",
+    "#minecraft:planks",
+  ]);
+
   // Pickup Upgrade
   event.shaped(
     "sophisticatedbackpacks:advanced_pickup_upgrade",

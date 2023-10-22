@@ -8,7 +8,7 @@
 		#If recipe toasts are blocked.
 		recipes = true
 		#If system toasts are blocked.
-		system = false
+		system = true
 		#If tutorial toasts are blocked.
 		tutorial = true
 		#If all vanilla toasts are blocked.

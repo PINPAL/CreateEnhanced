@@ -165,7 +165,118 @@ const itemsToTooltip = [
       },
     ],
   },
+  {
+    item: "storagedrawers:drawer_key",
+    summary: ["$Locks$ your drawer."],
+    controls: [
+      {
+        control: "R-Clicked on Drawer",
+        requiresHold: false,
+        text: [
+          "Toggles the $Lock$ on the $Drawer$.",
+          "which prevents any other items types",
+          "from being put into the $Drawer$.",
+        ],
+      },
+      {
+        control: "in Off Hand",
+        requiresHold: false,
+        text: ["$Locks$ drawers when you $place$ them."],
+      },
+    ],
+  },
+  {
+    item: "storagedrawers:quantify_key",
+    summary: ["Toggles $Item Quantites$ on your drawer."],
+    controls: [
+      {
+        control: "R-Clicked on Drawer",
+        requiresHold: false,
+        text: ["Toggles the $Item Quantity$ display", "on the $Drawer$."],
+      },
+      {
+        control: "in Off Hand",
+        requiresHold: false,
+        text: [
+          "$Hides$ $Item Quantity$ on new drawers",
+          "when you $place$ them.",
+        ],
+      },
+    ],
+  },
+  {
+    item: "storagedrawers:shroud_key",
+    summary: ["Toggles $Display$ on your drawer."],
+    controls: [
+      {
+        control: "R-Clicked on Drawer",
+        requiresHold: false,
+        text: [
+          "Toggles the $Information$ display",
+          "on the $Drawer$. This $Hides$ the",
+          "$Item Quantity$ and $Icon$.",
+        ],
+      },
+      {
+        control: "in Off Hand",
+        requiresHold: false,
+        text: ["$Hides$ $Everything$ on new drawers", "when you $place$ them."],
+      },
+    ],
+  },
 ];
+
+const drawerWoodTypes = [
+  { name: "oak", mod: "storagedrawers:" },
+  { name: "spruce", mod: "storagedrawers:" },
+  { name: "birch", mod: "storagedrawers:" },
+  { name: "jungle", mod: "storagedrawers:" },
+  { name: "acacia", mod: "storagedrawers:" },
+  { name: "dark_oak", mod: "storagedrawers:" },
+  { name: "crimson", mod: "storagedrawers:" },
+  { name: "warped", mod: "storagedrawers:" },
+  { name: "bamboo", mod: "everycomp:sd/quark/" },
+  { name: "spirit", mod: "everycomp:sd/create_dd/" },
+  { name: "rose", mod: "everycomp:sd/create_dd/" },
+  { name: "smoked", mod: "everycomp:sd/create_dd/" },
+];
+const drawerControls = [
+  {
+    control: "R-Clicked with Item",
+    requiresHold: false,
+    text: ["Places the $item stack$ into the $Drawer$."],
+  },
+  {
+    control: "Double R-Clicked with Item",
+    requiresHold: false,
+    text: ["Places $all items of that type$ into the $Drawer$."],
+  },
+  {
+    control: "Crouch & R-Clicked with Empty Hand",
+    requiresHold: true,
+    text: ["Opens the $Configuration Interface$"],
+  },
+];
+drawerWoodTypes.forEach((woodType) => {
+  itemsToTooltip.push({
+    item: woodType.mod + woodType.name + "_full_drawers_1",
+    summary: ["$One$ Item $Slot$", "Holds $32 Stacks$ per Slot."],
+    controls: drawerControls,
+    advancedControls: true,
+  });
+  itemsToTooltip.push({
+    item: woodType.mod + woodType.name + "_full_drawers_2",
+    summary: ["$Two$ Item $Slot$", "Holds $16 Stacks$ per Slot."],
+    controls: drawerControls,
+    advancedControls: true,
+  });
+  itemsToTooltip.push({
+    item: woodType.mod + woodType.name + "_full_drawers_4",
+    summary: ["$Four$ Item $Slot$", "Holds $8 Stacks$ per Slot."],
+    controls: drawerControls,
+    advancedControls: true,
+  });
+});
 
 ItemEvents.tooltip((tooltip) => {
   itemsToTooltip.forEach((tooltipItem) => {
@@ -198,9 +309,9 @@ ItemEvents.tooltip((tooltip) => {
 
         // Add Controls
         if (tooltipItem.hasOwnProperty("controls")) {
-          text.add(lineNumber, []);
-          lineNumber++;
           tooltipItem.controls.forEach((control) => {
+            text.add(lineNumber, []);
+            lineNumber++;
             text.add(lineNumber, [
               Text.of(control.requiresHold ? "Hold " : "When ").gray(),
               Text.of(control.control).gray(),

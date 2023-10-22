@@ -18,6 +18,7 @@ const modsToRemove = [
   "netherite_horse_armor",
   "melter",
   "createsifter",
+  "storagedrawers",
 ];
 
 ServerEvents.recipes((event) => {

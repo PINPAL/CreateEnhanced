@@ -147,6 +147,9 @@ const outputsToRemove = [
   "createindustry:heavy_plate",
   "createindustry:steel_scaffolding",
   "createindustry:sawdust",
+
+  // Every Compat
+  /everycomp:sd\/.*/,
 ];
 
 ServerEvents.recipes((event) => {

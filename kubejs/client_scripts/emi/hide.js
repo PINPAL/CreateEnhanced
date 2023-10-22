@@ -173,6 +173,18 @@ const hideFromJEI = [
   "minecraft:damaged_anvil",
   "minecraft:brewing_stand",
   "minecraft:enchanted_book",
+
+  "storagedrawers:one_stack_upgrade",
+  "storagedrawers:upgrade_template",
+  /storagedrawers:.*_half_.*/,
+  /everycomp:sd\/.*_half/,
+  /storagedrawers:.*_trim/,
+  /everycomp:sd\/.*_trim/,
+  "storagedrawers:controller",
+  "storagedrawers:controller_slave",
+  "storagedrawers:compacting_drawers_3",
+  "storagedrawers:creative_vending_upgrade",
+  "storagedrawers:conversion_upgrade",
 ];
 
 JEIEvents.hideItems((event) => {

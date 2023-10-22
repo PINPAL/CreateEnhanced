@@ -973,26 +973,20 @@
 		}
 		{
 			dependencies: ["6FEF3380D11818AF"]
+			icon: "storagedrawers:spruce_full_drawers_4"
 			id: "7EFE09C7A87A4FD3"
 			size: 2.0d
 			subtitle: "Storing your items."
 			tasks: [{
-				icon: {
-					Count: 1b
-					id: "sophisticatedstorage:gold_barrel"
-					tag: {
-						woodType: "spruce"
-					}
-				}
-				id: "5B3F76282047352C"
+				id: "7AF9DE12C8A74225"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "quests:andesite_storage"
+						value: "storagedrawers:drawers"
 					}
 				}
-				title: "Andesite Chest or Barrel"
+				title: "Any Storage Drawers"
 				type: "item"
 			}]
 			title: "Storage"
@@ -1001,17 +995,19 @@
 		}
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
+			icon: "storagedrawers:spruce_full_drawers_1"
 			id: "5AA93F61C816FF09"
 			subtitle: "The perfect solution to bulk item storage."
 			tasks: [{
-				id: "42B668276847DDB0"
+				id: "4D9788F980B0B4D3"
 				item: {
 					Count: 1b
-					id: "sophisticatedstorage:limited_gold_barrel_1"
+					id: "itemfilters:tag"
 					tag: {
-						woodType: "spruce"
+						value: "storagedrawers:drawers"
 					}
 				}
+				title: "Any Storage Drawers"
 				type: "item"
 			}]
 			title: "Bulk Storage"
@@ -1020,16 +1016,35 @@
 		}
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
-			description: ["&7The &rBarrel Wrench&7 allows you to easily manage your storage including locking drawers so they can only accept certain item types."]
+			description: ["&rKeys&7 allow you to easily manage your storage including locking drawers so they can only accept certain item types."]
 			hide: true
+			icon: "storagedrawers:shroud_key"
 			id: "75F594821E72D1B4"
-			subtitle: "The wrench is your friend!"
-			tasks: [{
-				id: "31547022A907891E"
-				item: "sophisticatedstorage:storage_tool"
-				type: "item"
+			rewards: [{
+				auto: "disabled"
+				id: "4E4811AF827812F1"
+				table_id: 5377619726450836083L
+				type: "random"
 			}]
-			title: "Configuring Barrels?"
+			subtitle: "The wrench is your friend!"
+			tasks: [
+				{
+					id: "4AAF348584356D87"
+					item: "storagedrawers:drawer_key"
+					type: "item"
+				}
+				{
+					id: "6C3EF7D890534906"
+					item: "storagedrawers:quantify_key"
+					type: "item"
+				}
+				{
+					id: "71E56393A936DF14"
+					item: "storagedrawers:shroud_key"
+					type: "item"
+				}
+			]
+			title: "Configuring Drawers?"
 			x: 7.875d
 			y: 10.0d
 		}
@@ -1129,10 +1144,10 @@
 			dependencies: ["7EFE09C7A87A4FD3"]
 			hide: true
 			id: "2142527C3A2204CA"
-			subtitle: "Increasing your stack size by two!"
+			subtitle: "Increasing your stack size by 8!"
 			tasks: [{
-				id: "3433D02D782835F8"
-				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				id: "2879C126365EBB3F"
+				item: "storagedrawers:obsidian_storage_upgrade"
 				type: "item"
 			}]
 			x: 6.125d
@@ -1141,38 +1156,38 @@
 		{
 			dependencies: ["2142527C3A2204CA"]
 			id: "23EF04B35C62461B"
-			subtitle: "Increasing your stack size by four!"
+			subtitle: "Increasing your stack size by 16!"
 			tasks: [{
-				id: "0860B4C28638B37B"
-				item: "sophisticatedstorage:stack_upgrade_tier_2"
+				id: "76A83AA902A64B48"
+				item: "storagedrawers:iron_storage_upgrade"
 				type: "item"
 			}]
-			x: 7.125d
+			x: 7.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["23EF04B35C62461B"]
 			id: "0A1CD692562DF490"
-			subtitle: "Increasing your stack size by eight!"
+			subtitle: "Increasing your stack size by 32!"
 			tasks: [{
-				id: "03D304D70C0A5512"
-				item: "sophisticatedstorage:stack_upgrade_tier_3"
+				id: "5E3394B83B0A3FDC"
+				item: "storagedrawers:gold_storage_upgrade"
 				type: "item"
 			}]
-			x: 8.125d
-			y: 13.5d
+			x: 7.875d
+			y: 13.375d
 		}
 		{
 			dependencies: ["0A1CD692562DF490"]
 			id: "0930A951D3532F0E"
-			subtitle: "With a brass drawer filled with these you can store over a billion items in one block!"
+			subtitle: "Increasing your stack size by 64!"
 			tasks: [{
-				id: "290518184C796C88"
-				item: "sophisticatedstorage:stack_upgrade_tier_4"
+				id: "679F3FAE00639BD5"
+				item: "storagedrawers:diamond_storage_upgrade"
 				type: "item"
 			}]
-			x: 9.25d
-			y: 14.0d
+			x: 8.75d
+			y: 13.75d
 		}
 		{
 			dependencies: ["7453758780D4848F"]
@@ -3251,10 +3266,10 @@
 			}
 			id: "5996CB4C81972F13"
 			rewards: [{
-				id: "1F531A428F8BE268"
-				item: "sophisticatedstorage:stack_upgrade_tier_4"
-				random_bonus: 2
-				type: "item"
+				auto: "disabled"
+				id: "75C5254C435C4EFE"
+				table_id: 5377619726450836083L
+				type: "random"
 			}]
 			subtitle: "Your first auto-sorter."
 			tasks: [
@@ -3297,6 +3312,7 @@
 		{
 			dependencies: ["497786B7F649F21B"]
 			description: ["Toolboxes provide you a quick way to access your items when nearby. The stack items 4x the normal stack size and can be accessed with a keybind. These are very useful to store items you use a lot like cogs/shafts/belts etc!"]
+			icon: "create:brown_toolbox"
 			id: "6DFE9B670BBBD1D9"
 			rewards: [{
 				id: "4CE4C20ABE4C1174"
@@ -6581,6 +6597,50 @@
 			title: "Cooking"
 			x: 6.5d
 			y: 2.375d
+		}
+		{
+			dependencies: ["0930A951D3532F0E"]
+			id: "0E177A8CB8C9DD1B"
+			subtitle: "Increasing your stack size by 128!"
+			tasks: [{
+				id: "40C5538BC6C24B2F"
+				item: "storagedrawers:emerald_storage_upgrade"
+				type: "item"
+			}]
+			x: 9.625d
+			y: 14.125d
+		}
+		{
+			dependencies: ["0E177A8CB8C9DD1B"]
+			id: "1F280F363BB84CDD"
+			rewards: [
+				{
+					auto: "disabled"
+					id: "32079A0B5DB0B1C7"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+				{
+					auto: "disabled"
+					id: "0C33DDC6131EEA90"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+				{
+					auto: "disabled"
+					id: "24C7666BCBBCBD70"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+			]
+			subtitle: "Infinate Storage!"
+			tasks: [{
+				id: "017C681620D5B79D"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 14.5d
 		}
 	]
 	title: "Create Modpack"

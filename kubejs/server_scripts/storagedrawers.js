@@ -1,0 +1,323 @@
+ServerEvents.recipes((event) => {
+  // Drawer Key
+  event.shaped("storagedrawers:drawer_key", ["  R", " R ", "C  "], {
+    C: "createdeco:gold_coin",
+    R: "#forge:rods/gold",
+  });
+  // Quantify Key
+  event.shapeless("storagedrawers:quantify_key", [
+    "storagedrawers:drawer_key",
+    "#minecraft:signs",
+  ]);
+  // Concealment Key
+  event.shapeless("storagedrawers:shroud_key", [
+    "storagedrawers:drawer_key",
+    "#forge:nuggets/gold",
+  ]);
+
+  // Void Upgrade
+  event.shaped("storagedrawers:void_upgrade", ["EOE", "OUO", "EOE"], {
+    U: "sophisticatedbackpacks:upgrade_base",
+    E: "#forge:ender_pearls",
+    O: "#forge:obsidian",
+  });
+
+  // Redstone Upgrade
+  event.shapeless("storagedrawers:redstone_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "minecraft:comparator",
+  ]);
+
+  // Min Redstone Upgrade
+  event.shapeless("storagedrawers:min_redstone_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "minecraft:comparator",
+    "minecraft:redstone",
+  ]);
+
+  // Max Redstone Upgrade
+  event.shapeless("storagedrawers:max_redstone_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "minecraft:comparator",
+    "2x minecraft:redstone",
+  ]);
+
+  // Illumination Upgrade
+  event.shapeless("3x storagedrawers:illumination_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "minecraft:glow_ink_sac",
+  ]);
+
+  // Fill Level Upgrade
+  event.shapeless("3x storagedrawers:fill_level_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "#minecraft:signs",
+  ]);
+
+  const drawerWoodTypes = [
+    { name: "oak", type: "logs", mod: "storagedrawers:" },
+    { name: "spruce", type: "logs", mod: "storagedrawers:" },
+    { name: "birch", type: "logs", mod: "storagedrawers:" },
+    { name: "jungle", type: "logs", mod: "storagedrawers:" },
+    { name: "acacia", type: "logs", mod: "storagedrawers:" },
+    { name: "dark_oak", type: "logs", mod: "storagedrawers:" },
+    { name: "crimson", type: "stems", mod: "storagedrawers:" },
+    { name: "warped", type: "stems", mod: "storagedrawers:" },
+    {
+      name: "bamboo",
+      type: "custom",
+      mod: "everycomp:sd/quark/",
+      customIngredient: "quark:bamboo_planks",
+    },
+    {
+      name: "spirit",
+      type: "custom",
+      mod: "everycomp:sd/create_dd/",
+      customIngredient: "#create_dd:spirit_logs",
+    },
+    {
+      name: "rose",
+      type: "custom",
+      mod: "everycomp:sd/create_dd/",
+      customIngredient: "#create_dd:rose_logs",
+    },
+    {
+      name: "smoked",
+      type: "custom",
+      mod: "everycomp:sd/create_dd/",
+      customIngredient: "#create_dd:smoked_logs",
+    },
+  ];
+  drawerWoodTypes.forEach((wood) => {
+    event.shaped(
+      `${wood.mod}${wood.name}_full_drawers_1`,
+      ["V V", " W ", "V V"],
+      {
+        W: getDrawerLogTag(wood),
+        V: "create:item_vault",
+      }
+    );
+    event.stonecutting(
+      `${wood.mod}${wood.name}_full_drawers_2`,
+      `#kubejs:${wood.name}_drawers`
+    );
+    event.stonecutting(
+      `${wood.mod}${wood.name}_full_drawers_4`,
+      `#kubejs:${wood.name}_drawers`
+    );
+  });
+  function getDrawerLogTag(wood) {
+    if (wood.type === "custom") {
+      return wood.customIngredient;
+    } else {
+      return `#minecraft:${wood.name}_${wood.type}`;
+    }
+  }
+
+  // Stack Upgrades
+  // =================
+  // Tier 1
+  event.recipes.create.deploying("storagedrawers:obsidian_storage_upgrade", [
+    "sophisticatedbackpacks:upgrade_base",
+    "create_dd:andesite_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:obsidian_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+  // Tier 2
+  event.recipes.create.deploying("storagedrawers:iron_storage_upgrade", [
+    "storagedrawers:obsidian_storage_upgrade",
+    "create:copper_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:iron_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:obsidian_storage_upgrade",
+          ["storagedrawers:obsidian_storage_upgrade", "create:copper_sheet"]
+        ),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+  // Tier 3
+  event.recipes.create.deploying("storagedrawers:gold_storage_upgrade", [
+    "storagedrawers:iron_storage_upgrade",
+    "create:brass_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:gold_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:obsidian_storage_upgrade",
+          ["storagedrawers:obsidian_storage_upgrade", "create:copper_sheet"]
+        ),
+        event.recipes.createDeploying("storagedrawers:iron_storage_upgrade", [
+          "storagedrawers:iron_storage_upgrade",
+          "create:brass_sheet",
+        ]),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+
+  // Tier 4
+  event.recipes.create.deploying("storagedrawers:diamond_storage_upgrade", [
+    "storagedrawers:gold_storage_upgrade",
+    "create:sturdy_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:diamond_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:obsidian_storage_upgrade",
+          ["storagedrawers:obsidian_storage_upgrade", "create:copper_sheet"]
+        ),
+        event.recipes.createDeploying("storagedrawers:iron_storage_upgrade", [
+          "storagedrawers:iron_storage_upgrade",
+          "create:brass_sheet",
+        ]),
+        event.recipes.createDeploying("storagedrawers:gold_storage_upgrade", [
+          "storagedrawers:gold_storage_upgrade",
+          "create:sturdy_sheet",
+        ]),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+
+  // Tier 5
+  event.recipes.create.deploying("storagedrawers:emerald_storage_upgrade", [
+    "storagedrawers:diamond_storage_upgrade",
+    "createdeco:netherite_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:emerald_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:obsidian_storage_upgrade",
+          ["storagedrawers:obsidian_storage_upgrade", "create:copper_sheet"]
+        ),
+        event.recipes.createDeploying("storagedrawers:iron_storage_upgrade", [
+          "storagedrawers:iron_storage_upgrade",
+          "create:brass_sheet",
+        ]),
+        event.recipes.createDeploying("storagedrawers:gold_storage_upgrade", [
+          "storagedrawers:gold_storage_upgrade",
+          "create:sturdy_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:diamond_storage_upgrade",
+          [
+            "storagedrawers:diamond_storage_upgrade",
+            "createdeco:netherite_sheet",
+          ]
+        ),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+
+  // Tier 6
+  event.recipes.create.deploying("storagedrawers:creative_storage_upgrade", [
+    "storagedrawers:emerald_storage_upgrade",
+    "create_dd:refined_radiance_sheet",
+  ]);
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // output
+        Item.of("storagedrawers:creative_storage_upgrade"),
+      ],
+      // input
+      "sophisticatedbackpacks:upgrade_base",
+      [
+        event.recipes.createDeploying("sophisticatedbackpacks:upgrade_base", [
+          "sophisticatedbackpacks:upgrade_base",
+          "create_dd:andesite_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:obsidian_storage_upgrade",
+          ["storagedrawers:obsidian_storage_upgrade", "create:copper_sheet"]
+        ),
+        event.recipes.createDeploying("storagedrawers:iron_storage_upgrade", [
+          "storagedrawers:iron_storage_upgrade",
+          "create:brass_sheet",
+        ]),
+        event.recipes.createDeploying("storagedrawers:gold_storage_upgrade", [
+          "storagedrawers:gold_storage_upgrade",
+          "create:sturdy_sheet",
+        ]),
+        event.recipes.createDeploying(
+          "storagedrawers:diamond_storage_upgrade",
+          [
+            "storagedrawers:diamond_storage_upgrade",
+            "createdeco:netherite_sheet",
+          ]
+        ),
+        event.recipes.createDeploying(
+          "storagedrawers:emerald_storage_upgrade",
+          [
+            "storagedrawers:emerald_storage_upgrade",
+            "create_dd:refined_radiance_sheet",
+          ]
+        ),
+      ]
+    )
+    .transitionalItem("sophisticatedbackpacks:upgrade_base")
+    .loops(1);
+});

@@ -10,6 +10,7 @@ const removedItems = [
   "quark:iron_rod",
   /quark:.*blossom.*/,
   /quark:.*ancient.*/,
+  /everycomp:sd\/quark\/.*ancient.*/,
   /quark:.*azalea.*/,
   /quark:.*corundum.*/,
   /quark:.*crystal_lamp.*/,
@@ -71,6 +72,11 @@ const removedItems = [
   /sophisticatedstorage:.*diamond.*/,
   /sophisticatedstorage:.*tier_upgrade.*/,
   /sophisticatedstorage:.*shulker_box.*/,
+
+  /storagedrawers:.*half_drawer.*/,
+  /storagedrawers:.*trim.*/,
+  /everycomp:sd\/.*half_drawer.*/,
+  /everycomp:sd\/.*trim.*/,
 ];
 
 removedItems.forEach((item) => {

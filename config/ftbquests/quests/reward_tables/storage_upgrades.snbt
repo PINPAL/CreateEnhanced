@@ -1,0 +1,15 @@
+{
+	icon: "storagedrawers:obsidian_storage_upgrade"
+	id: "4AA124A63C3C4273"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ item: "storagedrawers:obsidian_storage_upgrade", weight: 2.0f }
+		{ item: "storagedrawers:iron_storage_upgrade" }
+		{ item: "storagedrawers:gold_storage_upgrade" }
+		{ item: "storagedrawers:diamond_storage_upgrade" }
+		{ item: "storagedrawers:emerald_storage_upgrade" }
+		{ item: "storagedrawers:creative_storage_upgrade", weight: 0.5f }
+	]
+	title: "Storage Upgrades"
+}
