@@ -87,6 +87,30 @@ ServerEvents.recipes((event) => {
       mod: "everycomp:sd/create_dd/",
       customIngredient: "#create_dd:smoked_logs",
     },
+    {
+      name: "walnut",
+      type: "custom",
+      customIngredient: "#ecologics:walnut_logs",
+      mod: "everycomp:sd/ecologics/",
+    },
+    {
+      name: "azalea",
+      type: "custom",
+      customIngredient: "#ecologics:azalea_logs",
+      mod: "everycomp:sd/ecologics/",
+    },
+    {
+      name: "coconut",
+      type: "custom",
+      customIngredient: "#ecologics:coconut_logs",
+      mod: "everycomp:sd/ecologics/",
+    },
+    {
+      name: "flowering_azalea",
+      type: "custom",
+      customIngredient: "#ecologics:flowering_azalea_logs",
+      mod: "everycomp:sd/ecologics/",
+    },
   ];
   drawerWoodTypes.forEach((wood) => {
     event.shaped(

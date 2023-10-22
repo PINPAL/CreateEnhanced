@@ -5446,6 +5446,7 @@
 				random_bonus: 5
 				type: "item"
 			}]
+			subtitle: "Prepare your horse for battle!"
 			tasks: [{
 				id: "2CA9611357E22F34"
 				item: "netherite_horse_armor:netherite_horse_armor"

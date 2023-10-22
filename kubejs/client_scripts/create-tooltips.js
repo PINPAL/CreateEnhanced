@@ -239,6 +239,10 @@ const drawerWoodTypes = [
   { name: "spirit", mod: "everycomp:sd/create_dd/" },
   { name: "rose", mod: "everycomp:sd/create_dd/" },
   { name: "smoked", mod: "everycomp:sd/create_dd/" },
+  { name: "walnut", mod: "everycomp:sd/ecologics/" },
+  { name: "azalea", mod: "everycomp:sd/ecologics/" },
+  { name: "coconut", mod: "everycomp:sd/ecologics/" },
+  { name: "flowering_azalea", mod: "everycomp:sd/ecologics/" },
 ];
 const drawerControls = [
   {
@@ -262,19 +266,16 @@ drawerWoodTypes.forEach((woodType) => {
     item: woodType.mod + woodType.name + "_full_drawers_1",
     summary: ["$One$ Item $Slot$", "Holds $32 Stacks$ per Slot."],
     controls: drawerControls,
-    advancedControls: true,
   });
   itemsToTooltip.push({
     item: woodType.mod + woodType.name + "_full_drawers_2",
     summary: ["$Two$ Item $Slot$", "Holds $16 Stacks$ per Slot."],
     controls: drawerControls,
-    advancedControls: true,
   });
   itemsToTooltip.push({
     item: woodType.mod + woodType.name + "_full_drawers_4",
     summary: ["$Four$ Item $Slot$", "Holds $8 Stacks$ per Slot."],
     controls: drawerControls,
-    advancedControls: true,
   });
 });
 
@@ -285,23 +286,26 @@ ItemEvents.tooltip((tooltip) => {
       // Hide Original Tooltip (leaving just text[0] which is the item name)
       let name = text.get(0);
       text.removeIf((e) => e != name);
-      // Add Hold [Shift] for Summary
-      if (!tooltip.shift) {
-        text.add(1, [
-          Text.of("Hold ").darkGray(),
-          Text.of("[Shift]").gray(),
-          Text.of(" for Summary").darkGray(),
-        ]);
-        // When Holding Shift
-      } else {
+      if (tooltip.shift) {
         text.add(1, [
           Text.of("Hold ").darkGray(),
           Text.of("[Shift]").white(),
           Text.of(" for Summary").darkGray(),
         ]);
-        text.add(2, []);
         // define line number
-        let lineNumber = 3;
+        let lineNumber = 2;
+        if (tooltipItem.hasOwnProperty("controls")) {
+          if (tooltipItem.controls.length > 2) {
+            text.add(2, [
+              Text.of("Hold ").darkGray(),
+              Text.of("[Ctrl]").gray(),
+              Text.of(" for Controls").darkGray(),
+            ]);
+            lineNumber++;
+          }
+        }
+        text.add(lineNumber, []);
+        lineNumber++;
         tooltipItem.summary.forEach((line) => {
           text.add(lineNumber, createFormattedTextObjectArray(line));
           lineNumber++;
@@ -309,6 +313,47 @@ ItemEvents.tooltip((tooltip) => {
 
         // Add Controls
         if (tooltipItem.hasOwnProperty("controls")) {
+          if (tooltipItem.controls.length < 3) {
+            tooltipItem.controls.forEach((control) => {
+              text.add(lineNumber, []);
+              lineNumber++;
+              text.add(lineNumber, [
+                Text.of(control.requiresHold ? "Hold " : "When ").gray(),
+                Text.of(control.control).gray(),
+              ]);
+              lineNumber++;
+              control.text.forEach((line) => {
+                let formattedTextObjectArray =
+                  createFormattedTextObjectArray(line);
+                // Add a space before each line
+                formattedTextObjectArray.unshift(" ");
+                // Add the line to the tooltip
+                text.add(lineNumber, formattedTextObjectArray);
+                lineNumber++;
+              });
+            });
+          }
+        }
+      } else if (
+        tooltip.ctrl &&
+        tooltipItem.hasOwnProperty("controls") &&
+        tooltipItem.controls.length > 2
+      ) {
+        if (tooltipItem.controls.length > 2) {
+          text.add(1, [
+            Text.of("Hold ").darkGray(),
+            Text.of("[Shift]").gray(),
+            Text.of(" for Summary").darkGray(),
+          ]);
+          // define line number
+          let lineNumber = 2;
+          text.add(lineNumber, [
+            Text.of("Hold ").darkGray(),
+            Text.of("[Ctrl]").white(),
+            Text.of(" for Controls").darkGray(),
+          ]);
+          lineNumber++;
+          // Add Controls
           tooltipItem.controls.forEach((control) => {
             text.add(lineNumber, []);
             lineNumber++;
@@ -327,6 +372,23 @@ ItemEvents.tooltip((tooltip) => {
               lineNumber++;
             });
           });
+        }
+      }
+      // Not Holding Any Keys
+      else {
+        text.add(1, [
+          Text.of("Hold ").darkGray(),
+          Text.of("[Shift]").gray(),
+          Text.of(" for Summary").darkGray(),
+        ]);
+        if (tooltipItem.hasOwnProperty("controls")) {
+          if (tooltipItem.controls.length > 2) {
+            text.add(2, [
+              Text.of("Hold ").darkGray(),
+              Text.of("[Ctrl]").gray(),
+              Text.of(" for Controls").darkGray(),
+            ]);
+          }
         }
       }
     });

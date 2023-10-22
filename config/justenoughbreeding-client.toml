@@ -229,3 +229,27 @@
 			#Range: 0 ~ 100
 			shibaTamingChance = 33
 
+	[integration.ecologics]
+
+		[integration.ecologics.camel]
+			#Ingredients required for camel breeding
+			camelIngredients = "ecologics:prickly_pear"
+			camelSpawnEgg = "ecologics:camel_spawn_egg"
+			camelBreedingCooldown = 6000
+			#Ingredients required to gain cameltrust
+			camelTrustingIngredients = "minecraft:dead_bush, minecraft:cactus, ecologics:prickly_pear"
+			#Range: 0 ~ 100
+			camelTrustingChance = 33
+
+		[integration.ecologics.penguin]
+			#Ingredients required for penguin breeding
+			penguinIngredients = "minecraft:cod, minecraft:salmon"
+			penguinSpawnEgg = "ecologics:penguin_spawn_egg"
+			penguinBreedingCooldown = 6000
+
+		[integration.ecologics.squirrel]
+			#Ingredients required for squirrel breeding
+			squirrelIngredients = "minecraft:honeycomb"
+			squirrelSpawnEgg = "ecologics:squirrel_spawn_egg"
+			squirrelBreedingCooldown = 6000
+

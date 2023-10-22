@@ -1,4 +1,4 @@
-// priority: -1
+// priority: -100
 
 const removedItems = [
   /quark:.*jasper.*/,
@@ -8,10 +8,19 @@ const removedItems = [
   /quark:.*myalite.*/,
   /quark:.*soul_sandstone.*/,
   "quark:iron_rod",
+
   /quark:.*blossom.*/,
+  /everycomp:.*\/quark\/.*blossom.*/,
+  /supplementaries:quark\/.*blossom.*/,
+
   /quark:.*ancient.*/,
-  /everycomp:sd\/quark\/.*ancient.*/,
+  /everycomp:.*\/quark\/.*ancient.*/,
+  /supplementaries:quark\/.*ancient.*/,
+
   /quark:.*azalea.*/,
+  /everycomp:.*\/quark\/.*azalea.*/,
+  /supplementaries:quark\/.*azalea.*/,
+
   /quark:.*corundum.*/,
   /quark:.*crystal_lamp.*/,
   /quark:.*lantern.*/,
@@ -85,29 +94,5 @@ removedItems.forEach((item) => {
   });
   ServerEvents.tags("block", (event) => {
     event.removeAllTagsFrom(item);
-  });
-});
-
-// fix incorrect items in sorting categories
-ServerEvents.tags("item", (event) => {
-  event.remove("as:diamond", "easypaxellite:diamond_paxel");
-  event.add("as:steel", "easypaxellite:diamond_paxel");
-  event.remove("as:netherite", "easypaxellite:netherite_paxel");
-  event.add("as:diamond", "easypaxellite:netherite_paxel");
-
-  let copperStuffs = [
-    "minecraft:golden_helmet",
-    "minecraft:golden_chestplate",
-    "minecraft:golden_leggings",
-    "minecraft:golden_boots",
-    "minecraft:golden_sword",
-    "minecraft:golden_hoe",
-    "easypaxellite:golden_paxel",
-    "minecraft:golden_horse_armor",
-  ];
-  copperStuffs.forEach((item) => {
-    event.remove("minecraft:piglin_loved", item);
-    event.remove("as:gold", item);
-    event.add("as:copper", item);
   });
 });
