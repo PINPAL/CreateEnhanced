@@ -71,5 +71,5 @@
 	search_slot_color = 0
 	#Transparancy for the filtered out slots
 	#Range: 0.0 ~ 1.0
-	search_slot_alpha = 0.85
+	search_slot_alpha = 0.25
 

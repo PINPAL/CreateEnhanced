@@ -164,20 +164,40 @@ ServerEvents.recipes((event) => {
     // ARMOR
     // ============================
     if (tier.properties.hasArmor) {
+      // Helmet
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_helmet`,
+        `${tier.properties.prefix}_helmet`
+      );
       event.smithing(
         `${tier.properties.prefix}_helmet`,
         `${tier.previousTier.armorPrefix}_helmet`,
         `kubejs:${tier.tier}_stitching`
+      );
+      // Chestplate
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_chestplate`,
+        `${tier.properties.prefix}_chestplate`
       );
       event.smithing(
         `${tier.properties.prefix}_chestplate`,
         `${tier.previousTier.armorPrefix}_chestplate`,
         `kubejs:${tier.tier}_stitching`
       );
+      // Leggings
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_leggings`,
+        `${tier.properties.prefix}_leggings`
+      );
       event.smithing(
         `${tier.properties.prefix}_leggings`,
         `${tier.previousTier.armorPrefix}_leggings`,
         `kubejs:${tier.tier}_stitching`
+      );
+      // Boots
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_boots`,
+        `${tier.properties.prefix}_boots`
       );
       event.smithing(
         `${tier.properties.prefix}_boots`,
@@ -197,6 +217,10 @@ ServerEvents.recipes((event) => {
     // KNIFE
     // ============================
     if (tier.properties.hasKnife) {
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_knife`,
+        tier.properties.knife
+      );
       event.smithing(
         // Unbreakable IF netherite
         tier.tier == "netherite"
@@ -211,15 +235,30 @@ ServerEvents.recipes((event) => {
     // HOE, SWORD, PAXEL
     // ============================
     if (tier.properties.hasTools) {
+      // Sword
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_sword`,
+        `${tier.properties.prefix}_sword`
+      );
       event.smithing(
         `${tier.properties.prefix}_sword`,
         `${tier.previousTier.prefix}_sword`,
         `kubejs:${tier.tier}_blade`
       );
+      // Hoe
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_hoe`,
+        `${tier.properties.prefix}_hoe`
+      );
       event.smithing(
         `${tier.properties.prefix}_hoe`,
         `${tier.previousTier.prefix}_hoe`,
         `kubejs:${tier.tier}_blade`
+      );
+      // Paxel
+      event.recipes.create.crushing(
+        `kubejs:broken_${tier.tier}_paxel`,
+        tier.properties.paxel
       );
       event.smithing(
         tier.properties.paxel,
