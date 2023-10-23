@@ -6306,6 +6306,8 @@
 			y: 19.5d
 		}
 		{
+			dependencies: ["292C577E7EE1ACF8"]
+			hide_dependency_lines: true
 			icon: "minecraft:glowstone_dust"
 			id: "0062CC28481FAAC7"
 			shape: "square"
@@ -6325,6 +6327,8 @@
 			y: 12.25d
 		}
 		{
+			dependencies: ["28444E5D08F2C0E6"]
+			hide_dependency_lines: true
 			icon: "minecraft:redstone"
 			id: "317FCA1486F54A01"
 			shape: "square"
@@ -6344,6 +6348,8 @@
 			y: 13.25d
 		}
 		{
+			dependencies: ["4C9E51A196F8F0AE"]
+			hide_dependency_lines: true
 			icon: "minecraft:gunpowder"
 			id: "636C85513040BF8B"
 			shape: "square"
@@ -6363,6 +6369,8 @@
 			y: 14.25d
 		}
 		{
+			dependencies: ["1CA028ED7F34DA2F"]
+			hide_dependency_lines: true
 			icon: "minecraft:dragon_breath"
 			id: "1DC1D000D29C8E63"
 			shape: "square"
@@ -6642,6 +6650,51 @@
 			}]
 			x: 10.5d
 			y: 14.5d
+		}
+		{
+			dependencies: [
+				"636C85513040BF8B"
+				"4C9E51A196F8F0AE"
+			]
+			hide_dependency_lines: true
+			id: "1CA028ED7F34DA2F"
+			shape: "square"
+			tasks: [{
+				id: "20D8F98DE3CF4DF8"
+				item: {
+					Count: 1b
+					id: "minecraft:splash_potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Splash Potion"
+			x: 37.375d
+			y: 14.25d
+		}
+		{
+			dependencies: ["1DC1D000D29C8E63"]
+			hide_dependency_lines: true
+			id: "4D4B70F6AAD5AE33"
+			shape: "square"
+			tasks: [{
+				id: "3BECFAABA8DA73D4"
+				item: {
+					Count: 1b
+					id: "minecraft:lingering_potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Lingering Potion"
+			x: 36.0d
+			y: 15.625d
 		}
 	]
 	title: "Create Modpack"
