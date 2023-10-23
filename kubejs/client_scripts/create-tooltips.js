@@ -226,6 +226,27 @@ const itemsToTooltip = [
   },
 ];
 
+const allPaxels = [
+  "easypaxellite:wood_paxel",
+  "easypaxellite:stone_paxel",
+  "easypaxellite:iron_paxel",
+  "easypaxellite:golden_paxel",
+  "easypaxellite:diamond_paxel",
+  "easypaxellite:netherite_paxel",
+  "easypaxellite:tempered_netherite_paxel",
+];
+allPaxels.forEach((paxel) => {
+  itemsToTooltip.push({
+    item: paxel,
+    summary: [
+      "$Breaks$ blocks like a $Pickaxe$.",
+      "$Mines$ blocks like a $Shovel$.",
+      "$Cuts$ blocks like an $Axe$.",
+      "$Harvests$ blocks like a $Hoe$.",
+    ],
+  });
+});
+
 const drawerWoodTypes = [
   { name: "oak", mod: "storagedrawers:" },
   { name: "spruce", mod: "storagedrawers:" },
