@@ -1,9 +1,9 @@
 const ores = [
-  { name: "iron", mod: "minecraft" },
-  { name: "gold", mod: "minecraft" },
-  { name: "copper", mod: "minecraft" },
-  { name: "tin", mod: "create_dd" },
-  { name: "zinc", mod: "create" },
+  { name: "iron", mod: "minecraft", rock: "crimsite", rockMod: "create" },
+  { name: "gold", mod: "minecraft", rock: "ochrum", rockMod: "create" },
+  { name: "copper", mod: "minecraft", rock: "veridum", rockMod: "create" },
+  { name: "tin", mod: "create_dd", rock: "potassic", rockMod: "create_dd" },
+  { name: "zinc", mod: "create", rock: "asurine", rockMod: "create" },
 ];
 
 ServerEvents.recipes((event) => {
@@ -20,6 +20,14 @@ ServerEvents.recipes((event) => {
       {
         type: "create:crushing",
         input: `${ore.mod}:deepslate_${ore.name}_ore`,
+      },
+      {
+        type: "create:crushing",
+        input: `#${ore.rockMod}:stone_types/${ore.rock}`,
+      },
+      {
+        type: "create:crushing",
+        input: `create_dd:${ore.rock}_cobble`,
       },
     ]);
 
@@ -39,6 +47,11 @@ ServerEvents.recipes((event) => {
         Item.of("create:experience_nugget").withChance(0.95),
       ],
       [`#forge:ores/${ore.name}`]
+    );
+
+    event.recipes.create.crushing(
+      [Item.of(`create:crushed_raw_${ore.name}`).withChance(0.25)],
+      [`${ore.rockMod}:${ore.rock}`]
     );
   });
 });
