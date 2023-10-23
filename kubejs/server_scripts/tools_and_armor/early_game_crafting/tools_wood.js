@@ -16,4 +16,20 @@ ServerEvents.recipes((event) => {
     A: "minecraft:flint",
     B: "#forge:rods/wooden",
   });
+
+  // Wood Paxel Head
+  event
+    .shaped("kubejs:wood_head", ["MMM", "MSM", "M M"], {
+      M: "#minecraft:planks",
+      S: "minecraft:stick",
+    })
+    .id("kubejs:wood_head_crafting");
+  // Wood Blade
+  event
+    .shapeless("kubejs:wood_blade", [
+      "#minecraft:planks",
+      "minecraft:stick",
+      "#minecraft:planks",
+    ])
+    .id("kubejs:wood_blade_crafting");
 });
