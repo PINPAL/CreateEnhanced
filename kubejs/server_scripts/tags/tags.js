@@ -154,15 +154,11 @@ ServerEvents.tags("item", (event) => {
 
   event.add("quests:storage_blocks", "#forge:barrels");
   event.add("quests:storage_blocks", "#forge:chests");
+  event.add("quests:storage_blocks", "#storagedrawers:drawers");
   [
-    "sophisticatedstorage:limited_gold_barrel_1",
-    "sophisticatedstorage:limited_gold_barrel_2",
-    "sophisticatedstorage:limited_gold_barrel_3",
-    "sophisticatedstorage:limited_gold_barrel_4",
-    "sophisticatedstorage:limited_netherite_barrel_1",
-    "sophisticatedstorage:limited_netherite_barrel_2",
-    "sophisticatedstorage:limited_netherite_barrel_3",
-    "sophisticatedstorage:limited_netherite_barrel_4",
+    "metalbarrels:iron_barrel",
+    "metalbarrels:gold_barrel",
+    "metalbarrels:diamond_barrel",
   ].forEach((item) => {
     event.add("quests:storage_blocks", item);
   });

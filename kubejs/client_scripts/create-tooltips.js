@@ -247,6 +247,25 @@ allPaxels.forEach((paxel) => {
   });
 });
 
+const metalBarrelUpgrades = [
+  "metalbarrels:wood_to_iron",
+  "metalbarrels:iron_to_gold",
+  "metalbarrels:gold_to_diamond",
+];
+metalBarrelUpgrades.forEach((upgrade) => {
+  itemsToTooltip.push({
+    item: upgrade,
+    summary: ["$Upgrades$ a $Barrel$ to the next tier."],
+    controls: [
+      {
+        control: "R-Clicked on Barrel",
+        requiresHold: false,
+        text: ["$Upgrades$ the $Barrel$."],
+      },
+    ],
+  });
+});
+
 const drawerWoodTypes = [
   { name: "oak", mod: "storagedrawers:" },
   { name: "spruce", mod: "storagedrawers:" },

@@ -975,18 +975,16 @@
 			dependencies: ["6FEF3380D11818AF"]
 			icon: "storagedrawers:spruce_full_drawers_4"
 			id: "7EFE09C7A87A4FD3"
+			rewards: [{
+				id: "79B725BF9713D1F0"
+				item: "metalbarrels:wood_to_iron"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "Storing your items."
 			tasks: [{
-				id: "7AF9DE12C8A74225"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "storagedrawers:drawers"
-					}
-				}
-				title: "Any Storage Drawers"
+				id: "048CCA2FAAD57474"
+				item: "metalbarrels:iron_barrel"
 				type: "item"
 			}]
 			title: "Storage"
@@ -1026,7 +1024,7 @@
 				table_id: 5377619726450836083L
 				type: "random"
 			}]
-			subtitle: "The wrench is your friend!"
+			subtitle: "Keys are your friend!"
 			tasks: [
 				{
 					id: "4AAF348584356D87"
@@ -1105,39 +1103,37 @@
 			dependencies: ["7EFE09C7A87A4FD3"]
 			hide: true
 			id: "15CC2A8854A12C33"
-			subtitle: "More slots and upgrades!"
+			rewards: [{
+				id: "56F24355E790C802"
+				item: "metalbarrels:iron_to_gold"
+				type: "item"
+			}]
+			subtitle: "More slots!"
 			tasks: [{
-				id: "3CAF98AC7DC2BDD0"
-				item: {
-					Count: 1b
-					id: "sophisticatedstorage:netherite_barrel"
-					tag: {
-						woodType: "dark_oak"
-					}
-				}
+				id: "3A57AE2BCDCB208C"
+				item: "metalbarrels:gold_barrel"
 				type: "item"
 			}]
 			title: "Upgrading your storage."
 			x: 6.875d
-			y: 11.5d
+			y: 11.625d
 		}
 		{
 			dependencies: ["15CC2A8854A12C33"]
 			id: "13F8366D9B6C934A"
-			subtitle: "Brass Drawers provide the biggest capacity for storing items."
+			rewards: [{
+				id: "578FFA7E6A22C157"
+				item: "metalbarrels:gold_to_diamond"
+				type: "item"
+			}]
+			subtitle: "Brass Barrels provide the biggest capacity."
 			tasks: [{
-				id: "336EEF44F4070BE8"
-				item: {
-					Count: 1b
-					id: "sophisticatedstorage:limited_netherite_barrel_1"
-					tag: {
-						woodType: "dark_oak"
-					}
-				}
+				id: "3646562B1213BFF8"
+				item: "metalbarrels:diamond_barrel"
 				type: "item"
 			}]
 			title: "Now that's bulk!"
-			x: 7.875d
+			x: 7.75d
 			y: 12.0d
 		}
 		{
@@ -3257,24 +3253,32 @@
 		{
 			dependencies: ["7EFE09C7A87A4FD3"]
 			description: ["Before you get to the late game and digital storage, you're going to need some sort of storage to sort your items for you. Chest monsters make projects take infinitely longer than they should."]
-			icon: {
-				Count: 1b
-				id: "sophisticatedstorage:netherite_chest"
-				tag: {
-					woodType: "dark_oak"
-				}
-			}
+			icon: "minecraft:barrel"
 			id: "5996CB4C81972F13"
-			rewards: [{
-				auto: "disabled"
-				id: "75C5254C435C4EFE"
-				table_id: 5377619726450836083L
-				type: "random"
-			}]
+			rewards: [
+				{
+					auto: "disabled"
+					id: "75C5254C435C4EFE"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+				{
+					auto: "disabled"
+					id: "7A722D45777FAC37"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+				{
+					auto: "disabled"
+					id: "536B09D9A3DBF4B7"
+					table_id: 5377619726450836083L
+					type: "random"
+				}
+			]
 			subtitle: "Your first auto-sorter."
 			tasks: [
 				{
-					count: 8L
+					count: 16L
 					id: "79A6A6FF83BD06FD"
 					item: {
 						Count: 1b
@@ -3287,7 +3291,7 @@
 					type: "item"
 				}
 				{
-					count: 8L
+					count: 16L
 					id: "5714C1E401ED6B04"
 					item: {
 						Count: 1b
