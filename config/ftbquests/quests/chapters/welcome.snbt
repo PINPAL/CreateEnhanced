@@ -973,7 +973,7 @@
 		}
 		{
 			dependencies: ["6FEF3380D11818AF"]
-			icon: "storagedrawers:spruce_full_drawers_4"
+			icon: "metalbarrels:iron_barrel"
 			id: "7EFE09C7A87A4FD3"
 			rewards: [{
 				id: "79B725BF9713D1F0"
@@ -1132,7 +1132,7 @@
 				item: "metalbarrels:diamond_barrel"
 				type: "item"
 			}]
-			title: "Now that's bulk!"
+			title: "Even more slots!"
 			x: 7.75d
 			y: 12.0d
 		}
@@ -1249,7 +1249,10 @@
 			y: 13.375d
 		}
 		{
-			dependencies: ["504EA82C987ABA3F"]
+			dependencies: [
+				"504EA82C987ABA3F"
+				"1B73E52F20FF6C1F"
+			]
 			description: [
 				""
 				"{image:quests:textures/charging.png width:180 height:180 align:1}"
