@@ -115,7 +115,6 @@ const outputsToRemove = [
 
   // Create Things and Misc
   "create_things_and_misc:radar",
-  "create_things_and_misc:cherry_sail",
 
   // Create Addition
   "createaddition:digital_adapter",

@@ -72,7 +72,8 @@ const idsToRemove = [
   "decorative_blocks:lattice",
 
   // Create Things and Misc
-  "create_things_and_misc:mangrove_sail_craft_backport",
+  /create_things_and_misc:.*_sail_craft.*/,
+  /create_things_and_misc:.*_sail/,
   "create_things_and_misc:brass_speaker_craft",
 
   // Create Industry
