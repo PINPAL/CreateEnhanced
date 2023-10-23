@@ -924,7 +924,7 @@
 				type: "item"
 			}]
 			title: "Real Upgrades"
-			x: 3.875d
+			x: 4.375d
 			y: 5.25d
 		}
 		{
@@ -946,7 +946,7 @@
 				type: "item"
 			}]
 			title: "Better Weaponary"
-			x: 5.25d
+			x: 5.375d
 			y: 5.25d
 		}
 		{
@@ -968,7 +968,7 @@
 				type: "item"
 			}]
 			title: "Upgraded Farming"
-			x: 6.5d
+			x: 6.375d
 			y: 5.25d
 		}
 		{
@@ -4470,6 +4470,12 @@
 		{
 			dependencies: ["15A889CC22700F09"]
 			id: "39E9857E217FD35B"
+			rewards: [{
+				id: "78ABC7831A6381E3"
+				item: "minecraft:honeycomb"
+				type: "item"
+			}]
+			subtitle: "Buzzy Bees!"
 			tasks: [{
 				id: "0E8E7B52D01571BE"
 				item: "minecraft:honeycomb"
