@@ -557,7 +557,7 @@
 			}]
 			title: "Getting an Upgrade"
 			x: 0.0d
-			y: 4.5d
+			y: 4.25d
 		}
 		{
 			dependencies: ["6545EE475DD16057"]
