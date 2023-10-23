@@ -10,16 +10,18 @@ const removedItems = [
   "quark:iron_rod",
 
   /quark:.*blossom.*/,
-  /everycomp:.*\/quark\/.*blossom.*/,
+  /everycomp:.*\/q\/.*blossom.*/,
   /supplementaries:quark\/.*blossom.*/,
 
   /quark:.*ancient.*/,
+  /everycomp:.*\/q\/.*ancient.*/,
   /everycomp:.*\/quark\/.*ancient.*/,
   /supplementaries:quark\/.*ancient.*/,
 
   /quark:.*azalea.*/,
+  /everycomp:.*\/q\/.*azalea.*/,
   /everycomp:.*\/quark\/.*azalea.*/,
-  /supplementaries:quark\/.*azalea.*/,
+  /supplementaries:q\/.*azalea.*/,
 
   /quark:.*corundum.*/,
   /quark:.*crystal_lamp.*/,

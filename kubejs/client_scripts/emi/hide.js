@@ -25,6 +25,7 @@ const hideFromJEI = [
   /createindustry:.*concrete.*/,
   /spawn_egg/,
   /supplementaries:.*present.*/,
+  /everycomp:q\/.*ancient.*/,
 
   // Pixel, Axe & Shovel
   "minecraft:wooden_axe",

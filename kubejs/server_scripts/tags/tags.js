@@ -297,6 +297,22 @@ ServerEvents.tags("item", (event) => {
     "kubejs:rose_drawers",
     /everycomp:sd\/create_dd\/rose_full_drawers_.*/
   );
+  event.add(
+    "kubejs:azalea_drawers",
+    /everycomp:sd\/ecologics\/azalea_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:flowering_azalea_drawers",
+    /everycomp:sd\/ecologics\/flowering_azalea_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:coconut_drawers",
+    /everycomp:sd\/ecologics\/coconut_full_drawers_.*/
+  );
+  event.add(
+    "kubejs:walnut_drawers",
+    /everycomp:sd\/ecologics\/walnut_full_drawers_.*/
+  );
 });
 
 ServerEvents.tags("block", (event) => {
