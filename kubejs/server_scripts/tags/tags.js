@@ -60,6 +60,9 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:armors", item);
     event.add("kubejs:steel_armor", item);
   });
+  event.add("forge:tools/hoes", "alloyed:steel_hoe");
+  event.add("forge:hoes", "alloyed:steel_hoe");
+  event.add("forge:tools", "alloyed:steel_hoe");
 
   event.add("forge:helmets", "alloyed:steel_helmet");
   event.add("forge:chestplates", "alloyed:steel_chestplate");
