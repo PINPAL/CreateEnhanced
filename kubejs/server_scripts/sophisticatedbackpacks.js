@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
       S: "#forge:string",
       P: "minecraft:sticky_piston",
       G: "#forge:ingots/gold",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       Z: "#forge:plates/steel",
       D: "minecraft:diamond",
     }
@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
       S: "#forge:string",
       P: "minecraft:ender_pearl",
       G: "#forge:obsidian",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       Z: "#forge:plates/steel",
       D: "minecraft:diamond",
     }
@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
       S: "#forge:chests/wooden",
       P: "minecraft:sticky_piston",
       G: "#forge:ingots/gold",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       Z: "#forge:plates/steel",
       D: "minecraft:diamond",
     }
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
       S: "#forge:string",
       P: "minecraft:ender_pearl",
       G: "#forge:chests/wooden",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       Z: "#forge:plates/steel",
       D: "minecraft:diamond",
     }
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
     {
       S: "#forge:string",
       C: "minecraft:crafting_table",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
     }
   );
 
@@ -88,7 +88,7 @@ ServerEvents.recipes((event) => {
     {
       S: "#forge:string",
       C: "minecraft:stonecutter",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
     }
   );
 
@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
       S: "#forge:string",
       P: "#forge:chests/wooden",
       G: "minecraft:piston",
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       Z: "#forge:plates/steel",
       D: "minecraft:diamond",
     }
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
     "sophisticatedbackpacks:everlasting_upgrade",
     ["CNC", "NUN", "CNC"],
     {
-      U: "sophisticatedstorage:upgrade_base",
+      U: "sophisticatedbackpacks:upgrade_base",
       C: "minecraft:end_crystal",
       N: "minecraft:nether_star",
     }

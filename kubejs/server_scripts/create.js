@@ -287,7 +287,7 @@ ServerEvents.recipes((event) => {
   sailWoods.forEach((wood) => {
     event.remove({ output: `create_things_and_misc:${wood}_sail` });
     event.shapeless(`create_things_and_misc:${wood}_sail`, [
-      "create:white_sail",
+      "#kubejs:windmill_sails",
       wood == "bamboo" ? `quark:bamboo_planks` : `minecraft:${wood}_planks`,
     ]);
   });

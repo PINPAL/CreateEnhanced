@@ -1,7 +1,6 @@
 const hideFromJEI = [
   // Mod Match
   /sophisticatedbackpacks:*/,
-  /sophisticatedstorage:*/,
   /refinedstorage:*/,
   /itemfilters:*/,
   /simplemagnets:*/,

@@ -1341,7 +1341,7 @@
 		"Ancient City Loot Quality" = 1
 
 [mobs]
-	Wraith = false
+	Wraith = true
 	Toretoise = false
 	Stonelings = false
 	Shiba = false

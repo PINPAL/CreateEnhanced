@@ -1,3 +1,5 @@
+//priority: 0
+
 ServerEvents.tags("item", (event) => {
   [
     "minecraft:leather_chestplate",
@@ -107,11 +109,7 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:simple_nuggets", item);
   });
 
-  [
-    /create:.*sail/,
-    /create_things_and_misc:.*_sail/,
-    "#minecraft:wool",
-  ].forEach((item) => {
+  [/create:.*sail/, /create_things_and_misc:.*_sail/].forEach((item) => {
     event.add("kubejs:windmill_sails", item);
   });
 

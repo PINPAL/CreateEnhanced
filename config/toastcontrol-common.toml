@@ -25,7 +25,7 @@
 		#Range: 0 ~ 4000
 		force_time = 0
 		#If toasts are translucent.
-		translucent = false
+		translucent = true
 		#If toasts are transparent.  Overrides translucency.
 		transparent = false
 		#How many toasts will be displayed on screen at once.
@@ -33,7 +33,7 @@
 		toast_count = 3
 		#The X offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
-		x_offset = -230
+		x_offset = -225
 		#The Y offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
 		y_offset = 2

@@ -12,6 +12,7 @@ const addToJEI = [
   "sophisticatedbackpacks:gold_backpack",
   "sophisticatedbackpacks:diamond_backpack",
   "sophisticatedbackpacks:netherite_backpack",
+  "sophisticatedbackpacks:upgrade_base",
   "sophisticatedbackpacks:advanced_pickup_upgrade",
   "sophisticatedbackpacks:advanced_void_upgrade",
   "sophisticatedbackpacks:advanced_restock_upgrade",

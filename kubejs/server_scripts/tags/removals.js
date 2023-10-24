@@ -51,6 +51,10 @@ const removedItems = [
   "farmersdelight:golden_knife",
   "create_things_and_misc:zinc_knife",
   "create_things_and_misc:brass_knife",
+  "create_things_and_misc:cherry_sail",
+  "create_things_and_misc:chorus_sail",
+  "create_things_and_misc:jaboticaba_sail",
+  "create_things_and_misc:ramboutan_sail",
 
   /supplementaries:.*present.*/,
   /supplementaries:.*lantern.*/,
