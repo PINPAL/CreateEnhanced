@@ -21,7 +21,7 @@
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
 	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Allowed Screens" = []
+	"Allowed Screens" = ["tfar.metalbarrels.screens.MetalBarrelScreen"]
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
 	#Set to true to make the quark big worldgen features such as stone clusters generate as spheres rather than unique shapes. It's faster, but won't look as cool
@@ -33,7 +33,7 @@
 	#Set to false to stop quark from adding its own items to multi-requirement vanilla advancements
 	"Enable Advancement Modification" = true
 	#Set to false to stop quark from adding its own advancements
-	"Enable Quark Advancements" = true
+	"Enable Quark Advancements" = false
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
 	"Enable Onboarding" = false
 	#Set to false to disable the behavior where quark will automatically hide any disabled items
