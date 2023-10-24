@@ -48,6 +48,8 @@ const removedItems = [
   /alloyed:.*shears.*/,
   /alloyed:.*fishing_rod.*/,
 
+  /metalbarrels:.*_to_.*/,
+
   "farmersdelight:golden_knife",
   "create_things_and_misc:zinc_knife",
   "create_things_and_misc:brass_knife",

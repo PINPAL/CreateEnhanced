@@ -197,6 +197,22 @@ ServerEvents.tags("item", (event) => {
     event.remove("sliceanddice:allowed_tools", item);
   });
 
+  const easyPaxels = [
+    "easypaxellite:wood_paxel",
+    "easypaxellite:stone_paxel",
+    "easypaxellite:iron_paxel",
+    "easypaxellite:golden_paxel",
+    "easypaxellite:diamond_paxel",
+    "easypaxellite:netherite_paxel",
+    "easypaxellite:tempered_netherite_paxel",
+  ];
+  easyPaxels.forEach((item) => {
+    event.add("forge:axes", item);
+    event.add("forge:tools/axes", item);
+    event.add("minecraft:axes", item);
+    event.add("minecraft:tools/axes", item);
+  });
+
   const decals = [
     "create_things_and_misc:train_sing",
     "create_things_and_misc:train_sing_2",
