@@ -53,7 +53,7 @@ function handleDurability(event) {
       replacementItem = replacementItem.enchant(itemEnchants);
 
       // If item is broken, replace it
-      if (durability <= 2) {
+      if (durability <= 10) {
         if (item.slot == "helmet") {
           player.setHeadArmorItem(replacementItem);
         } else if (item.slot == "chestplate") {
