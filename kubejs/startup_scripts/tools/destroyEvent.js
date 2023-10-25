@@ -46,6 +46,6 @@ global.destroyitem = (event) => {
     );
 
     // Replace Item
-    event.entity.setHeldItem(slotThatBroke, replacementItem);
+    event.getEntity().setHeldItem(slotThatBroke, replacementItem);
   }
 };
