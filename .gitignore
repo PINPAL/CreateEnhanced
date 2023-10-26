@@ -31,6 +31,7 @@ config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-type-sort-order.ini
 config/cucumber*
 config/bocchud/*
+config/xaerominimap_entities.json
 
 # ignore config bak files
 config/*.bak
