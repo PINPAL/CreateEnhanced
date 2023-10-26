@@ -1,0 +1,47 @@
+type = menu
+
+customization-meta {
+  identifier = tfar.metalbarrels.screens.MetalBarrelScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=570543%
+  orientation = mid-centered
+  x = 71
+  action = movebutton
+  y = 44
+}
+
+customization {
+  identifier = %id=558543%
+  orientation = mid-centered
+  x = 59
+  action = movebutton
+  y = 44
+}
+
+customization {
+  identifier = %id=546543%
+  orientation = mid-centered
+  x = 47
+  action = movebutton
+  y = 44
+}
+
+customization {
+  identifier = %id=534543%
+  orientation = mid-centered
+  x = 35
+  action = movebutton
+  y = 44
+}
+
