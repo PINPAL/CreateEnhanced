@@ -1,4 +1,17 @@
 ServerEvents.recipes((event) => {
+  // Cheap Create Design n' Decor Lamps
+  const designDecoLamps = ["copper", "zinc", "brass"];
+  designDecoLamps.forEach((designDecoLamp) => {
+    event.remove({ output: `design_decor:${designDecoLamp}_lamp` });
+    event.shaped(
+      `4x design_decor:${designDecoLamp}_lamp`,
+      [" M ", "MGM", " M "],
+      {
+        M: "#forge:nuggets/" + designDecoLamp,
+        G: "minecraft:glowstone_dust",
+      }
+    );
+  });
   // Cheap Alloyed Steel Casing
   event.recipes.create
     .deploying("alloyed:steel_casing", [
