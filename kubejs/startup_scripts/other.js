@@ -1,4 +1,17 @@
 StartupEvents.registry("block", (event) => {
+  event
+    .create("cornflower_bush")
+    .displayName("Cornflower Bush")
+    .defaultCutout()
+    .material("plant")
+    .hardness(0)
+    .resistance(0)
+    .noCollision()
+    .notSolid()
+    .tagBlock("minecraft:flowers")
+    .tagBlock("minecraft:tall_flowers")
+    .tagBlock("minecraft:replaceable_plants")
+    .property(BlockProperties.HALF);
   event.create("belt_scroll").displayName("DEV ITEM");
   event
     .create("anvil", "cardinal")
