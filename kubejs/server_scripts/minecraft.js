@@ -30,6 +30,18 @@ ServerEvents.recipes((event) => {
     "minecraft:hanging_roots",
   ]);
 
+  // Name Tag
+  event.recipes
+    .createSequencedAssembly(["minecraft:name_tag"], "minecraft:string", [
+      event.recipes.createDeploying("kubejs:incomplete_name_tag", [
+        "kubejs:incomplete_saddle",
+        "createdeco:iron_coin",
+      ]),
+    ])
+    .transitionalItem("kubejs:incomplete_name_tag")
+    .loops(5)
+    .id("kubejs:name_tag");
+
   // Saddle
   event.recipes
     .createSequencedAssembly(["minecraft:saddle"], "#forge:nuggets/iron", [
