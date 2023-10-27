@@ -49,7 +49,11 @@ const colors = [
   },
   {
     color: "blue",
-    ingredients: ["minecraft:cornflower", "minecraft:lapis_lazuli"],
+    ingredients: [
+      "minecraft:cornflower",
+      "minecraft:lapis_lazuli",
+      "kubejs:cornflower_bush_item",
+    ],
   },
   {
     color: "brown",
