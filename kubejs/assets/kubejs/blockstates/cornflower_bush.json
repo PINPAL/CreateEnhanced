@@ -1,10 +1,10 @@
 {
   "variants": {
-    "half=lower": {
-      "model": "minecraft:block/cornflower_bush_bottom"
+    "half=bottom": {
+      "model": "kubejs:block/cornflower_bush_bottom"
     },
-    "half=upper": {
-      "model": "minecraft:block/cornflower_bush_top"
+    "half=top": {
+      "model": "kubejs:block/cornflower_bush_top"
     }
   }
 }

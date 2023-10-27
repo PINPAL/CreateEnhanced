@@ -125,7 +125,9 @@
     "com.hrznstudio.titanium.client.screen.container.BasicAddonScreen": true,
     "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot1": true,
     "tfar.metalbarrels.screens.MetalBarrelScreen": true,
-    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot4": true
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot4": true,
+    "xaero.common.gui.GuiEntityRadarSettings": true,
+    "xaero.common.gui.GuiEntityRadarCategorySettings": true
   },
   "hideBackground": {
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": false

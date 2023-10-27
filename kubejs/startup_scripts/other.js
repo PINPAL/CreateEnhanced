@@ -11,7 +11,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:flowers")
     .tagBlock("minecraft:tall_flowers")
     .tagBlock("minecraft:replaceable_plants")
-    .property(BlockProperties.HALF);
+    .property(BlockProperties.HALF)
+    .noItem();
   event.create("belt_scroll").displayName("DEV ITEM");
   event
     .create("anvil", "cardinal")
@@ -45,4 +46,5 @@ StartupEvents.registry("block", (event) => {
 StartupEvents.registry("item", (event) => {
   // Refined Rock
   event.create("refined_stone").displayName("Refined Rock");
+  event.create("cornflower_bush_item").displayName("Cornflower Bush");
 });
