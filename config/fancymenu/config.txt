@@ -4,7 +4,7 @@
 B:playbackgroundsoundsinworld = 'false';
 B:forcefullscreen = 'false';
 [If menu background sounds added by FancyMenu should be played or not.]
-B:playbackgroundsounds = 'true';
+B:playbackgroundsounds = 'false';
 [A minecraft restart is required after changing this value.]
 B:enablehotkeys = 'false';
 B:playmenumusic = 'false';
@@ -23,7 +23,7 @@ B:showcustomizationbuttons = 'false';
 ##[loading]
 
 B:allowgameintroskip = 'true';
-B:showanimationloadingstatus = 'false';
+B:showanimationloadingstatus = 'true';
 S:gameintroanimation = '';
 B:preloadanimations = 'true';
 S:customgameintroskiptext = '';
