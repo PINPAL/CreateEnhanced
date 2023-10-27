@@ -60,7 +60,6 @@ const toolUpgradingTiers = [
       hasKnife: true,
       hasBackpack: true,
       horseArmor: "minecraft:iron_horse_armor",
-      backpack: "sophisticatedbackpacks:iron_backpack",
       knife: "farmersdelight:iron_knife",
       paxel: "easypaxellite:iron_paxel",
     },
@@ -70,7 +69,6 @@ const toolUpgradingTiers = [
       armorPrefix: "kubejs:copper",
       knife: "create_things_and_misc:copper_knife",
       paxel: "easypaxellite:golden_paxel",
-      backpack: "sophisticatedbackpacks:backpack",
     },
   },
   {
@@ -82,7 +80,6 @@ const toolUpgradingTiers = [
       hasTools: true,
       hasKnife: true,
       hasBackpack: true,
-      backpack: "sophisticatedbackpacks:gold_backpack",
       knife: "alloyed:steel_knife",
       paxel: "easypaxellite:diamond_paxel",
     },
@@ -91,7 +88,6 @@ const toolUpgradingTiers = [
       armorPrefix: "minecraft:iron",
       knife: "farmersdelight:iron_knife",
       paxel: "easypaxellite:iron_paxel",
-      backpack: "sophisticatedbackpacks:iron_backpack",
     },
   },
   {
@@ -104,7 +100,6 @@ const toolUpgradingTiers = [
       hasKnife: true,
       hasBackpack: true,
       horseArmor: "minecraft:diamond_horse_armor",
-      backpack: "sophisticatedbackpacks:diamond_backpack",
       knife: "farmersdelight:diamond_knife",
       paxel: "easypaxellite:netherite_paxel",
     },
@@ -114,7 +109,6 @@ const toolUpgradingTiers = [
       armorPrefix: "alloyed:steel",
       knife: "alloyed:steel_knife",
       paxel: "easypaxellite:diamond_paxel",
-      backpack: "sophisticatedbackpacks:gold_backpack",
     },
   },
   {
@@ -127,7 +121,6 @@ const toolUpgradingTiers = [
       hasKnife: true,
       hasBackpack: true,
       horseArmor: "netherite_horse_armor:netherite_horse_armor",
-      backpack: "sophisticatedbackpacks:netherite_backpack",
       knife: "farmersdelight:netherite_knife",
       paxel: "easypaxellite:tempered_netherite_paxel",
     },
@@ -137,7 +130,6 @@ const toolUpgradingTiers = [
       armorPrefix: "minecraft:diamond",
       knife: "farmersdelight:diamond_knife",
       paxel: "easypaxellite:netherite_paxel",
-      backpack: "sophisticatedbackpacks:diamond_backpack",
     },
   },
 ];
@@ -202,15 +194,6 @@ ServerEvents.recipes((event) => {
       event.smithing(
         `${tier.properties.prefix}_boots`,
         `${tier.previousTier.armorPrefix}_boots`,
-        `kubejs:${tier.tier}_stitching`
-      );
-    }
-    // BACKPACK
-    // ============================
-    if (tier.properties.hasBackpack) {
-      event.smithing(
-        tier.properties.backpack,
-        tier.previousTier.backpack,
         `kubejs:${tier.tier}_stitching`
       );
     }
