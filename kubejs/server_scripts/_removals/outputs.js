@@ -18,7 +18,7 @@ const outputsToRemove = [
   // Vertical Slabs
   /createdeco:.*slab_vert/,
   /alloyed:.*vertical_slab/,
-  /supplementaries:.*vertical_slab/,
+  /v_slab_compat:createindustry\/.*concrete.*/,
 
   // Supplementaries
   "supplementaries:cog_block",
@@ -137,6 +137,7 @@ const outputsToRemove = [
   "createindustry:thermite_powder",
   "createindustry:factory_floor",
   "createindustry:factory_floor_slab",
+  /v_slab_compat:createindustry\/.*factory_floor.*/,
   "createindustry:industrial_barrel",
   "createindustry:caution_block",
   "createindustry:coal_coke",

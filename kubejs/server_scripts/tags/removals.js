@@ -75,6 +75,10 @@ const removedItems = [
   "createdeco:zinc_sheet",
 
   /createindustry:.*concrete.*/,
+  /v_slab_compat:createindustry\/.*concrete.*/,
+  "createindustry:factory_floor",
+  "createindustry:factory_floor_slab",
+  /v_slab_compat:createindustry\/.*factory_floor.*/,
 
   /refinedstorage:.*disk_manipulator.*/,
   /refinedstorage:.*network.*/,

@@ -61,6 +61,17 @@ ServerEvents.tags("item", (event) => {
     event.add("kubejs:steel_armor", item);
   });
 
+  [
+    "quark:polished_andesite_vertical_slab",
+    "quark:polished_diorite_vertical_slab",
+    "quark:polished_granite_vertical_slab",
+    "quark:polished_blackstone_vertical_slab",
+    "quark:polished_blackstone_brick_vertical_slab",
+    "quark:polished_deepslate_vertical_slab",
+  ].forEach((item) => {
+    event.add("quark:vertical_slabs", item);
+  });
+
   event.add("forge:tools/hoes", "alloyed:steel_hoe");
   event.add("forge:hoes", "alloyed:steel_hoee");
   event.add("forge:tools/swords", "alloyed:steel_sword");
