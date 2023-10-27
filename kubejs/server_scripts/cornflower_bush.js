@@ -71,3 +71,10 @@ BlockEvents.broken((event) => {
     }
   }
 });
+
+// Recipe
+ServerEvents.recipes((event) => {
+  event.recipes.create.compacting("kubejs:cornflower_bush_item", [
+    "9x minecraft:cornflower",
+  ]);
+});

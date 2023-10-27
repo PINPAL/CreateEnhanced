@@ -46,5 +46,9 @@ StartupEvents.registry("block", (event) => {
 StartupEvents.registry("item", (event) => {
   // Refined Rock
   event.create("refined_stone").displayName("Refined Rock");
-  event.create("cornflower_bush_item").displayName("Cornflower Bush");
+  event
+    .create("cornflower_bush_item")
+    .displayName("Cornflower Bush")
+    .tagItem("minecraft:flowers")
+    .tagItem("minecraft:tall_flowers");
 });
