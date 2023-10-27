@@ -87,14 +87,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  orientation = mid-centered
-  x = 4
-  action = movebutton
-  y = 5
-}
-
-customization {
   path = kubejs/assets/fancymenu/textures/title-banner.png
   orientation = top-left
   x = 220
@@ -103,5 +95,13 @@ customization {
   actionid = ec837dd5-e65d-4149-a26e-ea7ee3b4c3cf1698338492301
   y = -5
   height = 150
+}
+
+customization {
+  identifier = %id=504330%
+  orientation = mid-centered
+  x = 4
+  action = movebutton
+  y = 5
 }
 

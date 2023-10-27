@@ -49,6 +49,6 @@ StartupEvents.registry("item", (event) => {
   event
     .create("cornflower_bush_item")
     .displayName("Cornflower Bush")
-    .tagItem("minecraft:flowers")
-    .tagItem("minecraft:tall_flowers");
+    .tag("minecraft:flowers")
+    .tag("minecraft:tall_flowers");
 });
