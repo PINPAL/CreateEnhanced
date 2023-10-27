@@ -23,6 +23,7 @@ const hideFromJEI = [
   /createaddition:.*electrum.*/,
   /createindustry:.*concrete.*/,
   /spawn_egg/,
+  /quark:egg_parrot.*/,
   /supplementaries:.*present.*/,
   /everycomp:db\/quark\/.*ancient.*/,
   /everycomp:db\/quark\/.*azalea*/,
