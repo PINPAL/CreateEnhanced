@@ -11,6 +11,18 @@ const hideFromJEI = [
   /metalbarrels:.*/,
 
   // Regex Match
+  /createcasing:.*oak_shaft/,
+  /createcasing:.*spruce_shaft/,
+  /createcasing:.*birch_shaft/,
+  /createcasing:.*jungle_shaft/,
+  /createcasing:.*acacia_shaft/,
+  /createcasing:.*dark_oak_shaft/,
+  /createcasing:.*mangrove_shaft/,
+  /createcasing:.*crimson_shaft/,
+  /createcasing:.*warped_shaft/,
+  /createcasing:.*glass_shaft/,
+  /createcasing:.*brass_shaft/,
+  /createcasing:.*refined_radiance.*/,
   /everycomp:.*hollow.*log.*/,
   /create_central_kitchen:incomplete_.*/,
   /create_crystal_clear:.*encased.*/,
@@ -57,6 +69,8 @@ const hideFromJEI = [
   "kubejs:belt_scroll",
 
   "create:extendo_grip",
+
+  "createcasing:creative_cogwheel",
 
   "create_things_and_misc:cherry_sail",
   "create_things_and_misc:brass_knife",

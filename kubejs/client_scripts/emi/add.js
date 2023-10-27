@@ -58,6 +58,12 @@ const addToJEI = [
   "metalbarrels:wood_to_iron",
   "metalbarrels:iron_to_gold",
   "metalbarrels:gold_to_diamond",
+  "create:andesite_encased_shaft",
+  "create:andesite_encased_cogwheel",
+  "create:andesite_encased_large_cogwheel",
+  "create:brass_encased_shaft",
+  "create:brass_encased_cogwheel",
+  "create:brass_encased_large_cogwheel",
 ];
 
 JEIEvents.addItems((event) => {

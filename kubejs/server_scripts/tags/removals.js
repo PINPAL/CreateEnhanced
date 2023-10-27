@@ -9,6 +9,18 @@ const removedItems = [
   /quark:.*soul_sandstone.*/,
   "quark:iron_rod",
 
+  /createcasing:.*oak_shaft/,
+  /createcasing:.*spruce_shaft/,
+  /createcasing:.*birch_shaft/,
+  /createcasing:.*jungle_shaft/,
+  /createcasing:.*acacia_shaft/,
+  /createcasing:.*dark_oak_shaft/,
+  /createcasing:.*mangrove_shaft/,
+  /createcasing:.*crimson_shaft/,
+  /createcasing:.*warped_shaft/,
+  /createcasing:.*glass_shaft/,
+  /createcasing:.*brass_shaft/,
+
   /quark:.*blossom.*/,
   /everycomp:.*\/q\/.*blossom.*/,
   /supplementaries:quark\/.*blossom.*/,

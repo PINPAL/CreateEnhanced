@@ -328,18 +328,18 @@ ItemEvents.tooltip((tooltip) => {
       text.removeIf((e) => e != name);
       if (tooltip.shift) {
         text.add(1, [
-          Text.of("Hold ").darkGray(),
-          Text.of("[Shift]").white(),
-          Text.of(" for Summary").darkGray(),
+          Text.of("Hold [").darkGray(),
+          Text.of("Shift").white(),
+          Text.of("] for Summary").darkGray(),
         ]);
         // define line number
         let lineNumber = 2;
         if (tooltipItem.hasOwnProperty("controls")) {
           if (tooltipItem.controls.length > 2) {
             text.add(2, [
-              Text.of("Hold ").darkGray(),
-              Text.of("[Ctrl]").gray(),
-              Text.of(" for Controls").darkGray(),
+              Text.of("Hold [").darkGray(),
+              Text.of("Ctrl").gray(),
+              Text.of("] for Controls").darkGray(),
             ]);
             lineNumber++;
           }
@@ -381,16 +381,16 @@ ItemEvents.tooltip((tooltip) => {
       ) {
         if (tooltipItem.controls.length > 2) {
           text.add(1, [
-            Text.of("Hold ").darkGray(),
-            Text.of("[Shift]").gray(),
-            Text.of(" for Summary").darkGray(),
+            Text.of("Hold [").darkGray(),
+            Text.of("Shift").gray(),
+            Text.of("] for Summary").darkGray(),
           ]);
           // define line number
           let lineNumber = 2;
           text.add(lineNumber, [
-            Text.of("Hold ").darkGray(),
-            Text.of("[Ctrl]").white(),
-            Text.of(" for Controls").darkGray(),
+            Text.of("Hold [").darkGray(),
+            Text.of("Ctrl").white(),
+            Text.of("] for Controls").darkGray(),
           ]);
           lineNumber++;
           // Add Controls
@@ -417,9 +417,9 @@ ItemEvents.tooltip((tooltip) => {
       // Not Holding Any Keys
       else {
         text.add(1, [
-          Text.of("Hold ").darkGray(),
-          Text.of("[Shift]").gray(),
-          Text.of(" for Summary").darkGray(),
+          Text.of("Hold [").darkGray(),
+          Text.of("Shift").gray(),
+          Text.of("] for Summary").darkGray(),
         ]);
         if (tooltipItem.hasOwnProperty("controls")) {
           if (tooltipItem.controls.length > 2) {
