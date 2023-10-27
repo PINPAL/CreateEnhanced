@@ -20,10 +20,23 @@ ServerEvents.tags("item", (event) => {
   });
 
   [
+    "kubejs:copper_chestplate",
+    "kubejs:copper_leggings",
+    "kubejs:copper_boots",
+    "kubejs:copper_helmet",
+  ].forEach((item) => {
+    event.add("kubejs:copper_armor", item);
+  });
+
+  [
     "create:netherite_diving_boots",
     "create:netherite_diving_helmet",
     "create:copper_diving_boots",
     "create:copper_diving_helmet",
+    "kubejs:copper_boots",
+    "kubejs:copper_helmet",
+    "kubejs:copper_chestplate",
+    "kubejs:copper_leggings",
   ].forEach((item) => {
     event.add("forge:armors", item);
   });
@@ -72,15 +85,35 @@ ServerEvents.tags("item", (event) => {
     event.add("quark:vertical_slabs", item);
   });
 
-  event.add("forge:tools/hoes", "alloyed:steel_hoe");
-  event.add("forge:hoes", "alloyed:steel_hoee");
-  event.add("forge:tools/swords", "alloyed:steel_sword");
-  event.add("forge:swords", "alloyed:steel_sword");
+  ["alloyed:steel_hoe", "kubejs:copper_hoe"].forEach((item) => {
+    event.add("forge:tools/hoes", item);
+    event.add("forge:hoes", item);
+  });
 
-  event.add("forge:helmets", "alloyed:steel_helmet");
-  event.add("forge:chestplates", "alloyed:steel_chestplate");
-  event.add("forge:leggings", "alloyed:steel_leggings");
-  event.add("forge:boots", "alloyed:steel_boots");
+  ["alloyed:steel_sword", "kubejs:copper_sword"].forEach((item) => {
+    event.add("forge:tools/swords", item);
+    event.add("forge:swords", item);
+  });
+
+  ["alloyed:steel_helmet", "kubejs:copper_helmet"].forEach((item) => {
+    event.add("forge:helmets", item);
+    event.add("forge:armors/helmets", item);
+  });
+
+  ["alloyed:steel_chestplate", "kubejs:copper_chestplate"].forEach((item) => {
+    event.add("forge:chestplates", item);
+    event.add("forge:armors/chestplates", item);
+  });
+
+  ["alloyed:steel_leggings", "kubejs:copper_leggings"].forEach((item) => {
+    event.add("forge:leggings", item);
+    event.add("forge:armors/leggings", item);
+  });
+
+  ["alloyed:steel_boots", "kubejs:copper_boots"].forEach((item) => {
+    event.add("forge:boots", item);
+    event.add("forge:armors/boots", item);
+  });
 
   [
     "minecraft:diamond_chestplate",

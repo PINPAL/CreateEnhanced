@@ -54,6 +54,15 @@ const removedItems = [
   /minecraft:.*pickaxe.*/,
   /minecraft:.*shovel.*/,
   /minecraft:.*axe.*/,
+  "minecraft:elytra",
+
+  "minecraft:golden_sword",
+  "minecraft:golden_hoe",
+  "minecraft:golden_chestplate",
+  "minecraft:golden_boots",
+  "minecraft:golden_helmet",
+  "minecraft:golden_leggings",
+
   /alloyed:.*pickaxe.*/,
   /alloyed:.*shovel.*/,
   /alloyed:.*axe.*/,
@@ -84,6 +93,8 @@ const removedItems = [
   "createaddition:electrum_spool",
   "createaddition:zinc_sheet",
 
+  "create_dd:deforester_saw",
+
   "createdeco:zinc_sheet",
 
   /createindustry:.*concrete.*/,
@@ -110,6 +121,9 @@ const removedItems = [
   /storagedrawers:.*trim.*/,
   /everycomp:sd\/.*half_drawer.*/,
   /everycomp:sd\/.*trim.*/,
+
+  "metalbarrels:copper_barrel",
+  "create:copper_backtank_placeable",
 ];
 
 removedItems.forEach((item) => {

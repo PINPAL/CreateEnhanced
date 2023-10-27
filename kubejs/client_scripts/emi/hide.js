@@ -64,6 +64,14 @@ const hideFromJEI = [
   "minecraft:netherite_pickaxe",
   "alloyed:steel_pickaxe",
 
+  // Hide Golden Tools & Armor
+  "minecraft:golden_sword",
+  "minecraft:golden_hoe",
+  "minecraft:golden_chestplate",
+  "minecraft:golden_boots",
+  "minecraft:golden_helmet",
+  "minecraft:golden_leggings",
+
   // Item Match
   "kubejs:unfinished_leather_stitching",
   "kubejs:belt_scroll",

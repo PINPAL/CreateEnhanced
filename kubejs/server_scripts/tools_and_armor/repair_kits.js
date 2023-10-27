@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
       name: "copper",
       knifeMod: "create_things_and_misc",
       paxelId: "golden",
-      minecraftId: "golden",
+      modId: "kubejs",
       material: "#forge:ingots/copper",
     },
     {

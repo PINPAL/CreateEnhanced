@@ -32,7 +32,7 @@ const toolUpgradingTiers = [
   {
     tier: "copper",
     properties: {
-      prefix: "minecraft:golden",
+      prefix: "kubejs:copper",
       hasArmor: true,
       hasHorseArmor: true,
       hasTools: true,
@@ -65,9 +65,9 @@ const toolUpgradingTiers = [
       paxel: "easypaxellite:iron_paxel",
     },
     previousTier: {
-      prefix: "minecraft:golden",
+      prefix: "kubejs:copper",
       horseArmor: "minecraft:golden_horse_armor",
-      armorPrefix: "minecraft:golden",
+      armorPrefix: "kubejs:copper",
       knife: "create_things_and_misc:copper_knife",
       paxel: "easypaxellite:golden_paxel",
       backpack: "sophisticatedbackpacks:backpack",

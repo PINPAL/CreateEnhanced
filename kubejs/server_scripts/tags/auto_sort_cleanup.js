@@ -20,12 +20,6 @@ ServerEvents.tags("item", (event) => {
   event.add("as:dark_oak", /dark_oak($|_)/);
 
   let copperStuffs = [
-    "minecraft:golden_helmet",
-    "minecraft:golden_chestplate",
-    "minecraft:golden_leggings",
-    "minecraft:golden_boots",
-    "minecraft:golden_sword",
-    "minecraft:golden_hoe",
     "easypaxellite:golden_paxel",
     "minecraft:golden_horse_armor",
   ];

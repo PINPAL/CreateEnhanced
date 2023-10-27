@@ -54,12 +54,6 @@
   "enchantment.minecraft.thorns": "§f\uEfca §rThorns",
 
   // Gold to Copper
-  "item.minecraft.golden_sword": "Copper Sword",
-  "item.minecraft.golden_hoe": "Copper Hoe",
-  "item.minecraft.golden_helmet": "Copper Helmet",
-  "item.minecraft.golden_chestplate": "Copper Chestplate",
-  "item.minecraft.golden_leggings": "Copper Leggings",
-  "item.minecraft.golden_boots": "Copper Boots",
   "item.minecraft.golden_horse_armor": "Copper Horse Armor",
 
   // Rename Axes/Pickaxe/Shovel to "Any Paxel"
