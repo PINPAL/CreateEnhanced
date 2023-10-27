@@ -1,5 +1,11 @@
 const createCasings = [
   {
+    name: "brass",
+    casingId: "create:brass_casing",
+    hasNativeShaft: true,
+    noMachines: false,
+  },
+  {
     name: "copper",
     casingId: "create:copper_casing",
     hasNativeShaft: false,
