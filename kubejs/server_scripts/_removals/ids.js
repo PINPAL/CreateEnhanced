@@ -101,15 +101,6 @@ const idsToRemove = [
   "alloyed:item_application/steel_casing_from_wood_using_deployer",
 
   // Broken Recipes
-  "createindustry:stonecutting/duraluminium_sheetmetal",
-  "createindustry:stonecutting/cast_iron_sheetmetal",
-  "createindustry:crafting/prospector_tool",
-  "createindustry:stonecutting/aluminum_sheetmetal",
-  "createindustry:crafting/duraluminium_from_block",
-  "create_things_and_misc:copper_scaffolding_craft",
-  "createindustry:crafting/duraluminium_block",
-  "createindustry:stonecutting/steel_sheetmetal",
-  "create_things_and_misc:schematic_chair",
   "createindustry:colored_concrete/full_block/pink_concrete",
   "create_crystal_clear:steel_tinted_glass_casing",
 ];
