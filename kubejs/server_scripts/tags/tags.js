@@ -135,7 +135,6 @@ ServerEvents.tags("item", (event) => {
 
   const createTrainTracks = ["create:track", /railways:track_.*/];
   createTrainTracks.forEach((item) => {
-    console.log(item);
     event.add("kubejs:train_tracks", item);
   });
   event.remove("kubejs:train_tracks", /railways:track_switch.*/);
