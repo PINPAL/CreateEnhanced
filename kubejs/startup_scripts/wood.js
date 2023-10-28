@@ -30,7 +30,7 @@ StartupEvents.registry("block", (event) => {
         // Tag with minecraft:wooden_stairs or minecraft:wooden_slabs
         // Depending on the variant append an s to the end of the variant
         .tagBoth(
-          `minecraft:${variant.contains("wooden") ? "" : "wooden_"}${variant}${
+          `minecraft:${variant.includes("wooden") ? "" : "wooden_"}${variant}${
             variant.slice(-1) == "s" ? "" : "s"
           }`
         );
