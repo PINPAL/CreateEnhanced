@@ -224,6 +224,138 @@ const itemsToTooltip = [
       },
     ],
   },
+  {
+    item: "sophisticatedbackpacks:advanced_pickup_upgrade",
+    summary: ["Makes your backpack $pickup$ items"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_magnet_upgrade",
+    summary: ["Makes your backpack $attract$", "items $from range$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_feeding_upgrade",
+    summary: ["Makes your backpack $feed$", "you $automatically$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_void_upgrade",
+    summary: ["Makes your backpack $void$", "items $automatically$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_restock_upgrade",
+    summary: ["$Restocks$ backpack from $containers$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+      {
+        control: "Crouch & R-Clicked on Block",
+        requiresHold: true,
+        text: ["Extracts $items$ from the $block$", "you are looking at."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_deposit_upgrade",
+    summary: ["$Deposits$ backpack items", "into $containers$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+      {
+        control: "Crouch & R-Clicked on Block",
+        requiresHold: true,
+        text: ["Deposits $items$ into the $block$", "you are looking at."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:advanced_refill_upgrade",
+    summary: ["Keeps $stacks$ in player inventory", "full $automatically$"],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+      {
+        control: "Middle Clicked",
+        requiresHold: false,
+        text: [
+          "Attemps to $retrieve items$",
+          "from backpack if they $match$",
+          "the block you are looking at.",
+        ],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:everlasting_upgrade",
+    summary: [
+      "Makes your backpack $indestructible$.",
+      "Can't $despawn$ or $fall in the void$.",
+    ],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $configuration menu$", "for the upgrade."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:crafting_upgrade",
+    summary: ["Provides a $Crafting Grid$ in", "your backpack."],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $interface$ for", "crafting."],
+      },
+    ],
+  },
+  {
+    item: "sophisticatedbackpacks:stonecutter_upgrade",
+    summary: ["Provides a $Stonecutter$ in", "your backpack."],
+    controls: [
+      {
+        control: "Inserted into Backpack",
+        requiresHold: false,
+        text: ["Provides $interface$ for", "stone cutting."],
+      },
+    ],
+  },
 ];
 
 const allPaxels = [

@@ -1,6 +1,5 @@
 ServerEvents.recipes((event) => {
   // Backpack Base
-  // Upgrades in kubejs/server_scripts/tool_upgrades.js
   event.shaped("sophisticatedbackpacks:backpack", ["SLS", "SCS", "LLL"], {
     S: "#forge:string",
     L: "#forge:leather",
@@ -114,6 +113,32 @@ ServerEvents.recipes((event) => {
       U: "sophisticatedbackpacks:upgrade_base",
       C: "minecraft:end_crystal",
       N: "minecraft:nether_star",
+    }
+  );
+
+  // Feeding Upgrade
+  event.shaped(
+    "sophisticatedbackpacks:advanced_feeding_upgrade",
+    ["SPS", "NUN", "ZZZ"],
+    {
+      S: "#forge:string",
+      P: "kubejs:creative_omega_potion",
+      N: "create_things_and_misc:vibration_mechanism",
+      U: "sophisticatedbackpacks:upgrade_base",
+      Z: "#forge:plates/shadow_steel",
+    }
+  );
+
+  // Magnet Upgrade
+  event.shaped(
+    "sophisticatedbackpacks:advanced_magnet_upgrade",
+    ["SPS", "NUN", "ZZZ"],
+    {
+      S: "#forge:string",
+      P: "simplemagnets:advancedmagnet",
+      N: "simplemagnets:advanced_demagnetization_coil",
+      U: "sophisticatedbackpacks:upgrade_base",
+      Z: "create_things_and_misc:rose_quartz_sheet",
     }
   );
 });

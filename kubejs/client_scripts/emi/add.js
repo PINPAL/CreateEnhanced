@@ -18,6 +18,8 @@ const addToJEI = [
   "sophisticatedbackpacks:advanced_restock_upgrade",
   "sophisticatedbackpacks:advanced_deposit_upgrade",
   "sophisticatedbackpacks:advanced_refill_upgrade",
+  "sophisticatedbackpacks:advanced_feeding_upgrade",
+  "sophisticatedbackpacks:advanced_magnet_upgrade",
   "sophisticatedbackpacks:everlasting_upgrade",
   "sophisticatedbackpacks:crafting_upgrade",
   "sophisticatedbackpacks:stonecutter_upgrade",
