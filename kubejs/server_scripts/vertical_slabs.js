@@ -1,5 +1,12 @@
 var vertical_slabs = [];
 
+const supplementariesVerticalSlabs = [
+  "checker",
+  "ash_bricks",
+  "stone_tile",
+  "blackstone_tile",
+];
+
 ServerEvents.tags("item", (event) => {
   let v_slabs = event.get("v_slab_compat:vertical_slabs").getObjectIds();
   v_slabs.forEach((slab) => {
@@ -29,6 +36,14 @@ ServerEvents.recipes((event) => {
         .replace("v_slab_compat:", "")
         .replace("_vertical_slab", "_slab")
         .replace("/", ":")
+    );
+  });
+
+  // Handle Supplementaries
+  supplementariesVerticalSlabs.forEach((slab) => {
+    event.shapeless(
+      `supplementaries:${slab}_vertical_slab`,
+      `supplementaries:${slab}_slab`
     );
   });
 });
