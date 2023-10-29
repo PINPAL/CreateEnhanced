@@ -53,6 +53,10 @@ BlockEvents.rightClicked((event) => {
         0.1
       )}],Item:{id:"kubejs:cornflower_bush_item",Count:1b}}`
     );
+    event.player.setHeldItem(
+      event.getHand(),
+      `${event.getItem().getCount() - 1}x minecraft:bone_meal`
+    );
   }
 });
 
