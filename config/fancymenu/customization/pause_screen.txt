@@ -150,23 +150,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  orientation = mid-centered
-  x = 4
-  action = movebutton
-  y = 19
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
-}
-
-customization {
   path = kubejs/assets/fancymenu/textures/title-banner.png
   orientation = mid-centered
   x = -100
@@ -175,5 +158,22 @@ customization {
   actionid = ec837dd5-e65d-4149-a26e-ea7ee3b4c3cf1698338492301
   y = -164
   height = 150
+}
+
+customization {
+  identifier = %id=504330%
+  orientation = mid-centered
+  x = 4
+  action = movebutton
+  y = 19
+}
+
+customization {
+  identifier = %id=504330%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/assets/button_hover.png
+  backgroundnormal = config/fancymenu/assets/button.png
 }
 
