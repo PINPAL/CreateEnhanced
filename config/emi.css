@@ -399,7 +399,7 @@
 	/**
 	 * Delete the stack in the cursor when hovering the index
 	 */
-	delete-cursor-stack: "key.mouse.left";
+	delete-cursor-stack: "alt key.mouse.left";
 
 	/**
 	 * In edit mode, hide the hovered stack
