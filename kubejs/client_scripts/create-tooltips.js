@@ -375,6 +375,43 @@ const itemsToTooltip = [
 			},
 		],
 	},
+	{
+		item: "naturescompass:naturescompass",
+		summary: ["Points to a selected $Biome$."],
+		controls: [
+			{
+				control: "R-Clicked",
+				requiresHold: false,
+				text: ["Opens $configuration interface$,", "where $biomes$ can be selected."],
+			},
+		],
+	},
+	{
+		item: "explorerscompass:explorerscompass",
+		summary: ["Points to a selected $Structure$."],
+		controls: [
+			{
+				control: "R-Clicked",
+				requiresHold: false,
+				text: ["Opens $configuration interface$,", "where $structure$ can be selected."],
+			},
+		],
+	},
+	{
+		item: "minecraft:recovery_compass",
+		summary: ["Points to your last $death$", "location."],
+	},
+	{
+		item: "minecraft:compass",
+		summary: ["Points to $world spawn$."],
+		controls: [
+			{
+				control: "R-Clicked on Lodestone",
+				requiresHold: false,
+				text: ["Redirects the $compass$ to", "point to the $lodestone$."],
+			},
+		],
+	},
 ];
 
 const allPaxels = [
