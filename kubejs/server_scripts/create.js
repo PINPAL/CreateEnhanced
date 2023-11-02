@@ -135,11 +135,11 @@ ServerEvents.recipes((event) => {
 	event.stonecutting("createindustry:concrete_stairs", "createindustry:concrete");
 	event.stonecutting("createindustry:concrete_wall", "createindustry:concrete");
 	event.recipes.create.filling("createindustry:liquid_concrete_bucket", [
-		Fluid.of("createindustry:liquid_concrete_fluid", 1000),
+		Fluid.of("createindustry:liquid_concrete_fluid", 500),
 		"minecraft:bucket",
 	]);
 	event.recipes.create.emptying(
-		[Fluid.of("createindustry:liquid_concrete_fluid", 1000), "minecraft:bucket"],
+		[Fluid.of("createindustry:liquid_concrete_fluid", 500), "minecraft:bucket"],
 		"createindustry:liquid_concrete_bucket"
 	);
 

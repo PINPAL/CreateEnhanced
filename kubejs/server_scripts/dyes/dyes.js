@@ -136,8 +136,12 @@ ServerEvents.recipes((event) => {
 		);
 		// Concrete Powder
 		event.recipes.create.mixing(
-			["minecraft:" + colorObject.color + "_concrete_powder"],
+			["minecraft:" + colorObject.color + "_concrete"],
 			["createindustry:concrete", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125)]
+		);
+		event.recipes.create.crushing(
+			["minecraft:" + colorObject.color + "_concrete_powder"],
+			["minecraft:" + colorObject.color + "_concrete"]
 		);
 		// Stained Glass
 		event.recipes.create.mixing(
