@@ -15,20 +15,33 @@ ServerEvents.recipes((event) => {
 		{ mod: "create_dd", item: "bronze", type: "ingots" },
 		{ mod: "alloyed", item: "steel", type: "ingots" },
 		{ mod: "create_dd", item: "mithril", type: "ingots" },
+		{ mod: "createdeco", item: "cast_iron", type: "ingots" },
 	].forEach((block) => {
-		if (block.mod == "create") {
+		// Block from Ingots
+		event.remove({
+			type: "minecraft:crafting_shaped",
+			output: `#forge:storage_blocks/${block.item}`,
+			input: `#forge:${block.type}/${block.item}`,
+		});
+		// Ingots from Nuggets
+		if (block.type == "ingots") {
 			event.remove({
-				id: `${block.mod}:crafting/materials/${block.item}_block_from_compacting`,
+				type: "minecraft:crafting_shaped",
+				output: `#forge:ingots/${block.item}`,
+				input: `#forge:nuggets/${block.item}`,
 			});
-		} else if (block.mod == "create_dd" || block.mod == "alloyed") {
-			event.remove({
-				id: `${block.mod}:crafting/${block.item}_block_from_compacting`,
-			});
-		} else {
-			event.remove({ id: `${block.mod}:${block.item}_block` });
 		}
 
-		event.recipes.create.compacting(`${block.mod}:${block.item}_block`, `9x #forge:${block.type}/${block.item}`);
+		// Block from ingots
+		event.recipes.create
+			.compacting(`${block.mod}:${block.item}_block`, `9x #forge:${block.type}/${block.item}`)
+			.id("kubejs:compacting/" + block.item + "_block_from_ingots");
+		// Ingots from nuggets
+		if (block.type == "ingots") {
+			event.recipes.create
+				.compacting(`#forge:ingots/${block.item}`, `9x #forge:nuggets/${block.item}`)
+				.id("kubejs:compacting/" + block.item + "_ingot_from_nuggets");
+		}
 	});
 
 	// Lapis Alloy

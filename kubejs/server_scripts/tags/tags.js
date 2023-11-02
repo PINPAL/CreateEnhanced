@@ -80,6 +80,8 @@ ServerEvents.tags("item", (event) => {
 		event.add("quark:vertical_slabs", item);
 	});
 
+	event.add("forge:nuggets/bronze", "#forge:nuggets/strong_bronze");
+
 	["alloyed:steel_hoe", "kubejs:copper_hoe"].forEach((item) => {
 		event.add("forge:tools/hoes", item);
 		event.add("forge:hoes", item);
