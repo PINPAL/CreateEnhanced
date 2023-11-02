@@ -10,61 +10,56 @@ ServerEvents.recipes((event) => {
 
 BlockEvents.rightClicked((event) => {
 	let block = event.getBlock();
-	let isCrouching = event.getPlayer().isCrouching();
-	let sideClickedOn = event.getFacing();
 	if (block.hasTag("decorative_blocks:supports") && event.getItem() == "create:wrench") {
-		let blockState = event.getBlock().getBlockState();
+		let blockState = block.getBlockState();
+		let isCrouching = event.getPlayer().isCrouching();
+		let sideClickedOn = event.getFacing();
 
-		// let facing = blockState.getValue(BlockProperties.FACING);
-		let waterlogged = blockState.getValue(BlockProperties.WATERLOGGED);
-		let up = blockState.getValue(BlockProperties.UP);
 		let horizontal = blockState.getValue(ModBlockProperties.HORIZONTAL_SHAPE);
 		let vertical = blockState.getValue(ModBlockProperties.VERTICAL_SHAPE);
 
-		// console.log(facing);
-		// console.log(up);
-		// console.log(horizontal);
-		// console.log(vertical);
-		// console.log(sideClickedOn);
 		if (sideClickedOn == Direction.UP) {
 			// If crouching toggle hiding the side
 			if (isCrouching) {
-				block.set(block.getId(), {
-					up: up,
-					horizontal:
-						horizontal == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN,
-					vertical: vertical,
-					waterlogged: waterlogged,
-				});
+				block.setBlockState(
+					blockState.setValue(
+						ModBlockProperties.HORIZONTAL_SHAPE,
+						horizontal == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN
+					),
+					0
+				);
 			} else if (!isCrouching) {
 				// Ensure that the side is not hidden
 				if (horizontal != SupportFaceShape.HIDDEN) {
-					block.set(block.getId(), {
-						up: up,
-						horizontal: horizontal == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG,
-						vertical: vertical,
-						waterlogged: waterlogged,
-					});
+					block.setBlockState(
+						blockState.setValue(
+							ModBlockProperties.HORIZONTAL_SHAPE,
+							horizontal == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG
+						),
+						0
+					);
 				}
 			}
 		} else {
 			// If crouching toggle hiding the side
 			if (isCrouching) {
-				block.set(block.getId(), {
-					up: up,
-					horizontal: horizontal,
-					vertical: vertical == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN,
-					waterlogged: waterlogged,
-				});
+				block.setBlockState(
+					blockState.setValue(
+						ModBlockProperties.VERTICAL_SHAPE,
+						vertical == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN
+					),
+					0
+				);
 			} else if (!isCrouching) {
 				// Ensure that the side is not hidden
 				if (vertical != SupportFaceShape.HIDDEN) {
-					block.set(block.getId(), {
-						up: up,
-						horizontal: horizontal,
-						vertical: vertical == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG,
-						waterlogged: waterlogged,
-					});
+					block.setBlockState(
+						blockState.setValue(
+							ModBlockProperties.VERTICAL_SHAPE,
+							vertical == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG
+						),
+						0
+					);
 				}
 			}
 		}
