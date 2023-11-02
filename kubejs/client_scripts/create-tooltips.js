@@ -222,7 +222,13 @@ const itemsToTooltip = [
 	},
 	{
 		item: "sophisticatedbackpacks:advanced_magnet_upgrade",
-		summary: ["Makes your backpack $attract$", "items $from range$"],
+		summary: [
+			"Makes your backpack $attract$",
+			"items $from range$",
+			"",
+			"$Unaffected$ by Demagnetization",
+			"Coils.",
+		],
 		controls: [
 			{
 				control: "Inserted into Backpack",
