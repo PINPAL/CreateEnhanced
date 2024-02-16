@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		{ mod: "create", item: "zinc", type: "ingots" },
 		{ mod: "create", item: "brass", type: "ingots" },
 		{ mod: "create_dd", item: "bronze", type: "ingots" },
-		{ mod: "alloyed", item: "steel", type: "ingots" },
+		{ mod: "create_dd", item: "steel", type: "ingots" },
 		{ mod: "create_dd", item: "mithril", type: "ingots" },
 		{ mod: "createdeco", item: "cast_iron", type: "ingots" },
 	].forEach((block) => {
@@ -131,16 +131,16 @@ ServerEvents.recipes((event) => {
 	]);
 
 	// Concrete
-	event.stonecutting("2x createindustry:concrete_slab", "createindustry:concrete");
-	event.stonecutting("createindustry:concrete_stairs", "createindustry:concrete");
-	event.stonecutting("createindustry:concrete_wall", "createindustry:concrete");
-	event.recipes.create.filling("createindustry:liquid_concrete_bucket", [
-		Fluid.of("createindustry:liquid_concrete_fluid", 500),
+	event.stonecutting("2x tfmg:concrete_slab", "tfmg:concrete");
+	event.stonecutting("tfmg:concrete_stairs", "tfmg:concrete");
+	event.stonecutting("tfmg:concrete_wall", "tfmg:concrete");
+	event.recipes.create.filling("tfmg:liquid_concrete_bucket", [
+		Fluid.of("tfmg:liquid_concrete_fluid", 500),
 		"minecraft:bucket",
 	]);
 	event.recipes.create.emptying(
-		[Fluid.of("createindustry:liquid_concrete_fluid", 500), "minecraft:bucket"],
-		"createindustry:liquid_concrete_bucket"
+		[Fluid.of("tfmg:liquid_concrete_fluid", 500), "minecraft:bucket"],
+		"tfmg:liquid_concrete_bucket"
 	);
 
 	// Harder steam engine
@@ -201,7 +201,7 @@ ServerEvents.recipes((event) => {
 				"#forge:ingots/steel",
 				"#forge:ingots/bronze",
 				"create_dd:chromatic_compound",
-				Fluid.of("createindustry:liquid_plastic", 1000),
+				Fluid.of("tfmg:liquid_plastic", 1000),
 			]
 		)
 		.superheated();
@@ -215,7 +215,7 @@ ServerEvents.recipes((event) => {
 	event.shaped("8x create:electron_tube", [" R ", " N ", " P "], {
 		R: "create:polished_rose_quartz",
 		N: "#forge:nuggets/copper",
-		P: "createindustry:plastic_sheet",
+		P: "tfmg:plastic_sheet",
 	});
 
 	// Fix Dough
@@ -233,11 +233,11 @@ ServerEvents.recipes((event) => {
 	);
 
 	// Fix Coal Coke
-	event.recipes.create.mixing("createindustry:coal_coke", "#minecraft:coals").heated();
+	event.recipes.create.mixing("tfmg:coal_coke", "#minecraft:coals").heated();
 
 	// Harder Steel
 	event.recipes.create
-		.compacting("create_dd:steel_ingot", ["2x #forge:ingots/cast_iron", "createindustry:coal_coke"])
+		.compacting("create_dd:steel_ingot", ["2x #forge:ingots/cast_iron", "tfmg:coal_coke"])
 		.heated()
 		.id("kubejs:steel_ingot");
 

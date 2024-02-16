@@ -77,9 +77,9 @@ const idsToRemove = [
 	"create_things_and_misc:brass_speaker_craft",
 
 	// Create Industry
-	"createindustry:compacting/steel_block",
-	"createindustry:mixing/napalm",
-	"createindustry:crafting/electron_tube_from_plastic",
+	"tfmg:compacting/steel_block",
+	"tfmg:mixing/napalm",
+	"tfmg:crafting/electron_tube_from_plastic",
 
 	// Create
 	"create:crafting/kinetics/item_vault",
@@ -94,14 +94,8 @@ const idsToRemove = [
 	"create:pressing/sugar_cane",
 	"create:splashing/crushed_raw_iron",
 
-	// Create Allyoed
-	"alloyed:item_application/steel_casing_from_log",
-	"alloyed:item_application/steel_casing_from_wood",
-	"alloyed:item_application/steel_casing_from_log_using_deployer",
-	"alloyed:item_application/steel_casing_from_wood_using_deployer",
-
 	// Broken Recipes
-	"createindustry:colored_concrete/full_block/pink_concrete",
+	"tfmg:colored_concrete/full_block/pink_concrete",
 	"create_crystal_clear:steel_tinted_glass_casing",
 ];
 

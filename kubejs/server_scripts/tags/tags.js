@@ -54,7 +54,7 @@ ServerEvents.tags("item", (event) => {
 		}
 	);
 
-	["alloyed:steel_chestplate", "alloyed:steel_leggings", "alloyed:steel_boots", "alloyed:steel_helmet"].forEach(
+	["kubejs:steel_chestplate", "kubejs:steel_leggings", "kubejs:steel_boots", "kubejs:steel_helmet"].forEach(
 		(item) => {
 			event.add("forge:armors", item);
 			event.add("kubejs:steel_armor", item);
@@ -82,32 +82,32 @@ ServerEvents.tags("item", (event) => {
 
 	event.add("forge:nuggets/bronze", "#forge:nuggets/strong_bronze");
 
-	["alloyed:steel_hoe", "kubejs:copper_hoe"].forEach((item) => {
+	["kubejs:steel_hoe", "kubejs:copper_hoe"].forEach((item) => {
 		event.add("forge:tools/hoes", item);
 		event.add("forge:hoes", item);
 	});
 
-	["alloyed:steel_sword", "kubejs:copper_sword"].forEach((item) => {
+	["kubejs:steel_sword", "kubejs:copper_sword"].forEach((item) => {
 		event.add("forge:tools/swords", item);
 		event.add("forge:swords", item);
 	});
 
-	["alloyed:steel_helmet", "kubejs:copper_helmet"].forEach((item) => {
+	["kubejs:steel_helmet", "kubejs:copper_helmet"].forEach((item) => {
 		event.add("forge:helmets", item);
 		event.add("forge:armors/helmets", item);
 	});
 
-	["alloyed:steel_chestplate", "kubejs:copper_chestplate"].forEach((item) => {
+	["kubejs:steel_chestplate", "kubejs:copper_chestplate"].forEach((item) => {
 		event.add("forge:chestplates", item);
 		event.add("forge:armors/chestplates", item);
 	});
 
-	["alloyed:steel_leggings", "kubejs:copper_leggings"].forEach((item) => {
+	["kubejs:steel_leggings", "kubejs:copper_leggings"].forEach((item) => {
 		event.add("forge:leggings", item);
 		event.add("forge:armors/leggings", item);
 	});
 
-	["alloyed:steel_boots", "kubejs:copper_boots"].forEach((item) => {
+	["kubejs:steel_boots", "kubejs:copper_boots"].forEach((item) => {
 		event.add("forge:boots", item);
 		event.add("forge:armors/boots", item);
 	});
@@ -218,14 +218,14 @@ ServerEvents.tags("item", (event) => {
 		"minecraft:golden_axe",
 		"minecraft:diamond_axe",
 		"minecraft:netherite_axe",
-		"alloyed:steel_axe",
+		"kubejs:steel_axe",
 		"minecraft:wooden_shovel",
 		"minecraft:stone_shovel",
 		"minecraft:iron_shovel",
 		"minecraft:golden_shovel",
 		"minecraft:diamond_shovel",
 		"minecraft:netherite_shovel",
-		"alloyed:steel_shovel",
+		"kubejs:steel_shovel",
 	];
 	notAllowedtoSlice.forEach((item) => {
 		event.remove("sliceanddice:allowed_tools", item);

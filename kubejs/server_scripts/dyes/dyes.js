@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 	);
 	event.recipes.create.mixing(
 		["minecraft:slime_ball"],
-		["createindustry:sawdust", Fluid.of("create_things_and_misc:slime", 100)]
+		["tfmg:sawdust", Fluid.of("create_things_and_misc:slime", 100)]
 	);
 
 	colors.forEach((colorObject) => {
@@ -132,12 +132,12 @@ ServerEvents.recipes((event) => {
 		// Dye
 		event.recipes.create.mixing(
 			["minecraft:" + colorObject.color + "_dye"],
-			["createindustry:sawdust", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500)]
+			["tfmg:sawdust", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500)]
 		);
 		// Concrete Powder
 		event.recipes.create.mixing(
 			["minecraft:" + colorObject.color + "_concrete"],
-			["createindustry:concrete", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125)]
+			["tfmg:concrete", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125)]
 		);
 		event.recipes.create.crushing(
 			["minecraft:" + colorObject.color + "_concrete_powder"],

@@ -17,7 +17,6 @@ const outputsToRemove = [
 
 	// Vertical Slabs
 	/createdeco:.*slab_vert/,
-	/alloyed:.*vertical_slab/,
 	/v_slab_compat:createindustry\/.*concrete.*/,
 
 	// Supplementaries
@@ -34,26 +33,6 @@ const outputsToRemove = [
 
 	// Farmers Delight
 	"farmersdelight:cooking_pot",
-
-	// Alloyed
-	"alloyed:bronze_ingot",
-	"alloyed:bronze_nugget",
-	"alloyed:bronze_sheet",
-	"alloyed:bronze_block",
-	"alloyed:steel_ingot",
-	"alloyed:steel_nugget",
-	"alloyed:steel_sheet",
-	"alloyed:steel_pickaxe",
-	"alloyed:steel_shovel",
-	"alloyed:steel_axe",
-	"alloyed:steel_shears",
-	"alloyed:steel_fishing_rod",
-	"alloyed:steel_sword",
-	"alloyed:steel_hoe",
-	"alloyed:steel_helmet",
-	"alloyed:steel_chestplate",
-	"alloyed:steel_leggings",
-	"alloyed:steel_boots",
 
 	// Create Deco
 	"createdeco:netherite_bars",
@@ -130,24 +109,24 @@ const outputsToRemove = [
 	"create_paper_line:frame",
 
 	// Create Industry
-	"createindustry:napalm_bomb",
-	"createindustry:napalm_bucket",
-	"createindustry:thermite_grenade",
-	/createindustry:.*concrete.*/,
-	"createindustry:mesh",
-	"createindustry:thermite_powder",
-	"createindustry:factory_floor",
-	"createindustry:factory_floor_slab",
+	"tfmg:napalm_bomb",
+	"tfmg:napalm_bucket",
+	"tfmg:thermite_grenade",
+	/tfmg:.*concrete.*/,
+	"tfmg:mesh",
+	"tfmg:thermite_powder",
+	"tfmg:factory_floor",
+	"tfmg:factory_floor_slab",
 	/v_slab_compat:createindustry\/.*factory_floor.*/,
-	"createindustry:industrial_barrel",
-	"createindustry:caution_block",
-	"createindustry:coal_coke",
-	"createindustry:steel_ingot",
-	"createindustry:cast_iron_ingot",
-	"createindustry:cast_iron_block",
-	"createindustry:heavy_plate",
-	"createindustry:steel_scaffolding",
-	"createindustry:sawdust",
+	"tfmg:industrial_barrel",
+	"tfmg:caution_block",
+	"tfmg:coal_coke",
+	"tfmg:steel_ingot",
+	"tfmg:cast_iron_ingot",
+	"tfmg:cast_iron_block",
+	"tfmg:heavy_plate",
+	"tfmg:steel_scaffolding",
+	"tfmg:sawdust",
 
 	// Every Compat
 	/everycomp:sd\/.*/,
