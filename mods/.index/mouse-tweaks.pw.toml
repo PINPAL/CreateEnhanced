@@ -1,14 +1,13 @@
-name = "Mouse Tweaks"
-filename = "MouseTweaks-forge-mc1.19-2.23.jar"
-side = "both"
+filename = 'MouseTweaks-forge-mc1.20-2.25.jar'
+name = 'Mouse Tweaks'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/aC3cM3Vq/versions/1.19-2.23-forge/MouseTweaks-forge-mc1.19-2.23.jar"
-hash-format = "sha512"
-hash = "ba7c37155f252ee10176d2209cd168a80dd9cecb999e815096f381ff8662bfd3c903c06619bb836c2ed5d1771f7de7bf3be0d7cf4d0ea1de989a92517a4b7b93"
+hash = 'f3e8805d706a36717306d92bd5c45cb2aef854b6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "aC3cM3Vq"
-version = "Un7oJEL8"
+[update.curseforge]
+file-id = 4581240
+project-id = 60089

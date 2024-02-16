@@ -1,14 +1,13 @@
-name = "Shiny Horses Forge - Enchantable Horse Armor"
-filename = "ShinyHorses-1.19-1.2.jar"
-side = "both"
+filename = 'ShinyHorses-1.20.1-1.2.jar'
+name = 'Shiny Horses Forge - Enchantable Horse Armor'
+side = 'both'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "e57bc05a2322ed98b0dd90467d4f557460336e9a"
+hash = '74026990a656fbc09ed76ea6f511260062d5cd10'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
-file-id = 3984299
+file-id = 4757027
 project-id = 674456

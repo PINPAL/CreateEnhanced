@@ -12,8 +12,6 @@
 	#The vertical speed of freecam.
 	#Range: 0.0 ~ 10.0
 	"Vertical Speed" = 1.0
-	#Whether you can travel through blocks in freecam.
-	"No Clip" = true
 	#Disables freecam when damage is received.
 	"Disable on Damage" = true
 	#Whether you can interact with blocks/entities in freecam.
@@ -30,4 +28,19 @@
 	"Freecam Notifications" = true
 	#Notifies you when entering/exiting tripod cameras.
 	"Tripod Notifications" = true
+	#Allows travelling through transparent blocks in freecam.
+	"Ignore Transparent Blocks" = true
+	#Allows travelling through doors/trapdoors/gates in freecam.
+	"Ignore Openable Blocks" = true
+	#Allows travelling through all blocks in freecam.
+	"Ignore All Collision" = false
+	#Whether 'Initial Perspective' should check for collision, even when using 'Ignore All Collision'.
+	"Always Check Initial Collision" = false
+	#The initial perspective of the camera.
+	#Allowed Values: FIRST_PERSON, THIRD_PERSON, THIRD_PERSON_MIRROR, INSIDE
+	"Initial Perspective" = "INSIDE"
+	#Increases brightness while in freecam.
+	"Full Brightness" = false
+	#Whether you see a fog overlay underwater, in lava, or powdered snow.
+	"Show Submersion Fog" = false
 

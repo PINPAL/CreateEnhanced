@@ -1,14 +1,13 @@
-name = "Eating Animation [Forge]"
-filename = "eatinganimation-1.19-3.2.0.jar"
-side = "both"
+filename = 'eatinganimation-1.20-5.0.0.jar'
+name = 'Eating Animation [Forge]'
+side = 'both'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "a89b08a8f3d00a4b15554eeb7c9cb0e15837e68b"
+hash = '936b9a4b514af18d4f56ac99fcb3c96d9887d279'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
-file-id = 4440455
+file-id = 4576004
 project-id = 570544

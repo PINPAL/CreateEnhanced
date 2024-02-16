@@ -1,14 +1,13 @@
-name = "Universal Item Tags"
-filename = "Universal-Item-Tags-1.19-20-1.0.0.jar"
-side = "both"
+filename = 'Universal-Item-Tags-1.19-20-1.0.0.jar'
+name = 'Universal Item Tags'
+side = 'server'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "7e358e3ee6d853f8e401f5f5d5f0d5a0e75958a6"
+hash = 'ba4c079fbf223c52b04eb60d01bafd2c47feff87799ad4475287237d013a8338cfc8e14dc46e355afd1300509108914d3c9cfa9c8509d994d30c4efbf83eec90'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/zAZbhzxY/versions/ptLH2tjJ/Universal-Item-Tags-1.19-20-1.0.0.jar'
 
-[update]
-[update.curseforge]
-file-id = 4762435
-project-id = 915421
+[update.modrinth]
+mod-id = 'zAZbhzxY'
+version = 'ptLH2tjJ'

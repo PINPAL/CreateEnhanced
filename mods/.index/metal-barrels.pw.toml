@@ -1,14 +1,13 @@
-name = "Metal Barrels"
-filename = "metalbarrels-1.19.2-5.0.1.jar"
-side = "both"
+filename = 'metalbarrels-1.20.1-1.jar'
+name = 'Metal Barrels'
+side = 'both'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "e4290c109ecc9f1a948949e23d4d817eec552dc2"
+hash = '4ad7d98a9e72a9cf9f17e8e9907366c3fe74c717'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
-file-id = 4056303
+file-id = 4709187
 project-id = 324985

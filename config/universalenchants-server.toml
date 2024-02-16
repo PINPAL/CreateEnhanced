@@ -6,9 +6,6 @@ looting_boosts_xp = true
 true_infinity = true
 #Disables damage immunity when hit by a projectile. Makes it possible for entities to be hit by multiple projectiles at once (mainly useful for the multishot enchantment).
 no_projectile_immunity = true
-#Prevent the fire aspect enchantment from working as usually on digging tools: It will not set hit mobs on fire, but will only be usable to instantly smelt harvested blocks.
-#The behavior of fire aspect on weapons including axes is unchanged.
-nerf_fire_aspect_on_tools = true
 #Mending no longer repairs items using xp.
 #Instead mending allows the item to be repaired in the crafting menu in the same way as in an anvil without any experience cost: combining a tool with another one or the appropriate repair item is possible, all enchantments will be preserved (but no new ones from the item repaired with will be added as an anvil would do).
 #Additionally, repairing items enchanted with mending (only repairing, no renaming or adding more enchantments) in an anvil doesn't increase the items repair cost any further.

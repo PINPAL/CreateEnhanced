@@ -1,14 +1,13 @@
-name = "Just Enough Resources (JER)"
-filename = "JustEnoughResources-1.19.2-1.2.2.200.jar"
-side = "both"
+filename = 'JustEnoughResources-1.20.1-1.4.0.238.jar'
+name = 'Just Enough Resources (JER)'
+side = 'client'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/uEfK2CXF/versions/hCg1eHjd/JustEnoughResources-1.19.2-1.2.2.200.jar"
-hash-format = "sha512"
-hash = "3eacce3b3b3d815748e1f291a5e34515f4fa905f71f67716c746c8afe9a8b95ff95aa21336250b7c6c4acb9a69ce10993828c17426ccc268134ea398fd4f818d"
+hash = 'de30c3ecb0f0a50652e1f4da14a9d8d828180e9d07aa12fa2d893d4dfd397cb040c00fc0ef1740504718707baf12e33d55476f78a13cf58310572f4382b7cb45'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uEfK2CXF/versions/g9Lo1Pgi/JustEnoughResources-1.20.1-1.4.0.238.jar'
 
-[update]
 [update.modrinth]
-mod-id = "uEfK2CXF"
-version = "hCg1eHjd"
+mod-id = 'uEfK2CXF'
+version = 'g9Lo1Pgi'

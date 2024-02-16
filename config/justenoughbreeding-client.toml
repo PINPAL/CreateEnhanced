@@ -199,6 +199,33 @@
 		parrotTamingChance = 33
 		parrotSpawnEgg = "minecraft:parrot_spawn_egg"
 
+	[vanilla.camel]
+		#Ingredients required for camel breeding
+		camelIngredients = "minecraft:cactus"
+		camelSpawnEgg = "minecraft:camel_spawn_egg"
+		camelBreedingCooldown = 6000
+
+	[vanilla.sniffer]
+		#Ingredients required for sniffer breeding
+		snifferIngredients = "minecraft:torchflower_seeds"
+		snifferSpawnEgg = "minecraft:sniffer_spawn_egg"
+		snifferBreedingCooldown = 6000
+		#Egg that sniffer lays after breeding
+		snifferEggResult = "minecraft:sniffer_egg"
+		#Min amount of eggs that sniffer lays after breeding
+		#Range: 1 ~ 64
+		snifferEggMinAmount = 1
+		#Max amount of eggs that sniffer lays after breeding
+		#Range: 1 ~ 64
+		snifferEggMaxAmount = 1
+
+	[vanilla.allay]
+		#Ingredients required for allay trusting
+		allayTrustingIngredients = "*"
+		#Range: 0 ~ 100
+		allayTrustingChance = 33
+		allaySpawnEgg = "minecraft:allay_spawn_egg"
+
 [integration]
 
 	[integration.quark]
@@ -236,10 +263,6 @@
 			camelIngredients = "ecologics:prickly_pear"
 			camelSpawnEgg = "ecologics:camel_spawn_egg"
 			camelBreedingCooldown = 6000
-			#Ingredients required to gain cameltrust
-			camelTrustingIngredients = "minecraft:dead_bush, minecraft:cactus, ecologics:prickly_pear"
-			#Range: 0 ~ 100
-			camelTrustingChance = 33
 
 		[integration.ecologics.penguin]
 			#Ingredients required for penguin breeding

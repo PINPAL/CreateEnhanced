@@ -1,14 +1,13 @@
+filename = 'supermartijn642corelib-1.1.17-forge-mc1.20.1.jar'
 name = "SuperMartijn642's Core Lib"
-filename = "supermartijn642corelib-1.1.12-forge-mc1.19.2.jar"
-side = "both"
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/rOUBggPv/versions/XUrANNgw/supermartijn642corelib-1.1.12-forge-mc1.19.2.jar"
-hash-format = "sha512"
-hash = "16ee966b5ca7c15e9032508d2829977b26a1bcf4632f181a3dadbb176926635351f62e937415110ff29ceb75fd4c5f90091860235a244668f3dfd03ede44ba88"
+hash = 'f2c3d1aa0bef8663700b9438f789c15cfd72137d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "rOUBggPv"
-version = "XUrANNgw"
+[update.curseforge]
+file-id = 5102258
+project-id = 454372

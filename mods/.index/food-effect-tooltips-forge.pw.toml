@@ -1,14 +1,13 @@
-name = "Food Effect Tooltips (Forge)"
-filename = "foodeffecttooltips-1.0.2+forge-1.19.2.jar"
-side = "both"
+filename = 'foodeffecttooltips-1.0.1+forge-1.20.jar.jar'
+name = 'Food Effect Tooltips (Forge)'
+side = 'client'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/aetFpEaA/versions/XAlYoUlZ/foodeffecttooltips-1.0.2%2Bforge-1.19.2.jar"
-hash-format = "sha512"
-hash = "9206cd4627766d2a0382baa5c013851778304fcfbbac728b964626060412cd075b563bc24fe6a5dcee6912c227c9470b30e00d31be408a86b834304a4a0f3e34"
+hash = '37cc082122dae20babce3cb3417175bf814cb992d7f36c9ea6e16f93fd48a08cae4433f7d00ef5cee62bb475f195f1e3ef8e3e17dddfbcbce21a9237b8aa5224'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/aetFpEaA/versions/TsYbvAMF/foodeffecttooltips-1.0.1%2Bforge-1.20.jar.jar'
 
-[update]
 [update.modrinth]
-mod-id = "aetFpEaA"
-version = "XAlYoUlZ"
+mod-id = 'aetFpEaA'
+version = 'TsYbvAMF'

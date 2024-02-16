@@ -1,14 +1,13 @@
-name = "Building Wands"
-filename = "BuildingWands-mc1.19.2-2.6.8-release-forge.jar"
-side = "both"
+filename = 'BuildingWands-mc1.20.1-2.6.8-release-forge.jar'
+name = 'Building Wands'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/XkisZUfp/versions/tyIpJMNs/BuildingWands-mc1.19.2-2.6.8-release-forge.jar"
-hash-format = "sha512"
-hash = "087b53f8754426a5c2a0cefeb52b9a54dd3c5d9c036f448ee2f2a34639d0a46e5feb47b6ffa0fc393aad1bd83b9725df6286889637b08aaf4f3015ba9d514fd7"
+hash = 'b344a2d236fd17b6dbd24b288113c7da44ecc1e1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "XkisZUfp"
-version = "tyIpJMNs"
+[update.curseforge]
+file-id = 4782737
+project-id = 363392

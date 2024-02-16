@@ -1,14 +1,13 @@
-name = "Just Enough Items"
-filename = "jei-1.19.2-forge-11.6.0.1018.jar"
-side = "both"
+filename = 'jei-1.20.1-forge-15.3.0.4.jar'
+name = 'Just Enough Items'
+side = 'client'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "494718358db5fb2ef766eea0a174abc7b3abc04a"
+hash = 'ed6e240182aac592963b1f0bf0252f5f17dded33da6201e8a2eba460a7e25ec8c2d68e9798f858a19e63879867530c77903e491b537ba25d8e0e138b540f50e4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/u6dRKJwZ/versions/PeYsGsQy/jei-1.20.1-forge-15.3.0.4.jar'
 
-[update]
-[update.curseforge]
-file-id = 4712866
-project-id = 238222
+[update.modrinth]
+mod-id = 'u6dRKJwZ'
+version = 'PeYsGsQy'

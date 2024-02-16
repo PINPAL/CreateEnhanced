@@ -1,84 +1,221 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
-  identifier = net.minecraft.class_500
-  randomgroup = 1
-  renderorder = foreground
+layout-meta {
+  identifier = join_multiplayer_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1708001185843
+  is_enabled = true
   randommode = false
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:3cd7a826-34a6-42e0-ac63-d12779e4dfd5-1708001185843] = [groups:][instances:]
 }
 
-customization {
+menu_background {
+  animation_name = createmod
   restart_on_load = false
-  name = createmod
-  action = animatebackground
+  background_type = animation
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  identifier = %id=346948%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 
-customization {
-  identifier = %id=450948%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = 0cc686f3-1f90-4058-81e8-7257fd22fd61-1708001185844
+  [executable_block:0cc686f3-1f90-4058-81e8-7257fd22fd61-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 346972
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 4c5ab43d-f1f1-43b3-9fa1-353c7d4d7272-1708001185844
+  [loading_requirement_container_meta:4c5ab43d-f1f1-43b3-9fa1-353c7d4d7272-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=580972%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = cda49144-b44c-407c-ba2d-d494452bf0ec-1708001185844
+  [executable_block:cda49144-b44c-407c-ba2d-d494452bf0ec-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 450948
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 3e649521-ae38-41f9-ac03-8022181df3f0-1708001185844
+  [loading_requirement_container_meta:3e649521-ae38-41f9-ac03-8022181df3f0-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=346972%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = 373cf1a1-1776-4afc-b825-0ce5babccd11-1708001185843
+  [executable_block:373cf1a1-1776-4afc-b825-0ce5babccd11-1708001185843][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 346948
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 6f92875d-82e3-4180-a278-c670f5e1bb66-1708001185843
+  [loading_requirement_container_meta:6f92875d-82e3-4180-a278-c670f5e1bb66-1708001185843] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=426972%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = 9ff4f762-f241-486f-bc0b-86d4b271f28c-1708001185844
+  [executable_block:9ff4f762-f241-486f-bc0b-86d4b271f28c-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 504972
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 253c3aaf-a016-4a0f-bb77-1eaff2871838-1708001185844
+  [loading_requirement_container_meta:253c3aaf-a016-4a0f-bb77-1eaff2871838-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=504972%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = 54db4d25-1b9a-4a00-a5f2-d2796ff0f719-1708001185844
+  [executable_block:54db4d25-1b9a-4a00-a5f2-d2796ff0f719-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 426972
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 107734e9-7493-43bd-8fdc-fed346a0d9df-1708001185844
+  [loading_requirement_container_meta:107734e9-7493-43bd-8fdc-fed346a0d9df-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
-customization {
-  identifier = %id=554948%
-  loopbackgroundanimations = true
+vanilla_button {
+  button_element_executable_block_identifier = ab839dde-36ad-465c-b8a9-386edf2025be-1708001185844
+  [executable_block:ab839dde-36ad-465c-b8a9-386edf2025be-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
   restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = config/fancymenu/assets/button_hover.png
-  backgroundnormal = config/fancymenu/assets/button.png
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 580972
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 754dcf81-a9ab-4c19-acf7-4a0526668b45-1708001185844
+  [loading_requirement_container_meta:754dcf81-a9ab-4c19-acf7-4a0526668b45-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = ea53a2d0-e4be-4991-a81a-4020eeafbfe0-1708001185844
+  [executable_block:ea53a2d0-e4be-4991-a81a-4020eeafbfe0-1708001185844][type:generic] = [executables:]
+  backgroundnormal = [source:local]config/fancymenu/assets/button.png
+  backgroundhovered = [source:local]config/fancymenu/assets/button_hover.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 554948
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 92f821aa-b8a0-43d8-a63b-e36ee5bb80ec-1708001185844
+  [loading_requirement_container_meta:92f821aa-b8a0-43d8-a63b-e36ee5bb80ec-1708001185844] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 

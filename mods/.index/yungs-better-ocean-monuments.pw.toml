@@ -1,14 +1,13 @@
-name = "YUNG's Better Ocean Monuments"
-filename = "YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar"
-side = "both"
+filename = 'YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar'
+name = "YUNG's Better Ocean Monuments (Forge)"
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/3dT9sgt4/versions/Uehc7tGO/YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar"
-hash-format = "sha512"
-hash = "6765e705aa0726c65bfd7842ecab084b257b98390c298e01b757f212515d78ae431ebe11eacab7b72db6bbb22bd11a67794166f1879221788c91a08b8199279f"
+hash = 'd8e74ed19903752a97ed0e1d2b1a8bf378bc252f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "3dT9sgt4"
-version = "Uehc7tGO"
+[update.curseforge]
+file-id = 4883003
+project-id = 689238

@@ -1,0 +1,13 @@
+filename = 'melody_forge_1.0.2_MC_1.20.1-1.20.4.jar'
+name = 'Melody'
+side = 'client'
+
+[download]
+hash = '9a63a3b8d6bc58aac8602dbaa94b425e4567bbcb9cdb78b7070c62276ef82d9d5673e0900d135a720c67d46bfb36bc98af204b4131e3cef0437842db60d54530'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/CVT4pFB2/versions/t7thRplt/melody_forge_1.0.2_MC_1.20.1-1.20.4.jar'
+
+[update.modrinth]
+mod-id = 'CVT4pFB2'
+version = 't7thRplt'

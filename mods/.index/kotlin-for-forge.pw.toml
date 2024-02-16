@@ -1,14 +1,13 @@
-name = "Kotlin for Forge"
-filename = "kotlinforforge-3.12.0-all.jar"
-side = "both"
+filename = 'kotlinforforge-4.10.0-all.jar'
+name = 'Kotlin for Forge'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/ordsPcFz/versions/NBn3sEQk/kotlinforforge-3.12.0-all.jar"
-hash-format = "sha512"
-hash = "15e6e2e88ca8ea4df730a20e99e131d266b27822299d464f004bcbc0a3f15c3275d25e3edc4397ef0a6584dd1d6161e9199fa8369f1581abb05ec6c74edc8cc1"
+hash = '824031f8fa6908dbf1865b490277e6fed0c3348e7c91b5f26ffb875177bdd17e6ef8228372f1443efcff2cc526eddbedd19be37ff0705a8fbac276d5676b8aa5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ordsPcFz/versions/9j6YaPp2/kotlinforforge-4.10.0-all.jar'
 
-[update]
 [update.modrinth]
-mod-id = "ordsPcFz"
-version = "NBn3sEQk"
+mod-id = 'ordsPcFz'
+version = '9j6YaPp2'

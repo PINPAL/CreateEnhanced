@@ -1,14 +1,13 @@
-name = "Supplementaries"
-filename = "supplementaries-1.19.2-2.3.24.jar"
-side = "both"
+filename = 'supplementaries-1.20-2.7.36.jar'
+name = 'Supplementaries'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/CBsYx7wa/supplementaries-1.19.2-2.3.24.jar"
-hash-format = "sha512"
-hash = "a0a291dd3e2ec55efa672e5fc5c77280cdbb1e794af29b2df6cd56a9005a8a5321ccfd7f5749db1b429d8e0efc68610ea5fd3ee78f7c3a755f8496a8a5541807"
+hash = 'a7f24a23bc76eb1f11c20c9ad57f33c377777706'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "fFEIiSDQ"
-version = "CBsYx7wa"
+[update.curseforge]
+file-id = 5103704
+project-id = 412082

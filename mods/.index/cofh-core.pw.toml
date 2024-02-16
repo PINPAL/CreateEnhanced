@@ -1,14 +1,13 @@
-name = "CoFH Core"
-filename = "cofh_core-1.19.2-10.3.0.46.jar"
-side = "both"
+filename = 'cofh_core-1.20.1-11.0.0.51.jar'
+name = 'CoFH Core'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/OWSRM4vD/versions/LLFWn75q/cofh_core-1.19.2-10.3.0.46.jar"
-hash-format = "sha512"
-hash = "90c34aceb00a64203905ddc858db2bc0ddde8dce0670a95e16fadc0cd0343f0d71ffa3f282dda1c5876899384d03ced17de7f335e659be2c94b3a8ca4b39b257"
+hash = 'c2ccd722e4043fd5c8e5051dd7fce2ac312706bb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "OWSRM4vD"
-version = "LLFWn75q"
+[update.curseforge]
+file-id = 4970669
+project-id = 69162

@@ -6,4 +6,6 @@
 	blacklistItems = ["modid:testitem"]
 	#Blacklisted Mod IDs.
 	blacklistModsIDs = ["modid"]
+	#Show suspicious stew food effects tooltips
+	showSuspiciousStewTooltips = false
 

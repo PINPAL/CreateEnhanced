@@ -1,14 +1,13 @@
-name = "Terralith"
-filename = "Terralith_1.19.3_v2.3.11.jar"
-side = "both"
+filename = 'Terralith_1.20.1_v2.4.5.jar'
+name = 'Terralith'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/8oi3bsk5/versions/UJtMNPNx/Terralith_1.19.3_v2.3.11.jar"
-hash-format = "sha512"
-hash = "080dd365996cd1df64810c5ed2df949848b928c0c7141bd7c3f6f79053c51a1574d9bae8303252bd720882ed0bcc1c2378e2a69d6742cc13f0abdda7b62edae5"
+hash = '550446ab3401fe21b6f4761b3c23d7aa4fcab2cc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
-[update.modrinth]
-mod-id = "8oi3bsk5"
-version = "UJtMNPNx"
+[update.curseforge]
+file-id = 4725190
+project-id = 513688

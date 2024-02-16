@@ -1,14 +1,13 @@
-name = "Advancement Plaques"
-filename = "AdvancementPlaques-1.19.2-1.4.7.jar"
-side = "both"
+filename = 'AdvancementPlaques-1.20.1-forge-1.4.10.jar'
+name = 'Advancement Plaques'
+side = 'client'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/9NM0dXub/versions/i82iP1q7/AdvancementPlaques-1.19.2-1.4.7.jar"
-hash-format = "sha512"
-hash = "fcbd49173198def2f1ec6fcbce10993b2667b98bf4eacb48825a9d96a70c2a25f612cdf539d1424d4ed7c19ea57f4e052fbdf0f49b8180dac29c4d616f789058"
+hash = '51fb48e6b9ac64f96f0095f99540c70e873c2089537d5bae2ec5d98d265d20f0bff5c33d60ff117d69f5df56a6a1e97eccf2732b27bf66727ec9c3268095ccf9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9NM0dXub/versions/tim1GaS3/AdvancementPlaques-1.20.1-forge-1.4.10.jar'
 
-[update]
 [update.modrinth]
-mod-id = "9NM0dXub"
-version = "i82iP1q7"
+mod-id = '9NM0dXub'
+version = 'tim1GaS3'
