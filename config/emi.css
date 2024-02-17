@@ -151,7 +151,7 @@
 	/**
 	 * The subpanels in the left sidebar
 	 */
-	left-sidebar-subpanels: lookup-history 1;
+	left-sidebar-subpanels: lookup-history 3;
 
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
