@@ -22,12 +22,6 @@
 	#Disables certain types
 	[general.types]
 
-		[general.types.cake]
-
-			[general.types.cake.createaddition]
-				chocolate_cake = true
-				honey_cake = true
-
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.create_dd]

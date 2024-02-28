@@ -1,13 +1,13 @@
-filename = 'curtain-mc1.20.1-1.3.1.jar'
+filename = 'curtain-mc1.20.1-1.3.2.jar'
 name = 'Curtain'
-side = 'server'
+side = 'both'
 
 [download]
-hash = '3f70320de989f863ba4a26f3fe891d848ac6efa094367cc032ebf8822c4cba9d6c2600a6862eae3b896656a57a40b1f6f89a4b324e2f730f9095f0c9f919669b'
+hash = '8db6a8d6de4b5e279e2a8b76ab3edce8b7cac044b0a4bc085d8343c62565dfc4094d85f66c04f95c7732d4cc4dafe582c97f9eabc587196c4e7599c1b32cf8a5'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/2Vw36Ezz/versions/sCH7XYoU/curtain-mc1.20.1-1.3.1.jar'
+url = 'https://cdn.modrinth.com/data/2Vw36Ezz/versions/4gKjMbeX/curtain-mc1.20.1-1.3.2.jar'
 
 [update.modrinth]
 mod-id = '2Vw36Ezz'
-version = 'sCH7XYoU'
+version = '4gKjMbeX'

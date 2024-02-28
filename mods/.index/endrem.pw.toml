@@ -1,0 +1,13 @@
+filename = 'endrem_forge-5.2.3-R-1.20.X.jar'
+name = 'End Remastered'
+side = 'both'
+
+[download]
+hash = 'c917147032c95ef4cf423c2db76a8adecc187cee6ac9c2cf1e68d1fa74cdc0cc18d18e4f3121953b6f27bced35d436184785f42ae23bf0008a847359c6d3ea50'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZJTGwAND/versions/9OkkRvff/endrem_forge-5.2.3-R-1.20.X.jar'
+
+[update.modrinth]
+mod-id = 'ZJTGwAND'
+version = '9OkkRvff'

@@ -1,13 +1,13 @@
-filename = 'fancymenu_forge_3.0.6_MC_1.20.1.jar'
+filename = 'fancymenu_forge_3.1.0_MC_1.20.1.jar'
 name = 'FancyMenu'
-side = 'client'
+side = 'both'
 
 [download]
-hash = 'bdb315d4ee183330ea959528aaf4ab6f76d609a6d9879aded51e312920bc626923222a630d4d2ce8f452dd655c56618f1d01cd6d4218f23239678fc238b4a07d'
+hash = '50187849b3f38c42820109b90315ca631e93ed57cefecc5030671587318c45ed1446d948ca8b118f383f4750655d5f43ccaa08c0113e62b6cb494314615c4c0e'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/Wq5SjeWM/versions/LuNLnAlc/fancymenu_forge_3.0.6_MC_1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/Wq5SjeWM/versions/AuPFlN9F/fancymenu_forge_3.1.0_MC_1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'Wq5SjeWM'
-version = 'LuNLnAlc'
+version = 'AuPFlN9F'
