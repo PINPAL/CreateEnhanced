@@ -1,0 +1,13 @@
+filename = 'paxeljs-1.0.0.jar'
+name = 'PaxelJS'
+side = 'server'
+
+[download]
+hash = 'eb74833f018cca4aa01e7ff8dbe58b032fb19bbe250641b03866e899ac33b02bc41ad6168fbea6e1d6daa44b5ca6f3ee21543e5d9529b9a4efe58562f24ba9c5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/T0fiFtaZ/versions/vQKWrvtQ/paxeljs-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'T0fiFtaZ'
+version = 'vQKWrvtQ'
