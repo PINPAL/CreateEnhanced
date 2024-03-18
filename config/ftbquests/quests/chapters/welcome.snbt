@@ -529,6 +529,15 @@
 					item: "createsifter:sifter"
 					type: "item"
 				}
+				{
+					id: "692771B287179CC8"
+					item: {
+						Count: 1b
+						id: "createsifter:string_mesh"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			title: "Your First Engineering"
 			x: -1.0d
@@ -1048,6 +1057,7 @@
 		}
 		{
 			dependencies: ["06B04C606CE4187C"]
+			dependency_requirement: "one_started"
 			icon: "minecraft:netherrack"
 			id: "6DD58DEC49782F4E"
 			subtitle: "Enter the&6 Nether"
@@ -4352,10 +4362,10 @@
 			}]
 			subtitle: "Copper tools provide great mining level."
 			tasks: [{
-				id: "7972858EC47BAEA9"
+				id: "7FF273388E680FE5"
 				item: {
 					Count: 1b
-					id: "easypaxellite:golden_paxel"
+					id: "kubejs:copper_paxel"
 					tag: {
 						Damage: 0
 					}
@@ -4371,10 +4381,10 @@
 			id: "0E1184C33CD06F00"
 			subtitle: "A more powerful weapon!"
 			tasks: [{
-				id: "3A3BE3505286ADEB"
+				id: "5710E9A05FE7CA46"
 				item: {
 					Count: 1b
-					id: "minecraft:golden_sword"
+					id: "kubejs:copper_sword"
 					tag: {
 						Damage: 0
 					}

@@ -419,6 +419,7 @@ const allPaxels = [
 	"easypaxellite:stone_paxel",
 	"easypaxellite:iron_paxel",
 	"easypaxellite:golden_paxel",
+	"kubejs:copper_paxel",
 	"easypaxellite:diamond_paxel",
 	"easypaxellite:netherite_paxel",
 	"easypaxellite:tempered_netherite_paxel",

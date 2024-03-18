@@ -14,6 +14,7 @@ const outputsToRemove = [
 
 	// Minecraft
 	"minecraft:lodestone",
+	"minecraft:stone_pickaxe",
 
 	// Vertical Slabs
 	/createdeco:.*slab_vert/,
