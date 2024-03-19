@@ -1,14 +1,13 @@
-name = "Smooth Boot (Reloaded)"
-filename = "smoothboot(reloaded)-mc1.19.2-0.0.2.jar"
-side = "both"
+filename = 'smoothboot(reloaded)-mc1.19.2-0.0.4.jar'
+name = 'Smooth Boot (Reloaded)'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/z53V2L4P/versions/YXklcDpN/smoothboot%28reloaded%29-mc1.19.2-0.0.2.jar"
-hash-format = "sha512"
-hash = "088159d319c613289774b7f4710493240154ee2fe3f58373bf114cd80be108525015187cf618f256cf14329bb2442271bf54b099f81dea853a2489c0c6ed447b"
+hash = 'daf937bc1752f4674476e9d3a1f29292b9bea54b41ca8f006d9265a925255404368364dad07c276fdfac27bc86845c87f2e6dea67c13b1df19baaf9f51dec7c5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/z53V2L4P/versions/FzbfQajL/smoothboot%28reloaded%29-mc1.19.2-0.0.4.jar'
 
-[update]
 [update.modrinth]
-mod-id = "z53V2L4P"
-version = "YXklcDpN"
+mod-id = 'z53V2L4P'
+version = 'FzbfQajL'

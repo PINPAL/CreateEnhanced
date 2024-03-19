@@ -451,6 +451,48 @@ metalBarrelUpgrades.forEach((upgrade) => {
 	});
 });
 
+const supportBlocks = [
+	{ name: "oak", mod: "decorative_blocks:" },
+	{ name: "spruce", mod: "decorative_blocks:" },
+	{ name: "birch", mod: "decorative_blocks:" },
+	{ name: "jungle", mod: "decorative_blocks:" },
+	{ name: "acacia", mod: "decorative_blocks:" },
+	{ name: "dark_oak", mod: "decorative_blocks:" },
+	{ name: "crimson", mod: "decorative_blocks:" },
+	{ name: "warped", mod: "decorative_blocks:" },
+	{ name: "bamboo", mod: "everycomp:db/quark/" },
+	{ name: "spirit", mod: "everycomp:db/create_dd/" },
+	{ name: "rose", mod: "everycomp:db/create_dd/" },
+	{ name: "smoked", mod: "everycomp:db/create_dd/" },
+	{ name: "walnut", mod: "everycomp:db/ecologics/" },
+	{ name: "azalea", mod: "everycomp:db/ecologics/" },
+	{ name: "coconut", mod: "everycomp:db/ecologics/" },
+	{ name: "flowering_azalea", mod: "everycomp:db/ecologics/" },
+];
+const supportBlockControls = [
+	{
+		control: "R-Clicked with Wrench",
+		requiresHold: false,
+		text: ["Toggles the $side$ clicked between $big$ and $small$."],
+	},
+	{
+		control: "Sneak & R-Click with Wrench",
+		requiresHold: true,
+		text: ["$Hide$ or $Show$ the clicked $side$."],
+	},
+	{
+		control: "Sneak and R-Click in Air",
+		requiresHold: true,
+		text: ["$Flip$ block $upside down$."],
+	},
+];
+supportBlocks.forEach((supportBlock) => {
+	itemsToTooltip.push({
+		item: supportBlock.mod + supportBlock.name + "_support",
+		summary: ["A $decorative$ block that can be", "configured with a $Wrench$."],
+		controls: supportBlockControls,
+	});
+});
 const drawerWoodTypes = [
 	{ name: "oak", mod: "storagedrawers:" },
 	{ name: "spruce", mod: "storagedrawers:" },
@@ -481,7 +523,7 @@ const drawerControls = [
 		text: ["Places $all items of that type$ into the $Drawer$."],
 	},
 	{
-		control: "Crouch & R-Clicked with Empty Hand",
+		control: "Sneak & R-Clicked with Empty Hand",
 		requiresHold: true,
 		text: ["Opens the $Configuration Interface$"],
 	},

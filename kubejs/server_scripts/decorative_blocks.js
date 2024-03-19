@@ -8,60 +8,22 @@ ServerEvents.recipes((event) => {
 	});
 });
 
-BlockEvents.rightClicked((event) => {
-	let block = event.getBlock();
-	if (block.hasTag("decorative_blocks:supports") && event.getItem() == "create:wrench") {
-		let blockState = block.getBlockState();
-		let isCrouching = event.getPlayer().isCrouching();
-		let sideClickedOn = event.getFacing();
-
-		let horizontal = blockState.getValue(ModBlockProperties.HORIZONTAL_SHAPE);
-		let vertical = blockState.getValue(ModBlockProperties.VERTICAL_SHAPE);
-
-		if (sideClickedOn == Direction.UP) {
-			// If crouching toggle hiding the side
-			if (isCrouching) {
-				block.setBlockState(
-					blockState.setValue(
-						ModBlockProperties.HORIZONTAL_SHAPE,
-						horizontal == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN
-					),
-					0
-				);
-			} else if (!isCrouching) {
-				// Ensure that the side is not hidden
-				if (horizontal != SupportFaceShape.HIDDEN) {
-					block.setBlockState(
-						blockState.setValue(
-							ModBlockProperties.HORIZONTAL_SHAPE,
-							horizontal == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG
-						),
-						0
-					);
-				}
-			}
-		} else {
-			// If crouching toggle hiding the side
-			if (isCrouching) {
-				block.setBlockState(
-					blockState.setValue(
-						ModBlockProperties.VERTICAL_SHAPE,
-						vertical == SupportFaceShape.HIDDEN ? SupportFaceShape.SMALL : SupportFaceShape.HIDDEN
-					),
-					0
-				);
-			} else if (!isCrouching) {
-				// Ensure that the side is not hidden
-				if (vertical != SupportFaceShape.HIDDEN) {
-					block.setBlockState(
-						blockState.setValue(
-							ModBlockProperties.VERTICAL_SHAPE,
-							vertical == SupportFaceShape.BIG ? SupportFaceShape.SMALL : SupportFaceShape.BIG
-						),
-						0
-					);
-				}
-			}
+// Workaround to make the wrench work as an axe
+PlayerEvents.tick((event) => {
+	let player = event.player;
+	let block = player.rayTrace(8, false).block;
+	// Check if the block is null
+	if (block == null) {
+		// If the player is holding the wrench_axe, change it to the wrench
+		if (player.getMainHandItem().getId() == "kubejs:wrench_axe") {
+			player.setMainHandItem(Item.of("create:wrench"));
 		}
+		return;
+	}
+	// Check if the block has the decorative_blocks:supports tag and if the player is holding the create:wrench
+	if (block.hasTag("decorative_blocks:supports") && player.getMainHandItem().getId() == "create:wrench") {
+		player.setMainHandItem(Item.of("kubejs:wrench_axe").withNBT({ Unbreakable: true, HideFlags: 255 }));
+	} else if (!block.hasTag("decorative_blocks:supports") && player.getMainHandItem().getId() == "kubejs:wrench_axe") {
+		player.setMainHandItem(Item.of("create:wrench"));
 	}
 });

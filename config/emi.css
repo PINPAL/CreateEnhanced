@@ -146,7 +146,7 @@
 	/**
 	 * The subpanels in the left sidebar
 	 */
-	left-sidebar-subpanels: lookup-history 1;
+	left-sidebar-subpanels: lookup-history 2;
 
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
@@ -437,7 +437,7 @@
 	/**
 	 * Whether hovering the output of a recipe should show the recipe's EMI ID.
 	 */
-	show-recipe-ids: true;
+	show-recipe-ids: false;
 
 	/**
 	 * Whether stacks in the index should display a highlight if they have a recipe
