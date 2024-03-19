@@ -1,3 +1,5 @@
+// priority: 99
+
 const unifiedIngots = [
 	{ name: "steel", modsUsing: ["tfmg", "create_dd"] },
 	{ name: "industrial_iron", modsUsing: ["createdeco"] },
@@ -23,13 +25,11 @@ ServerEvents.recipes((event) => {
 				mod + ":" + ingot.name + "_ingot",
 				"#forge:ingots/" + ingot.name
 			);
-			event
-				.replaceOutput(
-					{ output: mod + ":" + ingot.name + "_ingot" },
-					mod + ":" + ingot.name + "_ingot",
-					"#forge:ingots/" + ingot.name
-				)
-				.id("create_complete_collection:ingots/" + mod + "/" + ingot.name + "_ingot");
+			event.replaceOutput(
+				{ output: mod + ":" + ingot.name + "_ingot" },
+				mod + ":" + ingot.name + "_ingot",
+				"#forge:ingots/" + ingot.name
+			);
 
 			// Nuggets
 			event.replaceInput(
@@ -37,13 +37,11 @@ ServerEvents.recipes((event) => {
 				mod + ":" + ingot.name + "_nugget",
 				"#forge:nuggets/" + ingot.name
 			);
-			event
-				.replaceOutput(
-					{ output: mod + ":" + ingot.name + "_nugget" },
-					mod + ":" + ingot.name + "_nugget",
-					"#forge:nuggets/" + ingot.name
-				)
-				.id("create_complete_collection:ingots/" + ingot.name + "_nugget");
+			event.replaceOutput(
+				{ output: mod + ":" + ingot.name + "_nugget" },
+				mod + ":" + ingot.name + "_nugget",
+				"#forge:nuggets/" + ingot.name
+			);
 
 			// Plates
 			event.replaceInput(
@@ -51,48 +49,29 @@ ServerEvents.recipes((event) => {
 				mod + ":" + ingot.name + "_sheet",
 				"#forge:plates/" + ingot.name
 			);
-			event
-				.replaceOutput(
-					{ output: mod + ":" + ingot.name + "_sheet" },
-					mod + ":" + ingot.name + "_sheet",
-					"#forge:plates/" + ingot.name
-				)
-				.id("create_complete_collection:ingots/" + ingot.name + "_sheet");
+			event.replaceOutput(
+				{ output: mod + ":" + ingot.name + "_sheet" },
+				mod + ":" + ingot.name + "_sheet",
+				"#forge:plates/" + ingot.name
+			);
 		});
 	});
 });
 
 ServerEvents.tags("item", (event) => {
-	// Add tags for all unified ingots
 	unifiedIngots.forEach((ingot) => {
-		event.add("create_complete_collection:" + ingot.name + "_ingot", "forge:ingots/" + ingot.name);
-		event.add("create_complete_collection:" + ingot.name + "_nugget", "forge:nuggets/" + ingot.name);
-		event.add("create_complete_collection:" + ingot.name + "_sheet", "forge:plates/" + ingot.name);
-		event.add("create_complete_collection:" + ingot.name + "_block", "forge:storage_blocks/" + ingot.name);
+		// Add tags for all unified ingots
+		event.add("forge:ingots/" + ingot.name, "create_complete_collection:" + ingot.name + "_ingot");
+		event.add("forge:nuggets/" + ingot.name, "create_complete_collection:" + ingot.name + "_nugget");
+		event.add("forge:plates/" + ingot.name, "create_complete_collection:" + ingot.name + "_sheet");
+		event.add("forge:storage_blocks/" + ingot.name, "create_complete_collection:" + ingot.name + "_block");
+
+		// Remove tags for all modded ingots
+		ingot.modsUsing.forEach((mod) => {
+			event.removeAllTagsFrom(mod + ":" + ingot.name + "_ingot");
+			event.removeAllTagsFrom(mod + ":" + ingot.name + "_nugget");
+			event.removeAllTagsFrom(mod + ":" + ingot.name + "_sheet");
+			event.removeAllTagsFrom(mod + ":" + ingot.name + "_block");
+		});
 	});
-
-	// Remove modded ingots
-	event.removeAllTagsFrom("tfmg:steel_ingot");
-	event.removeAllTagsFrom("tfmg:steel_block");
-	event.removeAllTagsFrom("create_dd:steel_ingot");
-	event.removeAllTagsFrom("create_dd:steel_nugget");
-	event.removeAllTagsFrom("create_dd:steel_sheet");
-	event.removeAllTagsFrom("create_dd:steel_block");
-
-	event.removeAllTagsFrom("create_dd:industrial_iron_ingot");
-	event.removeAllTagsFrom("create_dd:industrial_iron_nugget");
-	event.removeAllTagsFrom("create_dd:industrial_iron_sheet");
-	event.removeAllTagsFrom("createdeco:industrial_iron_ingot");
-	event.removeAllTagsFrom("createdeco:industrial_iron_nugget");
-	event.removeAllTagsFrom("createdeco:industrial_iron_sheet");
-	event.removeAllTagsFrom("tfmg:industrial_iron_ingot");
-	event.removeAllTagsFrom("tfmg:industrial_iron_nugget");
-	event.removeAllTagsFrom("tfmg:industrial_iron_sheet");
-
-	event.removeAllTagsFrom("create:zinc_ingot");
-	event.removeAllTagsFrom("create:zinc_nugget");
-	event.removeAllTagsFrom("create_dd:zinc_sheet");
-	event.removeAllTagsFrom("createdeco:zinc_sheet");
-	event.removeAllTagsFrom("createaddition:zinc_sheet");
-	event.removeAllTagsFrom("destroy:zinc_sheet");
 });

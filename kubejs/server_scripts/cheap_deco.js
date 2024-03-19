@@ -8,14 +8,8 @@ ServerEvents.recipes((event) => {
 			G: "minecraft:glowstone_dust",
 		});
 	});
-	// Cheap Netherite Building Blocks
-	event.stonecutting("16x createdeco:netherite_bars", "#forge:ingots/netherite");
-	event.shaped("64x createdeco:netherite_bars", ["SSS", "SSS"], {
-		S: "#forge:ingots/netherite",
-	});
 	// Cheap Cast Iron
 	event.recipes.create.compacting("createdeco:cast_iron_ingot", "minecraft:iron_ingot");
-	event.recipes.create.compacting("createdeco:cast_iron_block", "minecraft:iron_block");
 	// Cheap Asphalt
 	event.replaceOutput({ input: "create_dd:asphalt_block" }, "create_dd:asphalt_block", "16x create_dd:asphalt_block");
 	event.recipes.create.mixing("16x create_dd:asphalt_block", ["2x create:scoria", "minecraft:slime_ball"]).heated();

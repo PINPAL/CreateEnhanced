@@ -169,11 +169,11 @@ ServerEvents.tags("item", (event) => {
 	});
 
 	[
-		"minecraft:iron_ingot",
-		"minecraft:gold_ingot",
-		"create:zinc_ingot",
-		"create:brass_ingot",
-		"create_dd:tin_ingot",
+		"#forge:ingots/iron",
+		"#forge:ingots/gold",
+		"#forge:ingots/zinc",
+		"#forge:ingots/brass",
+		"#forge:ingots/tin",
 	].forEach((item) => {
 		event.add("kubejs:simple_ingots", item);
 	});
