@@ -26,8 +26,8 @@ slimeChunks:false
 mapSafeMode:false
 minimapOpacity:100.0
 waypointsIngameIconScale:0
-waypointsIngameDistanceScale:0
-waypointsIngameNameScale:0
+waypointsIngameDistanceScale:1
+waypointsIngameNameScale:1
 waypointsIngameCloseScale:1.0
 antiAliasing:true
 blockColours:0
@@ -37,8 +37,8 @@ dotNameScale:1.0
 compassOverEverything:true
 showFlowers:true
 keepWaypointNames:true
-waypointsDistanceExp:0
-waypointsDistanceMin:0.0
+waypointsDistanceExp:7
+waypointsDistanceMin:15.0
 defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
 defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
 arrowScale:1.5
@@ -49,14 +49,14 @@ terrainDepth:true
 terrainSlopes:2
 mainEntityAs:2
 blockTransparency:true
-waypointOpacityIngame:80
-waypointOpacityMap:90
+waypointOpacityIngame:60
+waypointOpacityMap:95
 hideWorldNames:1
 openSlimeSettings:true
 alwaysShowDistance:false
 crossDimensionalTp:true
 biomeColorsVanillaMode:false
-lookingAtAngle:10
+lookingAtAngle:3
 lookingAtAngleVertical:180
 centeredEnlarged:false
 zoomOnEnlarged:0
