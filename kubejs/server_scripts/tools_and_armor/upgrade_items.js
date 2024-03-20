@@ -1,69 +1,57 @@
 const toolUpgradeMats = [
-  { name: "netherite", cost: "#forge:ingots/netherite" },
-  { name: "diamond", cost: "#forge:gems/diamond" },
-  { name: "steel", cost: "#forge:ingots/steel" },
-  { name: "iron", cost: "#forge:ingots/iron" },
-  { name: "copper", cost: "#forge:ingots/copper" },
-  { name: "stone", cost: "kubejs:refined_stone" },
+	{ name: "netherite", cost: "#forge:ingots/netherite", costMultiplier: 0.5 },
+	{ name: "diamond", cost: "#forge:gems/diamond", costMultiplier: 2 },
+	{ name: "steel", cost: "#forge:ingots/steel", costMultiplier: 3 },
+	{ name: "iron", cost: "#forge:ingots/iron", costMultiplier: 2 },
+	{ name: "copper", cost: "#forge:ingots/copper", costMultiplier: 1 },
+	{ name: "stone", cost: "kubejs:refined_stone", costMultiplier: 1 },
 ];
 const armorUpgradeMats = [
-  { name: "netherite", cost: "#forge:ingots/netherite" },
-  { name: "diamond", cost: "#forge:gems/diamond" },
-  { name: "steel", cost: "#forge:ingots/steel" },
-  { name: "iron", cost: "#forge:ingots/iron" },
-  { name: "copper", cost: "#forge:ingots/copper" },
-  { name: "chainmail", cost: "minecraft:chain" },
+	{ name: "netherite", cost: "#forge:ingots/netherite", costMultiplier: 0.5 },
+	{ name: "diamond", cost: "#forge:gems/diamond", costMultiplier: 3 },
+	{ name: "steel", cost: "#forge:ingots/steel", costMultiplier: 3 },
+	{ name: "iron", cost: "#forge:ingots/iron", costMultiplier: 3 },
+	{ name: "copper", cost: "#forge:ingots/copper", costMultiplier: 1 },
+	{ name: "chainmail", cost: "minecraft:chain", costMultiplier: 1 },
 ];
 
 ServerEvents.recipes((event) => {
-  toolUpgradeMats.forEach((material) => {
-    // Blade
-    event.recipes.create
-      .sequenced_assembly(
-        [`kubejs:${material.name}_blade`],
-        "kubejs:wood_blade",
-        [
-          event.recipes.createDeploying(
-            `kubejs:incomplete_${material.name}_blade`,
-            [`kubejs:incomplete_${material.name}_blade`, material.cost]
-          ),
-        ]
-      )
-      .transitionalItem(`kubejs:incomplete_${material.name}_blade`)
-      .loops(material.name == "netherite" ? 1 : 2);
-    // Paxel Head
-    event.recipes.create
-      .sequenced_assembly(
-        [`kubejs:${material.name}_head`],
-        "kubejs:wood_head",
-        [
-          event.recipes.createDeploying(
-            `kubejs:incomplete_${material.name}_head`,
-            [`kubejs:incomplete_${material.name}_head`, material.cost]
-          ),
-        ]
-      )
-      .transitionalItem(`kubejs:incomplete_${material.name}_head`)
-      .loops(material.name == "netherite" ? 3 : 7);
-  });
-  armorUpgradeMats.forEach((material) => {
-    // Stitching
-    event.recipes.createDeploying(
-      `kubejs:unfinished_${material.name}_stitching`,
-      ["kubejs:leather_stitching", material.cost]
-    );
-    event.recipes.create
-      .sequenced_assembly(
-        [`kubejs:${material.name}_stitching`],
-        `kubejs:unfinished_${material.name}_stitching`,
-        [
-          event.recipes.createDeploying(
-            `kubejs:unfinished_${material.name}_stitching`,
-            [`kubejs:unfinished_${material.name}_stitching`, material.cost]
-          ),
-        ]
-      )
-      .transitionalItem(`kubejs:unfinished_${material.name}_stitching`)
-      .loops(material.name == "netherite" ? 1 : 5);
-  });
+	toolUpgradeMats.forEach((material) => {
+		// Blade
+		event.recipes.create
+			.sequenced_assembly([`kubejs:${material.name}_blade`], "kubejs:wood_blade", [
+				event.recipes.createDeploying(`kubejs:incomplete_${material.name}_blade`, [
+					`kubejs:incomplete_${material.name}_blade`,
+					material.cost,
+				]),
+			])
+			.transitionalItem(`kubejs:incomplete_${material.name}_blade`)
+			.loops(Math.round(2 * material.costMultiplier));
+		// Paxel Head
+		event.recipes.create
+			.sequenced_assembly([`kubejs:${material.name}_head`], "kubejs:wood_head", [
+				event.recipes.createDeploying(`kubejs:incomplete_${material.name}_head`, [
+					`kubejs:incomplete_${material.name}_head`,
+					material.cost,
+				]),
+			])
+			.transitionalItem(`kubejs:incomplete_${material.name}_head`)
+			.loops(Math.round(7 * material.costMultiplier));
+	});
+	armorUpgradeMats.forEach((material) => {
+		// Stitching
+		event.recipes.createDeploying(`kubejs:unfinished_${material.name}_stitching`, [
+			"kubejs:leather_stitching",
+			material.cost,
+		]);
+		event.recipes.create
+			.sequenced_assembly([`kubejs:${material.name}_stitching`], `kubejs:unfinished_${material.name}_stitching`, [
+				event.recipes.createDeploying(`kubejs:unfinished_${material.name}_stitching`, [
+					`kubejs:unfinished_${material.name}_stitching`,
+					material.cost,
+				]),
+			])
+			.transitionalItem(`kubejs:unfinished_${material.name}_stitching`)
+			.loops(Math.round(5 * material.costMultiplier));
+	});
 });

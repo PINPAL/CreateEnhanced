@@ -4,9 +4,10 @@
 	loot_size: 1
 	order_index: 2
 	rewards: [
-		{ item: "minecraft:name_tag" }
-		{ count: 2, item: "farmersdelight:horse_feed", random_bonus: 3 }
-		{ item: "minecraft:leather_horse_armor" }
+		{ count: 2, item: "minecraft:name_tag" }
+		{ count: 5, item: "farmersdelight:horse_feed", random_bonus: 5 }
+		{ item: "minecraft:diamond_horse_armor" }
+		{ count: 3, item: "minecraft:lead" }
 	]
 	title: "Horse Starter Kit"
 }

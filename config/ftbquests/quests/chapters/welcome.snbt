@@ -731,6 +731,7 @@
 		}
 		{
 			dependencies: ["6E931AE38AE91C4F"]
+			description: ["&lTip: &r&7You can acquire your first bits of paper from shipwrecks."]
 			hide: true
 			icon: {
 				Count: 1b
@@ -740,6 +741,17 @@
 				}
 			}
 			id: "77DDAE3A43C0356F"
+			rewards: [{
+				id: "73559449C540005D"
+				item: {
+					Count: 1b
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "Paper wasn't so easy huh?"
 			tasks: [{
 				id: "12271AE86589AA8A"
@@ -902,6 +914,7 @@
 				"26C9C63835C84874"
 				"6FEF3380D11818AF"
 			]
+			description: ["&lNote: &r&7You'll need to progress to the Brass Age before you can make Iron tools."]
 			hide: true
 			hide_dependency_lines: true
 			hide_details_until_startable: false
@@ -1079,30 +1092,31 @@
 			icon: "create:blaze_burner"
 			id: "3013996FDD5C82B3"
 			subtitle: "A step closer to brass!"
-			tasks: [
-				{
-					id: "57129730C0408BEF"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-				{
-					id: "7479FA2D68D70774"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "57129730C0408BEF"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "Mixing with Blaze!"
 			x: 0.0d
 			y: 10.375d
 		}
 		{
 			dependencies: ["3013996FDD5C82B3"]
+			icon: "create:brass_casing"
 			id: "26B607339F9A9909"
+			rewards: [{
+				count: 2
+				id: "1CFF67DE6CE08273"
+				item: "create:brass_ingot"
+				random_bonus: 3
+				type: "item"
+			}]
 			size: 1.5d
 			subtitle: "Where the real Create begins."
 			tasks: [{
-				id: "4FC62F0FD6CD0E43"
-				item: "create:brass_casing"
+				id: "7A8627F477845B32"
+				item: "create:brass_ingot"
 				type: "item"
 			}]
 			title: "The Brass Age"
@@ -1312,7 +1326,6 @@
 			rewards: [{
 				id: "4BE5F467DAB66478"
 				item: "kubejs:chainmail_repair_kit"
-				random_bonus: 2
 				type: "item"
 			}]
 			shape: "circle"
@@ -1367,7 +1380,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["568E4C255A477E20"]
+			dependencies: ["1BD4F8D880B07B41"]
 			hide: true
 			icon: {
 				Count: 1b
@@ -1378,6 +1391,11 @@
 			}
 			id: "49F9FC411BF9B890"
 			optional: true
+			rewards: [{
+				id: "2AB174317B1E203B"
+				item: "kubejs:iron_repair_kit"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "06F2166A623E1766"
@@ -1392,7 +1410,7 @@
 				type: "item"
 			}]
 			title: "Iron Armor"
-			x: 4.875d
+			x: 5.875d
 			y: 6.25d
 		}
 		{
@@ -1407,6 +1425,11 @@
 			}
 			id: "11866A0A040998FA"
 			optional: true
+			rewards: [{
+				id: "67EF1291E5020661"
+				item: "kubejs:steel_repair_kit"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "6CE66F0BF87F4DE1"
@@ -1421,7 +1444,7 @@
 				type: "item"
 			}]
 			title: "Steel Armor"
-			x: 5.875d
+			x: 6.875d
 			y: 6.25d
 		}
 		{
@@ -1436,6 +1459,11 @@
 			}
 			id: "2E7775FE373386DA"
 			optional: true
+			rewards: [{
+				id: "217B1C1A181385E5"
+				item: "kubejs:diamond_repair_kit"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "11D33E0000772BDE"
@@ -1450,7 +1478,7 @@
 				type: "item"
 			}]
 			title: "Diamond Armor"
-			x: 6.875d
+			x: 7.875d
 			y: 6.25d
 		}
 		{
@@ -1485,7 +1513,7 @@
 				type: "item"
 			}]
 			title: "Netherite Armor"
-			x: 7.875d
+			x: 8.875d
 			y: 6.25d
 		}
 		{
@@ -1761,7 +1789,7 @@
 		{
 			dependencies: [
 				"178976A1A9CF9A42"
-				"2084C1703DB2C2F3"
+				"05B308A5BA7C921C"
 			]
 			id: "2B04669626480B2F"
 			subtitle: "Storing liquid in a can!"
@@ -2243,8 +2271,9 @@
 				"Food must be balanced, you must make sure to get your &9Vegtables&r, &9Meat&r and &9Carbs&r."
 				""
 				"If you have a poor diet you will be &cmalnourished&r."
-				"- This will reduce your health slightly."
-				"- Your mining speed will be reduced a small amount."
+				"- This will halve your max health."
+				"- Your mining speed will be reduced a very small amount."
+				"- Your movement speed will be reduced slightly."
 				""
 				"&l&nWhy?"
 				""
@@ -2261,18 +2290,25 @@
 			}]
 			size: 2.0d
 			subtitle: "Nutritional Balance!"
-			tasks: [{
-				id: "18719282FDFB6558"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:seeds"
+			tasks: [
+				{
+					id: "18719282FDFB6558"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:seeds"
+						}
 					}
+					title: "Any Seeds"
+					type: "item"
 				}
-				title: "Any Seeds"
-				type: "item"
-			}]
+				{
+					id: "71D956E962AE4BAE"
+					title: "I understand!"
+					type: "checkmark"
+				}
+			]
 			title: "Food"
 			x: 3.25d
 			y: 1.0d
@@ -2387,6 +2423,11 @@
 			hide_dependency_lines: true
 			id: "4BEB29F474FAB0D4"
 			optional: true
+			rewards: [{
+				id: "5AA0163CF9549747"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "2 whole rows!"
 			tasks: [{
@@ -2449,6 +2490,11 @@
 			hide: true
 			id: "270DD27B292BD6C8"
 			optional: true
+			rewards: [{
+				id: "5637DAD348C4B0CD"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "Why not make it indestructable too?"
 			tasks: [{
@@ -4379,6 +4425,11 @@
 		{
 			dependencies: ["05BEFB7D67ECA089"]
 			id: "0E1184C33CD06F00"
+			rewards: [{
+				id: "1CDBED64B47A777F"
+				item: "kubejs:copper_repair_kit"
+				type: "item"
+			}]
 			subtitle: "A more powerful weapon!"
 			tasks: [{
 				id: "5710E9A05FE7CA46"
@@ -4469,16 +4520,31 @@
 		{
 			dependencies: ["26C9C63835C84874"]
 			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:shears"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "15A889CC22700F09"
 			tasks: [{
-				id: "0EADA06D6CCD8FE8"
-				item: {
+				icon: {
 					Count: 1b
 					id: "minecraft:shears"
 					tag: {
 						Damage: 0
 					}
 				}
+				id: "0EADA06D6CCD8FE8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:shears"
+					}
+				}
+				title: "Any Shears"
 				type: "item"
 			}]
 			x: 2.75d
@@ -5332,13 +5398,21 @@
 		}
 		{
 			dependencies: ["0DB98EEA322B623F"]
+			icon: "create_dd:diamond_shard"
 			id: "3EE22F912CE4780D"
 			subtitle: "Bulk Super Heat Coal Blocks into Diamond Shards"
-			tasks: [{
-				id: "7FAE8E1A6260E55C"
-				item: "create_dd:diamond_shard"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7FAE8E1A6260E55C"
+					item: "create_dd:diamond_shard"
+					type: "item"
+				}
+				{
+					id: "1EC30832D62A7D09"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
 			x: -34.125d
 			y: 0.375d
 		}
@@ -5364,14 +5438,22 @@
 		}
 		{
 			dependencies: ["3EE22F912CE4780D"]
+			icon: "minecraft:diamond"
 			id: "34D86C430479325D"
 			subtitle: "Pack Diamond Shards into Diamonds"
-			tasks: [{
-				count: 256L
-				id: "20EF6A8D6C374E1B"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 256L
+					id: "20EF6A8D6C374E1B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7BD9ADEE2E17E8CF"
+					title: "I've automated it!"
+					type: "checkmark"
+				}
+			]
 			title: "Diamond"
 			x: -33.125d
 			y: 0.75d
@@ -6547,10 +6629,10 @@
 			icon: "create_things_and_misc:sprinkler"
 			id: "61E794076BA52E76"
 			rewards: [{
-				count: 5
+				count: 64
 				id: "424C0FA85CE15E2B"
 				item: "minecraft:bone_meal"
-				random_bonus: 5
+				random_bonus: 64
 				type: "item"
 			}]
 			subtitle: "Faster crop farms!"
@@ -6718,6 +6800,75 @@
 			title: "Lingering Potion"
 			x: 36.0d
 			y: 15.625d
+		}
+		{
+			dependencies: ["60EC2DACD3C92008"]
+			icon: "netherite_horse_armor:netherite_horse_armor"
+			id: "36655AED6CF061E6"
+			rewards: [{
+				count: 10
+				id: "0987ED671A213C05"
+				item: "farmersdelight:horse_feed"
+				random_bonus: 10
+				type: "item"
+			}]
+			subtitle: "Truly protected!"
+			tasks: [{
+				id: "6B4B3E0A84AD4E2D"
+				item: {
+					Count: 1b
+					id: "netherite_horse_armor:netherite_horse_armor"
+					tag: {
+						Enchantments: [
+							{
+								id: "minecraft:protection"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:frost_walker"
+								lvl: 2s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "The Ultimate Ultimate Horse"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["568E4C255A477E20"]
+			icon: {
+				Count: 1b
+				id: "kubejs:copper_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1BD4F8D880B07B41"
+			optional: true
+			rewards: [{
+				id: "596F39A8E801E2F4"
+				item: "kubejs:copper_repair_kit"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "398CF808E491FE3A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:copper_armor"
+					}
+				}
+				title: "Any Copper Armor"
+				type: "item"
+			}]
+			title: "Copper Armor"
+			x: 4.875d
+			y: 6.25d
 		}
 	]
 	title: "Create Modpack"
