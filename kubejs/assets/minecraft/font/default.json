@@ -279,6 +279,27 @@
 			"ascent": 9,
 			"height": 9,
 			"chars": ["\uEff6"]
+		},
+		{
+			"type": "bitmap",
+			"file": "kubejs:food_hunches/veggies_half.png",
+			"ascent": 9,
+			"height": 9,
+			"chars": ["\uEff7"]
+		},
+		{
+			"type": "bitmap",
+			"file": "kubejs:food_hunches/protein_half.png",
+			"ascent": 9,
+			"height": 9,
+			"chars": ["\uEff8"]
+		},
+		{
+			"type": "bitmap",
+			"file": "kubejs:food_hunches/carbs_half.png",
+			"ascent": 9,
+			"height": 9,
+			"chars": ["\uEff9"]
 		}
 	]
 }
