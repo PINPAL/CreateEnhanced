@@ -24,7 +24,6 @@ function handleDurability(event) {
 		if (
 			item.item.hasTag("kubejs:paxel") ||
 			item.item.hasTag("forge:armors") ||
-			item.item.getMod() == "easypaxellite" ||
 			item.item.hasTag("forge:tools/swords") ||
 			item.item.hasTag("forge:tools/knives") ||
 			item.item.hasTag("forge:tools/hoes") ||
@@ -40,14 +39,6 @@ function handleDurability(event) {
 			// Get ItemID without mod prefix
 			let itemID = item.item.getId();
 			itemID = itemID.replace(item.item.getMod() + ":", "");
-			// Handle Conversions
-			itemID = itemID.replace("golden", "copper");
-			itemID = itemID.replace("wooden", "wood");
-			if (item.item.getMod() == "easypaxellite") {
-				itemID = itemID.replace("diamond", "steel");
-				itemID = itemID.replace("netherite", "diamond");
-				itemID = itemID.replace("tempered_netherite", "netherite");
-			}
 
 			// Generate Replacement Item
 			let replacementItem = Item.of(`kubejs:broken_${itemID}`);

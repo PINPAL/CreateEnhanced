@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	toolUpgradeMats.forEach((material) => {
 		// Blade
 		event.recipes.create
-			.sequenced_assembly([`kubejs:${material.name}_blade`], "kubejs:wood_blade", [
+			.sequenced_assembly([`kubejs:${material.name}_blade`], "kubejs:wooden_blade", [
 				event.recipes.createDeploying(`kubejs:incomplete_${material.name}_blade`, [
 					`kubejs:incomplete_${material.name}_blade`,
 					material.cost,
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
 			.loops(Math.round(2 * material.costMultiplier));
 		// Paxel Head
 		event.recipes.create
-			.sequenced_assembly([`kubejs:${material.name}_head`], "kubejs:wood_head", [
+			.sequenced_assembly([`kubejs:${material.name}_head`], "kubejs:wooden_head", [
 				event.recipes.createDeploying(`kubejs:incomplete_${material.name}_head`, [
 					`kubejs:incomplete_${material.name}_head`,
 					material.cost,

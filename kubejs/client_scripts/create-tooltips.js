@@ -415,21 +415,20 @@ const itemsToTooltip = [
 ];
 
 const allPaxels = [
-	"easypaxellite:wood_paxel",
-	"easypaxellite:stone_paxel",
-	"easypaxellite:iron_paxel",
-	"easypaxellite:golden_paxel",
+	"kubejs:wooden_paxel",
+	"kubejs:stone_paxel",
 	"kubejs:copper_paxel",
-	"easypaxellite:diamond_paxel",
-	"easypaxellite:netherite_paxel",
-	"easypaxellite:tempered_netherite_paxel",
+	"kubejs:iron_paxel",
+	"kubejs:steel_paxel",
+	"kubejs:diamond_paxel",
+	"kubejs:netherite_paxel",
 ];
 allPaxels.forEach((paxel) => {
 	itemsToTooltip.push({
 		item: paxel,
 		summary: [
 			"$Breaks$ blocks like a $Pickaxe$.",
-			"$Mines$ blocks like a $Shovel$.",
+			"$Digs$ blocks like a $Shovel$.",
 			"$Cuts$ blocks like an $Axe$.",
 			"$Harvests$ blocks like a $Hoe$.",
 		],

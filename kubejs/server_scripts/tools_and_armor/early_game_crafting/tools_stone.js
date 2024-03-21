@@ -13,6 +13,6 @@ ServerEvents.recipes((event) => {
 
 	// Stone Pickaxe Upgrade (no smithing - no iron)
 	event
-		.shapeless("easypaxellite:stone_paxel", ["kubejs:stone_head", "easypaxellite:wood_paxel"])
+		.shapeless("kubejs:stone_paxel", ["kubejs:stone_head", "kubejs:wooden_paxel"])
 		.id("kubejs:stone_paxel_crafting");
 });

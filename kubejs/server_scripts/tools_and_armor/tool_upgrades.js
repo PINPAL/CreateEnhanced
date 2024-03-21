@@ -8,11 +8,10 @@ const toolUpgradingTiers = [
 			hasTools: true,
 			hasKnife: false,
 			hasBackpack: false,
-			paxel: "easypaxellite:stone_paxel",
 		},
 		previousTier: {
+			name: "wooden",
 			prefix: "minecraft:wooden",
-			paxel: "easypaxellite:wood_paxel",
 		},
 	},
 	{
@@ -40,14 +39,13 @@ const toolUpgradingTiers = [
 			hasBackpack: false,
 			horseArmor: "minecraft:golden_horse_armor",
 			knife: "create_things_and_misc:copper_knife",
-			paxel: "kubejs:copper_paxel",
 		},
 		previousTier: {
+			name: "stone",
 			prefix: "minecraft:stone",
 			horseArmor: "minecraft:leather_horse_armor",
 			armorPrefix: "minecraft:chainmail",
 			knife: "farmersdelight:flint_knife",
-			paxel: "easypaxellite:stone_paxel",
 		},
 	},
 	{
@@ -61,14 +59,13 @@ const toolUpgradingTiers = [
 			hasBackpack: true,
 			horseArmor: "minecraft:iron_horse_armor",
 			knife: "farmersdelight:iron_knife",
-			paxel: "easypaxellite:iron_paxel",
 		},
 		previousTier: {
+			name: "copper",
 			prefix: "kubejs:copper",
 			horseArmor: "minecraft:golden_horse_armor",
 			armorPrefix: "kubejs:copper",
 			knife: "create_things_and_misc:copper_knife",
-			paxel: "easypaxellite:golden_paxel",
 		},
 	},
 	{
@@ -81,13 +78,12 @@ const toolUpgradingTiers = [
 			hasKnife: true,
 			hasBackpack: true,
 			knife: "alloyed:steel_knife",
-			paxel: "easypaxellite:diamond_paxel",
 		},
 		previousTier: {
+			name: "iron",
 			prefix: "minecraft:iron",
 			armorPrefix: "minecraft:iron",
 			knife: "farmersdelight:iron_knife",
-			paxel: "easypaxellite:iron_paxel",
 		},
 	},
 	{
@@ -101,14 +97,13 @@ const toolUpgradingTiers = [
 			hasBackpack: true,
 			horseArmor: "minecraft:diamond_horse_armor",
 			knife: "farmersdelight:diamond_knife",
-			paxel: "easypaxellite:netherite_paxel",
 		},
 		previousTier: {
+			name: "steel",
 			prefix: "alloyed:steel",
 			horseArmor: "minecraft:iron_horse_armor",
 			armorPrefix: "alloyed:steel",
 			knife: "alloyed:steel_knife",
-			paxel: "easypaxellite:diamond_paxel",
 		},
 	},
 	{
@@ -122,14 +117,13 @@ const toolUpgradingTiers = [
 			hasBackpack: true,
 			horseArmor: "netherite_horse_armor:netherite_horse_armor",
 			knife: "farmersdelight:netherite_knife",
-			paxel: "easypaxellite:tempered_netherite_paxel",
 		},
 		previousTier: {
+			name: "diamond",
 			prefix: "minecraft:diamond",
 			horseArmor: "minecraft:diamond_horse_armor",
 			armorPrefix: "minecraft:diamond",
 			knife: "farmersdelight:diamond_knife",
-			paxel: "easypaxellite:netherite_paxel",
 		},
 	},
 ];
@@ -208,7 +202,11 @@ ServerEvents.recipes((event) => {
 			);
 			// Paxel
 			event.recipes.create.crushing(`kubejs:broken_${tier.tier}_paxel`, tier.properties.paxel);
-			event.smithing(tier.properties.paxel, tier.previousTier.paxel, `kubejs:${tier.tier}_head`);
+			event.smithing(
+				`kubejs:${tier.tier}_paxel`,
+				`kubejs:${tier.previousTier.name}_paxel`,
+				`kubejs:${tier.tier}_head`
+			);
 		}
 		// HORSE ARMOR
 		// ============================

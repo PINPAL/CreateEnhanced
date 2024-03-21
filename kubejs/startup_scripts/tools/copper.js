@@ -1,3 +1,5 @@
+//priority: 1
+
 ItemEvents.toolTierRegistry((event) => {
 	event.add("copper", (tier) => {
 		tier.uses = 180;
@@ -18,7 +20,7 @@ ItemEvents.armorTierRegistry((event) => {
 });
 
 StartupEvents.registry("item", (event) => {
-	const types = ["sword", "hoe", "helmet", "chestplate", "leggings", "boots", "paxel"];
+	const types = ["sword", "hoe", "helmet", "chestplate", "leggings", "boots"];
 	types.forEach((type) => {
 		event
 			.create(`copper_${type}`, `${type}`)
