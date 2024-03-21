@@ -1,8 +1,7 @@
 // priority: 999
 ServerEvents.tags("item", (event) => {
 	// Add paxel tag
-	event.add("kubejs:paxel", /easypaxellite:.*_paxel$/);
-	event.add("kubejs:paxel", "kubejs:copper_paxel");
+	event.add("kubejs:paxel", /kubejs:.*_paxel$/);
 });
 
 ServerEvents.tags("block", (event) => {

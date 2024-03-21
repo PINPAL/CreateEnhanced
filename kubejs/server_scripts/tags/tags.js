@@ -231,16 +231,16 @@ ServerEvents.tags("item", (event) => {
 		event.remove("sliceanddice:allowed_tools", item);
 	});
 
-	const easyPaxels = [
-		"easypaxellite:wood_paxel",
-		"easypaxellite:stone_paxel",
-		"easypaxellite:iron_paxel",
-		"easypaxellite:golden_paxel",
-		"easypaxellite:diamond_paxel",
-		"easypaxellite:netherite_paxel",
-		"easypaxellite:tempered_netherite_paxel",
+	const paxels = [
+		"kubejs:wooden_paxel",
+		"kubejs:stone_paxel",
+		"kubejs:copper_paxel",
+		"kubejs:iron_paxel",
+		"kubejs:steel_paxel",
+		"kubejs:diamond_paxel",
+		"kubejs:netherite_paxel",
 	];
-	easyPaxels.forEach((item) => {
+	paxels.forEach((item) => {
 		event.add("forge:axes", item);
 		event.add("forge:tools/axes", item);
 		event.add("minecraft:axes", item);

@@ -176,9 +176,6 @@ const hideFromJEI = [
 	"alloyed:bronze_nugget",
 	"alloyed:bronze_sheet",
 
-	"easypaxellite:netherite_paxel_ingot",
-	"easypaxellite:golden_paxel",
-
 	"refinedstorageaddons:creative_wireless_crafting_grid",
 
 	"ironjetpacks:strap",
