@@ -450,7 +450,7 @@
 				id: "444AF8A4D0239ED1"
 				item: {
 					Count: 1b
-					id: "easypaxellite:wood_paxel"
+					id: "kubejs:wooden_paxel"
 					tag: {
 						Damage: 0
 					}
@@ -557,7 +557,7 @@
 				id: "1410B61E7EB08E76"
 				item: {
 					Count: 1b
-					id: "easypaxellite:stone_paxel"
+					id: "kubejs:stone_paxel"
 					tag: {
 						Damage: 0
 					}
@@ -938,7 +938,7 @@
 				id: "329B8328A81B9F47"
 				item: {
 					Count: 1b
-					id: "easypaxellite:iron_paxel"
+					id: "kubejs:iron_paxel"
 					tag: {
 						Damage: 0
 					}
@@ -1071,8 +1071,15 @@
 		{
 			dependencies: ["06B04C606CE4187C"]
 			dependency_requirement: "one_started"
+			description: ["&lTip: &r&7Soul Beeds can be used to quickly locate the a fortress. When used they fly towards the nearest fortress.&r"]
 			icon: "minecraft:netherrack"
 			id: "6DD58DEC49782F4E"
+			rewards: [{
+				count: 8
+				id: "4018AD0AD040B22C"
+				item: "quark:soul_bead"
+				type: "item"
+			}]
 			subtitle: "Enter the&6 Nether"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -1418,7 +1425,7 @@
 			hide: true
 			icon: {
 				Count: 1b
-				id: "alloyed:steel_chestplate"
+				id: "kubejs:steel_chestplate"
 				tag: {
 					Damage: 0
 				}
