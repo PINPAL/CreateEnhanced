@@ -1,14 +1,13 @@
-name = "Salt"
-filename = "salt-1.19.2-1.2.1.jar"
-side = "both"
+filename = 'salt-1.19.2-1.2.4.jar'
+name = 'Salt'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/CrDd9QcD/versions/weA3nPyx/salt-1.19.2-1.2.1.jar"
-hash-format = "sha512"
-hash = "4de6ad4fa6436d5c21cbb640624e7a8e4601c2b60735330fbd89e94b967fcb7393893b23af71785022b8eed7d417941a15abccc39d84fb95fc7b13fb7075d36b"
+hash = 'dedc7f16b1962c0372e75661838bd9cee053029a99fee4e4cee468c9755cd92fdc97175b071e21db23a083c45879627ec1d61afe5c5c2cd49e60944afe06f843'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/CrDd9QcD/versions/T32TNqhF/salt-1.19.2-1.2.4.jar'
 
-[update]
 [update.modrinth]
-mod-id = "CrDd9QcD"
-version = "weA3nPyx"
+mod-id = 'CrDd9QcD'
+version = 'T32TNqhF'

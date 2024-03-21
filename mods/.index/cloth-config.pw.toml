@@ -1,14 +1,13 @@
-name = "Cloth Config v8 API"
-filename = "cloth-config-8.3.103-forge.jar"
-side = "both"
+filename = 'cloth-config-8.3.115-forge.jar'
+name = 'Cloth Config v8 API'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/9s6osm5g/versions/EUyHCmUW/cloth-config-8.3.103-forge.jar"
-hash-format = "sha512"
-hash = "8a69e844d29dcfbddcc9ce07cbde84b2a147a9f368d075bcc01717af3b4aa77710c80835124e8fd508db2b9d326f7f157eb91d3fb308e2da9fd625d1fc617ffd"
+hash = 'b0a894303734dc029ce4b2c49736c1ec9af91821ee2b5d72a5c4d7a74409712be5748a018613d416cfe1059f5ceb0510401855422e81ab888f9949e4c250d453'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9s6osm5g/versions/o6AGzycg/cloth-config-8.3.115-forge.jar'
 
-[update]
 [update.modrinth]
-mod-id = "9s6osm5g"
-version = "EUyHCmUW"
+mod-id = '9s6osm5g'
+version = 'o6AGzycg'

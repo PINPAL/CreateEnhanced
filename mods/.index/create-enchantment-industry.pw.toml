@@ -1,14 +1,13 @@
-name = "Create Enchantment Industry"
-filename = "create_enchantment_industry-1.19.2-for-create-0.5.1.c-1.2.6.b.jar"
-side = "both"
+filename = 'create_enchantment_industry-1.19.2-for-create-0.5.1.f-1.2.8.jar'
+name = 'Create Enchantment Industry'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/JWGBpFUP/versions/ciiFU0T3/create_enchantment_industry-1.19.2-for-create-0.5.1.c-1.2.6.b.jar"
-hash-format = "sha512"
-hash = "faa736517c4d07a251e84eeec1aa165050b4643fadff32a6c98fc612da26f41e0511b7ab981db0da937a951beec897007f4541022cf07c04a44df10f2e9be354"
+hash = '6eb50ef36b6c468228b1bf27679ba674b5cba57acc8c398d2c44a0561acd623cd68ecf8b0f981023b86c2dee2d071e5eeccf00a8905e8649d835cb0148d6ce6d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/JWGBpFUP/versions/28n7KncC/create_enchantment_industry-1.19.2-for-create-0.5.1.f-1.2.8.jar'
 
-[update]
 [update.modrinth]
-mod-id = "JWGBpFUP"
-version = "ciiFU0T3"
+mod-id = 'JWGBpFUP'
+version = '28n7KncC'

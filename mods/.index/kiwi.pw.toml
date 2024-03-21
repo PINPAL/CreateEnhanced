@@ -1,14 +1,13 @@
-name = "Kiwi 🥝"
-filename = "Kiwi-1.19.1-forge-8.3.4.jar"
-side = "both"
+filename = 'Kiwi-1.19.2-forge-8.3.6.jar'
+name = 'Kiwi'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/ufdDoWPd/versions/wc9IhZWY/Kiwi-1.19.1-forge-8.3.4.jar"
-hash-format = "sha512"
-hash = "77592351a9e6257f020bb29c9859e3e8a48dfc2308569b348b7421033e53c3a292c0be8e2fe97646421811433d746f5b148bbfd29e1389151c0248fe3099f476"
+hash = 'd68d76a4f082fc686063631faa558c6b421194f05ae9fab8c746d6a4c057f3648e09995eee2aac5dffc19ccb14a1b941dd06035690aa387610fd0b0bd9a0b570'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ufdDoWPd/versions/yQbhR062/Kiwi-1.19.2-forge-8.3.6.jar'
 
-[update]
 [update.modrinth]
-mod-id = "ufdDoWPd"
-version = "wc9IhZWY"
+mod-id = 'ufdDoWPd'
+version = 'yQbhR062'

@@ -1,14 +1,13 @@
-name = "Create Sifting"
-filename = "createsifter-1.19.2-1.7.5.c-36.jar"
-side = "both"
+filename = 'createsifter-1.19.2-1.8.1.e-44.jar'
+name = 'Create Sifter'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/r018adCw/versions/onqcUIjj/createsifter-1.19.2-1.7.5.c-36.jar"
-hash-format = "sha512"
-hash = "2be60b7ef4ebe5eb660dea099185557a3e105913b668d75f21a1ffc6d5ed6157869e5452ff0495ff27e1a1b94248dfd66c12a18fab567acb4222d4ebd2dfb18d"
+hash = '21108e16eb4c1c6cb8380ed28efe2f3050a9a217d0f9a826eb5bffc4a0b36af3bbfcd36b6737da8e14897ab529f7f45e8515d4b83ea93a30c7ec37ca788ec4f5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/r018adCw/versions/bYgWxuGU/createsifter-1.19.2-1.8.1.e-44.jar'
 
-[update]
 [update.modrinth]
-mod-id = "r018adCw"
-version = "onqcUIjj"
+mod-id = 'r018adCw'
+version = 'bYgWxuGU'

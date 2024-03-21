@@ -1,0 +1,13 @@
+filename = 'create_connected-0.7.4-mc1.19.2-all.jar'
+name = 'Create: Connected'
+side = 'both'
+
+[download]
+hash = '1f36dcf5433b38d5889c02dd0ed0f953f6a4e130a0100f7cd43c785d153f6079e2fb99a0cdda8692ebf68321bf34629409a8819ea873f052630d7304f63caf1f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Vg5TIO6d/versions/GefGO2KP/create_connected-0.7.4-mc1.19.2-all.jar'
+
+[update.modrinth]
+mod-id = 'Vg5TIO6d'
+version = 'GefGO2KP'
