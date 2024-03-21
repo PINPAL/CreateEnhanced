@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		{
 			name: "steel",
 			modId: "kubejs",
-			knifeMod: "alloyed",
+			noKnife: true,
 			material: "#forge:ingots/steel",
 		},
 		{
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
 			toolsItemList.forEach((item) => {
 				// Get the repair item
 				// If the item is a paxel, use kubejs instead of modID/minecraft
-				// If the material has a modId, use that, otherwise use minecraft (eg: alloyed:steel instead of minecraft:steel)
+				// If the material has a modId, use that, otherwise use minecraft (eg: create_dd:steel instead of minecraft:steel)
 				// If the material has a minecraftId, use that, otherwise use the material name (eg: wooden instead of wood)
 				// Add the item name (eg: sword)
 				let repairedItem =
@@ -91,7 +91,7 @@ ServerEvents.recipes((event) => {
 		// Skip knife for chainmail, leather, stone and wood
 		if (!material.hasOwnProperty("noKnife")) {
 			// Get the repair item
-			// If the material has a knifeMod, use that, otherwise use farmersdelight (eg: alloyed:steel instead of farmersdelight:steel)
+			// If the material has a knifeMod, use that, otherwise use farmersdelight (eg: crete_dd:steel instead of farmersdelight:steel)
 			let repairedItem =
 				(material.hasOwnProperty("knifeMod") ? material.knifeMod : "farmersdelight") +
 				":" +
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
 		if (!material.hasOwnProperty("noArmor")) {
 			armors.forEach((item) => {
 				// Get the repair item
-				// If the material has a modId, use that, otherwise use minecraft (eg: alloyed:steel instead of minecraft:steel)
+				// If the material has a modId, use that, otherwise use minecraft (eg: create_dd:steel instead of minecraft:steel)
 				// If the material has a minecraftId, use that, otherwise use the material name (eg: wooden instead of wood)
 				// Add the item name (eg: sword)
 				let repairedItem =

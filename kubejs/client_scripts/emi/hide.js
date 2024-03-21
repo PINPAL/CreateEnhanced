@@ -29,7 +29,6 @@ const hideFromJEI = [
 	/kubejs:broken_.*/,
 	/kubejs:incomplete_.*/,
 	/create_central_kitchen:incomplete_.*/,
-	/alloyed:.*vertical_slab/,
 	/createdeco:.*slab_vert/,
 	/createaddition:.*electrum.*/,
 	/createindustry:.*concrete.*/,
@@ -48,21 +47,18 @@ const hideFromJEI = [
 	"minecraft:golden_axe",
 	"minecraft:diamond_axe",
 	"minecraft:netherite_axe",
-	"alloyed:steel_axe",
 	"minecraft:wooden_shovel",
 	"minecraft:stone_shovel",
 	"minecraft:iron_shovel",
 	"minecraft:golden_shovel",
 	"minecraft:diamond_shovel",
 	"minecraft:netherite_shovel",
-	"alloyed:steel_shovel",
 	"minecraft:wooden_pickaxe",
 	"minecraft:stone_pickaxe",
 	"minecraft:iron_pickaxe",
 	"minecraft:golden_pickaxe",
 	"minecraft:diamond_pickaxe",
 	"minecraft:netherite_pickaxe",
-	"alloyed:steel_pickaxe",
 
 	// Hide Golden Tools & Armor
 	"minecraft:golden_sword",
@@ -163,18 +159,6 @@ const hideFromJEI = [
 
 	"farmersdelight:golden_knife",
 	"farmersdelight:netherite_knife",
-
-	"alloyed:steel_pickaxe",
-	"alloyed:steel_shovel",
-	"alloyed:steel_axe",
-	"alloyed:steel_shears",
-	"alloyed:steel_fishing_rod",
-	"alloyed:steel_ingot",
-	"alloyed:steel_nugget",
-	"alloyed:steel_sheet",
-	"alloyed:bronze_ingot",
-	"alloyed:bronze_nugget",
-	"alloyed:bronze_sheet",
 
 	"refinedstorageaddons:creative_wireless_crafting_grid",
 

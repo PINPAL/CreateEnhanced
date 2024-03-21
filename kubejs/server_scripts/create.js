@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 		{ mod: "create", item: "zinc", type: "ingots" },
 		{ mod: "create", item: "brass", type: "ingots" },
 		{ mod: "create_dd", item: "bronze", type: "ingots" },
-		{ mod: "alloyed", item: "steel", type: "ingots" },
+		{ mod: "create_dd", item: "steel", type: "ingots" },
 		{ mod: "create_dd", item: "mithril", type: "ingots" },
 		{ mod: "createdeco", item: "cast_iron", type: "ingots" },
 	].forEach((block) => {

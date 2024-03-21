@@ -18,7 +18,6 @@ const outputsToRemove = [
 
 	// Vertical Slabs
 	/createdeco:.*slab_vert/,
-	/alloyed:.*vertical_slab/,
 	/v_slab_compat:createindustry\/.*concrete.*/,
 
 	// Supplementaries
@@ -35,26 +34,6 @@ const outputsToRemove = [
 
 	// Farmers Delight
 	"farmersdelight:cooking_pot",
-
-	// Alloyed
-	"alloyed:bronze_ingot",
-	"alloyed:bronze_nugget",
-	"alloyed:bronze_sheet",
-	"alloyed:bronze_block",
-	"alloyed:steel_ingot",
-	"alloyed:steel_nugget",
-	"alloyed:steel_sheet",
-	"alloyed:steel_pickaxe",
-	"alloyed:steel_shovel",
-	"alloyed:steel_axe",
-	"alloyed:steel_shears",
-	"alloyed:steel_fishing_rod",
-	"alloyed:steel_sword",
-	"alloyed:steel_hoe",
-	"alloyed:steel_helmet",
-	"alloyed:steel_chestplate",
-	"alloyed:steel_leggings",
-	"alloyed:steel_boots",
 
 	// Create Deco
 	"createdeco:netherite_bars",

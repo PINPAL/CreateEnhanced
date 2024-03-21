@@ -71,19 +71,17 @@ const toolUpgradingTiers = [
 	{
 		tier: "steel",
 		properties: {
-			prefix: "alloyed:steel",
+			prefix: "kubejs:steel",
 			hasArmor: true,
 			hasHorseArmor: false,
 			hasTools: true,
-			hasKnife: true,
+			hasKnife: false,
 			hasBackpack: true,
-			knife: "alloyed:steel_knife",
 		},
 		previousTier: {
 			name: "iron",
 			prefix: "minecraft:iron",
 			armorPrefix: "minecraft:iron",
-			knife: "farmersdelight:iron_knife",
 		},
 	},
 	{
@@ -100,10 +98,10 @@ const toolUpgradingTiers = [
 		},
 		previousTier: {
 			name: "steel",
-			prefix: "alloyed:steel",
+			prefix: "kubejs:steel",
 			horseArmor: "minecraft:iron_horse_armor",
-			armorPrefix: "alloyed:steel",
-			knife: "alloyed:steel_knife",
+			armorPrefix: "kubejs:steel",
+			knife: "farmersdelight:iron_knife",
 		},
 	},
 	{

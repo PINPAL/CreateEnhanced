@@ -95,12 +95,6 @@ const idsToRemove = [
 	"create:splashing/crushed_raw_iron",
 	"create:crafting/appliances/copper_backtank",
 
-	// Create Allyoed
-	"alloyed:item_application/steel_casing_from_log",
-	"alloyed:item_application/steel_casing_from_wood",
-	"alloyed:item_application/steel_casing_from_log_using_deployer",
-	"alloyed:item_application/steel_casing_from_wood_using_deployer",
-
 	// Broken Recipes
 	"createindustry:colored_concrete/full_block/pink_concrete",
 	"create_crystal_clear:steel_tinted_glass_casing",

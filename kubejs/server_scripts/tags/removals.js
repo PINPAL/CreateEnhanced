@@ -67,15 +67,6 @@ const removedItems = [
 	"minecraft:golden_helmet",
 	"minecraft:golden_leggings",
 
-	/alloyed:.*pickaxe.*/,
-	/alloyed:.*shovel.*/,
-	/alloyed:.*axe.*/,
-	/alloyed:.*shears.*/,
-	/alloyed:.*fishing_rod.*/,
-	"alloyed:bronze_ingot",
-	"alloyed:bronze_nugget",
-	"alloyed:bronze_nugget",
-
 	"easy_villagers:iron_farm",
 
 	/metalbarrels:.*_to_.*/,
