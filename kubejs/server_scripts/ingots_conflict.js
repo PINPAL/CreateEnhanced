@@ -35,31 +35,32 @@ ServerEvents.recipes((event) => {
 				Item.of("#forge:plates/steel").withChance(0.08),
 				Item.of("#forge:ingots/steel").withChance(0.08),
 				Item.of("#forge:ingots/aluminum").withChance(0.05),
-				Item.of("createindustry:industrial_pipe").withChance(0.03),
+				Item.of("createindustry:cast_iron_pipe").withChance(0.03),
 			],
 			// the input
 			"#forge:plates/steel",
 			[
-				event.recipes.createDeploying("createindustry:unprocessed_steel_mechanism", [
-					"createindustry:unprocessed_steel_mechanism",
+				event.recipes.createDeploying("createindustry:unfinished_steel_mechanism", [
+					"createindustry:unfinished_steel_mechanism",
 					"#forge:ingots/steel",
 				]),
-				event.recipes.createDeploying("createindustry:unprocessed_steel_mechanism", [
-					"createindustry:unprocessed_steel_mechanism",
+				event.recipes.createDeploying("createindustry:unfinished_steel_mechanism", [
+					"createindustry:unfinished_steel_mechanism",
 					"#forge:ingots/aluminum",
 				]),
-				event.recipes.createDeploying("createindustry:unprocessed_steel_mechanism", [
-					"createindustry:unprocessed_steel_mechanism",
+				event.recipes.createDeploying("createindustry:unfinished_steel_mechanism", [
+					"createindustry:unfinished_steel_mechanism",
 					"createindustry:screw",
 				]),
-				event.recipes.createDeploying("createindustry:unprocessed_steel_mechanism", [
-					"createindustry:unprocessed_steel_mechanism",
+				event.recipes.createDeploying("createindustry:unfinished_steel_mechanism", [
+					"createindustry:unfinished_steel_mechanism",
 					"createindustry:screwdriver",
 				]),
 			]
 		)
-		.transitionalItem("createindustry:unprocessed_steel_mechanism")
-		.loops(3);
+		.transitionalItem("createindustry:unfinished_steel_mechanism")
+		.loops(3)
+		.id("kubejs:createindustry/steel_mechanism");
 
 	event.remove({ output: "createindustry:diesel_engine" });
 	event.recipes
@@ -90,7 +91,8 @@ ServerEvents.recipes((event) => {
 			]),
 		])
 		.transitionalItem("createindustry:heavy_machinery_casing")
-		.loops(8);
+		.loops(8)
+		.id("kubejs:createindustry/diesel_engine");
 });
 
 // Fix Steel/Bronze/Cast Iron Conflicts
@@ -101,6 +103,7 @@ ServerEvents.tags("item", (event) => {
 	event.remove("forge:plates/strong_bronze", "create_dd:bronze_sheet");
 
 	// Create: The Factory Must Grow
+	event.remove("forge:plates/steel", "createindustry:heavy_plate");
 	event.remove("forge:ingots/steel", "createindustry:steel_ingot");
 	event.remove("forge:ingots/cast_iron", "createindustry:cast_iron_ingot");
 	event.remove("forge:blocks/cast_iron", "createindustry:cast_iron_block");

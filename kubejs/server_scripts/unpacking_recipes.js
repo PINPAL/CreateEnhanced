@@ -30,14 +30,11 @@ ServerEvents.recipes((event) => {
 			output: "minecraft:gold_ingot",
 			count: 4,
 		},
-		{
-			input: "createindustry:steel_trapdoor",
-			output: "create_dd:steel_ingot",
-			count: 6,
-		},
 	];
 
 	unpackingRecipes.forEach((recipe) => {
-		event.recipes.create.crushing(`${recipe.count}x ${recipe.output}`, recipe.input);
+		event.recipes.create
+			.crushing(`${recipe.count}x ${recipe.output}`, recipe.input)
+			.id(`kubejs:unpacking/${recipe.input.replace(":", "/")}`);
 	});
 });

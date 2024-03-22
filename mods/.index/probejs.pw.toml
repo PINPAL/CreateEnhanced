@@ -1,14 +1,13 @@
-name = "ProbeJS"
-filename = "probejs-5.3.1-forge.jar"
-side = "both"
+filename = 'probejs-5.3.4-forge.jar'
+name = 'ProbeJS'
+side = 'both'
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "64fe6eb5f0e013a99101202faa89f541db5025be"
+hash = '2bea94dcc58526dccb546dc01a06284a5bc14c28'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update]
 [update.curseforge]
-file-id = 4744799
+file-id = 5002340
 project-id = 585406

@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 		// Recipe for Drawers
 		event.shaped(`${wood.mod}${wood.name}_full_drawers_1`, ["V V", " W ", "V V"], {
 			W: getDrawerLogTag(wood),
-			V: "create:item_vault",
+			V: "#kubejs:item_vaults",
 		});
 		// Stone Cutting 1x1 Drawers into 2x2 & 2x1 Drawers
 		event.stonecutting(`${wood.mod}${wood.name}_full_drawers_2`, `#kubejs:${wood.name}_drawers`);

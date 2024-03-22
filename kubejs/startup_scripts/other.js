@@ -45,9 +45,12 @@ StartupEvents.registry("block", (event) => {
 StartupEvents.registry("item", (event) => {
 	// Refined Rock
 	event.create("refined_stone").displayName("Refined Rock");
+	// Cornflower Bush Item
 	event
 		.create("cornflower_bush_item")
 		.displayName("Cornflower Bush")
 		.tag("minecraft:flowers")
 		.tag("minecraft:tall_flowers");
+	// Insulation Brush
+	event.create("insulation_brush").displayName("Insulation Brush").maxDamage(99);
 });
