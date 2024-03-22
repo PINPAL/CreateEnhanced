@@ -177,7 +177,6 @@ const removedItems = [
 
 	"metalbarrels:copper_barrel",
 	"create:copper_backtank_placeable",
-	"create:copper_backtank",
 	"create:netherite_backtank_placeable",
 
 	"createindustry:zinc_grenade",
