@@ -11,6 +11,7 @@ const hideFromJEI = [
 	/metalbarrels:.*/,
 
 	// Regex Match
+	/createcasing:.*mldeg.*/,
 	/createcasing:.*oak_shaft/,
 	/createcasing:.*spruce_shaft/,
 	/createcasing:.*birch_shaft/,
