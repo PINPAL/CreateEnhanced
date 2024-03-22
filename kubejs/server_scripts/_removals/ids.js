@@ -101,7 +101,26 @@ const idsToRemove = [
 
 	// Broken Recipes
 	"createindustry:colored_concrete/full_block/pink_concrete",
+	"createindustry:colored_concrete/full_block/pink_concrete_q",
+	"createindustry:colored_concrete/full_block/lime_concrete_q",
+	"createindustry:colored_concrete/full_block/gray_concrete_q",
+	"createindustry:colored_concrete/full_block/red_concrete_q",
+	"createindustry:colored_concrete/full_block/purple_concrete_q",
+	"createindustry:colored_concrete/full_block/light_gray_concrete_q",
+	"createindustry:colored_concrete/full_block/cyan_concrete_q",
+	"createindustry:colored_concrete/full_block/blue_concrete_q",
+	"createindustry:colored_concrete/full_block/brown_concrete_q",
+	"createindustry:colored_concrete/full_block/green_concrete_q",
+	"createindustry:colored_concrete/full_block/red_concrete_q",
+	"createindustry:colored_concrete/full_block/yellow_concrete_q",
+	"createindustry:colored_concrete/full_block/light_blue_concrete_q",
+	"createindustry:colored_concrete/full_block/magenta_concrete_q",
+	"createindustry:colored_concrete/full_block/orange_concrete_q",
+	"createindustry:colored_concrete/full_block/white_concrete_q",
+	"createindustry:colored_concrete/full_block/black_concrete_q",
 	"create_crystal_clear:steel_tinted_glass_casing",
+	"design_decor:item_application/millstones/special_aluminum_cylinder",
+	"design_decor:item_application/crushing_wheels/special_aluminum_cylinder",
 ];
 
 ServerEvents.recipes((event) => {
