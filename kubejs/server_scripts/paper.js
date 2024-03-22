@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
 	// Wood Pulping
 	event.recipes.create.mixing(
 		[Fluid.of("create_paper_line:wood_pulp", 200)],
-		[Fluid.of("minecraft:water", 250), "createindustry:sawdust", "farmersdelight:tree_bark"]
+		[Fluid.of("minecraft:water", 250), "create_paper_line:saw_dust", "farmersdelight:tree_bark"]
 	);
 
 	// Replacing create_paper_line:wood_chips with farmsdelight:tree_bark
@@ -42,10 +42,14 @@ ServerEvents.recipes((event) => {
 	]);
 
 	// Merging Saw Dust
-	event.replaceInput({ input: "create_paper_line:saw_dust" }, "create_paper_line:saw_dust", "createindustry:sawdust");
+	event.replaceInput(
+		{ input: "create_paper_line:saw_dust" },
+		"create_paper_line:saw_dust",
+		"create_paper_line:saw_dust"
+	);
 	event.replaceOutput(
 		{ output: "create_paper_line:saw_dust" },
 		"create_paper_line:saw_dust",
-		"createindustry:sawdust"
+		"create_paper_line:saw_dust"
 	);
 });

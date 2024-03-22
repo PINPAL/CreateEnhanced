@@ -57,6 +57,7 @@
   "immersiveengineering:multiblock_icon": null,
   "create_paper_line:data": null,
   "melter:melter_data": null,
+  "create:backtank_capacity": null,
   "melter:melter_data": null,
   "corpse:corpse": null,
   "create:blaze_burner": null,

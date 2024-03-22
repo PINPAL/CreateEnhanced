@@ -252,6 +252,10 @@ ServerEvents.tags("item", (event) => {
 		event.add("minecraft:tools/axes", item);
 	});
 
+	const itemVaults = ["create:item_vault", "create_connected:item_silo"].forEach((item) => {
+		event.add("kubejs:item_vaults", item);
+	});
+
 	const decals = [
 		"create_things_and_misc:train_sing",
 		"create_things_and_misc:train_sing_2",

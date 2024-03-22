@@ -95,6 +95,9 @@ const idsToRemove = [
 	"create:splashing/crushed_raw_iron",
 	"create:crafting/appliances/copper_backtank",
 
+	// Create Connected
+	"create_connected:crafting/kinetics/item_silo",
+
 	// Broken Recipes
 	"createindustry:colored_concrete/full_block/pink_concrete",
 	"create_crystal_clear:steel_tinted_glass_casing",

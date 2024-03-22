@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 	);
 	event.recipes.create.mixing(
 		["minecraft:slime_ball"],
-		["createindustry:sawdust", Fluid.of("create_things_and_misc:slime", 100)]
+		["create_paper_line:saw_dust", Fluid.of("create_things_and_misc:slime", 100)]
 	);
 
 	colors.forEach((colorObject) => {
@@ -132,9 +132,9 @@ ServerEvents.recipes((event) => {
 		// Dye
 		event.recipes.create.mixing(
 			["minecraft:" + colorObject.color + "_dye"],
-			["createindustry:sawdust", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500)]
+			["create_paper_line:saw_dust", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500)]
 		);
-		// Concrete Powder
+		// Concrete
 		event.recipes.create.mixing(
 			["minecraft:" + colorObject.color + "_concrete"],
 			["createindustry:concrete", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125)]
@@ -251,14 +251,6 @@ ServerEvents.recipes((event) => {
 		event.recipes.create.mixing(
 			["create:" + colorObject.color + "_valve_handle"],
 			["create:copper_valve_handle", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 125)]
-		);
-		// Supplementaries Present
-		event.remove({
-			output: `supplementaries:present_${colorObject.color}`,
-		});
-		event.recipes.create.mixing(
-			[`supplementaries:present_${colorObject.color}`],
-			["supplementaries:present", Fluid.of("kubejs:" + colorObject.color + "_dye_fluid", 500)]
 		);
 	});
 

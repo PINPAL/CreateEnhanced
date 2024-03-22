@@ -2,6 +2,7 @@
 ServerEvents.tags("item", (event) => {
 	// Add paxel tag
 	event.add("kubejs:paxel", /kubejs:.*_paxel$/);
+	event.add("forge:tools/hoe", /kubejs:.*_paxel$/);
 });
 
 ServerEvents.tags("block", (event) => {

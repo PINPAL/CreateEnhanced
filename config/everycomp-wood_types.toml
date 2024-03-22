@@ -357,6 +357,9 @@
 			scorchia_castel_tile = true
 			veridium_castel_tile = true
 
+		[types.cut_block_type.kubejs]
+			waterproof = true
+
 [entries]
 
 	[entries.wood_type]

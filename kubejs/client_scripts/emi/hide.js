@@ -81,7 +81,6 @@ const hideFromJEI = [
 	"create_things_and_misc:zinc_knife",
 
 	"create_paper_line:frame",
-	"create_paper_line:saw_dust",
 	"create_paper_line:wood_chips",
 
 	"create_dd:kinetic_motor",
@@ -103,6 +102,12 @@ const hideFromJEI = [
 	"create_dd:industrial_iron_sheet",
 	"create_dd:deforester_saw",
 	"createdeco:zinc_sheet",
+	"create_dd:copycat_slab",
+
+	/create_connected:copycat_.*/,
+	"create_connected:control_chip",
+	"create_connected:brass_gearbox",
+	"create_connected:vertical_brass_gearbox",
 
 	"createaddition:digital_adapter",
 	"createadditon:zinc_sheet",
@@ -116,6 +121,7 @@ const hideFromJEI = [
 	"createindustry:napalm",
 	"createindustry:factory_floor",
 	"createindustry:factory_floor_slab",
+	"createindustry:steel_block",
 	"createindustry:steel_ingot",
 	"createindustry:cast_iron_ingot",
 	"createindustry:cast_iron_block",
@@ -123,6 +129,8 @@ const hideFromJEI = [
 	"createindustry:steel_scaffolding",
 	"createindustry:industrial_barrel",
 	"createindustry:caution_block",
+	"createindustry:zinc_grenade",
+	"createindustry:copper_grenade",
 
 	"createsifter:custom_mesh",
 	"createsifter:zinc_mesh",
