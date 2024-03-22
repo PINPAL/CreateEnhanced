@@ -125,6 +125,7 @@ const outputsToRemove = [
 	"createindustry:mesh",
 	"createindustry:thermite_powder",
 	"createindustry:factory_floor",
+	"createindustry:factory_floor_stairs",
 	"createindustry:factory_floor_slab",
 	/v_slab_compat:createindustry\/.*factory_floor.*/,
 	"createindustry:industrial_barrel",

@@ -122,6 +122,7 @@ const hideFromJEI = [
 	"createindustry:napalm",
 	"createindustry:factory_floor",
 	"createindustry:factory_floor_slab",
+	"createindustry:factory_floor_stairs",
 	"createindustry:steel_block",
 	"createindustry:steel_ingot",
 	"createindustry:cast_iron_ingot",
