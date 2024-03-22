@@ -75,6 +75,7 @@ const idsToRemove = [
 	/create_things_and_misc:.*_sail_craft.*/,
 	/create_things_and_misc:.*_sail/,
 	"create_things_and_misc:brass_speaker_craft",
+	"create_things_and_misc:diluted_bonemeal_craft",
 
 	// Create Industry
 	"createindustry:compacting/steel_block",

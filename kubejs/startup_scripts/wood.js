@@ -1,6 +1,6 @@
 const woodTypes = [
-	{ name: "hardened", namespace: "kubejs" },
-	{ name: "waterproof", namespace: "createindustry" },
+	{ name: "hardened", namespace: "createindustry" },
+	{ name: "waterproof", namespace: "kubejs" },
 ];
 
 const woodVariants = ["stairs", "slab", "fence", "fence_gate", "wooden_button", "wooden_pressure_plate"];
