@@ -1,6 +1,3 @@
-const ModBlockProperties = Java.loadClass("lilypuree.decorative_blocks.blocks.state.ModBlockProperties");
-const SupportFaceShape = Java.loadClass("lilypuree.decorative_blocks.blocks.state.SupportFaceShape");
-
 ServerEvents.recipes((event) => {
 	// Lattice
 	event.shaped(Item.of("decorative_blocks:lattice"), ["SS ", "SS ", "   "], {

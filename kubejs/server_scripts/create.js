@@ -105,6 +105,16 @@ ServerEvents.recipes((event) => {
 		B: "create_dd:bronze_casing",
 	});
 
+	// Insulation Brush
+	event.shaped("kubejs:insulation_brush", ["HS", "NH"], {
+		H: "minecraft:honeycomb",
+		S: "#forge:plates/iron",
+		N: "#forge:nuggets/iron",
+	});
+
+	// Harder Copper Casing
+	event.recipes.create.item_application("create:copper_casing", ["kubejs:waterproof_planks", "#forge:ingots/copper"]);
+
 	// Harder Spout
 	event.shaped(Item.of("create:spout"), [" C ", " K ", " S "], {
 		C: "create:copper_casing",
@@ -135,11 +145,11 @@ ServerEvents.recipes((event) => {
 	event.stonecutting("createindustry:concrete_stairs", "createindustry:concrete");
 	event.stonecutting("createindustry:concrete_wall", "createindustry:concrete");
 	event.recipes.create.filling("createindustry:liquid_concrete_bucket", [
-		Fluid.of("createindustry:liquid_concrete_fluid", 500),
+		Fluid.of("createindustry:liquid_concrete", 500),
 		"minecraft:bucket",
 	]);
 	event.recipes.create.emptying(
-		[Fluid.of("createindustry:liquid_concrete_fluid", 500), "minecraft:bucket"],
+		[Fluid.of("createindustry:liquid_concrete", 500), "minecraft:bucket"],
 		"createindustry:liquid_concrete_bucket"
 	);
 
@@ -167,6 +177,12 @@ ServerEvents.recipes((event) => {
 		I: "create_dd:integrated_mechanism",
 	});
 
+	// Harder Item Silo
+	event.shaped("2x create_connected:item_silo", ["   ", "IOI", "   "], {
+		I: "#forge:ingots/iron",
+		O: "create_dd:overburden_casing",
+	});
+
 	// Harder Drill
 	event.shaped(Item.of("create:mechanical_drill"), [" A ", "ASA", " C "], {
 		A: "create:andesite_alloy",
@@ -191,6 +207,13 @@ ServerEvents.recipes((event) => {
 		S: "create:display_board",
 		M: "create_dd:integrated_mechanism",
 	});
+
+	// Remove Control Chip
+	event.replaceInput(
+		{ input: "create_connected:control_chip" },
+		"create_connected:control_chip",
+		"#forge:storage_blocks/redstone"
+	);
 
 	// Mithril Ingot
 	event.recipes.create
@@ -232,14 +255,63 @@ ServerEvents.recipes((event) => {
 		Item.of("minecraft:air")
 	);
 
-	// Fix Coal Coke
-	event.recipes.create.mixing("createindustry:coal_coke", "#minecraft:coals").heated();
-
 	// Harder Steel
-	event.recipes.create
-		.compacting("create_dd:steel_ingot", ["2x #forge:ingots/cast_iron", "createindustry:coal_coke"])
-		.heated()
-		.id("kubejs:steel_ingot");
+	event
+		.custom({
+			type: "createindustry:casting",
+			ingredients: [
+				{
+					fluid: "createindustry:molten_steel",
+					amount: 1,
+				},
+			],
+			processingTime: 300,
+			results: [
+				{
+					count: 1,
+					item: "create_dd:steel_ingot",
+				},
+				{
+					count: 1,
+					item: "create_dd:steel_block",
+				},
+			],
+		})
+		.id("kubejs:casting/steel");
+
+	// Fireclay
+	event
+		.custom({
+			type: "create_dd:superheating",
+			ingredients: [
+				{
+					item: "minecraft:clay_ball",
+				},
+			],
+			results: [
+				{
+					item: "createindustry:fireclay_ball",
+					count: 1,
+				},
+			],
+		})
+		.id("kubejs:superheating/fireclay_ball");
+	event
+		.custom({
+			type: "create_dd:superheating",
+			ingredients: [
+				{
+					item: "minecraft:clay",
+				},
+			],
+			results: [
+				{
+					item: "createindustry:fireclay",
+					count: 1,
+				},
+			],
+		})
+		.id("kubejs:superheating/fireclay_block");
 
 	// Harder Sails
 	const sailWoods = [

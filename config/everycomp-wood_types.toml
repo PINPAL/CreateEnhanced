@@ -61,7 +61,6 @@
 		[types.cut_block_type.createindustry]
 			concrete = true
 			rebar_concrete = true
-			chipwood = true
 			factory_floor = true
 			cut_bauxite = true
 			polished_cut_bauxite = true
@@ -83,22 +82,7 @@
 			blue_concrete = true
 			magenta_concrete = true
 			pink_concrete = true
-			white_high_quality_concrete = true
-			light_gray_high_quality_concrete = true
-			gray_high_quality_concrete = true
-			black_high_quality_concrete = true
-			brown_high_quality_concrete = true
-			red_high_quality_concrete = true
-			orange_high_quality_concrete = true
-			yellow_high_quality_concrete = true
-			lime_high_quality_concrete = true
-			green_high_quality_concrete = true
-			purple_high_quality_concrete = true
-			cyan_high_quality_concrete = true
-			light_blue_high_quality_concrete = true
-			blue_high_quality_concrete = true
-			magenta_high_quality_concrete = true
-			pink_high_quality_concrete = true
+			hardened_planks = true
 
 		[types.cut_block_type.create]
 			copper_shingle = true
@@ -342,6 +326,39 @@
 			ash_bricks = true
 			stone_tile = true
 			blackstone_tile = true
+
+		[types.cut_block_type.design_decor]
+			granite_castel_brick = true
+			diorite_castel_brick = true
+			andesite_castel_brick = true
+			calcite_castel_brick = true
+			dripstone_castel_brick = true
+			deepslate_castel_brick = true
+			tuff_castel_brick = true
+			asurine_castel_brick = true
+			crimsite_castel_brick = true
+			limestone_castel_brick = true
+			ochrum_castel_brick = true
+			scoria_castel_brick = true
+			scorchia_castel_brick = true
+			veridium_castel_brick = true
+			granite_castel_tile = true
+			diorite_castel_tile = true
+			andesite_castel_tile = true
+			calcite_castel_tile = true
+			dripstone_castel_tile = true
+			deepslate_castel_tile = true
+			tuff_castel_tile = true
+			asurine_castel_tile = true
+			crimsite_castel_tile = true
+			limestone_castel_tile = true
+			ochrum_castel_tile = true
+			scoria_castel_tile = true
+			scorchia_castel_tile = true
+			veridium_castel_tile = true
+
+		[types.cut_block_type.kubejs]
+			waterproof = true
 
 [entries]
 

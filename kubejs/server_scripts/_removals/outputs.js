@@ -38,6 +38,12 @@ const outputsToRemove = [
 	// Create Deco
 	"createdeco:netherite_bars",
 
+	// Create Connected
+	/create_connected:copycat_.*/,
+	"create_connected:control_chip",
+	"create_connected:brass_gearbox",
+	"create_connected:vertical_brass_gearbox",
+
 	// Explorers Compass
 	"explorerscompass:explorerscompass",
 
@@ -78,6 +84,7 @@ const outputsToRemove = [
 	"create_dd:caramel_milkshake_bucket",
 	"create_dd:hot_chocolate_bucket",
 	"create_dd:chocolate_milkshake_bucket",
+	"create_dd:copycat_slab",
 
 	"create_dd:steel_block",
 	"create_dd:kinetic_motor",
@@ -96,6 +103,7 @@ const outputsToRemove = [
 
 	// Create Things and Misc
 	"create_things_and_misc:radar",
+	"create_things_and_misc:diluted_bonemeal",
 
 	// Create Addition
 	"createaddition:digital_adapter",
@@ -113,21 +121,23 @@ const outputsToRemove = [
 	"createindustry:napalm_bomb",
 	"createindustry:napalm_bucket",
 	"createindustry:thermite_grenade",
-	/createindustry:.*concrete.*/,
+	/createindustry:.*_concrete.*/,
 	"createindustry:mesh",
 	"createindustry:thermite_powder",
 	"createindustry:factory_floor",
+	"createindustry:factory_floor_stairs",
 	"createindustry:factory_floor_slab",
 	/v_slab_compat:createindustry\/.*factory_floor.*/,
 	"createindustry:industrial_barrel",
 	"createindustry:caution_block",
-	"createindustry:coal_coke",
 	"createindustry:steel_ingot",
+	"createindustry:steel_block",
 	"createindustry:cast_iron_ingot",
 	"createindustry:cast_iron_block",
 	"createindustry:heavy_plate",
 	"createindustry:steel_scaffolding",
-	"createindustry:sawdust",
+	"createindustry:zinc_grenade",
+	"createindustry:copper_grenade",
 
 	// Every Compat
 	/everycomp:sd\/.*/,

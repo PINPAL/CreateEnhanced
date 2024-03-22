@@ -1,14 +1,13 @@
-name = "Simple Netherite Horse Armor"
-filename = "netherite_horse_armor-1.19-1.0.3.jar"
-side = "both"
+filename = 'netherite_horse_armor-forge-1.19-1.0.4.jar'
+name = 'Netherite Horse Armor'
+side = 'both'
 
 [download]
-mode = "url"
-url = "https://cdn.modrinth.com/data/nDFVOeq7/versions/lUyhgXiE/netherite_horse_armor-1.19-1.0.3.jar"
-hash-format = "sha512"
-hash = "5f09076e25c02dc0158fc26d9f013dfd56784d43afd1a45e67b98f46ea8a2cf40b149548a436a65ce3bca7e0c9589e03227374425146fab2b85d7a853c129ec4"
+hash = '279afe2e47dba78d57eb44703a9107ce89446400791686980d4f12f3252b0d5d9db17892ec0d3f711e494c6fefb7995e992f8a1cd70ac8872934e0ba4805fdfc'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nDFVOeq7/versions/EWW1OsYx/netherite_horse_armor-forge-1.19-1.0.4.jar'
 
-[update]
 [update.modrinth]
-mod-id = "nDFVOeq7"
-version = "lUyhgXiE"
+mod-id = 'nDFVOeq7'
+version = 'EWW1OsYx'
